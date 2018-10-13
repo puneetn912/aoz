@@ -1,20 +1,11 @@
 <div ng-app="cmsApp" ng-cloak>
-<body>
-<ng-include src="'views/user/common/header.html'"></ng-include>
-<md-content ng-controller="homeController as vmHome" layout-padding ng-cloak>
-  <div layout-gt-xs="row">
-    <div flex-gt-xs>
-      <h3>Mobile Number</h3>
-  		<md-content class="md-no-momentum">
-	    	<md-input-container md-no-float class="md-block">
-	      		<!-- <md-icon md-svg-src="img/icons/ic_phone_24px.svg"></md-icon> -->
-	      			<input ng-model="vmHome.phone" type="text" placeholder="Phone Number">
-	    	</md-input-container>
-	     <md-button class="md-raised md-primary" ng-click="sendOtp()">send OTP</md-button>
-	 </md-content>
-    </div>
-  </div>
-</md-content>
-<ng-include src="'views/user/common/footer.html'"></ng-include>
-</body>
+	<md-content flex layout="row" ng-controller="homeController as vmHome" ng-cloak style='height: 600px'>
+		<div flex-offset="30" hide-xs hide-sm></div>
+		<div flex layout="column" layout-align="center center" >
+			<h1 style="margin: 0px">Welcome to DJ Fresh</h1>
+			<h3>Your Local Food Partner</h3>
+			<md-button class="md-raised md-primary" href="/signup">Login</md-button>
+		</div>
+		<div flex-offset="30" hide-xs hide-sm></div>
+	</md-content>
 </div>

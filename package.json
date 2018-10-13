@@ -33,6 +33,7 @@
     "angular-animate": "^1.7.3",
     "angular-aria": "^1.7.3",
     "angular-material": "^1.1.10",
+    "angular-material-calendar": "^0.2.14",
     "angular-messages": "^1.7.3",
     "angular-resource": "^1.7.3",
     "angular-route": "^1.7.3",
