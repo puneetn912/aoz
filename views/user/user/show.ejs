@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../../common/head %>
+</head>
+<body ng-app="adminApp" ng-cloak>
+  <div layout="column" ng-cloak>
+    <section layout="row" ng-controller="pageController as vmPage" flex>
+      <% include ../includes/sideNav %>
+      <md-content flex layout="column" ng-controller="userShowController as vmUserShow" ng-cloak>
+        <md-card>
+          <md-card-content>
+            <div layout="row" layout-align="space-between center">
+              <h2>User Show</h2>
+              <div layout="row">
+                <md-button class="md-raised md-primary" aria-label="users" href="{{'/admin/users/edit/'+'<%= user._id %>'}}">
+                  Edit
+                </md-button>
+                <md-button class="md-raised md-primary" aria-label="users" href="{{'/admin/users/delete/'+'<%= user._id %>'}}">
+                  Delete
+                </md-button>
+              </div>            </div>
+            <div layout="column" layout-align="">
+            <p>Name: <%= user.name %></p>
+            <p>Mobile: <%= user.mobileno %></p>
+            <p>Email: <%= user.email %></p>
+            <p>Caterer ID: <%= user.caterer_id %></p>
+            <p>Caterer Name: <%= user.caterer_name %></p>
+            <p>Apartment ID: <%= user.apartment_id %></p>
+            <p>Apartment Name: <%= user.apartment_name %></p>
+            </div>
+          </md-card-content>
+        </md-card>
+      </md-content>
+    </section>
+  </div>
+  <% include ../../common/script %>
+</body>
+</html>

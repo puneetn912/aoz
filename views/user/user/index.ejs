@@ -1,0 +1,73 @@
+<!-- Code generator by Bharath -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../../common/head %>
+</head>
+<body ng-app="adminApp" ng-cloak>
+	<div layout="column" ng-cloak>
+		<section layout="row" ng-controller="pageController as vmPage" flex>
+			<% include ../includes/sideNav %>
+			<md-content flex layout="column" ng-controller="userListController as vmUserList" ng-cloak>
+				<md-card>
+					<md-card-content>
+						<div layout="row" layout-align="space-between center">
+							<h2>User List</h2>
+
+                            <md-autocomplete
+                                ng-disabled="vmUserList.isDisabled"
+                                md-no-cache="vmUserList.noCache"
+                                md-selected-item="vmUserList.selectedItem"
+                                md-search-text-change="vmUserList.searchTextChange(vmUserList.searchText)"
+                                md-search-text="vmUserList.searchText"
+                                md-selected-item-change="vmUserList.selectedItemChange(item)"
+                                md-items="item in querySearch(vmUserList.searchText)"
+                                md-item-text="item.name"
+                                md-min-length="0"
+                                placeholder="Search User Name">
+                                <md-item-template>
+                                    <span md-highlight-text="vmUserList.searchText" md-highlight-flags="^i">{{item.name}}</span>
+                                </md-item-template>
+                                <md-not-found>
+                                    No states matching "{{vmUserList.searchText}}" were found.
+                                </md-not-found>
+                            </md-autocomplete>
+
+
+							<md-button class="md-primary" aria-label="users" href="/admin/users/create">
+								Create
+							</md-button>
+						</div>
+						<md-list flex>
+          				<% users.map(user => { %>
+								<md-list-item md-whiteframe="2" layout-padding>
+								<p><%= user.name %></p>
+								<p><%= user.mobileno %></p>
+								<p><%= user.email %></p>
+								<p><%= user.caterer_id %></p>
+								<p><%= user.caterer_name %></p>
+								<p><%= user.apartment_id %></p>
+								<p><%= user.apartment_name %></p>
+									<div layout="row" layout-xs="column">
+										<md-button class="md-primary" aria-label="users" href="/admin/users/show/<%= user._id %>">
+											Show
+										</md-button>
+										<md-button class="md-accent" aria-label="users" href="/admin/users/edit/<%= user._id %>">
+											Edit
+										</md-button>
+										<md-button class="md-accent" aria-label="users" href="/admin/users/delete/<%= user._id %>">
+											Delete
+										</md-button>
+									</div>
+								</md-list-item>
+						<% }) %>
+						</md-list>
+					</md-card-content>
+				</md-card>
+			</md-content>
+		</section>
+	</div>
+	<% include ../../common/script %>
+</body>
+</html>
+<!-- End of File -->

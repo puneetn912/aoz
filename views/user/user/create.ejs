@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../../common/head %>
+</head>
+<body ng-app="adminApp" ng-cloak>
+	<div layout="column" ng-cloak>
+		<section layout="row" ng-controller="pageController as vmPage" flex>
+			<% include ../includes/sideNav %>
+			<md-content flex layout="column" ng-controller="userCreateController as vmUserCreate" ng-cloak>
+				<form action="/admin/users/save" name="userForm" method="POST">
+					<md-card>
+						<md-card-content>
+							<h2>User Create</h2>
+							<% var vm= 'vmUserCreate'; %>
+							<table>
+							  <tbody>
+							    <tr>
+							      <td>Name</td>
+							      <td>
+							        <md-input-container class="md-block">
+							          <input type="text" aria-label="users" name="name" ng-model="<%= vm %>.name" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Mobile</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="mobileno" ng-model="<%= vm %>.mobileno" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Email</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="email" ng-model="<%= vm %>.email" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Caterer ID</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="caterer_id" ng-model="<%= vm %>.caterer_id" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>caterer Name</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="caterer_name" ng-model="<%= vm %>.caterer_name" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Apartment ID</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="apartment_id" ng-model="<%= vm %>.apartment_id" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td>Apartment Name</td>
+							      <td>
+							        <md-input-container class="md-block">
+							        <input type="text" aria-label="users" name="apartment_name" ng-model="<%= vm %>.apartment_name" />
+							        </md-input-container>
+							      </td>
+							    </tr>
+							  </tbody>
+							</table>
+						</md-card-content>
+						<md-card-actions>
+							<md-button class="md-raised md-primary" type="submit">Submit</md-button>
+						</md-card-actions>
+					</md-card>
+				</form>
+			</md-content>
+		</section>
+	</div>
+	<% include ../../common/script %>
+</body>
+</html>

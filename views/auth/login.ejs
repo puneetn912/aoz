@@ -1,0 +1,56 @@
+<!-- Code generator by Bharath -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../common/loginSignupHead %>
+  </head>
+  <body ng-app="adminApp" ng-cloak>
+    <% include ../common/menu %>
+    <md-content ng-controller="authController as vmAuth">
+      <md-card>
+        <md-card-content>
+            <% var vm= 'vmAuth'; %>
+          <div layout="row" layout-align="space-between center">
+            <h2>Login page</h2>
+          </div>
+          <form action="/" method="post" name='loginForm'>
+            <md-input-container class="md-block">
+              <label>Email</label>
+              <input required type="email" name="email" ng-model="<%= vm %>.email"
+                    minlength="10" maxlength="100" ng-pattern="/^.+@.+..+$/" />
+
+              <div ng-messages="loginForm.email.$error" role="alert">
+                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                  Your email must be between 10 and 100 characters long and look like an e-mail address.
+                </div>
+              </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+              <label>Password</label>
+              <input required type="password" name="password" ng-model="password"
+                     minlength="10" maxlength="100" />
+
+              <div ng-messages="loginForm.password.$error" role="alert">
+                <div ng-message-exp="['required', 'minlength', 'maxlength']">
+                  Your password must be between 10 and 100 characters long.
+                </div>
+              </div>
+            </md-input-container>
+            <md-button type="submit">Login</md-button>
+            <md-button class="md-primary md-raised" ng-click="showPrompt($event)"  >
+              SignUp
+            </md-button>
+            <!-- <a href='/signup'>Signup</a> -->
+          </form>
+           <div ng-if="status" id="status">
+                <b layout="row" layout-align="center center" class="md-padding">
+                  {{status}}
+                </b>
+              </div>
+        </md-card-content>
+      </md-card>
+    </md-content>
+    <% include ../common/script %>
+  </body>
+</html>
+<!-- End of file -->
