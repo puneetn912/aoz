@@ -1,7 +1,11 @@
 <div ng-app="cmsApp" ng-cloak>
     <md-content flex layout="row" ng-controller="subscriptionController as vmSubscription" ng-cloak style='height: 600px'>
+
         <div flex-offset="30" hide-xs hide-sm></div>
         <md-card flex layout-align="center">
+      <md-content layout-padding>
+        The Description of the food will come here. Includes curd, salad, one more thing, more thing, more thing, and then will be packed in a beautiful box with branding and will server
+      </md-content>
             <form name="userForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
                     <md-input-container>
@@ -11,11 +15,23 @@
                           <md-option value="nonveg">Non-Veg</md-option>
                           <md-option value="wand">Both</md-option>
                       </md-select>
-                  </md-input-container>
+                    </md-input-container>
                   <md-input-container>
-                    <label>Email Address</label>
-                    <input required type="number" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
-                    <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider>
+                    <label>Number of meals</label>
+
+                    <md-button class="md-accent md-raised" ng-click="inc()">+</md-button>
+                    <input id="text" type="text" value="0"  readonly>
+                    <md-button class="md-accent md-raised" ng-click="dec()">-</md-button>
+
+<!--                       <input type="button" ng-click="inc()" value="+"/>
+                      <input id="text" type="text" value="0" disabled="true"/>
+                      <input type="button" ng-click="dec()" value="-"/> -->
+
+
+                  </md-input-container>
+                <md-input-container>
+                  <label>Start date</label>
+                    <md-datepicker ng-model="date"></md-datepicker>
                 </md-input-container>
                 <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
             </md-card-content>
@@ -24,3 +40,7 @@
     <div flex-offset="30" hide-xs hide-sm></div>
 </md-content>
 </div>
+
+<!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
+
+

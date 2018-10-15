@@ -1,11 +1,13 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content flex layout="row" ng-controller="homeController as vmHome" ng-cloak style='height: 600px'>
+	<md-content class="height600" flex layout="row" ng-controller="homeController as vmHome" ng-cloak  >
 		<div flex-offset="30" hide-xs hide-sm></div>
-		<div flex layout="column" layout-align="center center" >
-			<h1 style="margin: 0px">Welcome to DJ Fresh</h1>
-			<h3>Your Local Food Partner</h3>
-			<md-button class="md-raised md-primary" href="/signup">Login</md-button>
-		</div>
+		<md-card flex layout="column" layout-align="center center">
+			<h4 class="pb70 greyfont">Best place for<span class="FFC300font"> food lovers </span>like you</h1>
+			<h4 class="greyfont">Create a new account or sign in</h3>
+			<div>	
+			    <md-button class="md-raised home-signup-btn" href="/signup">Log In</md-button>
+		    </div>
+		</md-card>
 		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
 </div>
