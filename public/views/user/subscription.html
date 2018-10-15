@@ -15,9 +15,7 @@
                   <md-input-container>
                     <label>Email Address</label>
                     <input required type="number" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
-                    <md-calendar ng-model="vmSubscription.myDate" ng-change="vmSubscription.onDateChanged()"  ></md-calendar>
-                    <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating">
-                    </md-slider>
+                    <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider>
                 </md-input-container>
                 <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
             </md-card-content>
