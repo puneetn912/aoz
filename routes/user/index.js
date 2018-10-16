@@ -11,7 +11,7 @@ router.post('/sendotp', function(req, res) {
   	  console.log('req.body',req.body)
   	  console.log('req.body',signupotp)
   	  console.log('req.body',phone)
-  	  res.send(signupotp)
+  	  // res.send(signupotp)
 });
 
 module.exports = router;
