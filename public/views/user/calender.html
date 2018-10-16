@@ -17,8 +17,8 @@
 			</div><br>
 
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
-				<a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a>
-				<a id="currDateHead" style="display: none">Choose meal count for {{vmCalender.currDateHead}}</a>
+				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
+				<a id="currDateHead" style="display: block">Choose meal count for {{vmCalender.currDateHead}}</a>
 				<div layout="row" style="padding: 0px">
 					<md-input-container style='margin-bottom: 0px'>
 						<label>Veg MealCount</label>
@@ -26,7 +26,7 @@
       
                     <div layout="row" layout-align="center center">
                        <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
-                        <div><input id="calveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                        <div><input type="number" id="calveg" class="aligncenter" placeholder="No. of meals" ng-model="vmCalender.dayVegCount"></div>
                        <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
                     </div>
 					</md-input-container>
@@ -36,7 +36,7 @@
 
                     <div layout="row" layout-align="center center">
                        <div><md-button class="calender-count-btn md-accent md-raised" ng-click="calinveg()">+</md-button></div>
-                        <div><input id="calnveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                        <div><input type="number" id="calnveg" class="aligncenter" placeholder="No. of meals" ng-model="vmCalender.dayNonvegCount"></div>
                        <div><md-button class="calender-count-btn md-accent md-raised" ng-click="caldnveg()">-</md-button></div>
                     </div>
 					</md-input-container>
