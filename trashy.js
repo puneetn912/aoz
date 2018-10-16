@@ -102,3 +102,82 @@
             // vmListingEdit.listing.rMerchants = listing.merchant_id
             // vmListingEdit.listing.merchant_id = merchants
             ////console.log('vmListingEdit.listing.rMerchants',vmListingEdit.listing.rMerchants)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // console.log(vmApartmentCreate.towerCount)
+
+
+        // $scope.submitCount = function(){
+        //     console.log(vmApartmentCreate.years,'type')
+        // } 
+
+        // $scope.calcul = function(){
+        //     let countArr = Array.apply(null, {length: 3}).map(Number.call, Number)
+        //     let document.innerHTML = countArr.map(x =>{
+        //         return `<td layout='row' id='${x}'>
+        //         <md-input-container class="md-block">
+        //             <label for="tower_name">Tower Name</label>
+        //             <input type="text" aria-label="apartments" name="tower_name" ng-model="<%= vm %>.tower_name" />
+        //         </md-input-container>
+        //         <md-input-container class="md-block">
+        //             <label for="door_number">Door Numbers</label>
+        //             <md-chips ng-model="vmApartmentCreate.editableTowerNames"  
+        //             md-removable="vmApartmentCreate.removable" 
+        //             md-enable-chip-edit="true" 
+        //             md-transform-chip="vmApartmentCreate.newTower($chip)"></md-chips>
+        //         </md-input-container>
+        //         </td>`
+        //     }).join(' ');
+        //     return a
+        // }   
+        // var startYear = 1900
+        // var thisYear = new Date().getFullYear();
+        // var range = [];
+
+            //         let appTitle = countArr.map(x =>{
+            //     return `<td layout='row'>
+            //     <md-input-container class="md-block">
+            //         <label for="tower_name">Tower Name</label>
+            //         <input type="text" aria-label="apartments" name="tower_name" ng-model="<%= vm %>.tower_name" />
+            //     </md-input-container>
+            //     <md-input-container class="md-block">
+            //         <label for="door_number">Door Numbers</label>
+            //         <md-chips ng-model="vmApartmentCreate.editableTowerNames"  
+            //         md-removable="vmApartmentCreate.removable" 
+            //         md-enable-chip-edit="true" 
+            //         md-transform-chip="vmApartmentCreate.newTower($chip)"></md-chips>
+            //     </md-input-container>
+            //     </td>`
+            // }).join(' ');
+            // vmApartmentCreate.myText = $sce.trustAsHtml($compile(appTitle));
+
+                        // document.getElementById('towerInputs').innerHTML = countArr.map(x =>{
+            //     return `<td layout='row'>
+            //     <md-input-container class="md-block">
+            //         <label for="tower_name">Tower Name</label>
+            //         <input type="text" aria-label="apartments" name="tower_name" ng-model="<%= vm %>.tower_name" />
+            //     </md-input-container>
+            //     <md-input-container class="md-block">
+            //         <label for="door_number">Door Numbers</label>
+            //         <md-chips ng-model="vmApartmentCreate.editableTowerNames"  
+            //         md-removable="vmApartmentCreate.removable" 
+            //         md-enable-chip-edit="true" 
+            //         md-transform-chip="vmApartmentCreate.newTower($chip)"></md-chips>
+            //     </md-input-container>
+            //     </td>`
+            // }).join(' ')
