@@ -18246,6 +18246,32 @@ md-toolbar {
 /* End of File */
 
 
+
+
+
+
+/*--------------------subscription.html----------------------*/
+
+.subscription-veg {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.subscription-nveg {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/*--------------------subscription.html------------------------------*/
+
+
+
+/*-----------------------signup.html-----------------------------*/
 .dot {
     height: 25px;
     width: 25px;
@@ -18274,10 +18300,10 @@ md-toolbar {
     display: inline-block;
      margin-left: 8px;
      margin-right: 10px;
-}
+}/*----------------------signup.html---------------------------*/
 
 
-
+/*-----------------home.html--------------------------*/
 .home-signup-btn{
   color: white !important;
   background-color: #FFC300 !important;
@@ -18291,12 +18317,7 @@ md-toolbar {
   font-size: 16px;
   border:2px solid #FFC300;
 }
-/*.home-log-btn:hover{
-  color: #FFC300 !important;
-  background-color: white !important;
-  border:2px solid #FFC300;  
-}*/
-
+/*---------------------home.html----------------------------*/
 
 
 /* Code generator by Bharath */
@@ -18376,3 +18397,22 @@ body {
 /*height*/
 .height600 {height: 600px;}
 /*height*/
+
+
+/*font-weight*/
+.font-weightbold{
+  font-weight: bold;
+}
+/*font-weight*/
+
+/*align*/
+.aligncenter{
+  text-align: center;
+}
+.alignleft{
+  text-align: left;
+}
+.alignright{
+  text-align: right;
+}
+/*align*/
