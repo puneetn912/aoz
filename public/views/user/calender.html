@@ -22,11 +22,23 @@
 				<div layout="row" style="padding: 0px">
 					<md-input-container style='margin-bottom: 0px'>
 						<label>Veg MealCount</label>
-						<input type="number" id="dayVegCount" name="dayVegCount" ng-model="vmCalender.dayVegCount" md-maxlength="255" />
+<!-- 						<input type="number" id="dayVegCount" name="dayVegCount" ng-model="vmCalender.dayVegCount" md-maxlength="255" /> -->
+      
+                    <div layout="row" layout-align="center center">
+                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
+                        <div><input id="calveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
+                    </div>
 					</md-input-container>
 					<md-input-container style='margin-bottom: 0px'>
 						<label>NonVeg MealCount</label>
-						<input type="number" id="dayNonvegCount" name="dayNonvegCount" ng-model="vmCalender.dayNonvegCount" md-maxlength="255" />
+<!-- 						<input type="number" id="dayNonvegCount" name="dayNonvegCount" ng-model="vmCalender.dayNonvegCount" md-maxlength="255" /> -->
+
+                    <div layout="row" layout-align="center center">
+                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="calinveg()">+</md-button></div>
+                        <div><input id="calnveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="caldnveg()">-</md-button></div>
+                    </div>
 					</md-input-container>
 				</div>
 			</form>
