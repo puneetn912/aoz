@@ -1,22 +1,50 @@
 <div ng-app="cmsApp" ng-cloak>
     <md-content flex layout="row" ng-controller="subscriptionController as vmSubscription" ng-cloak style='height: 600px'>
+
         <div flex-offset="30" hide-xs hide-sm></div>
         <md-card flex layout-align="center">
+      <div layout-padding class="aligncenter">
+         <p>
+           The Description of the food will come here. Includes curd, salad, one more thing, more thing, more thing, and then will be packed in a beautiful box with branding and will server
+         </p>
+      </div>
+      <div layout="row" layout-align="space-around center">
+         <div><span class="subscription-veg"></span></div>
+         <div><span class="subscription-nveg"></span></div>
+      </div><br><br>  
+      <div layout="row" layout-align="space-around center">
+         <div><span class="greyfont font-weightbold" >@99/-</span></div>
+         <div><span class="greyfont font-weightbold">@119/-</span></div>
+      </div>
             <form name="userForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
                     <md-input-container>
                         <label>MealType</label>
                         <md-select ng-model="weapon" placeholder="MealType" class="md-no-underline">
-                          <md-option value="veg">Veg</md-option>
-                          <md-option value="nonveg">Non-Veg</md-option>
+                            <md-option value="veg">Veg</md-option>
+                            <md-option value="nonveg">Non-Veg</md-option>
                           <md-option value="wand">Both</md-option>
                       </md-select>
+                    </md-input-container>
+                  <md-input-container>
+                    <div layout="row" layout-align="center center">
+                       <div><md-button class="md-accent md-raised" ng-click="iveg()">+</md-button></div>
+                        <div><input id="veg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                       <div><md-button class="md-accent md-raised" ng-click="dveg()">-</md-button></div>
+                    </div>
                   </md-input-container>
                   <md-input-container>
-                    <label>Email Address</label>
-                    <input required type="number" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
-                    <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider>
-                </md-input-container>
+                    <div layout="row" layout-align="center center">
+                       <div><md-button class="md-accent md-raised" ng-click="inveg()">+</md-button></div>
+                        <div><input id="nveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                       <div><md-button class="md-accent md-raised" ng-click="dnveg()">-</md-button></div>
+                    </div>
+                  </md-input-container>
+                  <md-input-container>
+                  <label>Start date</label>
+                    <md-datepicker ng-model="date">
+                    </md-datepicker>
+                  </md-input-container>
                 <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
             </md-card-content>
         </form>
@@ -24,3 +52,7 @@
     <div flex-offset="30" hide-xs hide-sm></div>
 </md-content>
 </div>
+
+<!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
+
+

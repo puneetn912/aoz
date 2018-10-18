@@ -1,3 +1,97 @@
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/*--------------calender.html----------------------*/
+
+.calender-count-btn{
+    min-height: 15px !important;
+    min-width: 25px !important;
+
+}
+/*--------------calender.html-----------------------*/
+
+
+
+/*--------------------subscription.html----------------------*/
+
+.subscription-veg {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.subscription-nveg {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/*--------------------subscription.html------------------------------*/
+
+
+
+/*-----------------------signup.html-----------------------------*/
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #FFC300;
+    border-radius: 50%;
+    display: inline-block;
+}
+.line {
+    height: 10px;
+    width: 100px;
+    background-color: #FFC300;
+    display: inline-block; 
+}
+.line1 {
+    height: 10px;
+    width: 79px;
+    background-color: white;
+    display: inline-block;
+     margin-left: 5px;
+     margin-right: 10px;
+}
+.line2 {
+    height: 10px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+     margin-left: 8px;
+     margin-right: 10px;
+}/*----------------------signup.html---------------------------*/
+
+
+/*-----------------home.html--------------------------*/
+.home-signup-btn{
+  color: white !important;
+  background-color: #FFC300 !important;
+  padding: 5px 40px; 
+  font-size: 16px;
+}
+.home-login-btn{
+  color: #FFC300 !important;
+  background-color: white !important;
+  padding: 5px 40px; 
+  font-size: 16px;
+  border:2px solid #FFC300;
+}
+/*---------------------home.html----------------------------*/
+
+
 /* Code generator by Bharath */
 body {
   font-family: 'Roboto', sans-serif;
@@ -51,3 +145,46 @@ body {
 .nonveg{background: brown}
 
 /* End of File */
+
+
+
+.bgcolorFFC300{background-color: #FFC300 !important;}
+
+
+/*padding*/
+.pb70 {padding-bottom: 70px !important;}
+.pt179{padding-top: 179px !important;}
+/*padding*/
+
+
+/*font-color*/
+.whitefont {color: white !important;}
+.goldfont {color:gold !important;}
+.yellowfont {color:yellow;}
+.FFC300font{color:#FFC300 !important;}
+.greyfont{color: grey !important;}
+/*font-color*/
+
+
+/*height*/
+.height600 {height: 600px;}
+/*height*/
+
+
+/*font-weight*/
+.font-weightbold{
+  font-weight: bold;
+}
+/*font-weight*/
+
+/*align*/
+.aligncenter{
+  text-align: center;
+}
+.alignleft{
+  text-align: left;
+}
+.alignright{
+  text-align: right;
+}
+/*align*/

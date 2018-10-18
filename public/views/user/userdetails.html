@@ -19,14 +19,21 @@
             <form name="userForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
                     <md-input-container>
-                        <label>Name</label>
-                        <input required type="text" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
+                      <md-select ng-model="someModel" placeholder="Choose an Apartment">
+                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
+                      </md-select>
                     </md-input-container>
                     <md-input-container>
-                        <label>Email Address</label>
-                        <input required type="text" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
+                      <md-select ng-model="someModel" placeholder="Choose a tower name">
+                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
+                      </md-select>
                     </md-input-container>
-                    <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
+                    <md-input-container>
+                      <md-select ng-model="someModel" placeholder="Choose a door Number">
+                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
+                      </md-select>
+                     </md-input-container>
+                    <md-button class="md-raised bgcolorFFC300 whitefont" ng-click="sendOtp(userForm)">Submit</md-button>
                 </md-card-content>
             </form>
         </md-card>
