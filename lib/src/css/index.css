@@ -12,4 +12,42 @@ body {
   text-align: left;
   width: 100%;
 }
+
+.material-icons.icon,
+.material-label {
+  font-size: 30px;
+  line-height: 1;
+  display: block;
+  color: #424242;
+  /*margin: .5em 0*/
+}
+
+
+.material-icons.mdl-badge.veg[data-badge]::after,
+.material-label.mdl-badge.veg[data-badge]::after{
+  font-size: .3em;
+  width: 2em;
+  height: 2em;
+  background-color: green;
+  margin-right: 17px!important;
+}
+.material-icons.mdl-badge.nonveg[data-badge]::after,
+.material-label.mdl-badge.nonveg[data-badge]::after{
+  font-size: .3em;
+  width: 2em;
+  height: 2em;
+  background-color: brown
+}
+/*.mdl-badge[data-badge]:after*/
+.material-icons.mdl-badge[data-badge]::after {
+  top: -1em;
+  right: -1em;
+}
+.mdl-badge{
+    margin-top: -35px;
+    margin-right: 20px ;
+}
+.veg{background: green}
+.nonveg{background: brown}
+
 /* End of File */

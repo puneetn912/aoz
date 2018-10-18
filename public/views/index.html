@@ -1,11 +1,14 @@
 <html ng-app="cmsApp">
 <head>
-<link rel="stylesheet" src="text/css" href="../dist/main.css">
-<script src="../dist/main.js"></script>
-<meta charset="utf-8">
-<base href="/">
+	<meta name="viewport" content="">
+	<link rel="stylesheet" src="text/css" href="../dist/main.css">
+	<script src="../dist/main.js"></script>
+	<meta charset="utf-8">
+	<base href="/">
 </head>
 <body>
-<div ng-view=""></div>
+	<ng-include src="'views/user/common/header.html'"></ng-include>
+	<div ng-view="" style='height: 610px'></div>
+	<ng-include src="'views/user/common/footer.html'"></ng-include>
 </body>
 </html>

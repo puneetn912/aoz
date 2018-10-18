@@ -1,14 +1,29 @@
 <div ng-app="cmsApp" ng-cloak>
-<body>
-<ng-include src="'views/user/common/header.html'"></ng-include>
-<md-content ng-controller="calenderController as vmCalender" layout-padding ng-cloak>
-  <div layout-gt-xs="row">
-    <div flex-gt-xs>
-      <h4>Standard date-picker</h4>
-      <md-datepicker ng-model="vmCalender.myDate" name='myDate' md-placeholder="Enter date"></md-datepicker>
-    </div>
-  </div>
-</md-content>
-<ng-include src="'views/user/common/footer.html'"></ng-include>
-</body>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+	<md-content flex layout="row" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
+		<div flex-offset="30" hide-xs hide-sm></div>
+		<md-card flex layout-align="center">
+			<div id='mealCountDisp'>
+				Meal Count is set for everyday 1 veg and 1 nonveg meal, click on date to change
+			</div>
+			<form name="userForm" id='mealCountForm' style="display: none">
+				Choose meal count for {{vmCalender.startDate}}<br>
+				<md-input-container>
+					<label>Veg MealCount</label>
+        			<input type="number" id="vegMealCount" name="vegMealCount" ng-model="vmCalender.vegMealCount" md-maxlength="255" />
+				</md-input-container>
+				<md-input-container>
+					<label>NonVeg MealCount</label>
+        			<input type="number" id="vegMealCount" name="vegMealCount" ng-model="vmCalender.nonvegMealCount" md-maxlength="255" />
+				</md-input-container>
+			</form>
+			<md-card-content layout="column"  layout-padding layout-margin >
+				<md-calendar ng-model="vmCalender.startDate" ng-click="some(startDate)"></md-calendar>
+			</md-card-content>
+
+			<div class="material-label mdl-badge" data-badge="4">Inbox</div>
+		</md-card>
+		<div flex-offset="30" hide-xs hide-sm></div>
+	</md-content>
 </div>
