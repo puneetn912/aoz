@@ -15,19 +15,21 @@
 			<div id='mealCountDisp' class="pl20">
 				Meal Count is set for everyday 1 veg and 1 nonveg meal.
 			</div><br>
-
+            <a href="">{{vmCalender.lastVegDate}}</a>
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
-				<a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a>
-				<a id="currDateHead" style="display: none">Choose meal count for {{vmCalender.currDateHead}}</a>
+				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
+				<a id="currDateHead" style="display: block">Choose meal count for {{vmCalender.currDateHead}}</a>
 				<div layout="row" style="padding: 0px">
 					<md-input-container style='margin-bottom: 0px'>
 						<label>Veg MealCount</label>
 <!-- 						<input type="number" id="dayVegCount" name="dayVegCount" ng-model="vmCalender.dayVegCount" md-maxlength="255" /> -->
       
                     <div layout="row" layout-align="center center">
+
                        <div><md-button class="calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
                         <div><input id="calveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
                        <div><md-button class=" calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
+
                     </div>
 					</md-input-container>
 					<md-input-container style='margin-bottom: 0px'>
@@ -35,9 +37,11 @@
 <!-- 						<input type="number" id="dayNonvegCount" name="dayNonvegCount" ng-model="vmCalender.dayNonvegCount" md-maxlength="255" /> -->
 
                     <div layout="row" layout-align="center center">
+
                        <div><md-button class="calender-count-btn md-raised" ng-click="calinveg()">+</md-button></div>
                         <div><input id="calnveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
                        <div><md-button class="calender-count-btn md-raised" ng-click="caldnveg()">-</md-button></div>
+
                     </div>
 					</md-input-container>
 				</div>
