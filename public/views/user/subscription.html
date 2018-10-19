@@ -16,36 +16,36 @@
          <div><span class="greyfont font-weightbold" >@99/-</span></div>
          <div><span class="greyfont font-weightbold">@119/-</span></div>
       </div>
-            <form name="userForm">
+            <form name="countForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
-                    <md-input-container>
+<!--                     <md-input-container>
                         <label>MealType</label>
                         <md-select ng-model="weapon" placeholder="MealType" class="md-no-underline">
                             <md-option value="veg">Veg</md-option>
                             <md-option value="nonveg">Non-Veg</md-option>
                           <md-option value="wand">Both</md-option>
                       </md-select>
-                    </md-input-container>
+                    </md-input-container> -->
                   <md-input-container>
                     <div layout="row" layout-align="center center">
                        <div><md-button class="md-accent md-raised" ng-click="iveg()">+</md-button></div>
-                        <div><input id="veg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                        <div><input id="veg" class="aligncenter" name='veg_count' placeholder="No. of Veg Meals" type="text" value="0"></div>
                        <div><md-button class="md-accent md-raised" ng-click="dveg()">-</md-button></div>
                     </div>
                   </md-input-container>
                   <md-input-container>
                     <div layout="row" layout-align="center center">
                        <div><md-button class="md-accent md-raised" ng-click="inveg()">+</md-button></div>
-                        <div><input id="nveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
+                        <div><input id="nveg" class="aligncenter" name='nonveg_count' placeholder="No. of Non Meals" type="text" value="0"></div>
                        <div><md-button class="md-accent md-raised" ng-click="dnveg()">-</md-button></div>
                     </div>
                   </md-input-container>
                   <md-input-container>
                   <label>Start date</label>
-                    <md-datepicker ng-model="date">
+                    <md-datepicker ng-model="countForm.date" name='start_date'>
                     </md-datepicker>
                   </md-input-container>
-                <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
+                <md-button class="md-raised md-primary" ng-click="saveNumber(countForm)">Submit</md-button>
             </md-card-content>
         </form>
     </md-card>

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
+let scriptController = require('../../lib/src/js/scriptController/scriptController');
 
 //send otp sign up functionalities
 router.post('/sendotp', function(req, res) {
@@ -13,5 +14,8 @@ router.post('/sendotp', function(req, res) {
   	  console.log('req.body',phone)
   	  // res.send(signupotp)
 });
+
+
+router.post('/mealcount',scriptController.subscriptionCount)
 
 module.exports = router;
