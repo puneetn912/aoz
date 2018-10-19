@@ -5,14 +5,14 @@
 		<div flex-offset="30" hide-xs hide-sm></div>
 		<md-card flex layout-align="center">
 			<div align="center">
-				Totoal Meal count :
+				Totoal Meal count :{{vmCalender.vegCount+vmCalender.nonvegCount}}
 				<div layout='row' layout-align='space-around center'>
 					<label for="">veg : {{vmCalender.vegCount}}</label>
 					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
 				</div>
 			</div><br>
 
-			<div id='mealCountDisp' >
+			<div id='mealCountDisp' class="pl20">
 				Meal Count is set for everyday 1 veg and 1 nonveg meal.
 			</div><br>
 
@@ -25,9 +25,9 @@
 <!-- 						<input type="number" id="dayVegCount" name="dayVegCount" ng-model="vmCalender.dayVegCount" md-maxlength="255" /> -->
       
                     <div layout="row" layout-align="center center">
-                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
+                       <div><md-button class="calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
                         <div><input id="calveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
-                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
+                       <div><md-button class=" calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
                     </div>
 					</md-input-container>
 					<md-input-container style='margin-bottom: 0px'>
@@ -35,9 +35,9 @@
 <!-- 						<input type="number" id="dayNonvegCount" name="dayNonvegCount" ng-model="vmCalender.dayNonvegCount" md-maxlength="255" /> -->
 
                     <div layout="row" layout-align="center center">
-                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="calinveg()">+</md-button></div>
+                       <div><md-button class="calender-count-btn md-raised" ng-click="calinveg()">+</md-button></div>
                         <div><input id="calnveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
-                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="caldnveg()">-</md-button></div>
+                       <div><md-button class="calender-count-btn md-raised" ng-click="caldnveg()">-</md-button></div>
                     </div>
 					</md-input-container>
 				</div>

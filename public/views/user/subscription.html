@@ -1,9 +1,24 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content flex layout="row" ng-controller="subscriptionController as vmSubscription" ng-cloak style='height: 600px'>
+    <md-content flex layout="row" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
 
         <div flex-offset="30" hide-xs hide-sm></div>
         <md-card flex layout-align="center">
+<!--       <div layout="row" layout-align="center center">
+        <span class="dot">1</span>
+        <span class="line"></span>
+        <span class="dot">2</span>
+        <span class="line"></span>
+        <span class="dot">3</span>
+      </div>  
+      <div layout="row" layout-align="center center">
+        <span class="FFC300font">Phone</span>
+        <span class="line1"></span>
+        <span class="greyfont">Verify</span>
+        <span class="line2"></span>
+        <span class="greyfont">Preferance</span>
+      </div>  --> 
       <div layout-padding class="aligncenter">
+
          <p>
            The Description of the food will come here. Includes curd, salad, one more thing, more thing, more thing, and then will be packed in a beautiful box with branding and will server
          </p>
@@ -28,16 +43,16 @@
                     </md-input-container>
                   <md-input-container>
                     <div layout="row" layout-align="center center">
-                       <div><md-button class="md-accent md-raised" ng-click="iveg()">+</md-button></div>
+                       <div><md-button class="md-raised" ng-click="iveg()">+</md-button></div>
                         <div><input id="veg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
-                       <div><md-button class="md-accent md-raised" ng-click="dveg()">-</md-button></div>
+                       <div><md-button class="md-raised" ng-click="dveg()">-</md-button></div>
                     </div>
                   </md-input-container>
                   <md-input-container>
                     <div layout="row" layout-align="center center">
-                       <div><md-button class="md-accent md-raised" ng-click="inveg()">+</md-button></div>
+                       <div><md-button class="md-raised" ng-click="inveg()">+</md-button></div>
                         <div><input id="nveg" class="aligncenter" placeholder="No. of meals" type="text" value="0"></div>
-                       <div><md-button class="md-accent md-raised" ng-click="dnveg()">-</md-button></div>
+                       <div><md-button class="md-raised" ng-click="dnveg()">-</md-button></div>
                     </div>
                   </md-input-container>
                   <md-input-container>
@@ -45,7 +60,7 @@
                     <md-datepicker ng-model="date">
                     </md-datepicker>
                   </md-input-container>
-                <md-button class="md-raised md-primary" ng-click="sendOtp(userForm)">Submit</md-button>
+                <md-button class="md-raised FFC300bgcolor whitefont" ng-click="sendOtp(userForm) ">Submit</md-button>
             </md-card-content>
         </form>
     </md-card>

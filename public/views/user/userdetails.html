@@ -28,11 +28,15 @@
                         <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
                       </md-select>
                     </md-input-container>
-                    <md-input-container>
+                      <md-select ng-model="someModel" placeholder="Choose a pin">
+                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
+                      </md-select>
+                    </md-input-container>
+<!--                     <md-input-container>
                       <md-select ng-model="someModel" placeholder="Choose a door Number">
                         <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
                       </md-select>
-                     </md-input-container>
+                     </md-input-container> -->
                     <md-button class="md-raised bgcolorFFC300 whitefont" ng-click="sendOtp(userForm)">Submit</md-button>
                 </md-card-content>
             </form>

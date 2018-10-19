@@ -1,14 +1,67 @@
 <div ng-app="cmsApp" ng-cloak>
-<body>
-<ng-include src="'views/user/common/header.html'"></ng-include>
-<md-content ng-controller="cartController as vmCart" layout-padding ng-cloak>
-  <div layout-gt-xs="row">
-    <div flex-gt-xs>
-      <h4>Standard date-picker</h4>
-      <md-datepicker ng-model="vmCart.myDate" name='myDate' md-placeholder="Enter date"></md-datepicker>
-    </div>
-  </div>
-</md-content>
-<ng-include src="'views/user/common/footer.html'"></ng-include>
-</body>
+	<md-content class="height600" flex layout="row" ng-controller="cartController as vmCart" ng-cloak  >
+		<div flex-offset="30" hide-xs hide-sm></div>
+		<md-card flex layout="column">
+			<div layout="row" style="border-bottom: 1px solid #eee;">
+			  	 <div flex="20">
+			  	   <img src="../images/user.jpg" widht="50px" height="50px" class="md-card-image pl10 pt20" alt="image caption">
+			     </div>
+			  	 <div>
+			  	   <h4 class="greyfont mb5">Anoop</h4> 
+			  	   <h4 class="greyfont mt5 font-weight400">9876543210</h4>
+			     </div>
+			</div>
+			<div style="border-bottom: 1px solid #eee;">
+			  <h5 class="goldfont mt10 pl10 mb5 font-weight400">Delivery Address</h5>
+			  <h5 class="greyfont pl10 mt5 font-weight400">Flat No: 305, Maruthi Homes, Immadihalli Road, Whitefield - 56006</h5>
+			</div>
+			<div layout="row" style="border-bottom: 1px solid #eee;">
+			  	 <div flex="20">
+			  	   <img src="../images/user.jpg" widht="50px" height="50px" class="md-card-image pl10 pt20" alt="image caption">
+			     </div>
+			  	 <div>
+			  	     <h4 class="greyfont mb5">Dinner bell</h4> 
+			  	     <div layout="row" flex="100">
+			  	     	<div flex="30">
+			  	          <h4 class="greyfont mt5 font-weight400">20 * 1</h4>
+			  	        </div>
+			  	        <div flex="30">
+			  	          <h4 class="greyfont mt5 font-weight400">Dinner</h4>
+			  	        </div>
+			  	        <div flex="30">
+			  	          <h4 class="greyfont mt5 font-weight400">NorthIndian</h4>
+			  	        </div>
+			  	     </div>
+			     </div>
+			</div>
+			<div layout="row" style="border-bottom: 1px solid #eee;padding-top: 20px;padding-bottom: 20px;" align="right">
+			<div flex layout="column" layout-align="center center">
+			 <div style="float: left" class="greyfont font-weight400">
+			  <div >Price :</div>
+			  <div >Shipping :</div>
+			  <div >GST :</div>
+			  <div >Voucher :</div>
+			  <div >Total Payment :</div>
+			 </div>
+			</div>
+
+			<div flex layout="column" layout-align="center center">
+			 <div style="float: left;padding-right: 60px" class="greyfont font-weight400">
+			  <div ></div>
+			  <div >3700.00</div>
+			  <div >600.00</div>
+			  <div >185.00</div>
+			  <div>0.00</div>
+			  <div >3885.00</div>
+			 </div>
+			</div>
+            </div>
+
+			<div flex layout-align="center center" layout="row">
+                  <md-button class="md-raised " style="width:174px;border-radius: 50px;background-color:#FFC300;color:white">Pay Now</md-button>
+			</div>
+			  
+		</md-card>
+		<div flex-offset="30" hide-xs hide-sm></div>
+	</md-content>
 </div>
