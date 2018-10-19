@@ -47,7 +47,6 @@ myMiddleware(app);
 app.get('*',function(req,res)
 {
 	res.render('views/index');
-	
 });
 
 // app.use('/', index);
