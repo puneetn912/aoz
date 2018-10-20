@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var subscription = require('../../lib/models/subscription');
 
 
 let scriptController = require('../../lib/src/js/scriptController/scriptController');
