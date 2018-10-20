@@ -5,24 +5,23 @@
 		<div flex-offset="30" hide-xs hide-sm></div>
 		<md-card flex layout-align="center">
 			<div style="background: linear-gradient(to top, #ff4e50, #f9d423);">
-			<div layout="row" layout-align="center center" class="pt20">
+			<div layout="row" layout-align="center center">
 			<a id="currDateHead" class="whitefont" style="display: block">{{vmCalender.currDateHead}}</a>
 		    </div>
 			<md-card-content layout="column" style="margin-top: -15px" layout-padding layout-margin >
 				<md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
 			</md-card-content>
             </div>
-			<div align="center">
-				Total Meal count :{{vmCalender.vegCount+vmCalender.nonvegCount}}
+			<div class="greyfont pl20" style="border-bottom: 2px solid #eee;"><span class="FFC300font" style="font-size: 12px;font-weight: 600">{{vmCalender.vegCount+vmCalender.nonvegCount}} Meals remaining</span><br/><span class="pl20" style="font-size: 14px"> Out of {{vmCalender.vegCount+vmCalender.nonvegCount}}</span>
 				<div layout='row' layout-align='space-around center'>
-					<label for="">veg : {{vmCalender.vegCount}}</label>
-					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
+<!-- 					<label for="">veg : {{vmCalender.vegCount}}</label>
+					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label> -->
 				</div>
 			</div><br>
 
-			<div id='mealCountDisp' class="pl20">
+<!-- 			<div id='mealCountDisp' class="pl20">
 				Meal Count is set for everyday 1 veg and 1 nonveg meal.
-			</div><br>
+			</div><br> -->
             <a href="">{{vmCalender.lastVegDate}}</a>
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
@@ -54,6 +53,10 @@
 					</md-input-container>
 				</div>
 			</form>
+			<div flex layout-align="center center" layout="row">
+                  <md-button class="md-raised " style="width:174px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px">Save Now</md-button>
+                  <md-button class="md-raised " style="width:174px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px">Add more</md-button>
+			</div>
 
 		</md-card>
 		<div flex-offset="30" hide-xs hide-sm></div>

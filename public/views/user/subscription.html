@@ -33,19 +33,22 @@
       </div>
             <form name="countForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
-<!--                     <md-input-container>
-                        <label>MealType</label>
-                        <md-select ng-model="weapon" placeholder="MealType" class="md-no-underline">
+                    <md-input-container>
+                        <md-select ng-model="weapon" placeholder="Meal Type" class="md-no-underline">
                             <md-option value="veg">Veg</md-option>
                             <md-option value="nonveg">Non-Veg</md-option>
                           <md-option value="wand">Both</md-option>
                       </md-select>
-                    </md-input-container> -->
+                    </md-input-container>
                   <md-input-container>
                     <div layout="row" layout-align="center center">
 
                        <div><md-button class="md-raised" ng-click="iveg()">+</md-button></div>
-                        <div><input id="veg" class="aligncenter" placeholder="No. of meals" type="number" value="0"></div>
+                        <div>
+                        <md-label class="greyfont" style="font-size: 12px">
+                          No. of veg meals
+                        </md-label>
+                          <input id="veg" class="aligncenter" type="number" value="0"></div>
                        <div><md-button class="md-raised" ng-click="dveg()">-</md-button></div>
 
                     </div>
@@ -54,7 +57,11 @@
                     <div layout="row" layout-align="center center">
 
                        <div><md-button class="md-raised" ng-click="inveg()">+</md-button></div>
-                        <div><input id="nveg" class="aligncenter" placeholder="No. of meals" type="number" value="0"></div>
+                        <div>
+                        <md-label class="greyfont" style="font-size: 12px">
+                          No. of non-veg meals
+                        </md-label>
+                          <input id="nveg" class="aligncenter" type="number" value="0"></div>
                        <div><md-button class="md-raised" ng-click="dnveg()">-</md-button></div>
 
                     </div>
