@@ -12,9 +12,9 @@
 				</div>
 			</div><br>
 
-			<div id='mealCountDisp' >
+<!-- 			<div id='mealCountDisp' >
 				Meal Count is set for everyday 1 veg and 1 nonveg meal.
-			</div><br>
+			</div><br> -->
             <a href="">{{vmCalender.lastVegDate}}</a>
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
@@ -42,9 +42,13 @@
 					</md-input-container>
 				</div>
 			</form>
-			<md-card-content layout="column"  layout-padding layout-margin >
-				<md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
-			</md-card-content>
+            <md-card-content layout="column"  layout-padding layout-margin >
+                <md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
+            </md-card-content>
+            <div class="row" style="display: none" id='finalSubmit' align="center">
+                <md-button class="md-raised md-primary" ng-click="finalSave()">Update</md-button> 
+			    <md-button class="md-raised md-primary" ng-click="finalCancel()">Cancel</md-button> 
+            </div>
 		</md-card>
 		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
