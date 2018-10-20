@@ -4,8 +4,16 @@
 	<md-content flex layout="row" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
 		<div flex-offset="30" hide-xs hide-sm></div>
 		<md-card flex layout-align="center">
+			<div style="background: linear-gradient(to top, #ff4e50, #f9d423);">
+			<div layout="row" layout-align="center center" class="pt20">
+			<a id="currDateHead" class="whitefont" style="display: block">{{vmCalender.currDateHead}}</a>
+		    </div>
+			<md-card-content layout="column" style="margin-top: -15px" layout-padding layout-margin >
+				<md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
+			</md-card-content>
+            </div>
 			<div align="center">
-				Totoal Meal count :{{vmCalender.vegCount+vmCalender.nonvegCount}}
+				Total Meal count :{{vmCalender.vegCount+vmCalender.nonvegCount}}
 				<div layout='row' layout-align='space-around center'>
 					<label for="">veg : {{vmCalender.vegCount}}</label>
 					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
@@ -18,7 +26,7 @@
             <a href="">{{vmCalender.lastVegDate}}</a>
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
-				<a id="currDateHead" style="display: block">Choose meal count for {{vmCalender.currDateHead}}</a>
+
 				<div layout="row" style="padding: 0px">
 					<md-input-container style='margin-bottom: 0px'>
 						<label>Veg MealCount</label>
@@ -46,9 +54,7 @@
 					</md-input-container>
 				</div>
 			</form>
-			<md-card-content layout="column"  layout-padding layout-margin >
-				<md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
-			</md-card-content>
+
 		</md-card>
 		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
