@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var subscription = require('../../lib/models/subscription');
+let subscriptionController = require('../../lib/src/js/scriptController/scriptController');
+let localityController = require('../../lib/src/js/scriptController/localityController');
+let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
 
-
-let scriptController = require('../../lib/src/js/scriptController/scriptController');
+var locality = require('../../lib/models/locality')
 
 //send otp sign up functionalities
 router.post('/sendotp', function(req, res) {
@@ -17,6 +19,12 @@ router.post('/sendotp', function(req, res) {
 });
 
 
-router.post('/mealcount',scriptController.subscriptionCount)
+router.post('/mealcount',subscriptionController.subscriptionCount)
+
+// locality
+router.post('/getAllLocality',localityController.getAll)
+
+// apartment
+router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
 
 module.exports = router;
