@@ -1,0 +1,31 @@
+<div ng-app="cmsApp" ng-cloak>
+	<md-content flex layout="row" ng-controller="verifyController as vmVerify" ng-cloak class="height600">
+		<div flex-offset="30" hide-xs hide-sm></div>
+		<md-card flex layout-align="center">
+			<div layout="row" layout-align="center center">
+			  <span class="dot"></span>
+              <span class="line"></span>
+			  <span class="dot"></span>
+			  <span class="line"></span>
+			  <span class="dot"></span>
+			</div>	
+			<div layout="row" layout-align="center center">
+			  <span class="FFC300font">Phone</span>
+              <span class="line1"></span>
+			  <span class="greyfont">Verify</span>
+			  <span class="line2"></span>
+			  <span class="greyfont">Preferance</span>
+			</div>	
+			<form name="otpForm" class="pt179">
+				<md-card-content layout="column"  layout-padding layout-margin  >
+					<md-input-container>
+						<label>Please Verify OTP</label>
+						<input required type="text" id='otp' name="otp" ng-model="Motp"/>
+					</md-input-container>
+					<md-button class="md-raised bgcolorFFC300 whitefont" ng-click="verifyOtp(otpForm)">confirm</md-button>
+				</md-card-content>
+			</form>
+		</md-card>
+		<div flex-offset="30" hide-xs hide-sm></div>
+	</md-content>
+</div>

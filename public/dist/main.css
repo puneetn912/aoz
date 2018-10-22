@@ -18256,6 +18256,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+/*table.md-calendar{width: 100%}
+div.md-virtual-repeat-offsetter{width: 100%}
+div.md-virtual-repeat-sizer{width: 100%}
+.md-calendar-scroll-container{width: 100%}
+.md-calendar-scroll-mask{width: 100%}
+table.md-calendar-day-header{width: 100%}*/
+
+
 
 /*-------------------otp.html------------------------*/
 .otp-otpbtn-div{
