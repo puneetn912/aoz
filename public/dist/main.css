@@ -18269,7 +18269,7 @@ table.md-calendar-day-header{width: 100%}*/
 .otp-otpbtn-div{
   display:flex;
   flex-direction:row;
-  border:1px solid grey;
+  border:1px solid lightsalmon;
   padding:2px;
   border-radius: 50px;
   margin-left: 70px;
@@ -18287,11 +18287,11 @@ table.md-calendar-day-header{width: 100%}*/
 
 .otp-otpbtn-btn{
   border:1px solid #FFC300;
-  background:#FFC300;
-  color:white;
+  background:#c02425;
+  color:white !important;
     width: 40px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 /*--------------------otp.html---------------------------------*/
@@ -18351,16 +18351,16 @@ table.md-calendar-day-header{width: 100%}*/
     width: 79px;
     background-color: white;
     display: inline-block;
-     margin-left: 5px;
-     margin-right: 10px;
+     margin-left: 0px;
+     margin-right: 0px;
 }
 .line2 {
     height: 10px;
     width: 50px;
     background-color: white;
     display: inline-block;
-     margin-left: 8px;
-     margin-right: 10px;
+     margin-left: -3px;
+     margin-right: -10px;
 }
 
 .signup-submit-btn{
@@ -18534,6 +18534,7 @@ body {
 /*margins*/
 .m0{margin: 0px}
 
+.mt-136{margin-top: -136px}
 .mt-80{margin-top: -80px}
 .mt0{margin-top: 0px}
 .mt5{margin-top: 5px}
@@ -18554,6 +18555,10 @@ body {
 
 /*border-radius*/
 .border-radius50{border-radius: 50px !important}
+
+
+/*letter-spacing*/
+.letter-space1{letter-spacing:1px}
 
 
 
