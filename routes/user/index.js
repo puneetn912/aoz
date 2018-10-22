@@ -18,7 +18,7 @@ router.post('/sendotp', function(req, res) {
   	  // res.send(signupotp)
 });
 
-
+// subcription
 router.post('/mealcount',subscriptionController.subscriptionCount)
 
 // locality
