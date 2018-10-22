@@ -1,20 +1,18 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content class="height600" flex layout="row" ng-controller="homeController as vmHome" ng-cloak >
-		<div flex-offset="30" hide-xs hide-sm></div>
-		<md-card flex layout="column" layout-align="center center"> 
+	<md-content class="height600" layout="row" layout-xs="column" ng-controller="homeController as vmHome" ng-cloak >
+         <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
            <div layout="column" layout-align="center center">
 			<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
 			
 			<h4 class="greyfont">Healthy home cooked food</h4>
 		   </div>
-			<h4 class="greyfont">Create a new account or sign in</h4>
+			<h4 class="greyfont">Please sign in</h4>
 		  <div layout="row">
 			<div>	
 			    <md-button class="md-raised home-signup-btn" href="/signup" style="border-radius: 50px">Log in</md-button>
 		    </div>
 		   </div>
 		</md-card>
-		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
 </div>
 
