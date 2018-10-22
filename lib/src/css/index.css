@@ -121,16 +121,19 @@ table.md-calendar-day-header{width: 100%}*/
 /*-----------------home.html--------------------------*/
 .home-signup-btn{
   color: white !important;
-  background-color: #FFC300 !important;
+  background: linear-gradient(to right, #c02425, #f0cb35);
   padding: 5px 40px; 
   font-size: 16px;
+  height: 50px;
 }
 .home-login-btn{
   color: #FFC300 !important;
-  background-color: white !important;
+  
   padding: 5px 40px; 
   font-size: 16px;
-  border:2px solid #FFC300;
+  height: 50px;
+  border: solid;
+  /*border-image: linear-gradient(to right, #c02425, #f0cb35);*/
 }
 /*---------------------home.html----------------------------*/
 
@@ -211,31 +214,31 @@ body {
 
 /*bg-color*/
 
-.FFC300bgcolor{
-  background-color:#FFC300 !important; 
-}
-
-
+.FFC300bgcolor{background-color:#FFC300 !important}
 
 /*bg-color*/
 
 
 /*height*/
+
 .height600 {height: 600px;}
+
 /*height*/
 
 
 /*font-weight*/
-.font-weightbold{
-  font-weight: bold;
-}
+
+.font-weightbold{font-weight: bold}
 .font-weight400{font-weight: 400}
+
 /*font-weight*/
 
 /*align*/
+
 .aligncenter{text-align: center;}
 .alignleft{text-align: left;}
 .alignright{text-align: right;}
+
 /*align*/
 
 

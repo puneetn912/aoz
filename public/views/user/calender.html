@@ -1,51 +1,32 @@
 <div ng-app="cmsApp" ng-cloak>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-
-	<md-content flex layout="row" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
-		<div flex-offset="30" hide-xs hide-sm></div>
-		<md-card flex layout-align="center">
-			<div style="background: linear-gradient(to top, #ff4e50, #f9d423);">
-			<div layout="row" layout-align="center center">
-			<a id="currDateHead" class="whitefont" style="display: block">{{vmCalender.currDateHead}}</a>
-		    </div>
-			<md-card-content layout="column" style="margin-top: -15px" layout-padding layout-margin >
-				<md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
-			</md-card-content>
-            </div>
-			<div class="greyfont pl20" style="border-bottom: 2px solid #eee;"><span class="FFC300font" style="font-size: 12px;font-weight: 600">{{vmCalender.vegCount+vmCalender.nonvegCount}} Meals remaining</span><br/><span class="pl20" style="font-size: 14px"> Out of {{vmCalender.vegCount+vmCalender.nonvegCount}}</span>
-
-<!-- 	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
+	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
 		<md-card flex-offset-gt-xs="55" flex-gt-xs="30" flex="100" layout-align="center">
 			<div align="center">
-				Totoal Meal count : -->
-
+				Totoal Meal count :
 				<div layout='row' layout-align='space-around center'>
-<!-- 					<label for="">veg : {{vmCalender.vegCount}}</label>
-					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label> -->
+					<label for="">veg : {{vmCalender.vegCount}}</label>
+					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
 				</div>
 			</div><br>
 
-
-<!-- 			<div id='mealCountDisp' class="pl20">
-
+<!-- 			<div id='mealCountDisp' >
 				Meal Count is set for everyday 1 veg and 1 nonveg meal.
 			</div><br> -->
             <a href="">{{vmCalender.lastVegDate}}</a>
 			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 				<!-- <a id="startDateHead" style="display: block">Choose meal count for {{vmCalender.startDate}}</a> -->
-
+				<a id="currDateHead" style="display: block">Choose meal count for {{vmCalender.currDateHead}}</a>
 				<div layout="row" style="padding: 0px">
 					<md-input-container style='margin-bottom: 0px'>
 						<label>Veg MealCount</label>
 <!-- 						<input type="number" id="dayVegCount" name="dayVegCount" ng-model="vmCalender.dayVegCount" md-maxlength="255" /> -->
       
                     <div layout="row" layout-align="center center">
-
-                       <div><md-button class="calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
-                        <div><input id="calveg" class="aligncenter" placeholder="No. of meals" type="number" value="0"></div>
-                       <div><md-button id="abccaldveg" class="calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
-
+                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caliveg()">+</md-button></div>
+                        <div><input type="number" id="calveg" class="aligncenter" placeholder="No. of meals" ng-model="vmCalender.dayVegCount"></div>
+                       <div><md-button class="md-accent calender-count-btn md-raised" ng-click="caldveg()">-</md-button></div>
                     </div>
 					</md-input-container>
 					<md-input-container style='margin-bottom: 0px'>
@@ -53,22 +34,13 @@
 <!-- 						<input type="number" id="dayNonvegCount" name="dayNonvegCount" ng-model="vmCalender.dayNonvegCount" md-maxlength="255" /> -->
 
                     <div layout="row" layout-align="center center">
-
-                       <div><md-button class="calender-count-btn md-raised" ng-click="calinveg()">+</md-button></div>
-                        <div><input id="calnveg" class="aligncenter" placeholder="No. of meals" type="number" value="0"></div>
-                       <div><md-button class="calender-count-btn md-raised" ng-click="caldnveg()">-</md-button></div>
-
+                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="calinveg()">+</md-button></div>
+                        <div><input type="number" id="calnveg" class="aligncenter" placeholder="No. of meals" ng-model="vmCalender.dayNonvegCount"></div>
+                       <div><md-button class="calender-count-btn md-accent md-raised" ng-click="caldnveg()">-</md-button></div>
                     </div>
 					</md-input-container>
 				</div>
 			</form>
-
-<!-- 			<div flex layout-align="center center" layout="row">
-                  <md-button class="md-raised " style="width:174px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px">Save Now</md-button>
-                  <md-button class="md-raised " style="width:174px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px">Add more</md-button>
-			</div> -->
-
-
             <md-card-content layout="column">
                 <md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
             </md-card-content>
@@ -76,7 +48,6 @@
                 <md-button class="md-raised md-primary" ng-click="finalSave()">Update</md-button> 
 			    <md-button class="md-raised md-primary" ng-click="finalCancel()">Cancel</md-button> 
             </div>
-
 		</md-card>
 	</md-content>
 </div>
