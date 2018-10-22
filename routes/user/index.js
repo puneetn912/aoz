@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var subscription = require('../../lib/models/subscription');
-let subscriptionController = require('../../lib/src/js/scriptController/scriptController');
+let subscriptionController = require('../../lib/src/js/scriptController/subscriptionController');
 let localityController = require('../../lib/src/js/scriptController/localityController');
 let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
 
