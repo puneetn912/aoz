@@ -1,16 +1,17 @@
 <div ng-app="cmsApp" ng-cloak>
-<body>
-<ng-include src="'views/user/common/header.html'"></ng-include>
-<md-content ng-controller="transactionsController as vmTransactions" layout-padding ng-cloak>
-  <div layout-gt-xs="row">
-    <md-button href="/calender/:subId">Submit</md-button>	
-    <div flex-gt-xs>
-      <h4>Standard date-picker</h4>
-      <md-datepicker ng-model="vmTransactions.myDate" name='myDate' md-placeholder="Enter date"></md-datepicker>
-    </div>
+	<md-content layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak class="height600">
 
-  </div>
-</md-content>
-<ng-include src="'views/user/common/footer.html'"></ng-include>
-</body>
+		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+	
+
+			<form name="userForm" class="pt179">
+				<md-content layout="row" layout-align="center center">Thank you</md-content>
+				<md-card-content layout="column"  layout-padding layout-margin  >
+
+					<md-button href="/calender/:subId" class="md-raised bgcolorFFC300 whitefont">Submit</md-button>
+				</md-card-content>
+			</form>
+			
+		</md-card>
+	</md-content>
 </div>

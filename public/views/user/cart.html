@@ -1,7 +1,7 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content class="height600" flex layout="row" ng-controller="cartController as vmCart" ng-cloak  >
-		<div flex-offset="30" hide-xs hide-sm></div>
-		<md-card flex layout="column">
+	<md-content class="height600" layout="row" layout-xs="column" ng-controller="cartController as vmCart" ng-cloak  >
+		
+		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 			<div layout="row" style="border-bottom: 2px solid #eee;">
 			  	 <div flex="20">
 			  	   <img src="../images/user.jpg" widht="50px" height="50px" class="md-card-image pl10 pt20" alt="image caption">
@@ -62,6 +62,5 @@
 			</div>
 			  
 		</md-card>
-		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
 </div>

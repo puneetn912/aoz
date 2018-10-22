@@ -1,8 +1,8 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content flex layout="row" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
+    <md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
 
-        <div flex-offset="30" hide-xs hide-sm></div>
-        <md-card flex layout-align="center">
+        
+        <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 <!--       <div layout="row" layout-align="center center">
         <span class="dot">1</span>
         <span class="line"></span>
@@ -66,11 +66,11 @@
 
                     </div>
                   </md-input-container>
-                  <md-input-container>
+<!--                   <md-input-container>
                   <label>Start date</label>
                     <md-datepicker ng-model="countForm.date" name='start_date'>
                     </md-datepicker>
-                  </md-input-container>
+                  </md-input-container> -->
 
                 <div flex layout-align="center center" layout="row">
                   <md-content class="greyfont" style="font-size: 18px;padding-right: 50px"> Total Price: 119/-</md-content>
@@ -79,7 +79,7 @@
             </md-card-content>
         </form>
     </md-card>
-    <div flex-offset="30" hide-xs hide-sm></div>
+
 </md-content>
 </div>
 

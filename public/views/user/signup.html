@@ -1,7 +1,7 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content flex layout="row" ng-controller="signupController as vmSignup" ng-cloak class="height600">
-		<div flex-offset="30" hide-xs hide-sm></div>
-		<md-card flex layout-align="center">
+	<md-content layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak class="height600">
+
+		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 			<div layout="row" layout-align="center center">
 			  <span class="dot">1</span>
               <span class="line"></span>
@@ -26,7 +26,7 @@
 					<md-button class="md-raised bgcolorFFC300 whitefont" ng-click="sendOtp(userForm)">Submit</md-button>
 				</md-card-content>
 			</form>
+			
 		</md-card>
-		<div flex-offset="30" hide-xs hide-sm></div>
 	</md-content>
 </div>
