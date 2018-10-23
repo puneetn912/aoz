@@ -1,9 +1,34 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content flex layout="row" ng-controller="userdetailsController as vmUserdetails" ng-cloak class="height600">
-		<div flex-offset="30" hide-xs hide-sm></div>
-		<md-card flex layout-align="center">
+	<md-content layout="row" layout-xs="column" ng-controller="userdetailsController as vmUserdetails" ng-cloak class="height600">
+
+		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+			<div layout="column" layout-align="center center">	
+			<div class="mt-136">
+			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
+            </div>
+			<div>
+               <h4 class="greyfont mt-80 letter-space1">Healthy home cooked food</h4>
+            </div>
+			<div layout="row" layout-align="center center" >
+			  <span class="dot">1</span>
+              <span class="line"></span>
+			  <span class="dot">2</span>
+			  <span class="line"></span>
+			  <span class="dot">3</span>
+			</div>	
+			<div class="mt10">
+			  <span class="indianredfont font-weightbold">Phone</span>
+              <span class="line1"></span>
+			  <span class="indianredfont font-weightbold">Verify</span>
+			  <span class="line2"></span>
+			  <span class="indianredfont font-weightbold">Order</span>
+			</div>
+		  </div>
+
 			<form name="userForm">
-				<md-card-content layout="column"  layout-padding layout-margin >
+
+				<div layout="column" class="pt20">
+					
 					<md-autocomplete
 			            md-selected-item="vmUserdetails.selectedItemPin"
 			            md-search-text-change="vmUserdetails.searchTextChangePin(vmUserdetails.searchTextPin)"
@@ -12,7 +37,7 @@
 			            md-items="item in vmUserdetails.querySearchPin(vmUserdetails.searchTextPin)"
 			            md-item-text="item.pincode.toString()"
 			            md-min-length="0"
-			            placeholder="Enter Pin Code">
+			            placeholder="Pin code">
 						<md-item-template>
 							<span md-highlight-text="vmUserdetails.searchTextPin" md-highlight-flags="^i">{{item.pincode}}</span>
 						</md-item-template>
@@ -54,12 +79,16 @@
 							No states matching "{{vmUserdetails.searchTextTwr}}" were found.
 						</md-not-found>
 					</md-autocomplete>
+				  </div>
 
-					<md-button class="md-raised bgcolorFFC300 whitefont" ng-click="sendOtp(userForm)">Submit</md-button>
-
-				</md-card-content>
+                  <div layout="row" layout-align="center center" class="pt20">
+                       <md-button class="md-fab user-submit-btn" ng-click="sendOtp(userForm)">
+                       <img src="../images/checked.svg" widht="50px" height="50px" alt="submit"></img>
+                       </md-button>
+                  </div>
+				
 			</form>
 		</md-card>
-		<div flex-offset="30" hide-xs hide-sm></div>
+        </div>
 	</md-content>
 </div>
