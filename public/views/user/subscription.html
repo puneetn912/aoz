@@ -42,30 +42,30 @@
                 <div>
                   <md-input-container>
                     <label>Meal Type</label>
-                     <md-select ng-model="abc">
-                       <md-option>
+                     <select ng-model="mealType" ng-change="selectedMeal(mealType)">
+                       <option>
                          Veg
-                       </md-option>
-                       <md-option>
+                       </option>
+                       <option>
                          Non Veg
-                       </md-option>
-                       <md-option>
+                       </option>
+                       <option>
                          Both
-                       </md-option>
-                     </md-select>
+                       </option>
+                     </select>
                   </md-input-container>
                 </div>
                 <div>
                   <div layout="row" layout-align="center center">
                       <label>No. of Veg Meals</label>
                        <div>
-                          <button class="md-raised" ng-click="dveg()">-</button>
+                          <md-button class="md-raised" ng-click="dveg()">-</md-button>
                        </div>
                        <div>
                           <input id="veg" class="aligncenter" type="number" value="0">
                        </div>
                        <div>
-                          <button class="md-raised" ng-click="iveg()">+</button>
+                          <md-button class="md-raised" ng-click="iveg()">+</md-button>
                        </div>
                   </div>
                 </div>
@@ -73,20 +73,24 @@
                   <div layout="row" layout-align="center center">
                       <label>No. of non Veg Meals</label>
                        <div>
-                          <button class="md-raised" ng-click="dnveg()">-</button>
+                          <md-button class="md-raised" ng-click="dnveg()">-</md-button>
                        </div>
                        <div>
                           <input id="nveg" class="aligncenter" type="number" value="0">
                        </div>
                        <div>
-                          <button class="md-raised" ng-click="inveg()">+</button>
+                          <md-button class="md-raised" ng-click="inveg()">+</md-button>
                        </div>
                   </div>
                 </div>
+
+                <a ng-model="vegAmt" ng-bind="vegAmt" id="vegAmt"></a>
+                <a ng-model="nvegAmt" ng-bind="nvegAmt" id="nvegAmt"></a>
+
                 <div>
                   <label>Total Price :</label>
                   <md-input-container>
-                      <input type="text" name="">  
+                      <input type="number" name="total" id="total" value="0">  
                   </md-input-container>
                 </div>
                 </div>

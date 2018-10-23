@@ -4,6 +4,7 @@ var subscription = require('../../lib/models/subscription');
 let subscriptionController = require('../../lib/src/js/scriptController/subscriptionController');
 let localityController = require('../../lib/src/js/scriptController/localityController');
 let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
+let userController = require('../../lib/src/js/scriptController/userController');
 
 var locality = require('../../lib/models/locality')
 
@@ -20,11 +21,17 @@ router.post('/sendotp', function(req, res) {
 
 // subcription
 router.post('/mealcount',subscriptionController.subscriptionCount)
+router.post('/createSubs',subscriptionController.createSubs)
+router.post('/updateSubs',subscriptionController.updateSubs)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
 
 // apartment
 router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
+
+// user
+router.post('/createUser',userController.createUser)
+router.post('/updateUser',userController.updateUser)
 
 module.exports = router;

@@ -27,7 +27,7 @@
 		  <div>
 			<form name="otpForm" class="pt20">
             <h4 class="greyfont font-weight400" layout="row" layout-align="center center">Enter the verification code you've received</h4>
-<!-- 				<md-card-content layout="column"  layout-padding layout-margin  >
+                <!--<md-card-content layout="column"  layout-padding layout-margin  >
 					<md-input-container>
 						<label>Enter OTP</label>
 						<input required type="text" name="otpno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
@@ -36,8 +36,7 @@
 				</md-card-content> -->
               <div class="otp-otpbtn-div">
               	<input class="otp-otpbtn-inp" placeholder="OTP" required type="text" id='otp' name="otp" ng-model="Motp"/>
-              	<button class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)">Sub</button>
-
+              	<md-button class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)">Sub</md-button>
               </div>
 
 			</form>
