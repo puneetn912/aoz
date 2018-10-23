@@ -18480,32 +18480,26 @@ body {
 /*font-color*/
 
 /*bg-color*/
-
 .FFC300bgcolor{background-color:#FFC300 !important}
 .c02425bgcolor{background-color: #c02425 !important}
 /*bg-color*/
 
 
 /*height*/
-
 .height600 {height: 600px;}
-
 /*height*/
 
 
 /*font-weight*/
-
 .font-weightbold{font-weight: bold}
 .font-weight400{font-weight: 400}
-
 /*font-weight*/
 
-/*align*/
 
+/*align*/
 .aligncenter{text-align: center;}
 .alignleft{text-align: left;}
 .alignright{text-align: right;}
-
 /*align*/
 
 
@@ -18540,6 +18534,7 @@ body {
 
 .pb10{padding-bottom: 10px}
 .pb20{padding-bottom: 20px}
+.pb30{padding-bottom: 30px}
 .pb40{padding-bottom: 40px}
 .pb60{padding-bottom: 60px}
 .pb0{padding-bottom:0px}
