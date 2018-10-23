@@ -2,36 +2,118 @@
     <md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
 
         
-        <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
-<!--       <div layout="row" layout-align="center center">
-        <span class="dot">1</span>
-        <span class="line"></span>
-        <span class="dot">2</span>
-        <span class="line"></span>
-        <span class="dot">3</span>
-      </div>  
-      <div layout="row" layout-align="center center">
-        <span class="FFC300font">Phone</span>
-        <span class="line1"></span>
-        <span class="greyfont">Verify</span>
-        <span class="line2"></span>
-        <span class="greyfont">Preferance</span>
-      </div>  --> 
-      <div layout-padding class="aligncenter">
+      <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+<!--                <div layout="row" style="height: 60px;position: fixed-top;" layout-align="space-between center" layout-padding class="c02425bgcolor">
+                    <div>
+                        <i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
+                    </div>
+                    <div>
+                        <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
+                    </div>
+                </div>
 
-         <p>
-           The Description of the food will come here. Includes curd, salad, one more thing, more thing, more thing, and then will be packed in a beautiful box with branding and will server
-         </p>
-      </div>
-      <div layout="row" layout-align="space-around center">
-         <div><span class="subscription-veg"></span></div>
-         <div><span class="subscription-nveg"></span></div>
-      </div><br><br>  
-      <div layout="row" layout-align="space-around center">
-         <div><span class="greyfont font-weightbold" >@99/-</span></div>
-         <div><span class="greyfont font-weightbold">@119/-</span></div>
-      </div>
-            <form name="countForm">
+                <div style="height: 142px">
+                    <img src="../images/food.jpg" width="100%" height="142px" alt="lunch">
+                </div>
+                
+                <div layout-padding class="aligncenter">
+                   <h5 class="greyfont font-weight400 mt0 mb0">
+                       The Description of the food will come here. Packed in a beautiful box with branding and will server
+                   </h5>
+                </div> -->
+
+
+
+
+
+
+                <div>
+                <form>
+                <div layout="column">
+                <div>
+                  <md-input-container>
+                    <label>Meal Time</label>
+                    <input type="text" placeholder="Dinner" disabled="true">
+                  </md-input-container>
+                </div>
+                <div>
+                  <md-input-container>
+                    <label>Meal Type</label>
+                     <md-select ng-model="abc">
+                       <md-option>
+                         Veg
+                       </md-option>
+                       <md-option>
+                         Non Veg
+                       </md-option>
+                       <md-option>
+                         Both
+                       </md-option>
+                     </md-select>
+                  </md-input-container>
+                </div>
+                <div>
+                  <div layout="row" layout-align="center center">
+                      <label>No. of Veg Meals</label>
+                       <div>
+                          <button class="md-raised" ng-click="dveg()">-</button>
+                       </div>
+                       <div>
+                          <input id="veg" class="aligncenter" type="number" value="0">
+                       </div>
+                       <div>
+                          <button class="md-raised" ng-click="iveg()">+</button>
+                       </div>
+                  </div>
+                </div>
+                <div>
+                  <div layout="row" layout-align="center center">
+                      <label>No. of non Veg Meals</label>
+                       <div>
+                          <button class="md-raised" ng-click="dnveg()">-</button>
+                       </div>
+                       <div>
+                          <input id="nveg" class="aligncenter" type="number" value="0">
+                       </div>
+                       <div>
+                          <button class="md-raised" ng-click="inveg()">+</button>
+                       </div>
+                  </div>
+                </div>
+                <div>
+                  <label>Total Price :</label>
+                  <md-input-container>
+                      <input type="text" name="">  
+                  </md-input-container>
+                </div>
+                </div>
+
+                <div layout="row" layout-align="center center">
+                  <md-button ng-click="subscribe() " class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;">buy Now</md-button>
+                </div>
+                </form>
+                </div>
+
+               <div layout="row" style="height: 60px;position: fixed-top;" layout-align="space-between center" layout-padding class="c02425bgcolor">
+                    <div>
+                        <i class="fa fa-home" style="color: white;font-size: 30px" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
+                    </div>
+                </div>
+
+
+
+
+
+<!--             <form name="countForm">
                 <md-card-content layout="column"  layout-padding layout-margin >
                     <md-input-container>
                         <md-select ng-model="weapon" placeholder="Meal Type" class="md-no-underline">
@@ -72,12 +154,13 @@
                     </md-datepicker>
                   </md-input-container> -->
 
-                <div flex layout-align="center center" layout="row">
+<!--                 <div flex layout-align="center center" layout="row">
                   <md-content class="greyfont" style="font-size: 18px;padding-right: 50px"> Total Price: 119/-</md-content>
                   <md-button ng-click="subscribe() " class="md-raised" style="width:120px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px;">buy Now</md-button>
                 </div>
             </md-card-content>
-        </form>
+
+        </form>-->
     </md-card>
 
 </md-content>
