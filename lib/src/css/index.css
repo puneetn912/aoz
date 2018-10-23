@@ -82,14 +82,15 @@ table.md-calendar-day-header{width: 100%}*/
     width: 25px;
     background-color: green;
     border-radius: 50%;
-    display: inline-block;
-}
-.subscription-nveg {
     height: 25px;
     width: 25px;
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+}
+
+.sub-meal-btn{
+  border-radius: 20px;min-width: 20px;min-height: 23px;color:white !important; background-color: #c02425 !important;
 }
 
 /*--------------------subscription.html------------------------------*/
@@ -236,17 +237,25 @@ body {
 /*bg-color*/
 .FFC300bgcolor{background-color:#FFC300 !important}
 .c02425bgcolor{background-color: #c02425 !important}
+.whitebgcolor{background-color: #ffffff}
 /*bg-color*/
 
 
 /*height*/
 .height600 {height: 600px;}
+.height60{height: 60px }
 /*height*/
+
+/*width*/
+.width35{width: 35px !important}
+
+/*width*/
 
 
 /*font-weight*/
 .font-weightbold{font-weight: bold}
 .font-weight400{font-weight: 400}
+.font-weight600{font-weight: 600}
 /*font-weight*/
 
 
@@ -298,12 +307,12 @@ body {
 
 .mt-136{margin-top: -136px}
 .mt-80{margin-top: -80px}
-.mt0{margin-top: 0px}
+.mt0{margin-top: 0px !important}
 .mt5{margin-top: 5px}
 .mt10{margin-top: 10px}
 .mt16{margin-top: 16px}
 
-.mb0{margin-bottom: 0px}
+.mb0{margin-bottom: 0px !important}
 .mb5{margin-bottom: 5px}
 .mb10{margin-bottom: 10px}
 .mb20{margin-bottom: 20px}
@@ -315,12 +324,29 @@ body {
 .ml10{margin-left: 10px}
 
 
-/*border-radius*/
+/*border*/
 .border-radius50{border-radius: 50px !important}
+.border-none{border:none; }
 
 
 /*letter-spacing*/
 .letter-space1{letter-spacing:1px}
+/*letter-spacing*/
 
+/*border-top*/
+.bt-1-s-eee{border-top: 1px solid #eee;}
+/*border-top*/
+
+/*text-align*/
+.text-right{text-align: right}
+.text-left{text-align: left;}
+/*text-align*/
+
+
+/*position*/
+
+
+
+/*position*/
 
 

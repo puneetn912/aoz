@@ -23,6 +23,7 @@ router.post('/sendotp', function(req, res) {
 router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs',subscriptionController.updateSubs)
+router.post('/getSub/:id',subscriptionController.getSub)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
