@@ -29,10 +29,10 @@
 				<md-card-content layout="column"  layout-padding layout-margin >
 					<md-input-container>
 						<label>Phone Number</label>
-						<input required type="text" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" ng-pattern="/^[0-9]+$/"/>
+						<input required type="text" name="mobileno" ng-model="vmSignup.mobileno" maxlength="10" ng-pattern="/^[0-9]+$/"/>
 					</md-input-container>
 					<div layout="row" layout-align="center center">
-					<md-button class="md-raised signup-submit-btn" ng-click="sendOtp(userForm)">Submit</md-button>
+                    <md-button id='submit' class="md-raised signup-submit-btn" ng-bind='vmSignup.submit' ng-click="sendOtp(userForm)">Send OTP</md-button>
 				</div>
 				</md-card-content>
 			</form>
