@@ -24,6 +24,7 @@ router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs',subscriptionController.updateSubs)
 router.post('/getSub/:id',subscriptionController.getSub)
+router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
@@ -34,5 +35,6 @@ router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
 // user
 router.post('/createUser',userController.createUser)
 router.post('/updateUser',userController.updateUser)
+router.post('/checkUser/:phone',userController.checkUser)
 
 module.exports = router;

@@ -46,17 +46,12 @@
 							<div>
 								<label class="greyfont">No. of Veg Meals</label>
 							</div>
-							<div layout="row" layout-align="center center" class="pt0 pb0">
-								<div>
-									<md-button class="md-raised sub-meal-btn" ng-click="dveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
-								</div>
-								<div>
-									<input id="veg" class="aligncenter width35 border-none" type="number" value="0">
-								</div>
-								<div>
-									<md-button class="md-raised sub-meal-btn" ng-click="iveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
-								</div>
-							</div>
+                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
 						</div>
 						
 						
@@ -64,20 +59,13 @@
 							<div>
 								<label class="greyfont">No. of non Veg Meals</label>
 							</div>
-							<div layout="row" layout-align="center center" class="pt0 pb0">
-								<div>
-									<md-button class="md-raised sub-meal-btn" ng-click="dnveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
-								</div>
-								<div>
-									<input id="nveg" class="aligncenter width35 border-none" type="number" value="0">
-								</div>
-								<div>
-									<md-button class="md-raised sub-meal-btn" ng-click="inveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
-								</div>
-							</div>
+                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
 						</div>
-						<a ng-model="vegAmt" ng-bind="vegAmt" id="vegAmt"></a>
-						<a ng-model="nvegAmt" ng-bind="nvegAmt" id="nvegAmt"></a>
 						
 						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
 							<label class="pt0 pb0">Total Price :</label>
