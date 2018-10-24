@@ -10,7 +10,7 @@
                <h4 class="greyfont mt-80 letter-space1">Healthy home cooked food</h4>
             </div>
 			<div layout="row" layout-align="center center" >
-			  <span class="dot">1</span>
+			  <span class="dot"><i class="fa fa-check" aria-hidden="true" style="padding:6px;float: right;font-size: 12px"></i></span>
               <span class="line"></span>
 			  <span class="dot">2</span>
 			  <span class="line"></span>
@@ -34,11 +34,12 @@
 					</md-input-container>
 					<md-button class="md-raised bgcolorFFC300 whitefont" ng-click="">Enter OTP</md-button>
 				</md-card-content> -->
+			<div layout="row" layout-align="center center" layout-padding layout-margin>
               <div class="otp-otpbtn-div">
               	<input class="otp-otpbtn-inp" placeholder="OTP" required type="text" id='otp' name="otp" ng-model="Motp"/>
-              	<md-button class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)">Sub</md-button>
+              	<md-button class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)"><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
               </div>
-
+            </div>
 			</form>
 		  </div>
 		</md-card>
