@@ -18312,15 +18312,39 @@ table.md-calendar-day-header{width: 100%}*/
 /*--------------------verify.html---------------------------------*/
 
 
-/*--------------calender.html----------------------*/
+/*--------------calendar.html----------------------*/
 
 .calender-count-btn{
     min-height: 15px !important;
     min-width: 25px !important;
-
 }
 
-/*--------------calender.html-----------------------*/
+
+.md-calendar-date-selection-indicator {
+   /* -webkit-transition: background-color, color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);*/
+    transition: background-color, color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 0% !important;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+.mdl-badge[data-badge]:after {
+border-radius: 0px !important;
+}
+
+.md-calendar-scroll-mask{
+  height: 265px !important;
+}
+
+
+/*.md-calendar-date-today{
+  background:#c02425 !important; 
+}*/
+
+
+/*--------------calendar.html-----------------------*/
 
 
 
@@ -18435,17 +18459,18 @@ body {
 .material-icons.mdl-badge.veg[data-badge]::after,
 .material-label.mdl-badge.veg[data-badge]::after{
   font-size: .3em;
-  width: 2em;
+  width: 2.4em;
   height: 2em;
   background-color: green;
-  margin-right: 17px!important;
+  margin-right: 20px!important;
 }
 .material-icons.mdl-badge.nonveg[data-badge]::after,
 .material-label.mdl-badge.nonveg[data-badge]::after{
   font-size: .3em;
-  width: 2em;
+  width: 2.4em;
   height: 2em;
-  background-color: brown
+  background-color: brown;
+  margin-right: -1px !important;
 }
 /*.mdl-badge[data-badge]:after*/
 .material-icons.mdl-badge[data-badge]::after {
@@ -18453,7 +18478,7 @@ body {
   right: -1em;
 }
 .mdl-badge{
-    margin-top: -35px;
+    margin-top: 0px;
     margin-right: 20px ;
 }
 .veg{background: green}
@@ -18590,13 +18615,4 @@ body {
 .text-right{text-align: right}
 .text-left{text-align: left;}
 /*text-align*/
-
-
-/*position*/
-
-
-
-/*position*/
-
-
 

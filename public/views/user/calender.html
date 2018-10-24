@@ -1,7 +1,7 @@
 <div ng-app="cmsApp" ng-cloak>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style='height: 600px'>
+	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style="height: -webkit-fill-available;"> <!-- style="height: -webkit-fill-available;" -->
 		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 
 <!-- header -->
@@ -25,7 +25,7 @@
 
 
 <!-- calender -->
-            <md-card-content layout="column">
+            <md-card-content layout="column" class="pl0">
                 <md-calendar ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
             </md-card-content>
 <!-- calender -->
@@ -36,15 +36,33 @@
 
 <!-- ccount -->
 
-			<div align="center">
+<!-- 			<div align="center">
 				Total Meal count :
 				<div layout='row' layout-align='space-around center'>
 					<label for="">veg : {{vmCalender.vegCount}}</label>
 					<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
 				</div>
-			</div><br>
+			</div><br> -->
 
 <!-- count -->
+
+
+            <div layout="row" layout-align="space-between center" layout-padding>
+            	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
+            	<div style="color: red">4 Meals Remaining
+            	  <span style="color:grey"> Out of 10 Veg meals </span>
+                </div>
+                </div>
+                <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
+            	<div style="color:red">4 Meals Remaining
+            	  <span style="color: grey"> Out of 10 Veg meals </span>
+                </div>
+                </div>
+                <div>
+									<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+                </div>
+            </div>
+
 
 
 
