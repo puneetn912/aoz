@@ -25,7 +25,12 @@ table.md-calendar-day-header{width: 100%}*/
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 3px;
+    width: 50px !important;
+    height: 50px !important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0) !important;
+}
+.md-whiteframe-z1{
+  box-shadow: none !important;
 }
 
 /*---------------------userdetails.html--------------------------------*/
@@ -89,7 +94,7 @@ border-radius: 0px !important;
 }
 
 .md-calendar-scroll-mask{
-  height: 265px !important;
+  height: 223px !important;
 }
 
 

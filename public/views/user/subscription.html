@@ -1,10 +1,10 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
+	<md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak style="height:-webkit-fill-available;">
 		
 		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 			<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
 				<div>
-					<i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
+					<i class="fa fa-bars" style="color: white;font-size: 20px" aria-hidden="true"></i>
 				</div>
 				<div>
 					<img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
@@ -15,11 +15,11 @@
 			</div>
 
 			<div style="height: 142px">
-				<img src="../images/food.jpg" width="100%" height="142px" alt="lunch">
+				<img src="../images/food2.jpeg" width="100%" height="142px" alt="lunch">
 			</div>
 			
 			<div layout-padding class="aligncenter">
-				<h5 class="greyfont font-weight400 mt0 mb0">
+				<h5 class="greyfont font-weightbold mt0 mb0">
 					The Description of the food will come here. Packed in a beautiful box with branding and will server
 				</h5>
 			</div>
@@ -46,7 +46,7 @@
 							<div>
 								<label class="greyfont">No. of Veg Meals</label>
 							</div>
-                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled>
+                            <select class="border-none" name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -59,7 +59,7 @@
 							<div>
 								<label class="greyfont">No. of non Veg Meals</label>
 							</div>
-                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled>
+                            <select class="border-none" name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
