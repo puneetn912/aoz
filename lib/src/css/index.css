@@ -18,6 +18,8 @@ div.md-virtual-repeat-sizer{width: 100%}
 table.md-calendar-day-header{width: 100%}*/
 
 
+table.md-calendar-day-header{width: 100%}
+.md-calendar-scroll-container{width: 100%}
 /*---------------------userdetails.html--------------------------*/
 
 .user-submit-btn{
@@ -95,6 +97,7 @@ border-radius: 0px !important;
 
 .md-calendar-scroll-mask{
   height: 223px !important;
+  width: 338px !important ;
 }
 
 
@@ -218,7 +221,7 @@ body {
 .material-icons.mdl-badge.veg[data-badge]::after,
 .material-label.mdl-badge.veg[data-badge]::after{
   font-size: .3em;
-  width: 2.4em;
+  width: 2.3em;
   height: 2em;
   background-color: green;
   margin-right: 20px!important;
@@ -226,10 +229,10 @@ body {
 .material-icons.mdl-badge.nonveg[data-badge]::after,
 .material-label.mdl-badge.nonveg[data-badge]::after{
   font-size: .3em;
-  width: 2.4em;
+  width: 2.5em;
   height: 2em;
   background-color: brown;
-  margin-right: -1px !important;
+  margin-right: -2px !important;
 }
 /*.mdl-badge[data-badge]:after*/
 .material-icons.mdl-badge[data-badge]::after {

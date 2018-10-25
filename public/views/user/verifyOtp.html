@@ -1,9 +1,37 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content flex layout="row" ng-controller="verifyController as vmVerify" ng-cloak style="height:-webkit-fill-available;">
-      <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+	<md-content layout="row" ng-controller="verifyController as vmVerify" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
+      
 
+<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+		   	<div>
+		   		<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+		   	</div>
+		   	<div style="padding-left: 5%">
+		   		<h1>100% HOME</h1>
+		   	</div>
+            <div style="padding-left: 5%">
+            	<h4>Get Veg meal in just 99/-</h4>
+            </div>
+		   	<div>
+		   		<md-button class="md-raised home-signup-btn">Download now</md-button>
+		   	</div>
+		   </div>
+		
+		</div>
+<!-- left -->
+
+
+
+
+
+<!-- right -->
+      <md-card flex-gt-xs="25" layout-align="center" style="margin-top: 6%;margin-bottom: 2%;">
+        <div style="height:100%">
 			<div layout="column" layout-align="center center">	
-			<div class="mt-136">
+			<div>
 			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
             </div>
 			<div>
@@ -43,7 +71,9 @@
             </div>
 			</form>
 		  </div>
+		 </div>
 		</md-card>
+<!-- right -->
 		
 	</md-content>
 </div>

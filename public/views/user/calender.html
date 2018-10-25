@@ -1,10 +1,39 @@
 <div ng-app="cmsApp" ng-cloak>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style="height: -webkit-fill-available;"> <!-- style="height: -webkit-fill-available;" -->
-		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > <!-- style="height: -webkit-fill-available;" -->
 
-<!-- header -->
+
+
+<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+		   	<div>
+		   		<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+		   	</div>
+		   	<div style="padding-left: 5%">
+		   		<h1>100% HOME</h1>
+		   	</div>
+            <div style="padding-left: 5%">
+            	<h4>Get Veg meal in just 99/-</h4>
+            </div>
+		   	<div>
+		   		<md-button class="md-raised home-signup-btn">Download now</md-button>
+		   	</div>
+		   </div>
+		
+		</div>
+<!-- left -->
+
+
+
+<!-- right -->
+		<md-card flex-gt-xs="25" layout-align="center" style="margin-top: 6%;margin-bottom: 2%;">
+          <div style="height:100%">
+
+
+        <!-- header -->
                <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
                     <div>
                         <i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
@@ -16,16 +45,11 @@
                         <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
                     </div>
                 </div>
-<!-- header -->
+        <!-- header -->
 
-
-
-
-               <div layout="row" layout-align="center center">
+<!--                <div layout="row" layout-align="center center">
 				  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
-               </div>
-
-
+               </div> -->
 
 <!-- calender -->
             <md-card-content layout="column" class="pl0 pt0 pr0">
@@ -51,22 +75,20 @@
 
 
             <div layout="row" layout-align="space-between center" layout-padding>
-            	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-            	<div style="color: red">4 Meals Remaining
-            	  <span style="color:grey"> Out of 10 Veg meals </span>
+            	<div style="font-size: 12px" layout="column" layout-align="space-between center">
+            	   <div style="color: red">4 Meals Remaining
+            	     <span style="color:grey"> Out of 10 Veg meals </span>
+                   </div>
                 </div>
-                </div>
-                <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-            	<div style="color:red">4 Meals Remaining
-            	  <span style="color: grey"> Out of 10 Veg meals </span>
-                </div>
+                <div style="font-size: 12px" layout="column" layout-align="space-between center">
+            	   <div style="color:red">4 Meals Remaining
+            	      <span style="color: grey"> Out of 10 Veg meals </span>
+                   </div>
                 </div>
                 <div>
-									<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+					<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
                 </div>
             </div>
-
-
 
 
             <!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
@@ -116,8 +138,8 @@
                 <md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
             </div>
 
-<!-- footer -->
-               <div layout="row" style="height: 60px;position: fixed-top;border-top: 1px solid #eee" layout-align="space-between center" layout-padding >
+        <!-- footer -->
+               <div layout="row" style="height: 60px;border-top: 1px solid #eee;position: fixed;bottom:28px"  layout-align="space-between center" layout-padding >
                     <div layout="column" layout-align="center center">
                         <i class="fa fa-home" style="color:#c02425;font-size: 25px" aria-hidden="true"></i>
                         <span style="font-size: 12px">Home</span>
@@ -126,13 +148,15 @@
                         <i class="fa fa-calendar" aria-hidden="true" style="color: grey;font-size: 25px"></i>
                         <span style="font-size: 12px">Manage</span>
                     </div>
-                    <div>
+                    <div style="padding-left: 64px">
                         <img src="../images/logoBlack.png" alt="lunch" style="width: 80px">
                     </div>
                </div>
-<!-- footer -->
+        <!-- footer -->
 
-
+          </div>
 		</md-card>
-	</md-content>
+<!-- right -->
+
+</md-content>
 </div>
