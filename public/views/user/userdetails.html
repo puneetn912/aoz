@@ -1,46 +1,94 @@
-<!-- <div ng-app="cmsApp" ng-cloak>
-<body>
-<ng-include src="'views/user/common/header.html'"></ng-include>
-<md-content ng-controller="userdetailsController as vmUserdetails" layout-padding ng-cloak>
-  <div layout-gt-xs="row">
-    <div flex-gt-xs>
-      <h4>Standard date-picker</h4>
-      <md-datepicker ng-model="vmUserdetails.myDate" name='myDate' md-placeholder="Enter date"></md-datepicker>
-    </div>
-  </div>
-</md-content>
-<ng-include src="'views/user/common/footer.html'"></ng-include>
-</body>
-</div> -->
 <div ng-app="cmsApp" ng-cloak>
-    <md-content flex layout="row" ng-controller="userdetailsController as vmUserdetails" ng-cloak style='height: 600px'>
-        <div flex-offset="30" hide-xs hide-sm></div>
-        <md-card flex layout-align="center">
-            <form name="userForm">
-                <md-card-content layout="column"  layout-padding layout-margin >
-                    <md-input-container>
-                      <md-select ng-model="someModel" placeholder="Choose an Apartment">
-                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
-                      </md-select>
-                    </md-input-container>
-                    <md-input-container>
-                      <md-select ng-model="someModel" placeholder="Choose a tower name">
-                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
-                      </md-select>
-                    </md-input-container>
-                      <md-select ng-model="someModel" placeholder="Choose a pin">
-                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
-                      </md-select>
-                    </md-input-container>
-<!--                     <md-input-container>
-                      <md-select ng-model="someModel" placeholder="Choose a door Number">
-                        <md-option ng-value="opt" ng-repeat="opt in neighborhoods2">{{ opt }}</md-option>
-                      </md-select>
-                     </md-input-container> -->
-                    <md-button class="md-raised bgcolorFFC300 whitefont" ng-click="sendOtp(userForm)">Submit</md-button>
-                </md-card-content>
-            </form>
-        </md-card>
-        <div flex-offset="30" hide-xs hide-sm></div>
-    </md-content>
+	<md-content layout="row" layout-xs="column" ng-controller="userdetailsController as vmUserdetails" ng-cloak class="height600">
+
+		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+			<div layout="column" layout-align="center center">	
+			<div class="mt-136">
+			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
+            </div>
+			<div>
+               <h4 class="greyfont mt-80 letter-space1">Healthy home cooked food</h4>
+            </div>
+			<div layout="row" layout-align="center center" >
+			  <span class="dot">1</span>
+              <span class="line"></span>
+			  <span class="dot">2</span>
+			  <span class="line"></span>
+			  <span class="dot">3</span>
+			</div>	
+			<div class="mt10">
+			  <span class="indianredfont font-weightbold">Phone</span>
+              <span class="line1"></span>
+			  <span class="indianredfont font-weightbold">Verify</span>
+			  <span class="line2"></span>
+			  <span class="indianredfont font-weightbold">Order</span>
+			</div>
+		  </div>
+
+			<form name="userForm">
+
+				<div layout="column" class="pt20">
+					
+					<md-autocomplete
+			            md-selected-item="vmUserdetails.selectedItemPin"
+			            md-search-text-change="vmUserdetails.searchTextChangePin(vmUserdetails.searchTextPin)"
+			            md-search-text="vmUserdetails.searchTextPin"
+			            md-selected-item-change="vmUserdetails.selectedItemChangePin(item)"
+			            md-items="item in vmUserdetails.querySearchPin(vmUserdetails.searchTextPin)"
+			            md-item-text="item.pincode.toString()"
+			            md-min-length="0"
+			            placeholder="Pin code">
+						<md-item-template>
+							<span md-highlight-text="vmUserdetails.searchTextPin" md-highlight-flags="^i">{{item.pincode}}</span>
+						</md-item-template>
+						<md-not-found>
+							No states matching "{{vmUserdetails.searchTextPin}}" were found.
+						</md-not-found>
+					</md-autocomplete>
+
+					<md-autocomplete
+						md-selected-item="vmUserdetails.selectedItemApt"
+						md-search-text-change="vmUserdetails.searchTextChangeApt(vmUserdetails.searchTextApt)"
+						md-search-text="vmUserdetails.searchTextApt"
+						md-selected-item-change="vmUserdetails.selectedItemChangeApt(item)"
+						md-items="item in vmUserdetails.querySearchApt(vmUserdetails.searchTextApt)"
+						md-item-text="item.apartment_name"
+						md-min-length="0"
+						placeholder="Enter Apartment name">
+						<md-item-template>
+							<span md-highlight-text="vmUserdetails.searchTextApt" md-highlight-flags="^i">{{item.apartment_name}}</span>
+						</md-item-template>
+						<md-not-found>
+							No states matching "{{vmUserdetails.searchTextApt}}" were found.
+						</md-not-found>
+					</md-autocomplete>
+
+					<md-autocomplete
+						md-selected-item="vmUserdetails.selectedItemTwr"
+						md-search-text-change="vmUserdetails.searchTextChangeTwr(vmUserdetails.searchTextTwr)"
+						md-search-text="vmUserdetails.searchTextTwr"
+						md-selected-item-change="vmUserdetails.selectedItemChangeTwr(item)"
+						md-items="item in vmUserdetails.querySearchTwr(vmUserdetails.searchTextTwr)"
+						md-item-text="item"
+						md-min-length="0"
+						placeholder="Enter Tower name">
+						<md-item-template>
+							<span md-highlight-text="vmUserdetails.searchTextTwr" md-highlight-flags="^i">{{item}}</span>
+						</md-item-template>
+						<md-not-found>
+							No states matching "{{vmUserdetails.searchTextTwr}}" were found.
+						</md-not-found>
+					</md-autocomplete>
+				  </div>
+
+                  <div layout="row" layout-align="center center" class="pt20">
+                       <md-button class="md-fab user-submit-btn" ng-click="updateUser()">
+                       <img src="../images/checked.svg" widht="50px" height="50px" alt="submit"></img>
+                       </md-button>
+                  </div>
+				
+			</form>
+		</md-card>
+        </div>
+	</md-content>
 </div>

@@ -18,23 +18,25 @@ var path = require('path');
 var port = normalizePort(process.env.PORT || '3008');
 app.set('port', port);
 
-if(process.env.NODE_ENV === 'dev ' || process.env.NODE_ENV === 'dev') {
-  /**
-   * Create HTTP server.
-  */
-  var server = http.createServer(app);
-} else {
-  /**
-   * Create HTTPS server.
-  */
-  var options = {
-    key: fs.readFileSync(path.join(__dirname, '../lib/.cert/server-key.pem')),
-    cert: fs.readFileSync(path.join(__dirname, '../lib/.cert/server-crt.pem')),
-    ca: fs.readFileSync(path.join(__dirname, '../lib/.cert/ca-crt.pem'))
-  };
+var server = http.createServer(app);
 
-  var server = https.createServer(options, app);
-}
+// if(process.env.NODE_ENV === 'dev ' || process.env.NODE_ENV === 'dev') {
+//   /**
+//    * Create HTTP server.
+//   */
+//   var server = http.createServer(app);
+// } else {
+//   /**
+//    * Create HTTPS server.
+//   */
+//   var options = {
+//     key: fs.readFileSync(path.join(__dirname, '../lib/.cert/server-key.pem')),
+//     cert: fs.readFileSync(path.join(__dirname, '../lib/.cert/server-crt.pem')),
+//     ca: fs.readFileSync(path.join(__dirname, '../lib/.cert/ca-crt.pem'))
+//   };
+
+//   var server = https.createServer(options, app);
+// }
 
 /**
  * Listen on provided port, on all network interfaces.

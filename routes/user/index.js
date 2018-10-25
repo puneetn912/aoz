@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var subscription = require('../../lib/models/subscription');
+let subscriptionController = require('../../lib/src/js/scriptController/subscriptionController');
+let localityController = require('../../lib/src/js/scriptController/localityController');
+let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
+let userController = require('../../lib/src/js/scriptController/userController');
 
-
-let scriptController = require('../../lib/src/js/scriptController/scriptController');
+var locality = require('../../lib/models/locality')
 
 //send otp sign up functionalities
 router.post('/sendotp', function(req, res) {
@@ -16,7 +19,20 @@ router.post('/sendotp', function(req, res) {
   	  // res.send(signupotp)
 });
 
+// subcription
+router.post('/mealcount',subscriptionController.subscriptionCount)
+router.post('/createSubs',subscriptionController.createSubs)
+router.post('/updateSubs',subscriptionController.updateSubs)
+router.post('/getSub/:id',subscriptionController.getSub)
 
-router.post('/mealcount',scriptController.subscriptionCount)
+// locality
+router.post('/getAllLocality',localityController.getAll)
+
+// apartment
+router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
+
+// user
+router.post('/createUser',userController.createUser)
+router.post('/updateUser',userController.updateUser)
 
 module.exports = router;

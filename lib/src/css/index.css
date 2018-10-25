@@ -18,12 +18,25 @@ div.md-virtual-repeat-sizer{width: 100%}
 table.md-calendar-day-header{width: 100%}*/
 
 
+/*---------------------userdetails.html--------------------------*/
+
+.user-submit-btn{
+    background-color: transparent !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0) !important;
+}
+
+/*---------------------userdetails.html--------------------------------*/
+
+
 
 /*-------------------otp.html------------------------*/
 .otp-otpbtn-div{
   display:flex;
   flex-direction:row;
-  border:1px solid grey;
+  border:1px solid lightsalmon;
   padding:2px;
   border-radius: 50px;
   margin-left: 70px;
@@ -41,11 +54,11 @@ table.md-calendar-day-header{width: 100%}*/
 
 .otp-otpbtn-btn{
   border:1px solid #FFC300;
-  background:#FFC300;
-  color:white;
+  background:#c02425;
+  color:white !important;
     width: 40px;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 /*--------------------otp.html---------------------------------*/
@@ -69,14 +82,15 @@ table.md-calendar-day-header{width: 100%}*/
     width: 25px;
     background-color: green;
     border-radius: 50%;
-    display: inline-block;
-}
-.subscription-nveg {
     height: 25px;
     width: 25px;
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+}
+
+.sub-meal-btn{
+  border-radius: 20px;min-width: 20px;min-height: 23px;color:white !important; background-color: #c02425 !important;
 }
 
 /*--------------------subscription.html------------------------------*/
@@ -87,17 +101,17 @@ table.md-calendar-day-header{width: 100%}*/
 .dot {
     height: 25px;
     width: 25px;
-    background-color: #FFC300;
+    background-color: indianred;
     border-radius: 50%;
     display: inline-block;
     padding-left: 8px;
     padding-top: 2px;
-    color: grey;
+    color: white;
 }
 .line {
     height: 10px;
     width: 100px;
-    background-color: #FFC300;
+    background-color: #c02425;
     display: inline-block; 
 }
 .line1 {
@@ -105,17 +119,30 @@ table.md-calendar-day-header{width: 100%}*/
     width: 79px;
     background-color: white;
     display: inline-block;
-     margin-left: 5px;
-     margin-right: 10px;
+     margin-left: 0px;
+     margin-right: 0px;
 }
 .line2 {
     height: 10px;
     width: 50px;
     background-color: white;
     display: inline-block;
-     margin-left: 8px;
-     margin-right: 10px;
-}/*----------------------signup.html---------------------------*/
+     margin-left: -3px;
+     margin-right: 30px;
+}
+
+.signup-submit-btn{
+  color: white !important;
+  background: linear-gradient(to right, #c02425, #f0cb35);
+  border-radius: 50px;
+  width: 150px;
+  font-size: 18px;
+  height: 52px;
+
+
+}
+
+/*----------------------signup.html---------------------------*/
 
 
 /*-----------------home.html--------------------------*/
@@ -123,18 +150,11 @@ table.md-calendar-day-header{width: 100%}*/
   color: white !important;
   background: linear-gradient(to right, #c02425, #f0cb35);
   padding: 5px 40px; 
-  font-size: 16px;
+  font-size: 18px;
   height: 50px;
+  border-radius: 50px;
 }
-.home-login-btn{
-  color: #FFC300 !important;
-  
-  padding: 5px 40px; 
-  font-size: 16px;
-  height: 50px;
-  border: solid;
-  /*border-image: linear-gradient(to right, #c02425, #f0cb35);*/
-}
+
 /*---------------------home.html----------------------------*/
 
 
@@ -198,47 +218,51 @@ body {
 
 
 /*padding*/
-.pb70 {padding-bottom: 70px !important;}
-.pt179{padding-top: 179px !important;}
+.pb70 {padding-bottom: 70px !important}
+.pt179{padding-top: 179px !important}
 /*padding*/
 
 
 /*font-color*/
-.whitefont {color: white !important;}
-.goldfont {color:gold !important;}
-.yellowfont {color:yellow;}
-.FFC300font{color:#FFC300 !important;}
-.greyfont{color: grey !important;}
-.eeefont{color:#eee !important;}
+.whitefont {color: white !important}
+.goldfont {color:gold !important}
+.yellowfont {color:yellow}
+.FFC300font{color:#FFC300 !important}
+.greyfont{color: grey !important}
+.eeefont{color:#eee !important}
+.c02425font{color: #c02425 !important}
+.indianredfont{color:indianred !important}
 /*font-color*/
 
 /*bg-color*/
-
 .FFC300bgcolor{background-color:#FFC300 !important}
-
+.c02425bgcolor{background-color: #c02425 !important}
+.whitebgcolor{background-color: #ffffff}
 /*bg-color*/
 
 
 /*height*/
-
 .height600 {height: 600px;}
-
+.height60{height: 60px }
 /*height*/
 
+/*width*/
+.width35{width: 35px !important}
+
+/*width*/
+
 
 /*font-weight*/
-
 .font-weightbold{font-weight: bold}
 .font-weight400{font-weight: 400}
-
+.font-weight600{font-weight: 600}
 /*font-weight*/
 
-/*align*/
 
+/*align*/
 .aligncenter{text-align: center;}
 .alignleft{text-align: left;}
 .alignright{text-align: right;}
-
 /*align*/
 
 
@@ -273,21 +297,56 @@ body {
 
 .pb10{padding-bottom: 10px}
 .pb20{padding-bottom: 20px}
+.pb30{padding-bottom: 30px}
 .pb40{padding-bottom: 40px}
 .pb60{padding-bottom: 60px}
 .pb0{padding-bottom:0px}
 
 /*margins*/
 .m0{margin: 0px}
-.mt0{margin-top: 0px}
-.mb0{margin-bottom: 0px}
+
+.mt-136{margin-top: -136px}
+.mt-80{margin-top: -80px}
+.mt0{margin-top: 0px !important}
+.mt5{margin-top: 5px}
+.mt10{margin-top: 10px}
+.mt16{margin-top: 16px}
+
+.mb0{margin-bottom: 0px !important}
+.mb5{margin-bottom: 5px}
+.mb10{margin-bottom: 10px}
 .mb20{margin-bottom: 20px}
+
 .mr0{margin-right: 0px}
+.mr10{margin-right: 10px}
+
 .ml0{margin-left: 0px}
 .ml10{margin-left: 10px}
-.mr10{margin-right: 10px}
-.mt10{margin-top: 10px}
-.mb10{margin-bottom: 10px}
-.mb5{margin-bottom: 5px}
-.mt5{margin-top: 5px}
+
+
+/*border*/
+.border-radius50{border-radius: 50px !important}
+.border-none{border:none; }
+
+
+/*letter-spacing*/
+.letter-space1{letter-spacing:1px}
+/*letter-spacing*/
+
+/*border-top*/
+.bt-1-s-eee{border-top: 1px solid #eee;}
+/*border-top*/
+
+/*text-align*/
+.text-right{text-align: right}
+.text-left{text-align: left;}
+/*text-align*/
+
+
+/*position*/
+
+
+
+/*position*/
+
 
