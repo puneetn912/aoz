@@ -17,22 +17,58 @@
 			  <span class="dot">3</span>
 			</div>	
 			<div class="mt16">
-			  <span class="indianredfont font-weightbold">Phone</span>
+			  <span style="color:#c02425" class="font-weightbold letter-space1">Phone</span>
               <span class="line1"></span>
 			  <span class="greyfont">Verify</span>
 			  <span class="line2"></span>
 			  <span class="greyfont">Order</span>
 			</div>
 		  </div>	
+
+			<form name="userForm" style="padding-top: 93px">
+				<h4 class="greyfont letter-space1" layout="row" layout-align="center center">Enter your phone number</h4>
+				<md-card-content layout="column"  layout-padding layout-margin class="ml0 mr0 pl0 pr0">
+					<div layout="row" layout-align="center center" layout-padding class="pl0 pr0 ml0 mr0">
+					<input type="text" style="width: 70px ;    border: 1px solid #eee;" value="+91">
+						<input 
+						style="border: 1px solid #eee;" 
+						flex required type="text" 
+						name="mobileno" 
+						ng-model="vmSignup.mobileno" 
+						maxlength="10" 
+						ng-pattern="/^[0-9]+$/" 
+						placeholder="Phone Number">
+
+					</div>
+					<div layout="row" layout-align="center center">
+					<md-button 
+					class="md-raised signup-submit-btn letter-space1" 
+					ng-click="sendOtp(userForm)"
+                    id='submit' 
+                    ng-bind='vmSignup.submit' 
+
+					>Submit</md-button>
+<!-- =======
 			<form name="userForm" class="pt179">
 				<h4 class="greyfont" layout="row" layout-align="center center">Enter your phone number</h4>
 				<md-card-content layout="column"  layout-padding layout-margin >
 					<md-input-container>
 						<label>Phone Number</label>
-						<input required type="text" name="mobileno" ng-model="userForm.Mmobileno" maxlength="10" ng-pattern="/^[0-9]+$/"/>
+						<input 
+						required 
+						type="text" 
+						name="mobileno" 
+						ng-model="vmSignup.mobileno" 
+						maxlength="10" 
+						ng-pattern="/^[0-9]+$/"/>
 					</md-input-container>
 					<div layout="row" layout-align="center center">
-					<md-button class="md-raised signup-submit-btn" ng-click="sendOtp(userForm)">Submit</md-button>
+                    <md-button 
+                    id='submit' 
+                    class="md-raised signup-submit-btn" 
+                    ng-bind='vmSignup.submit' 
+                    ng-click="sendOtp(userForm)">Send OTP</md-button>
+>>>>>>> 8a6e03fbc5d08f594072d0dab7ffdc8cb454043b -->
 				</div>
 				</md-card-content>
 			</form>

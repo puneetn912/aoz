@@ -1,10 +1,9 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content layout="row" layout-xs="column" ng-controller="cartController as vmCart" ng-cloak class="height600">
+    <md-content layout="row" layout-xs="column" ng-controller="thankyouController as vmThanks" ng-cloak class="height600">
 
         
       <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
 
-<!-- header -->
                <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
                     <div>
                         <i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
@@ -31,17 +30,18 @@
  
                  <form>
 	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;">
-                  <label class="pt0 pb0">Door/Flat No :</label>
-                      <input type="text" name=""  class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+                        <label class="pt0 pb0">Door/Flat No :</label>
+                        <input type="text" name="" ng-model="vmThanks.doorNo"  class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
                 </div>
 
 	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;">
                   <label class="pt0 pb0">Name :</label>
-                      <input type="text" name="" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+                      <input type="text" name="" ng-model="vmThanks.userName" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
                 </div>
              
                 <div layout="row" layout-align="center center" class="bt-1-s-eee">
-                  <md-button ng-click="" class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425">Update
+
+                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425">
                   </md-button>
                 </div>
 
@@ -54,14 +54,14 @@
                   <md-button ng-click="" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;background-color: white;height: 47px">Help
                   </md-button>
 
-                  <md-button ng-click="" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 47px"">Manage
+                  <md-button ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 47px"">Manage
                   </md-button>
                 </div>
                 </form>
 
 
 
-<!-- footer -->
+/*footer*/
                <div layout="row" style="height: 60px;position: fixed-top;border-top: 1px solid #eee" layout-align="space-between center" layout-padding >
                     <div layout="column" layout-align="center center">
                         <i class="fa fa-home" style="color:#c02425;font-size: 25px" aria-hidden="true"></i>
