@@ -80,8 +80,8 @@
             <div layout="row" layout-align="space-between center" layout-padding>
 
             	<div style="font-size: 12px" layout="column" layout-align="space-between center">
-            	   <div style="color: red">4 Meals Remaining
-            	     <span style="color:grey"> Out of 10 Veg meals </span>
+            	   <div style="color: red">{{vmCalender.vegRem}} Meals Remaining
+            	     <span style="color:grey"> Out of {{vmCalender.totalVegCount}} Veg meals </span>
                    </div>
 
 <!--             	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
@@ -95,12 +95,12 @@
 
                 </div>
                 <div style="font-size: 12px" layout="column" layout-align="space-between center">
-            	   <div style="color:red">4 Meals Remaining
-            	      <span style="color: grey"> Out of 10 Veg meals </span>
+            	   <div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
+            	      <span style="color: grey"> Out of {{vmCalender.totalNvegCount}} NonVeg meals </span>
                    </div>
                 </div>
                 <div>
-					<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+					<md-button ng-click="addMore()" class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
                 </div>
             </div>
 
@@ -151,6 +151,7 @@
                 <md-button class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" ng-click="finalSave()">Update</md-button> 
                 <md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
             </div>
+            <a href="">{{vmCalender.error}}</a>
 
         <!-- footer -->
                <div layout="row" style="height: 60px;border-top: 1px solid #eee;position: fixed;bottom:28px"  layout-align="space-between center" layout-padding >
