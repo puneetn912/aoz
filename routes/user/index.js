@@ -6,6 +6,7 @@ let subscriptionController = require('../../lib/src/js/scriptController/subscrip
 let localityController = require('../../lib/src/js/scriptController/localityController');
 let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
 let userController = require('../../lib/src/js/scriptController/userController');
+let calendarController = require('../../lib/src/js/scriptController/calendarController');
 
 
 var mid = '24324';
@@ -48,7 +49,7 @@ router.post('/sendtoairpay', function(req, res, next) {
 // subcription
 router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
-router.post('/updateSubs',subscriptionController.updateSubs)
+router.post('/updateSubs/:id',subscriptionController.updateSubs)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
@@ -62,5 +63,10 @@ router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
 router.post('/createUser',userController.createUser)
 router.post('/updateUser',userController.updateUser)
 router.post('/checkUser/:phone',userController.checkUser)
+
+//calendar
+router.post('/addCalendar',calendarController.add)
+router.post('/updateCalendar',calendarController.update)
+router.post('/getCal/:subId',calendarController.getCal)
 
 module.exports = router;
