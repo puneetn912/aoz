@@ -1,3 +1,15 @@
+
+
+.card-border{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
 /* For Firefox */
 input[type='number'] {
     -moz-appearance:textfield;
@@ -20,6 +32,8 @@ table.md-calendar-day-header{width: 100%}*/
 
 table.md-calendar-day-header{width: 100%}
 .md-calendar-scroll-container{width: 100%}
+
+
 /*---------------------userdetails.html--------------------------*/
 
 .user-submit-btn{
@@ -186,8 +200,9 @@ border-radius: 0px !important;
   background: linear-gradient(to right, #c02425, #f0cb35);
   padding: 5px 40px; 
   font-size: 18px;
-  height: 50px;
+  height: 60px;
   border-radius: 50px;
+  padding-top: 13px;
 }
 
 /*---------------------home.html----------------------------*/
@@ -284,6 +299,7 @@ body {
 
 /*width*/
 .width35{width: 35px !important}
+.width25{width:25px !important}
 
 /*width*/
 
@@ -377,3 +393,9 @@ body {
 .text-right{text-align: right}
 .text-left{text-align: left;}
 /*text-align*/
+
+
+/*font-size*/
+.font20{font-size: 20px}
+.font25{font-size: 25px}
+/*font-size*/
