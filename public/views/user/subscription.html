@@ -1,10 +1,39 @@
-<div ng-app="cmsApp" ng-cloak>
-	<md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak class="height600">
+<div ng-app="cmsApp" ng-cloak >
+	<md-content layout="row" layout-xs="column" ng-controller="subscriptionController as vmSubscription" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);" >
 		
-		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
-			<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
+<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+		   	<div style="padding-left: 5%">
+		   		<img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+		   	</div>
+		   	<div style="padding-left: 5%;margin-top: -72px">
+		   		<ul>
+		   			<li class="font20 greyfont">Healthy Home Style Meal</li>
+		   			<li class="font20 greyfont">Free Delivery at your doorstep</li>
+		   			<li class="font20 greyfont">Different Cuisine Everyday</li>
+		   			<li class="font20 greyfont">No More Kitchen Hassles</li>
+		   			<li class="font20 greyfont">No Repeat for 30 days</li>
+		   		</ul>
+		   		<h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
+		   		<h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+		   	</div>
+		   </div>
+		
+		</div>
+<!-- left -->
+
+
+<!-- right -->
+		<md-card class="card-border" flex-gt-xs="25" style="margin-top: 6%;margin-bottom: 2%;" layout-align="center">
+		  <div  style="height:100%">
+
+
+    <!-- header -->
+			<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
 				<div>
-					<i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
+					<i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
 				</div>
 				<div>
 					<img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
@@ -13,26 +42,25 @@
 					<img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
 				</div>
 			</div>
+    <!-- header -->
+
+
 
 			<div style="height: 142px">
-				<img src="../images/food.jpg" width="100%" height="142px" alt="lunch">
+				<img src="../images/food2.jpeg" width="100%" height="142px" alt="lunch">
 			</div>
-			
 			<div layout-padding class="aligncenter">
-				<h5 class="greyfont font-weight400 mt0 mb0">
+				<h5 class="blackffont-weight400 mt0 mb0">
 					The Description of the food will come here. Packed in a beautiful box with branding and will server
 				</h5>
 			</div>
-
 			<div>
 				<form style="margin-bottom: 0px">
 					<div layout="column">
-
 						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
 							<label class="pt0 pb0">Meal Time</label>
 							<input type="text" name="" value="Dinner" disabled="true" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right">  
 						</div>
-
 						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
 							<label class="pt0 pb0">Meal Type</label>
 							<select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" >
@@ -41,25 +69,22 @@
 								<option>Both</option>
 							</select>
 						</div>
-						
 						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
 							<div>
 								<label class="greyfont">No. of Veg Meals</label>
 							</div>
-                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled>
+                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled style="border:none ">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
                                 <option value="30">30</option>
                             </select>
 						</div>
-						
-						
 						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
 							<div>
 								<label class="greyfont">No. of non Veg Meals</label>
 							</div>
-                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled>
+                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled style="border:none">
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -82,79 +107,25 @@
 				</form>
 			</div>
 
+        <!-- footer -->
+               <div layout="row" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px;background-color:#c02425;height: 60px;border-top: 1px solid #eee;position: fixed;bottom:26px;width: 25%"  layout-align="space-between center" layout-padding >
+                    <div layout="column" layout-align="center center">
+                        <i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>
+                        <span class="whitefont" style="font-size: 12px">Home</span>
+                    </div>
+                    <div style="padding-left: 30%" layout="column" layout-align="center center">
+                        <i class="fa fa-calendar" aria-hidden="true" style="color: white;font-size: 23px"></i>
+                        <span style="font-size: 12px" class="whitefont">Manage</span>
+                    </div>
+                    <div style="padding-left: 12%;">
+                        <img src="../images/logowhite.png" alt="lunch" style="width: 80px">
+                    </div>
+               </div>
+        <!-- footer -->
 
-			
-
-<!-- footer -->
-
-			<div layout="row" style="height: 60px;position: fixed-top;border-top: 1px solid #eee" layout-align="space-between center" layout-padding >
-				<div layout="column" layout-align="center center">
-					<i class="fa fa-home" style="color:#c02425;font-size: 25px" aria-hidden="true"></i>
-					<span style="font-size: 12px">Home</span>
-				</div>
-				<div style="padding-left: 74px" layout="column" layout-align="center center">
-					<i class="fa fa-calendar" aria-hidden="true" style="color: grey;font-size: 25px"></i>
-					<span style="font-size: 12px">Manage</span>
-				</div>
-				<div>
-					<img src="../images/logoBlack.png" alt="lunch" style="width: 80px">
-				</div>
-			</div>
-
-<!-- footer -->
-
-
-
-
-<!--             <form name="countForm">
-				<md-card-content layout="column"  layout-padding layout-margin >
-					<md-input-container>
-						<md-select ng-model="weapon" placeholder="Meal Type" class="md-no-underline">
-							<md-option value="veg">Veg</md-option>
-							<md-option value="nonveg">Non-Veg</md-option>
-						  <md-option value="wand">Both</md-option>
-					  </md-select>
-					</md-input-container>
-				  <md-input-container>
-					<div layout="row" layout-align="center center">
-
-					   <div><md-button class="md-raised" ng-click="iveg()">+</md-button></div>
-						<div>
-						<md-label class="greyfont" style="font-size: 12px">
-						  No. of veg meals
-						</md-label>
-						  <input id="veg" class="aligncenter" type="number" value="0"></div>
-					   <div><md-button class="md-raised" ng-click="dveg()">-</md-button></div>
-
-					</div>
-				  </md-input-container>
-				  <md-input-container>
-					<div layout="row" layout-align="center center">
-
-					   <div><md-button class="md-raised" ng-click="inveg()">+</md-button></div>
-						<div>
-						<md-label class="greyfont" style="font-size: 12px">
-						  No. of non-veg meals
-						</md-label>
-						  <input id="nveg" class="aligncenter" type="number" value="0"></div>
-					   <div><md-button class="md-raised" ng-click="dnveg()">-</md-button></div>
-
-					</div>
-				  </md-input-container>
-<!--                   <md-input-container>
-				  <label>Start date</label>
-					<md-datepicker ng-model="countForm.date" name='start_date'>
-					</md-datepicker>
-				</md-input-container> -->
-
-<!--                 <div flex layout-align="center center" layout="row">
-				  <md-content class="greyfont" style="font-size: 18px;padding-right: 50px"> Total Price: 119/-</md-content>
-				  <md-button ng-click="subscribe() " class="md-raised" style="width:120px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px;">buy Now</md-button>
-				</div>
-			</md-card-content>
-
-		</form>-->
-	</md-card>
+          </div>
+	    </md-card>
+<!-- right -->
 
 </md-content>
 </div>

@@ -50,6 +50,7 @@ router.post('/sendtoairpay', function(req, res, next) {
 router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs/:id',subscriptionController.updateSubs)
+router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
@@ -66,7 +67,7 @@ router.post('/checkUser/:phone',userController.checkUser)
 
 //calendar
 router.post('/addCalendar',calendarController.add)
-router.post('/updateCalendar',calendarController.update)
+router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
 
 module.exports = router;

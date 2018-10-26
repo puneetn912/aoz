@@ -1,33 +1,65 @@
 <div ng-app="cmsApp" ng-cloak>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak style="height: -webkit-fill-available;"> <!-- style="height: -webkit-fill-available;" -->
-		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
+	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > <!-- style="height: -webkit-fill-available;" -->
 
-<!-- header -->
-               <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
-                    <div>
-                        <i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
-                    </div>
-                    <div>
-                        <img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
-                    </div>
-                    <div>
-                        <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
-                    </div>
-                </div>
-<!-- header -->
 
-               <div layout="row" layout-align="center center">
+
+<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+		   	<div style="padding-left: 5%">
+		   		<img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+		   	</div>
+		   	<div style="padding-left: 5%;margin-top: -72px">
+		   		<ul>
+		   			<li class="font20 greyfont">Healthy Home Style Meal</li>
+		   			<li class="font20 greyfont">Free Delivery at your doorstep</li>
+		   			<li class="font20 greyfont">Different Cuisine Everyday</li>
+		   			<li class="font20 greyfont">No More Kitchen Hassles</li>
+		   			<li class="font20 greyfont">No Repeat for 30 days</li>
+		   		</ul>
+		   		<h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
+		   		<h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+		   	</div>
+		   </div>
+		
+		</div>
+<!-- left -->
+
+
+
+<!-- right -->
+		<md-card class="card-border" flex-gt-xs="25" layout-align="center" style="margin-top: 6%;margin-bottom: 2%;">
+          <div style="height:100%">
+
+
+    <!-- header -->
+			<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
+				<div>
+					<i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+				</div>
+				<div>
+					<img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
+				</div>
+				<div>
+					<img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
+				</div>
+			</div>
+    <!-- header -->
+
+<!--                <div layout="row" layout-align="center center">
 				  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
-               </div>
-
-
+               </div> -->
 
 <!-- calender -->
-            <md-card-content layout="column" class="pl0">
-                <md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
+
+            <md-card-content layout="column" class="pl0 pt0 pr0">
+                <md-calendar md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
             </md-card-content>
+<!--             <md-card-content layout="column" class="pl0">
+                <md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
 <!-- calender -->
 
 
@@ -48,22 +80,31 @@
 
 
             <div layout="row" layout-align="space-between center" layout-padding>
-            	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
+
+            	<div style="font-size: 12px" layout="column" layout-align="space-between center">
+            	   <div style="color: red">{{vmCalender.vegRem}} Meals Remaining
+            	     <span style="color:grey"> Out of {{vmCalender.totalVegCount}} Veg meals </span>
+                   </div>
+
+<!--             	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
             	<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
             	  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
                 </div>
                 </div>
                 <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
             	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
-            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span>
+            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span> -->
+
                 </div>
+                <div style="font-size: 12px" layout="column" layout-align="space-between center">
+            	   <div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
+            	      <span style="color: grey"> Out of {{vmCalender.totalNvegCount}} NonVeg meals </span>
+                   </div>
                 </div>
                 <div>
-									<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+					<md-button ng-click="addMore()" class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
                 </div>
             </div>
-
-
 
 
             <!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
@@ -112,24 +153,27 @@
                 <md-button class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" ng-click="finalSave()">Update</md-button> 
                 <md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
             </div>
+            <a href="">{{vmCalender.error}}</a>
 
-<!-- footer -->
-               <div layout="row" style="height: 60px;position: fixed-top;border-top: 1px solid #eee" layout-align="space-between center" layout-padding >
+        <!-- footer -->
+               <div layout="row" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px;background-color:#c02425;height: 60px;border-top: 1px solid #eee;position: fixed;bottom:26px;width: 25%"  layout-align="space-between center" layout-padding >
                     <div layout="column" layout-align="center center">
-                        <i class="fa fa-home" style="color:#c02425;font-size: 25px" aria-hidden="true"></i>
-                        <span style="font-size: 12px">Home</span>
+                        <i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>
+                        <span class="whitefont" style="font-size: 12px">Home</span>
                     </div>
-                    <div style="padding-left: 74px" layout="column" layout-align="center center">
-                        <i class="fa fa-calendar" aria-hidden="true" style="color: grey;font-size: 25px"></i>
-                        <span style="font-size: 12px">Manage</span>
+                    <div style="padding-left: 30%" layout="column" layout-align="center center">
+                        <i class="fa fa-calendar" aria-hidden="true" style="color: white;font-size: 23px"></i>
+                        <span style="font-size: 12px" class="whitefont">Manage</span>
                     </div>
-                    <div>
-                        <img src="../images/logoBlack.png" alt="lunch" style="width: 80px">
+                    <div style="padding-left: 12%;">
+                        <img src="../images/logowhite.png" alt="lunch" style="width: 80px">
                     </div>
                </div>
-<!-- footer -->
+        <!-- footer -->
 
-
+          </div>
 		</md-card>
-	</md-content>
+<!-- right -->
+
+</md-content>
 </div>

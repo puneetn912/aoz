@@ -18244,6 +18244,18 @@ md-toolbar {
 }
 
 /* End of File */
+
+
+.card-border{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
 /* For Firefox */
 input[type='number'] {
     -moz-appearance:textfield;
@@ -18264,6 +18276,10 @@ div.md-virtual-repeat-sizer{width: 100%}
 table.md-calendar-day-header{width: 100%}*/
 
 
+table.md-calendar-day-header{width: 100%}
+.md-calendar-scroll-container{width: 100%}
+
+
 /*---------------------userdetails.html--------------------------*/
 
 .user-submit-btn{
@@ -18271,7 +18287,12 @@ table.md-calendar-day-header{width: 100%}*/
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 3px;
+    width: 50px !important;
+    height: 50px !important;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0) !important;
+}
+.md-whiteframe-z1{
+  box-shadow: none !important;
 }
 
 /*---------------------userdetails.html--------------------------------*/
@@ -18335,7 +18356,8 @@ border-radius: 0px !important;
 }
 
 .md-calendar-scroll-mask{
-  height: 265px !important;
+  height: 223px !important;
+  width: 338px !important ;
 }
 
 
@@ -18424,8 +18446,9 @@ border-radius: 0px !important;
   background: linear-gradient(to right, #c02425, #f0cb35);
   padding: 5px 40px; 
   font-size: 18px;
-  height: 50px;
+  height: 60px;
   border-radius: 50px;
+  padding-top: 13px;
 }
 
 /*---------------------home.html----------------------------*/
@@ -18459,7 +18482,7 @@ body {
 .material-icons.mdl-badge.veg[data-badge]::after,
 .material-label.mdl-badge.veg[data-badge]::after{
   font-size: .3em;
-  width: 2.4em;
+  width: 2.3em;
   height: 2em;
   background-color: green;
   margin-right: 20px!important;
@@ -18467,10 +18490,10 @@ body {
 .material-icons.mdl-badge.nonveg[data-badge]::after,
 .material-label.mdl-badge.nonveg[data-badge]::after{
   font-size: .3em;
-  width: 2.4em;
+  width: 2.5em;
   height: 2em;
   background-color: brown;
-  margin-right: -1px !important;
+  margin-right: -2px !important;
 }
 /*.mdl-badge[data-badge]:after*/
 .material-icons.mdl-badge[data-badge]::after {
@@ -18522,6 +18545,7 @@ body {
 
 /*width*/
 .width35{width: 35px !important}
+.width25{width:25px !important}
 
 /*width*/
 
@@ -18616,3 +18640,8 @@ body {
 .text-left{text-align: left;}
 /*text-align*/
 
+
+/*font-size*/
+.font20{font-size: 20px}
+.font25{font-size: 25px}
+/*font-size*/

@@ -1,18 +1,46 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content layout="row" layout-xs="column" ng-controller="userdetailsController as vmUserdetails" ng-cloak class="height600">
+	<md-content layout="row" layout-xs="column" ng-controller="userdetailsController as vmUserdetails" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
 
-		<md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
-			<div layout="column" layout-align="center center">	
-			<div class="mt-136">
+
+
+<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+		   	<div style="padding-left: 5%">
+		   		<img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+		   	</div>
+		   	<div style="padding-left: 5%;margin-top: -72px">
+		   		<ul>
+		   			<li class="font20 greyfont">Healthy Home Style Meal</li>
+		   			<li class="font20 greyfont">Free Delivery at your doorstep</li>
+		   			<li class="font20 greyfont">Different Cuisine Everyday</li>
+		   			<li class="font20 greyfont">No More Kitchen Hassles</li>
+		   			<li class="font20 greyfont">No Repeat for 30 days</li>
+		   		</ul>
+		   		<h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
+		   		<h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+		   	</div>
+		   </div>
+		
+		</div>
+<!-- left -->
+
+
+<!-- right -->
+		<md-card class="card-border" flex-gt-xs="25" style="margin-top: 6%;margin-bottom: 2%;" layout-align="center">
+		<div style="height:100%">
+		  <div layout="column" layout-align="center center">	
+			<div>
 			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
             </div>
 			<div>
                <h4 class="greyfont mt-80 letter-space1">Healthy home cooked food</h4>
             </div>
 			<div layout="row" layout-align="center center" >
-			  <span class="dot">1</span>
+			  <span class="dot" style="background-color: #c02425 !important"><i style="padding:6px;font-size: 12px;float: right;" class="fa fa-check" aria-hidden="true"></i></span>
               <span class="line"></span>
-			  <span class="dot">2</span>
+			  <span style="background-color: #c02425 !important" class="dot"><i style="padding:6px;font-size: 12px;float: right;" class="fa fa-check" aria-hidden="true"></i></span>
 			  <span class="line"></span>
 			  <span class="dot">3</span>
 			</div>	
@@ -26,10 +54,8 @@
 		  </div>
 
 			<form name="userForm">
-
 				<div layout="column" class="pt20">
-					
-					<md-autocomplete
+					<md-autocomplete style="border: 1px solid #eee;"
 			            md-selected-item="vmUserdetails.selectedItemPin"
 			            md-search-text-change="vmUserdetails.searchTextChangePin(vmUserdetails.searchTextPin)"
 			            md-search-text="vmUserdetails.searchTextPin"
@@ -46,7 +72,7 @@
 						</md-not-found>
 					</md-autocomplete>
 
-					<md-autocomplete
+					<md-autocomplete style="border: 1px solid #eee;"
 						md-selected-item="vmUserdetails.selectedItemApt"
 						md-search-text-change="vmUserdetails.searchTextChangeApt(vmUserdetails.searchTextApt)"
 						md-search-text="vmUserdetails.searchTextApt"
@@ -63,7 +89,7 @@
 						</md-not-found>
 					</md-autocomplete>
 
-					<md-autocomplete
+					<md-autocomplete style="border: 1px solid #eee;"
 						md-selected-item="vmUserdetails.selectedItemTwr"
 						md-search-text-change="vmUserdetails.searchTextChangeTwr(vmUserdetails.searchTextTwr)"
 						md-search-text="vmUserdetails.searchTextTwr"
@@ -82,13 +108,17 @@
 				  </div>
 
                   <div layout="row" layout-align="center center" class="pt20">
-                       <md-button class="md-fab user-submit-btn" ng-click="updateUser()">
-                       <img src="../images/checked.svg" widht="50px" height="50px" alt="submit"></img>
+                       <md-button style="background-color:#c02425 !important" class="md-fab user-submit-btn" ng-click="updateUser()">
+ <!--                       <img src="../images/checked.svg" widht="50px" height="50px" alt="submit"></img> -->
+ <i class="fa fa-check" aria-hidden="true" style="font-size: 25px; background-color: transparent;color:white"></i>
                        </md-button>
                   </div>
 				
 			</form>
+		  </div>
 		</md-card>
-        </div>
+<!-- right -->
+
+        
 	</md-content>
 </div>

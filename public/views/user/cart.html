@@ -1,164 +1,161 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content layout="row" layout-xs="column" ng-controller="cartController as vmCart" ng-cloak class="height600">
+	<md-content layout="row" layout-xs="column" ng-controller="cartController as vmCart" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);" >
 
-        
-      <md-card flex-offset-gt-xs="55" flex-gt-xs="25" flex="100" layout-align="center">
-               <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60">
-                    <div>
-                        <i class="fa fa-bars" style="color: white" aria-hidden="true"></i>
-                    </div>
-                    <div>
-                        <img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
-                    </div>
-                    <div>
-                        <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
-                    </div>
-                </div>
-               
-			<div layout="row" style="border-bottom: 2px solid #eee;" layout-padding>
-			  	 <div>
-			  	   <h4 class="greyfont mb5">User Id</h4> 
-			  	   <h4 class="greyfont mt5 font-weight400" ng-model="vmCart.userPhone" ng-bind="vmCart.userPhone"></h4>
-			     </div>
+
+		<!-- left -->
+		<div flex-gt-xs="55" hide-xs>
+
+			<div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+				<div style="padding-left: 5%">
+					<img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+				</div>
+				<div style="padding-left: 5%;margin-top: -72px">
+					<ul>
+						<li class="font20 greyfont">Healthy Home Style Meal</li>
+						<li class="font20 greyfont">Free Delivery at your doorstep</li>
+						<li class="font20 greyfont">Different Cuisine Everyday</li>
+						<li class="font20 greyfont">No More Kitchen Hassles</li>
+						<li class="font20 greyfont">No Repeat for 30 days</li>
+					</ul>
+					<h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
+					<h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+				</div>
 			</div>
+			
+		</div>
+		<!-- left -->
 
-                
-                <div>
-                <form style="margin-bottom: 0px">
-                <div layout="column">
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Meal Time</label>
-                      <a ng-bind="vmCart.mealTime" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+		<!-- right -->
+		<md-card class="card-border" flex-gt-xs="25" layout-align="center" style="margin-top: 6%;margin-bottom: 2%;">
+			<div style="height:100%">
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Meal Type</label>
-                      <a ng-bind="vmCart.mealType" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+				<!-- header -->
+				<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
+					<div>
+						<i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+					</div>
+					<div>
+						<img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
+					</div>
+					<div>
+						<img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
+					</div>
+				</div>
+				<!-- header -->
+				
+				<div layout="row" style="border-bottom: 2px solid #eee;" layout-padding>
+					<div>
+						<h4 class="greyfont mb5">User Id</h4> 
+						<h4 class="greyfont mt5 font-weight400" ng-model="vmCart.userPhone" ng-bind="vmCart.userPhone"></h4>
+					</div>
+				</div>
+				
+				<div>
+					<form style="margin-bottom: 0px">
+						<div layout="column">
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Veg Meals</label>
-                      <a ng-bind="vmCart.vegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Meal Time</label>
+								<a ng-bind="vmCart.mealTime" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Non-Veg Meals</label>
-                      <a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Meal Type</label>
+								<a ng-bind="vmCart.mealType" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Total Amount</label>
-                      <a ng-bind="vmCart.mealCost" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Veg Meals</label>
+								<a ng-bind="vmCart.vegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">GST :</label>
-                      <a ng-bind="vmCart.gst" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Non-Veg Meals</label>
+								<a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
-                  <label class="pt0 pb0">Net Payable Amount :</label>
-                      <a ng-bind="vmCart.total" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Total Amount</label>
+								<a ng-bind="vmCart.mealCost" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-                </form>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">GST :</label>
+								<a ng-bind="vmCart.gst" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-              <form style="margin-bottom: 0px">
-                  <input type="text" ng-value="vmCart.userPhone" id="userPhone"/>
-                  <input type="text" ng-value="vmCart.address" id="address"/>
-                  <input type="text" ng-value="vmCart._id" id="su_id"/>
-                  <input type="text" ng-value="vmCart.total" id="total"/>
-                    <div layout="row" layout-align="center center" class="bt-1-s-eee">
-                      <md-button ng-click="paynow()" class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;">Pay Now
-                      </md-button>
-                    </div>
-                </form>
-                </div>
+							<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+								<label class="pt0 pb0">Net Payable Amount :</label>
+								<a ng-bind="vmCart.total" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+							</div>
 
-              <form method='POST' action='https://payments.airpay.co.in/pay/index.php' id='sendtoairpay'>
-                  <input type="text" name='privatekey' id='privatekey'/>
-                  <input type="text" id="mid" name='mercid'/>
-                  <input type="text" id="orderid" name='orderid'/>
-                  <input type="text" id="buyerAddress" name='buyerAddress'/>
-                  <input type="text" id="buyerPhone" name='buyerPhone'/>
-                  <input type="text" id="amount" name='amount'/>
-                  <input type="text" id="checksum" name='checksum'/>
-                  <input type="text" value=356 name='currency'/>
-                  <input type="text" value="INR" name='isocurrency'/>
-                  <input type="text" value="pg" name='chmod'/>
-                </form>
-                </div>
-
-               <div layout="row" style="height: 60px;position: fixed-top;border-top: 1px solid #eee" layout-align="space-between center" layout-padding >
-                    <div layout="column" layout-align="center center">
-                        <i class="fa fa-home" style="color:#c02425;font-size: 25px" aria-hidden="true"></i>
-                        <span style="font-size: 12px">Home</span>
-                    </div>
-                    <div style="padding-left: 74px" layout="column" layout-align="center center">
-                        <i class="fa fa-calendar" aria-hidden="true" style="color: grey;font-size: 25px"></i>
-                        <span style="font-size: 12px">Manage</span>
-                    </div>
-                    <div>
-                        <img src="../images/logoBlack.png" alt="lunch" style="width: 80px">
-                    </div>
-               </div>
+						</form>
 
 
 
 
 
-<!--             <form name="countForm">
-                <md-card-content layout="column"  layout-padding layout-margin >
-                    <md-input-container>
-                        <md-select ng-model="weapon" placeholder="Meal Type" class="md-no-underline">
-                            <md-option value="veg">Veg</md-option>
-                            <md-option value="nonveg">Non-Veg</md-option>
-                          <md-option value="wand">Both</md-option>
-                      </md-select>
-                    </md-input-container>
-                  <md-input-container>
-                    <div layout="row" layout-align="center center">
+						<!-- payment -->
 
-                       <div><md-button class="md-raised" ng-click="iveg()">+</md-button></div>
-                        <div>
-                        <md-label class="greyfont" style="font-size: 12px">
-                          No. of veg meals
-                        </md-label>
-                          <input id="veg" class="aligncenter" type="number" value="0"></div>
-                       <div><md-button class="md-raised" ng-click="dveg()">-</md-button></div>
+						<form style="margin-bottom: 0px">
+<!-- 							<div layout="row" layout-align="center center" style="display:none">
+								<input type="text" ng-value="vmCart.userPhone" id="userPhone" class="width25"/>
+								<input type="text" ng-value="vmCart.address" id="address" class="width25"/>
+								<input type="text" ng-value="vmCart._id" id="su_id" class="width25"/>
+								<input type="text" ng-value="vmCart.total" id="total" class="width25"/>
+							</div> -->
 
-                    </div>
-                  </md-input-container>
-                  <md-input-container>
-                    <div layout="row" layout-align="center center">
+							<div layout="row" layout-align="center center">
+								<md-button ng-click="paynow()" class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;">Pay Now
+								</md-button>
+							</div>
+						</form>
+					</div>
 
-                       <div><md-button class="md-raised" ng-click="inveg()">+</md-button></div>
-                        <div>
-                        <md-label class="greyfont" style="font-size: 12px">
-                          No. of non-veg meals
-                        </md-label>
-                          <input id="nveg" class="aligncenter" type="number" value="0"></div>
-                       <div><md-button class="md-raised" ng-click="dnveg()">-</md-button></div>
 
-                    </div>
-                  </md-input-container>
-<!--                   <md-input-container>
-                  <label>Start date</label>
-                    <md-datepicker ng-model="countForm.date" name='start_date'>
-                    </md-datepicker>
-                  </md-input-container> -->
+<!-- 					<form method='POST' action='https://payments.airpay.co.in/pay/index.php' id='sendtoairpay'>
+						<div layout="row" layout-align="center center" style="display: none">
+							<input type="text" name='privatekey' id='privatekey' class="width25"/>
+							<input type="text" id="mid" name='mercid' class="width25"/>
+							<input type="text" id="orderid" name='orderid' class="width25"/>
+							<input type="text" id="buyerAddress" name='buyerAddress' class="width25"/>
+							<input type="text" id="buyerPhone" name='buyerPhone' class="width25"/>
+							<input type="text" id="amount" name='amount' class="width25"/>
+							<input type="text" id="checksum" name='checksum' class="width25"/>
+							<input type="text" value=356 name='currency' class="width25"/>
+							<input type="text" value="INR" name='isocurrency' class="width25"/>
+							<input type="text" value="pg" name='chmod' class="width25"/>
+						</div>
+					</form> -->
+				</div>
+				<!-- payment -->
 
-<!--                 <div flex layout-align="center center" layout="row">
-                  <md-content class="greyfont" style="font-size: 18px;padding-right: 50px"> Total Price: 119/-</md-content>
-                  <md-button ng-click="subscribe() " class="md-raised" style="width:120px;border-radius: 50px;background-color:#FFC300;color:white;font-size: 18px;">buy Now</md-button>
-                </div>
-            </md-card-content>
 
-        </form>-->
-    </md-card>
 
-</md-content>
+
+
+				<!-- footer -->
+				<div layout="row" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px;background-color:#c02425;height: 60px;border-top: 1px solid #eee;position: fixed;bottom:26px;width: 25%"  layout-align="space-between center" layout-padding >
+					<div layout="column" layout-align="center center">
+						<i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>
+						<span class="whitefont" style="font-size: 12px">Home</span>
+					</div>
+					<div style="padding-left: 30%" layout="column" layout-align="center center">
+						<i class="fa fa-calendar" aria-hidden="true" style="color: white;font-size: 23px"></i>
+						<span style="font-size: 12px" class="whitefont">Manage</span>
+					</div>
+					<div style="padding-left: 12%;">
+						<img src="../images/logowhite.png" alt="lunch" style="width: 80px">
+					</div>
+				</div>
+				<!-- footer -->
+			</div>       
+		</md-card>
+		<!-- right -->
+
+
+	</md-content>
 </div>
 
 <!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
