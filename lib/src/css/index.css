@@ -5,8 +5,20 @@
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
+.card-footer{
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  background-color:#c02425;
+  height: 60px;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom:54px;
+  width: 25%;
+}
 
 .md-open-menu-container.md-active{
     height: 20%;
@@ -72,7 +84,7 @@ table.md-calendar-day-header{width: 100%}
 /*  margin-left: 70px;
   margin-right: 70px;*/
   height: 40px;
-  position: absolute;
+ /* position: absolute;*/
 }
 
 .otp-otpbtn-inp{
