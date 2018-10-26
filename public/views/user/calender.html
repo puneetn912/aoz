@@ -37,8 +37,30 @@
 
     <!-- header -->
 			<div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
-				<div>
-					<i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+				<div style="padding:0px !important ">
+					<md-menu-bar style="padding: 0px ">
+			          <md-menu>
+			            <button ng-click="$mdMenu.open()">
+			              <i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+			            </button>
+			            <md-menu-content>
+			              <md-menu-item layout="column">
+			                <md-button ng-click="">
+			                  Home
+			                </md-button>
+			                <md-button ng-click="">
+			                  About us
+			                </md-button>
+			                <md-button ng-click="">
+			                  Blog
+			                </md-button>
+			                <md-button ng-click="">
+			                  Contact us
+			                </md-button>
+			              </md-menu-item>
+			            </md-menu-content>
+			          </md-menu>
+					</md-menu-bar>
 				</div>
 				<div>
 					<img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
@@ -82,29 +104,33 @@
             <div layout="row" layout-align="space-between center" layout-padding>
 
             	<div style="font-size: 12px" layout="column" layout-align="space-between center">
-            	   <div style="color: red">4 Meals Remaining
-            	     <span style="color:grey"> Out of 10 Veg meals </span>
-                   </div>
-
-<!--             	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-            	<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
-            	  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
-                </div>
-                </div>
-                <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-            	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
-            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span> -->
-
-                </div>
+	            	<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
+	            	  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
+	                </div>
+	            </div>
                 <div style="font-size: 12px" layout="column" layout-align="space-between center">
-            	   <div style="color:red">4 Meals Remaining
-            	      <span style="color: grey"> Out of 10 Veg meals </span>
-                   </div>
+	            	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
+	            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span>
+	                </div>
                 </div>
                 <div>
 					<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
                 </div>
             </div>
+
+
+<!--             	<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
+            	<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
+            	  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
+                </div>
+                </div> -->
+
+<!--                 <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
+            	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
+            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span>
+                </div> -->
+
+
 
 
             <!-- <a href="">{{vmCalender.lastVegDate}}</a> -->

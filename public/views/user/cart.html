@@ -32,8 +32,30 @@
 
             <!-- header -->
                 <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
-                    <div>
-                        <i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+                    <div style="padding:0px !important ">
+                      <md-menu-bar style="padding: 0px ">
+                            <md-menu>
+                              <button ng-click="$mdMenu.open()">
+                                <i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
+                              </button>
+                              <md-menu-content>
+                                <md-menu-item layout="column">
+                                  <md-button ng-click="">
+                                    Home
+                                  </md-button>
+                                  <md-button ng-click="">
+                                    About us
+                                  </md-button>
+                                  <md-button ng-click="">
+                                    Blog
+                                  </md-button>
+                                  <md-button ng-click="">
+                                    Contact us
+                                  </md-button>
+                                </md-menu-item>
+                              </md-menu-content>
+                            </md-menu>
+                      </md-menu-bar>
                     </div>
                     <div>
                         <img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">

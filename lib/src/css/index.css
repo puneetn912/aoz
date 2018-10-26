@@ -8,6 +8,15 @@
 }
 
 
+.md-open-menu-container.md-active{
+    height: 20%;
+    top: 18% !important;
+    left: 56.5% !important;
+}
+
+.md-menu-bar-menu.md-dense{
+  height: 78% !important;
+}
 
 
 /* For Firefox */
@@ -110,15 +119,23 @@ border-radius: 0px !important;
 }
 
 .md-calendar-scroll-mask{
-  height: 223px !important;
-  width: 338px !important ;
+  height: 266px !important;
+  width: 100% !important ;
 }
 
+
+.md-calendar{
+  width: 100% !important;
+}
 
 /*.md-calendar-date-today{
   background:#c02425 !important; 
 }*/
 
+
+.md-virtual-repeat-scroller{
+  width: 100% !important;
+}
 
 /*--------------calendar.html-----------------------*/
 
@@ -198,8 +215,8 @@ border-radius: 0px !important;
 .home-signup-btn{
   color: white !important;
   background: linear-gradient(to right, #c02425, #f0cb35);
-  padding: 5px 40px; 
-  font-size: 18px;
+  padding: 5px 60px; 
+  font-size: 26px;
   height: 60px;
   border-radius: 50px;
   padding-top: 13px;
