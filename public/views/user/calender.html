@@ -82,6 +82,7 @@
             </md-card-content>
 <!--             <md-card-content layout="column" class="pl0">
                 <md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
+
 <!-- calender -->
 
 
@@ -104,17 +105,17 @@
             <div layout="row" layout-align="space-between center" layout-padding>
 
             	<div style="font-size: 12px" layout="column" layout-align="space-between center">
-	            	<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
-	            	  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
-	                </div>
+            	   <div style="color: red">{{vmCalender.vegRem}} Meals Remaining
+            	     <span style="color:grey"> Out of {{vmCalender.totalVegCount}} Veg meals </span>
+                   </div>
 	            </div>
                 <div style="font-size: 12px" layout="column" layout-align="space-between center">
-	            	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
-	            	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span>
-	                </div>
+            	   <div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
+            	      <span style="color: grey"> Out of {{vmCalender.totalNvegCount}} NonVeg meals </span>
+                   </div>
                 </div>
                 <div>
-					<md-button class="md-raised sub-meal-btn" ng-click="" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+					<md-button class="md-raised sub-meal-btn" ng-click="addMore()" style="min-width: 40px;min-height: 40px"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
                 </div>
             </div>
 
@@ -129,7 +130,6 @@
             	<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
             	  <span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span>
                 </div> -->
-
 
 
 
@@ -179,6 +179,7 @@
                 <md-button class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" ng-click="finalSave()">Update</md-button> 
                 <md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
             </div>
+            <a href="">{{vmCalender.error}}</a>
 
         <!-- footer -->
                <div layout="row" class="card-footer"  layout-align="space-between center" layout-padding >
