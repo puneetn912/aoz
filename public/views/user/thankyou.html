@@ -30,6 +30,7 @@
 <!-- right -->
       <md-card class="card-border" flex-gt-xs="25" layout-align="center">
        <div  style="height:100%">
+
     <!-- header -->
         <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
           <div style="padding:0px !important ">
@@ -65,14 +66,17 @@
           </div>
         </div>
     <!-- header -->
-<div>
+
+
+       <div style="overflow: hidden;">
+        <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
                
-			<div layout="column" layout-align="center center"  layout-padding >
-         <img src="../images/checked.svg" widht="90px" height="90px" alt="submit"></img>
-         <h1 class="mt0 mb0">Thank You!</h1>
-         <h4 class="mt0 mb0">Order Successfull</h4>
-         <h6 class="mt0 mb0">Kindly Share your Door/ Flat No to serve you faster</h6>
-			</div>
+        		  <div layout="column" layout-align="center center"  layout-padding >
+                 <img src="../images/checked.svg" widht="90px" height="90px" alt="submit"></img>
+                 <h1 class="mt0 mb0">Thank You!</h1>
+                 <h4 class="mt0 mb0">Order Successfull</h4>
+                 <h6 class="mt0 mb0">Kindly Share your Door/ Flat No to serve you faster</h6>
+        			</div>
 
                 
  
@@ -89,7 +93,7 @@
              
                 <div layout="row" layout-align="center center" class="bt-1-s-eee">
 
-                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425">
+                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;height: 48px">
                   </md-button>
                 </div>
 
@@ -99,16 +103,17 @@
                 </div>
                 
                 <div layout="row" layout-align="space-between center" layout-padding>
-                  <md-button ng-click="" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;background-color: white;height: 47px">Help
+                  <md-button ng-click="" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;background-color: white;height: 48px;padding-top: 6px">Help
                   </md-button>
 
-                  <md-button ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 47px"">Manage
+                  <md-button ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 48px">Manage
                   </md-button>
                 </div>
                 </form>
-
-</div>
-
+        </div>
+      </div>
+      
+      <!-- footer -->
                <div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
                     <div layout="column" layout-align="center center">
                         <i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>

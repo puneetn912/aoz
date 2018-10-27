@@ -71,6 +71,9 @@
 			</div>
     <!-- header -->
 
+       <div style="overflow: hidden;">
+        <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;">
+
 <!--                <div layout="row" layout-align="center center">
 				  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
                </div> -->
@@ -177,9 +180,10 @@
 
             <div class="row" style="display: none" id='finalSubmit' align="center">
                 <md-button class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" ng-click="finalSave()">Update</md-button> 
-                <md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
             </div>
             <a href="">{{vmCalender.error}}</a>
+
+       </div>
 
         <!-- footer -->
                <div layout="row" class="card-footer"  layout-align="space-between center" layout-padding >
@@ -198,6 +202,7 @@
         <!-- footer -->
 
           </div>
+        </div>
 		</md-card>
 <!-- right -->
 

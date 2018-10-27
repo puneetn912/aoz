@@ -18316,6 +18316,14 @@ table.md-calendar-day-header{width: 100%}
   box-shadow: none !important;
 }
 
+
+@media screen and (max-height: 700px) {
+.user-card-content{margin-bottom: 0px}
+}
+@media screen and (min-height: 700px){
+.user-card-content{margin-bottom: 60px}
+}
+
 /*---------------------userdetails.html--------------------------------*/
 
 
@@ -18350,6 +18358,16 @@ table.md-calendar-day-header{width: 100%}
     min-width: 36px;
     margin: -1px;
 }
+
+
+
+@media screen and (max-height: 700px) {
+.otp-card-img{margin-top: -70px}
+}
+@media screen and (min-height: 700px){
+.otp-card-img{margin-top: 0px}
+}
+
 
 /*--------------------verify.html---------------------------------*/
 
@@ -18462,9 +18480,25 @@ border-radius: 0px !important;
   width: 150px;
   font-size: 18px;
   height: 52px;
-
-
 }
+
+
+
+@media screen and (max-height: 700px) {
+.signup-card-content{margin-bottom: 0px}
+}
+@media screen and (min-height: 700px){
+.signup-card-content{margin-bottom: 60px}
+}
+
+
+@media screen and (max-height: 700px) {
+.signup-card-form{padding-top: 0px}
+}
+@media screen and (min-height: 700px){
+.signup-card-form{padding-top: 60px}
+}
+
 
 /*----------------------signup.html---------------------------*/
 
