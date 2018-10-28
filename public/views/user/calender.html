@@ -3,8 +3,6 @@
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
 	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > <!-- style="height: -webkit-fill-available;" -->
 
-
-
 		<!-- left -->
 		<div flex-gt-xs="55" hide-xs>
 
@@ -28,8 +26,6 @@
 		</div>
 		<!-- left -->
 
-
-
 		<!-- right -->
 		<md-card class="card-border" flex-gt-xs="25" layout-align="center" style="margin-top: 6%;margin-bottom: 2%;">
 			<div id="cardContent" style="height:100%">
@@ -49,52 +45,18 @@
 				</div>
 				<!-- header -->
 
-				<!-- <div layout="row" layout-align="center center">
-				  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
-				</div> -->
-
 				<!-- calender -->
 
 				<md-card-content layout="column" class="pl0 pt0 pr0">
-					<md-calendar md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
+					<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
 				</md-card-content>
-				<!-- <md-card-content layout="column" class="pl0">
-				<md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
-				<!-- calender -->
-
-
-
-
-
-				<!-- ccount -->
-
-				<!--<div align="center">
-					Total Meal count :
-					<div layout='row' layout-align='space-around center'>
-						<label for="">veg : {{vmCalender.vegCount}}</label>
-						<label for="">Nonveg : {{vmCalender.nonvegCount}}</label>
-					</div>
-				</div><br> -->
-
-				<!-- count -->
-
-
+	
 				<div layout="row" layout-align="space-between center" layout-padding>
 
 					<div style="font-size: 12px" layout="column" layout-align="space-between center">
 						<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
 							<span style="color:grey"> Out of {{vmCalender.totalVegCount}} Veg meals </span>
 						</div>
-
-					<!-- <div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-					<div style="color: red">{{vmCalender.vegRem}} Meals Remaining
-					  <span style="color:grey"> Out of {{vmCalender.vegCount}} Veg meals </span>
-					</div>
-					</div>
-					<div class="font-weightbold" style="font-size: 12px" layout="column" layout-align="space-between center">
-					<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
-						<span style="color: grey"> Out of {{vmCalender.nonvegCount}} NVeg meals </span> -->
-
 					</div>
 					<div style="font-size: 12px" layout="column" layout-align="space-between center">
 						<div style="color:red">{{vmCalender.nvegRem}} Meals Remaining
@@ -106,11 +68,7 @@
 					</div>
 				</div>
 
-
-				<!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
 				<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
-
-
 					<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
 						<div>
 							<label class="greyfont">No. of Veg Meals</label>
@@ -147,13 +105,10 @@
 					</div>
 				</form>
 
-
-
 				<div class="row" style="display: none" id='finalSubmit' align="center">
 					<md-button class="md-raised" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" ng-click="finalSave()">Update</md-button> 
 					<md-button style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;" class="md-raised" ng-click="finalCancel()">Cancel</md-button> 
 				</div>
-				<a href="">{{vmCalender.error}}</a>
 
 				<!-- footer -->
 				<div layout="row" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px;background-color:#c02425;height: 60px;border-top: 1px solid #eee;position: fixed;bottom:26px;width: 25%"  layout-align="space-between center" layout-padding >
