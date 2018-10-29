@@ -16,8 +16,15 @@
   height: 60px;
   border-top: 1px solid #eee;
   position: fixed;
-  bottom:54px;
-  width: 25%;
+
+}
+
+@media screen and (min-width: 500px){
+  .card-footer{bottom:54px;width: 25%}
+}
+
+@media screen and (max-width: 500px){
+  .card-footer{bottom:14px;width: 96%}
 }
 
 .md-open-menu-container.md-active{
@@ -76,6 +83,11 @@ table.md-calendar-day-header{width: 100%}
 }
 @media screen and (min-height: 700px){
 .user-card-content{margin-bottom: 60px}
+}
+
+
+@media screen and (max-width: 500px){
+.user-dot{padding-top: 60px}
 }
 
 /*---------------------userdetails.html--------------------------------*/
@@ -189,6 +201,7 @@ border-radius: 0px !important;
   border-radius: 20px;min-width: 20px;min-height: 23px;color:white !important; background-color: #c02425 !important;
 }
 
+
 /*--------------------subscription.html------------------------------*/
 
 
@@ -254,6 +267,20 @@ border-radius: 0px !important;
 }
 
 
+@media screen and (max-width: 500px) {
+.signup-car-form{padding-bottom: 50px}
+}
+@media screen and (min-width: 500px){
+.signup-car-form{padding-bottom: 0px}
+}
+
+@media screen and (max-width: 500px) {
+.signup-card-img{margin-top: -45px}
+}
+@media screen and (min-width: 500px){
+.signup-card-img{margin-top: 0px}
+}
+
 /*----------------------signup.html---------------------------*/
 
 
@@ -267,6 +294,13 @@ border-radius: 0px !important;
   border-radius: 50px;
   padding-top: 13px;
 }
+
+@media screen and (max-width: 500px) {
+.home-card-content{height: 100%;padding-top: 70px;}
+}
+/*@media screen and (min-width: 500px){
+.home-card-content{height: 0px}
+}*/
 
 /*---------------------home.html----------------------------*/
 
