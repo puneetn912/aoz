@@ -76,6 +76,9 @@
 					</md-autocomplete>
 
 					<md-autocomplete style="border: 1px solid #eee;"
+                        ng-disabled="vmUserdetails.isDisabledApt"
+                        md-no-cache="true"
+                        md-input-name="apartment"
 						md-selected-item="vmUserdetails.selectedItemApt"
 						md-search-text-change="vmUserdetails.searchTextChangeApt(vmUserdetails.searchTextApt)"
 						md-search-text="vmUserdetails.searchTextApt"
@@ -93,6 +96,7 @@
 					</md-autocomplete>
 
 					<md-autocomplete style="border: 1px solid #eee;"
+                        ng-disabled="vmUserdetails.isDisabledTwr"
 						md-selected-item="vmUserdetails.selectedItemTwr"
 						md-search-text-change="vmUserdetails.searchTextChangeTwr(vmUserdetails.searchTextTwr)"
 						md-search-text="vmUserdetails.searchTextTwr"
