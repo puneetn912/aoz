@@ -1,8 +1,7 @@
 <div ng-app="cmsApp" ng-cloak>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > <!-- style="height: -webkit-fill-available;" -->
-
+	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > 
 
 
 <!-- left -->
@@ -82,7 +81,7 @@
 
 			<!-- calender -->
 			            <md-card-content layout="column" class="pl0 pt0 pr0">
-			                <md-calendar md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
+			                <md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
 			            </md-card-content>
 			<!--             <md-card-content layout="column" class="pl0">
 			                <md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
@@ -181,7 +180,7 @@
                         <span style="font-size: 12px" class="whitefont">Manage</span>
                     </div>
                     <div style="padding-left: 12%;">
-                        <img src="../images/logowhite.png" alt="lunch" style="width: 80px">
+                        <a href="https://www.dialjordan.com/" target="_blank"><img src="../images/logowhite.png" alt="logo" style="width: 80px"></a>
                     </div>
                </div>
         <!-- footer -->
