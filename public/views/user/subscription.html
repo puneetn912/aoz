@@ -72,7 +72,7 @@
 			<div style="height: 142px">
 				<img src="../images/food2.jpeg" width="100%" height="142px" alt="lunch">
 			</div>
-			<div layout-padding class="aligncenter">
+			<div layout-padding class="aligncenter" style="padding-bottom: 20px">
 				<h5 class="blackffont-weight400 mt0 mb0">
 					The Description of the food will come here. Packed in a beautiful box with branding and will server
 				</h5>
@@ -80,34 +80,37 @@
 			<div>
 				<form style="margin-bottom: 0px">
 					<div layout="column">
-						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
 							<label class="pt0 pb0">Meal Time</label>
 							<input type="text" name="" value="Dinner" disabled="true" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right">  
 						</div>
-						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
+						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 							<label class="pt0 pb0">Meal Type</label>
-							<select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" >
+							<select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none">
+								<option>Select</option>
 								<option>Veg</option>
 								<option>Non Veg</option>
 								<option>Both</option>
 							</select>
 						</div>
-						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
+						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 							<div>
 								<label class="greyfont">No. of Veg Meals</label>
 							</div>
                             <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled style="border:none ">
+                            	<option>select</option>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
                                 <option value="30">30</option>
                             </select>
 						</div>
-						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
+						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 							<div>
 								<label class="greyfont">No. of non Veg Meals</label>
 							</div>
                             <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled style="border:none">
+                            	<option>select</option>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -115,7 +118,7 @@
                             </select>
 						</div>
 						
-						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee">
+						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
 							<label class="pt0 pb0">Total Price :</label>
 							<input type="number" name="" id="total" value="0" disabled="true" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
 						</div>

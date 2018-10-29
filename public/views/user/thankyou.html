@@ -71,34 +71,34 @@
        <div style="overflow: hidden;">
         <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
                
-        		  <div layout="column" layout-align="center center"  layout-padding >
+        		  <div layout="column" layout-align="center center"  layout-padding style="padding-top: 60px">
                  <img src="../images/checked.svg" widht="90px" height="90px" alt="submit"></img>
-                 <h1 class="mt0 mb0">Thank You!</h1>
-                 <h4 class="mt0 mb0">Order Successfull</h4>
-                 <h6 class="mt0 mb0">Kindly Share your Door/ Flat No to serve you faster</h6>
+                 <h1 class="mt0 mb0 pb0 font-weightbold" style="color: #c02425;letter-spacing: 3px">Thank You!</h1>
+                 <h4 class="mt0 mb0 pt0" style="letter-spacing: 1px">Order Successfull</h4>
+                 <h6 class="mt0 mb0" style="letter-spacing: 1px;padding-top: 20px">Kindly Share your Door/ Flat No to serve you faster</h6>
         			</div>
 
                 
  
                  <form>
-	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;">
+	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;padding:12px 8px; ">
                         <label class="pt0 pb0">Door/Flat No :</label>
                         <input type="text" name="" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
                 </div>
 
-	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;">
+	                <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;padding: 12px 8px ">
                   <label class="pt0 pb0">Name :</label>
                       <input type="text" name="" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
                 </div>
              
-                <div layout="row" layout-align="center center" class="bt-1-s-eee">
+                <div layout="row" layout-align="center center" class="bt-1-s-eee" style="padding-top: 15px">
 
-                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;height: 48px">
+                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
                   </md-button>
                 </div>
 
                 
-                <div layout-padding>
+<!--                 <div layout-padding>
                 <h5 class="mb0 mt0">Click on the bellow button to manage subscription calender</h5>
                 </div>
                 
@@ -108,7 +108,7 @@
 
                   <md-button ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 48px">Manage
                   </md-button>
-                </div>
+                </div> -->
                 </form>
         </div>
       </div>
