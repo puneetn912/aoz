@@ -1,3 +1,55 @@
+// dialog code
+
+// console.log(currTd,'currTd')
+            // if(currTd.class != 'md-calendar-date md-calendar-date-disabled'){
+            //     $mdDialog.show({
+                    
+            //         parent: angular.element(document.getElementById('cardContent')),
+            //         template: `<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
+            //                 <div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
+            //                     <div>
+            //                         <label class="greyfont">No. of Veg Meals</label>
+            //                     </div>
+            //                     <div layout="row" layout-align="center center" class="pt0 pb0">
+            //                         <div>
+            //                             <md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+            //                         </div>
+            //                         <div>
+            //                             <input readonly id="calveg" class="aligncenter width35 border-none" type="number" value="${vmCalender.dayVegCount}">
+            //                         </div>
+            //                         <div>
+            //                             <md-button class="md-raised sub-meal-btn" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+                            
+            //                 <div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee">
+            //                     <div>
+            //                         <label class="greyfont">No. of non Veg Meals</label>
+            //                     </div>
+            //                     <div layout="row" layout-align="center center" class="pt0 pb0">
+            //                         <div>
+            //                             <md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+            //                         </div>
+            //                         <div>
+            //                             <input readonly id="calnveg" class="aligncenter width35 border-none" type="number" value="${vmCalender.dayNonvegCount}">
+            //                         </div>
+            //                         <div>
+            //                             <md-button class="md-raised sub-meal-btn" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+            //     </form>`,
+            //         locals:{},
+            //         scope:$scope,
+            //         controller: calenderController
+            //     });
+            // }
+
+
+
+
+
 //------------------------------------------------------------------------------------------------ Create controller with autocomplete
 
     // /* Code generator by Bharath */

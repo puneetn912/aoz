@@ -1,6 +1,9 @@
 <div ng-app="cmsApp" ng-cloak>
     <md-content layout="row" layout-xs="column" ng-controller="thankyouController as vmThanks" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
-
+        
+        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+        </div>
 
 <!-- left -->
     <div flex-gt-xs="55" hide-xs>
@@ -93,12 +96,12 @@
              
                 <div layout="row" layout-align="center center" class="bt-1-s-eee">
 
-                  <md-button ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;height: 48px">
+                  <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;height: 48px">
                   </md-button>
                 </div>
 
                 
-                <div layout-padding>
+                <!-- <div layout-padding>
                 <h5 class="mb0 mt0">Click on the bellow button to manage subscription calender</h5>
                 </div>
                 
@@ -106,9 +109,9 @@
                   <md-button ng-click="" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;color:#c02425;font-size: 18px;margin: 19px 0px;border:1px solid #c02425;background-color: white;height: 48px;padding-top: 6px">Help
                   </md-button>
 
-                  <md-button ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 48px">Manage
+                  <md-button id="calendarBtn" ng-click="calendar()" class="md-raised mt0 mb0" style="width:120px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;margin: 19px 0px;height: 48px">Manage
                   </md-button>
-                </div>
+                 --></div>
                 </form>
         </div>
       </div>
