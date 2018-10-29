@@ -85,6 +85,11 @@ table.md-calendar-day-header{width: 100%}
 .user-card-content{margin-bottom: 60px}
 }
 
+
+@media screen and (max-width: 500px){
+.user-dot{padding-top: 60px}
+}
+
 /*---------------------userdetails.html--------------------------------*/
 
 
@@ -269,10 +274,10 @@ border-radius: 0px !important;
 }
 
 @media screen and (max-width: 500px) {
-.abc{margin-top: -45px}
+.signup-card-img{margin-top: -45px}
 }
 @media screen and (min-width: 500px){
-.abc{margin-top: 0px}
+.signup-card-img{margin-top: 0px}
 }
 
 /*----------------------signup.html---------------------------*/
