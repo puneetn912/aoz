@@ -9,19 +9,19 @@
     <div flex-gt-xs="55" hide-xs>
 
        <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-        <div style="padding-left: 5%">
-          <img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+        <div style="margin-top: -5%">
+          <img src="../images/logo.png" width="150px" height="150px" class="md-card-image" alt="image caption">
         </div>
-        <div style="padding-left: 5%;margin-top: -72px">
-          <ul>
-            <li class="font20 greyfont">Healthy Home Style Meal</li>
-            <li class="font20 greyfont">Free Delivery at your doorstep</li>
-            <li class="font20 greyfont">Different Cuisine Everyday</li>
-            <li class="font20 greyfont">No More Kitchen Hassles</li>
-            <li class="font20 greyfont">No Repeat for 30 days</li>
-          </ul>
-          <h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
-          <h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+        <div style="margin-left: 5%">
+          <h1 class="home-left-h1">Healthy Home Style Meal</h1>
+          <h1 class="home-left-h1">Free Delivery at your doorstep</h1>
+          <h1 class="home-left-h1">Different Cuisine Everyday</h1>
+          <h1 class="home-left-h1">No More Kitchen Hassles</h1>
+          <h1 class="home-left-h1">No Repeat for 30 days</h1>
+            </div>
+            <div style="margin-left: 5%">
+              <h4 class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-, organize your schedule </h4>
+              <h4 class="home-left-h4">No more kitchen hassles, Free home delivery</h4>
         </div>
        </div>
     
@@ -81,13 +81,13 @@
     			</div>
  
           <form>
-            <div id="doorInp" layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;padding:12px 8px;display: block">
+            <div id="doorInp" layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding:12px 8px;display: block">
                 <label class="pt0 pb0">Door/Flat No :</label>
-                <input type="text" name="" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+                <input type="text" name="" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none">  
             </div>
-            <div id='nameInp' layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="border-top: 1px solid #eee;padding: 12px 8px;display: block ">
+            <div id='nameInp' layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: block ">
             <label class="pt0 pb0">Name :</label>
-                <input type="text" name="" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+                <input type="text" name="" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none">  
             </div>
             <div layout="row" layout-align="center center" class="bt-1-s-eee" style="padding-top: 15px">
               <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:180px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
