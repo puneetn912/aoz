@@ -70,6 +70,12 @@
 
               	<input class="otp-otpbtn-inp" placeholder="OTP" maxlength="4" required type="text" id='otp' name="otp" ng-model="vmVerify.Otp" style="outline: none;"/>
               	<md-button id="verifyOtp" class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)"><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
+
+                <md-button id="resendOtp" class="md-raised md-warn" ng-click="resendOtp()">Resend OTP</md-button>
+                <br>
+                <a id="resendMsg"></a>
+                <!-- <a ng-bind="<%= vm %>.titleErr" ng-model="<%= vm %>.titleErr" style='color:red'></a> -->
+
               </div>
             </div>
 			</form>
