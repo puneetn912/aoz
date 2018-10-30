@@ -1,6 +1,9 @@
 <div ng-app="cmsApp" ng-cloak>
 	<md-content style="height:100%;background-image: url(../images/screen1.jpg);" layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak>
 
+        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+        </div>
 
 
 <!-- left -->
@@ -25,8 +28,8 @@
 		
 		</div>
 <!-- left -->
-
-
+        
+        
 <!-- right -->
 		<md-card class="card-border" flex-gt-xs="25" layout-align="center">
 		<md-card-content style="height: 100%">
@@ -70,6 +73,7 @@
 					</div>
 					<div layout="row" layout-align="center center">
 					<md-button 
+                    id="sendOTP"
 					class="md-raised signup-submit-btn letter-space1" 
 					ng-click="sendOtp(userForm)"
                     id='submit' 
