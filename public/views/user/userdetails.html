@@ -95,7 +95,7 @@
 						</md-not-found>
 					</md-autocomplete>
 
-					<md-autocomplete style="border: 1px solid #eee;"
+					<!-- <md-autocomplete style="border: 1px solid #eee;"
                         ng-disabled="vmUserdetails.isDisabledTwr"
 						md-selected-item="vmUserdetails.selectedItemTwr"
 						md-search-text-change="vmUserdetails.searchTextChangeTwr(vmUserdetails.searchTextTwr)"
@@ -111,7 +111,8 @@
 						<md-not-found>
 							No states matching "{{vmUserdetails.searchTextTwr}}" were found.
 						</md-not-found>
-					</md-autocomplete>
+					</md-autocomplete> -->
+                    <input type="text" name="towerName" ng-model="vmUserdetails.tower" ng-disabled="vmUserdetails.isDisabledTwr">
 				  </div>
 
                   <div layout="row" layout-align="center center" class="pt20">

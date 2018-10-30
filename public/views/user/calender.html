@@ -80,11 +80,9 @@
 
 
 			<!-- calender -->
-                        <form id="death" ng-disabled="true">
 			            <md-card-content layout="column" class="pl0 pt0 pr0 pb0">
-			                <md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)"></md-calendar>
+			                <md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
 			            </md-card-content>
-                        </form>
 			<!--             <md-card-content layout="column" class="pl0">
 			                <md-calendar ng-model="vmCalender.currDate" md-min-date="vmCalender.currDate" md-max-date="vmCalender.threeMahead"  ng-click="some(startDate)"></md-calendar>
 
@@ -164,9 +162,12 @@
 
 
 
-            <div class="row" style="display: none" id='finalSubmit' align="center">
+            <div class="row" style="display: block" id='finalSubmit' align="center">
                 <md-button class="md-raised" style="width:180px;border-radius: 50px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;font-size: 18px;height: 45px;letter-spacing: 3px;padding-top: 2px " ng-click="finalSave()">Update</md-button> 
+                <md-button class="md-raised" style="background: linear-gradient(to right, #c02425, #f0cb35);" ng-click="showMenu()">Menu</md-button> 
             </div>
+
+
             <a href="">{{vmCalender.error}}</a>
 
        </div>
