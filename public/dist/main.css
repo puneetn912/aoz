@@ -18246,14 +18246,28 @@ md-toolbar {
 /* End of File */
 
 
-.card-border{
+
+@media screen and (min-width: 500px){
+  .card-border{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top: 4%;
     margin-bottom: 4%;
+  }
 }
+@media screen and (max-width: 500px){
+  .card-border{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin:0px;
+  }
+}
+
+
 
 .card-footer{
   border-bottom-left-radius:15px;
@@ -18270,7 +18284,7 @@ md-toolbar {
 }
 
 @media screen and (max-width: 500px){
-  .card-footer{bottom:14px;width: 96%}
+  .card-footer{bottom:0px;width: 100%}
 }
 
 .md-open-menu-container.md-active{
@@ -18531,6 +18545,34 @@ border-radius: 0px !important;
 }
 
 
+.home-signup-btn{
+  color: #CE362C !important;
+  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  /*padding: 5px 60px; */
+  font-size: 18px;
+  height: 52px;
+  border-radius: 50px;
+  padding-top: 8px;
+  width: 150px;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+}
+
+
+.sub-buynow-btn{
+width:150px;
+border-radius: 50px;
+color: #CE362C !important;
+font-size: 18px;
+/*margin: 19px 0px;*/
+height: 52px;
+letter-spacing: 1px;
+background-color: white !important;
+border: 1px solid #DE772E;
+}
+
 
 .subscribe-select-type {position:relative}
 .subscribe-select-type:after {
@@ -18611,13 +18653,18 @@ select{
      margin-right: 30px;
 }
 
+
+
 .signup-submit-btn{
-  color: white !important;
-  background: linear-gradient(to right, #c02425, #f0cb35);
+  color: #CE362C !important;
+  background-color: white !important;
   border-radius: 50px;
   width: 150px;
   font-size: 18px;
   height: 52px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #DE772E;
 }
 
 
@@ -18654,6 +18701,46 @@ select{
 
 /*----------------------signup.html---------------------------*/
 
+
+
+/*---------------cart.html-----------------------*/
+
+.cart-pay-btn{
+  width:150px;
+  border-radius: 50px;
+  font-size: 18px;
+ /* margin: 19px 0px;*/
+  height: 52px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+}
+
+
+
+/*-----------------cart.html------------------------------*/
+
+
+
+/*-------------------thankyou.html---------------------------------*/
+
+.thank-manage-btn{
+  width:150px;
+  border-radius: 50px;
+  font-size: 18px;
+/*  margin: 19px 0px;*/
+  height: 52px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+
+}
+
+/*--------------------thankyou.html--------------------------------------*/
 
 /*-----------------home.html--------------------------*/
 .home-signup-btn{
@@ -18695,6 +18782,9 @@ select{
 
 
 /*---------------------home.html----------------------------*/
+
+
+
 
 
 /* Code generator by Bharath */
