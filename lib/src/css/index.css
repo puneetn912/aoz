@@ -161,14 +161,32 @@ md-autocomplete input:not(.md-input) {
 
 /*--------------calendar.html----------------------*/
 
-
 .calendar-update-btn{
-  width:180px;
+  background-color: white !important;
+  width:150px;
   border-radius: 50px;
-  color:white;font-size: 18px;
-  height: 45px;
+  color: #CE362C !important;
+  font-size: 18px;
+  height: 52px;
   letter-spacing:3px;
-  padding-top: 2px; 
+  padding-top: 2px;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+}
+
+.calendar-menu-btn{
+  background-color: white !important;
+  width:150px;
+  border-radius: 50px;
+  color: #CE362C !important;
+  font-size: 18px;
+  height: 52px;
+  letter-spacing:3px;
+  padding-top: 2px;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
 }
 
 
