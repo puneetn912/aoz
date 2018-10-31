@@ -58,7 +58,7 @@
 
 			<form name="userForm">
 				<div layout="column" class="pt20">
-					<md-autocomplete style="border: 1px solid #eee;"
+					<!-- <md-autocomplete style="border: 1px solid #eee;"
 			            md-selected-item="vmUserdetails.selectedItemPin"
 			            md-search-text-change="vmUserdetails.searchTextChangePin(vmUserdetails.searchTextPin)"
 			            md-search-text="vmUserdetails.searchTextPin"
@@ -73,7 +73,7 @@
 						<md-not-found>
 							No states matching "{{vmUserdetails.searchTextPin}}" were found.
 						</md-not-found>
-					</md-autocomplete>
+					</md-autocomplete> -->
 
 					<md-autocomplete style="border: 1px solid #eee;"
                         ng-disabled="vmUserdetails.isDisabledApt"
@@ -95,7 +95,7 @@
 						</md-not-found>
 					</md-autocomplete>
 
-					<!-- <md-autocomplete style="border: 1px solid #eee;"
+					<md-autocomplete style="border: 1px solid #eee;"
                         ng-disabled="vmUserdetails.isDisabledTwr"
 						md-selected-item="vmUserdetails.selectedItemTwr"
 						md-search-text-change="vmUserdetails.searchTextChangeTwr(vmUserdetails.searchTextTwr)"
@@ -109,10 +109,11 @@
 							<span md-highlight-text="vmUserdetails.searchTextTwr" md-highlight-flags="^i">{{item}}</span>
 						</md-item-template>
 						<md-not-found>
-							No states matching "{{vmUserdetails.searchTextTwr}}" were found.
+							Not found.
+                            <md-button ng-click="vmUserdetails.newStateTwr(vmUserdetails.searchTextTwr)" class="md-raised md-primary">Create new?</md-button>
 						</md-not-found>
-					</md-autocomplete> -->
-                    <input type="text" name="towerName" ng-model="vmUserdetails.tower" ng-disabled="vmUserdetails.isDisabledTwr">
+					</md-autocomplete>
+                    <!-- <input type="text" name="towerName" ng-model="vmUserdetails.tower" ng-disabled="vmUserdetails.isDisabledTwr"> -->
 				  </div>
 
                   <div layout="row" layout-align="center center" class="pt20">

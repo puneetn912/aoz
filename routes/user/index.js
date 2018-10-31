@@ -59,6 +59,9 @@ router.post('/getAllLocality',localityController.getAll)
 
 // apartment
 router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
+router.post('/getAllApt',apartmentController.getAll)
+router.post('/updateApt/:id',apartmentController.update)
+router.post('/addTwr/:id',apartmentController.addTwr)
 
 // user
 router.post('/createUser',userController.createUser)
