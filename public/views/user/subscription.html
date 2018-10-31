@@ -9,19 +9,19 @@
 		<div flex-gt-xs="55" hide-xs>
 
 		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-		   	<div style="padding-left: 5%">
-		   		<img src="../images/logo.png" width="300px" height="300px" class="md-card-image" alt="image caption">
+		   	<div style="margin-top: -5%;margin-bottom: -45px;padding-left: 0px">
+		   		<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
 		   	</div>
-		   	<div style="padding-left: 5%;margin-top: -72px">
-		   		<ul>
-		   			<li class="font20 greyfont">Healthy Home Style Meal</li>
-		   			<li class="font20 greyfont">Free Delivery at your doorstep</li>
-		   			<li class="font20 greyfont">Different Cuisine Everyday</li>
-		   			<li class="font20 greyfont">No More Kitchen Hassles</li>
-		   			<li class="font20 greyfont">No Repeat for 30 days</li>
-		   		</ul>
-		   		<h1 class="greyfont font25">Veg Meal Box @ <span style="color: black">&#8377 99</span></h1>
-		   		<h1 class="greyfont font25">Non Veg Meal Box @ <span style="color: black">&#8377 119</span></h1>
+		   	<div style="margin-left: 5%">
+	   			<h1 class="home-left-h1">Healthy Home Style Meal</h1>
+	   			<h1 class="home-left-h1">Free Delivery at your doorstep</h1>
+	   			<h1 class="home-left-h1">Different Cuisine Everyday</h1>
+	   			<h1 class="home-left-h1">No More Kitchen Hassles</h1>
+	   			<h1 class="home-left-h1">No Repeat for 30 days</h1>
+            </div>
+            <div style="margin-left: 5%">
+            	<h4 class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-, organize your schedule </h4>
+            	<h4 class="home-left-h4">No more kitchen hassles, Free home delivery</h4>
 		   	</div>
 		   </div>
 		
@@ -88,10 +88,10 @@
 							<label class="pt0 pb0">Meal Time</label>
 							<input type="text" name="" value="Dinner" disabled="true" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right">  
 						</div>
-						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
+						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee subscribe-select-type" style="padding: 4px 8px">
 							<label class="pt0 pb0">Meal Type</label>
-							<select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none">
-								<option>Select</option>
+							<select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" style="width: 30%">
+								<option value="" disabled style="padding-right: 3px">- Select -</option>
 								<option>Veg</option>
 								<option>Non Veg</option>
 								<option>Both</option>
@@ -101,25 +101,29 @@
 							<div>
 								<label class="greyfont">No. of Veg Meals</label>
 							</div>
-                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled style="border:none ">
-                            	<option>select</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                            </select>
+							<div class="subscribe-select-meal" style="margin-right: -9px ">
+	                            <select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled style="border:none ;width: 60px">
+	                            	<!-- <option value="" disabled >0</option> -->
+	                                <option value="5">5</option>
+	                                <option value="10">10</option>
+	                                <option value="20">20</option>
+	                                <option value="30">30</option>
+	                            </select>
+                            </div>
 						</div>
 						<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 							<div>
 								<label class="greyfont">No. of non Veg Meals</label>
 							</div>
-                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled style="border:none">
-                            	<option>select</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                            </select>
+							<div class="subscribe-select-meal" style="margin-right: -9px">
+	                            <select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled style="border:none;width: 60px">
+	                            	<!-- <option value="" disabled >0</option> -->
+	                                <option value="5">5</option>
+	                                <option value="10">10</option>
+	                                <option value="20">20</option>
+	                                <option value="30">30</option>
+	                            </select>
+                            </div>
 						</div>
 						
 						<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">

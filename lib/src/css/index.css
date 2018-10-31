@@ -90,6 +90,27 @@ table.md-calendar-day-header{width: 100%}
 .user-dot{padding-top: 60px}
 }
 
+md-autocomplete {
+    border-radius: 2px;
+    display: block;
+    height: 50px !important;
+    position: relative;
+    overflow: visible;
+    min-width: 190px;
+}
+
+md-autocomplete input:not(.md-input) {
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: white;
+    width: 100%;
+    padding: 0 15px;
+    line-height: 40px;
+    height: 50px;
+}
 /*---------------------userdetails.html--------------------------------*/
 
 
@@ -162,7 +183,7 @@ border-radius: 0px !important;
 
 .md-calendar-scroll-mask{
   height: 266px !important;
-  width: 100% !important ;
+  width: 96% !important ;
 }
 
 
@@ -177,6 +198,39 @@ border-radius: 0px !important;
 
 .md-virtual-repeat-scroller{
   width: 100% !important;
+}
+
+.md-calendar-date:first-child{
+  padding-left: 10px !important;
+}
+
+
+
+@media screen and (max-height: 700px) {
+.calender-left-h1{font-size: 20px;font-weight: bold;line-height: 1.1;display: list-item;list-style-position: inside;}
+}
+@media screen and (min-height: 700px){
+.calender-left-h1{font-size: 25px;font-weight: bold;line-height: 1.1;display: list-item;list-style-position: inside;}
+}
+
+@media screen and (max-height: 700px) {
+.calender-left-h4{font-size: 15px;font-weight: bold}
+}
+@media screen and (min-height: 700px){
+.calender-left-h4{font-size: 18px;font-weight: bold}
+}
+
+
+@media screen and (max-height: 700px){
+.calender-left-div{margin-top:-30px;}
+}
+
+
+@media screen and (min-height: 700px){
+.calender-left-h4-2{margin-top:-12px;font-size: 18px;font-weight: bold}
+}
+@media screen and (max-height: 700px){
+.calender-left-h4-2{margin-top:-12px;font-size: 15px;font-weight: bold}
 }
 
 /*--------------calendar.html-----------------------*/
@@ -202,6 +256,48 @@ border-radius: 0px !important;
 }
 
 
+
+.subscribe-select-type {position:relative}
+.subscribe-select-type:after {
+    content:"\f078";   
+    font-family: "FontAwesome";
+    font-size: 14px;
+    color:#aaa;
+    right:12px; top:14px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.subscribe-select-meal {position:relative}
+.subscribe-select-meal:after {
+    content:"\f078";   
+    font-family: "FontAwesome";
+    font-size: 14px;
+    color:#aaa;
+    right:12px; top:12px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+
+
+/*.abc:before {
+    content:'';
+    right:4px; top:0px;
+    width:23px; height:18px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+}*/
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 /*--------------------subscription.html------------------------------*/
 
 
@@ -288,11 +384,12 @@ border-radius: 0px !important;
 .home-signup-btn{
   color: white !important;
   background: linear-gradient(to right, #c02425, #f0cb35);
-  padding: 5px 60px; 
-  font-size: 26px;
-  height: 60px;
+  /*padding: 5px 60px; */
+  font-size: 18px;
+  height: 52px;
   border-radius: 50px;
-  padding-top: 13px;
+  padding-top: 8px;
+  width: 150px
 }
 
 @media screen and (max-width: 500px) {
@@ -301,6 +398,22 @@ border-radius: 0px !important;
 /*@media screen and (min-width: 500px){
 .home-card-content{height: 0px}
 }*/
+
+@media screen and (max-height: 700px) {
+.home-left-h1{font-size: 20px;display: list-item;list-style-position: inside;}
+}
+@media screen and (min-height: 700px){
+.home-left-h1{font-size: 25px;display: list-item;list-style-position: inside;}
+}
+
+
+@media screen and (max-height: 700px) {
+.home-left-h4{font-size: 15px}
+}
+@media screen and (min-height: 700px){
+.home-left-h4{font-size: 18px}
+}
+
 
 /*---------------------home.html----------------------------*/
 
@@ -334,17 +447,17 @@ body {
 .material-label.mdl-badge.veg[data-badge]::after{
   font-size: .3em;
   width: 2.3em;
-  height: 2em;
+  height: 1.5em;
   background-color: green;
   margin-right: 20px!important;
 }
 .material-icons.mdl-badge.nonveg[data-badge]::after,
 .material-label.mdl-badge.nonveg[data-badge]::after{
   font-size: .3em;
-  width: 2.5em;
-  height: 2em;
+  width: 2.4em;
+  height: 1.5em;
   background-color: brown;
-  margin-right: -2px !important;
+  margin-right: -1px !important;
 }
 /*.mdl-badge[data-badge]:after*/
 .material-icons.mdl-badge[data-badge]::after {
