@@ -33,42 +33,7 @@
 <!-- right -->
       <md-card class="card-border" flex-gt-xs="25" layout-align="center">
        <div  style="height:100%">
-
-    <!-- header -->
-        <div layout="row" layout-align="space-between center" layout-padding class="c02425bgcolor height60" style="border-top-left-radius: 15px;border-top-right-radius: 15px">
-          <div style="padding:0px !important ">
-            <md-menu-bar style="padding: 0px ">
-                  <md-menu>
-                    <button ng-click="$mdMenu.open()">
-                      <i class="fa fa-bars" style="color: white;font-size: 23px" aria-hidden="true"></i>
-                    </button>
-                    <md-menu-content>
-                      <md-menu-item layout="column">
-                        <md-button ng-click="">
-                          Home
-                        </md-button>
-                        <md-button ng-click="">
-                          About us
-                        </md-button>
-                        <md-button ng-click="">
-                          Blog
-                        </md-button>
-                        <md-button ng-click="">
-                          Contact us
-                        </md-button>
-                      </md-menu-item>
-                    </md-menu-content>
-                  </md-menu>
-            </md-menu-bar>
-          </div>
-          <div>
-            <img src="../images/white-logo.png" width="100px" height="100px" alt="white-logo">
-          </div>
-          <div>
-            <img src="../images/lunch-white.png" width="25px" height="25px" alt="lunch">
-          </div>
-        </div>
-    <!-- header -->
+        <ng-include src="'views/user/includes/header.html'"></ng-include>
 
 
       <div style="overflow: hidden;">
@@ -121,23 +86,8 @@
         </div>
       </div>
       
-      <!-- footer -->
-               <div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
-                    <div layout="column" layout-align="center center">
-                        <i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>
-                        <span class="whitefont" style="font-size: 12px">Home</span>
-                    </div>
-                    <div style="padding-left: 30%" layout="column" layout-align="center center">
-                        <i class="fa fa-calendar" aria-hidden="true" style="color: white;font-size: 23px"></i>
-                        <span style="font-size: 12px" class="whitefont">Manage</span>
-                    </div>
-                    <div style="padding-left: 12%;">
-                        <img src="../images/logowhite.png" alt="lunch" style="width: 80px">
-                    </div>
-                  
-               </div>
-
-        <!-- footer -->
+        <ng-include src="'views/user/includes/footer.html'"></ng-include>
+        
     </md-card>
 <!-- right -->
 
