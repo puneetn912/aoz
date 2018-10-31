@@ -9,8 +9,8 @@
     <div flex-gt-xs="55" hide-xs>
 
        <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-        <div style="margin-top: -5%">
-          <img src="../images/logo.png" width="150px" height="150px" class="md-card-image" alt="image caption">
+        <div style="margin-top: -5%;margin-bottom: -45px;padding-left: 0px">
+          <img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
         </div>
         <div style="margin-left: 5%">
           <h1 class="home-left-h1">Healthy Home Style Meal</h1>
@@ -79,21 +79,45 @@
              <h4 class="mt0 mb0 pt0" style="letter-spacing: 1px">Order Successfull</h4>
              <h6 class="mt0 mb0" style="letter-spacing: 1px;padding-top: 20px">Kindly Share your Door/ Flat No to serve you faster</h6>
     			</div>
- 
+
           <form>
-            <div id="doorInp" layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding:12px 8px;display: block">
-                <label class="pt0 pb0">Door/Flat No :</label>
-                <input type="text" name="" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none">  
-            </div>
-            <div id='nameInp' layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: block ">
-            <label class="pt0 pb0">Name :</label>
-                <input type="text" name="" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none">  
-            </div>
-            <div layout="row" layout-align="center center" class="bt-1-s-eee" style="padding-top: 15px">
-              <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:180px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
-              </md-button>
-            </div>
+              <div id="doorInp" layout="row" layout-align="center">
+                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none" type="text" value="Door/Flat No :" disabled>
+                <input ng-model="vmThanks.doorNo" typr="text" placeholder="Door No" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center;border-bottom: none" class="font-weightbold">
+              </div>
+
+              <div id='nameInp' layout="row" layout-align="center">
+                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none" type="text" value="Name :" disabled>
+                <input ng-model="vmThanks.userName" typr="text" placeholder="Name" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center;border-bottom: none" class="font-weightbold">
+              </div>
+
+              <div id="" layout="row" layout-align="center">
+                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%" type="text" value="Email Id :" disabled>
+                <input typr="text" placeholder="Email Id" style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center" class="font-weightbold">
+              </div>
+              <div layout="row" layout-align="center center" style="padding-top: 15px">
+                <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:180px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
+                </md-button>
+              </div>
           </form>
+ 
+
+
+          <!--           <form>
+                      <div id="doorInp" layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding:12px 8px;display: block">
+                          <label for="drno" class="pt0 pb0">Door/Flat No :</label>
+                          <input type="text" name="drno" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none"/>  
+                      </div>
+                      <div id='nameInp' layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: block ">
+                      <label for="uname" class="pt0 pb0">Name :</label>
+                          <input type="text" name="uname" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none">  
+                      </div>
+                      <div layout="row" layout-align="center center" class="bt-1-s-eee" style="padding-top: 15px">
+                        <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:180px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
+                        </md-button>
+                      </div>
+                    </form> -->
+
         </div>
       </div>
       
