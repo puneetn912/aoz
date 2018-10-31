@@ -161,10 +161,21 @@ md-autocomplete input:not(.md-input) {
 
 /*--------------calendar.html----------------------*/
 
-.calender-count-btn{
+
+.calendar-update-btn{
+  width:180px;
+  border-radius: 50px;
+  color:white;font-size: 18px;
+  height: 45px;
+  letter-spacing:3px;
+  padding-top: 2px; 
+}
+
+
+/*.calender-count-btn{
     min-height: 15px !important;
     min-width: 25px !important;
-}
+}*/
 
 
 .md-calendar-date-selection-indicator {
