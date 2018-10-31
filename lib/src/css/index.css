@@ -22,25 +22,6 @@
 }
 
 
-
-.card-footer{
-  border-bottom-left-radius:15px;
-  border-bottom-right-radius:15px;
-  background-color:#c02425;
-  height: 60px;
-  border-top: 1px solid #eee;
-  position: fixed;
-
-}
-
-@media screen and (min-width: 500px){
-  .card-footer{bottom:54px;width: 25%}
-}
-
-@media screen and (max-width: 500px){
-  .card-footer{bottom:0px;width: 100%}
-}
-
 .md-open-menu-container.md-active{
     height: 20%;
     top: 18% !important;
@@ -126,6 +107,54 @@ md-autocomplete input:not(.md-input) {
     height: 50px;
 }
 /*---------------------userdetails.html--------------------------------*/
+
+
+
+
+/*---------------------header.html-------------------------*/
+@media screen and (max-width: 500px){
+.header-border{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+}
+
+@media screen and (min-width: 500px){
+.header-border{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+}
+/*-----------------------header.html------------------------------*/
+
+
+
+/*---------------------footer.html-------------------------*/
+
+.card-footer{
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  background-color:#c02425;
+  height: 60px;
+  border-top: 1px solid #eee;
+  position: fixed;
+}
+
+@media screen and (min-width: 500px){
+.card-footer{bottom:54px;
+  width: 25%;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;}
+}
+
+@media screen and (max-width: 500px){
+  .card-footer{bottom:0px;width: 100%; 
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;}
+}
+/*-----------------------footer.html------------------------------*/
+
+
 
 
 
