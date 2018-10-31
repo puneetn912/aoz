@@ -1,21 +1,39 @@
 <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
     <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">DIALJORDAN</h1>
+        <h1 class="md-toolbar-tools">DJFRESH <md-button ng-click="vmPage.close()" style="position: fixed;right: 0px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button></h1>
+        
     </md-toolbar>
     <md-content>
-        <div layout="column">  
-            <md-button ng-click="vmPage.close()" class="md-primary" hide-gt-md>Close Menu</md-button>
-            <!-- <md-button class="md-raised" aria-label="locality" href="/admin/localities">Locality</md-button>   -->
-            <md-button class="md-raised" aria-label="caterer" href="/admin/caterers">Caterer</md-button>
-            <md-button class="md-raised" aria-label="apartment" href="/admin/apartments">Apartment</md-button> 
-            <md-button class="md-raised" aria-label="user" href="/admin/users">User</md-button> 
-            <md-button class="md-raised" aria-label="subscription" href="/admin/subscriptions">Subscription</md-button>
-            <md-button class="md-raised" aria-label="menu" href="/admin/vegmenus">VEG Menu</md-button>
-            <md-button class="md-raised" aria-label="menu" href="/admin/nonvegmenus">Non Veg Menu</md-button>
-            <md-button class="md-raised" aria-label="notification" href="/admin/notifications">Notification</md-button>
-            <md-button class="md-raised" aria-label="payment" href="/admin/payments">Payment</md-button>
-            <md-button class="md-raised" aria-label="calender" href="/admin/calenders">Calender</md-button>
-            <md-button class="md-raised" aria-label="logout" href="/logout">Logout</md-button>
-        </div>
-    </md-content>
+      <md-list flex>
+        <a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+            FAQ’s
+        </md-list-item></a>
+        <md-divider ></md-divider>
+        
+        <a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
+            Terms & Conditions
+        </md-list-item></a>
+        <md-divider ></md-divider>
+        
+        <a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
+            Cancellation Policy
+        </md-list-item></a>
+        <md-divider ></md-divider>
+        
+        <a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
+            Order History
+        </md-list-item></a>
+        <md-divider ></md-divider>
+
+        <a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
+            Contact Us
+        </md-list-item></a>
+        <md-divider ></md-divider>
+
+        <a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
+            Chef Registration
+        </md-list-item></a>
+        <md-divider ></md-divider>
+    </md-list>
+</md-content>
 </md-sidenav>
