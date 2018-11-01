@@ -18262,10 +18262,10 @@ md-toolbar {
 }
 @media screen and (max-width: 500px){
   .card-border{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     margin:0px;
   }
 }
