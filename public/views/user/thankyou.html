@@ -50,19 +50,19 @@
     			</div>
 
           <form>
-              <div id="doorInp" layout="row" layout-align="center">
-                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none" type="text" value="Door/Flat No :" disabled>
-                <input ng-model="vmThanks.doorNo" typr="text" placeholder="Door No" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center;border-bottom: none" class="font-weightbold">
+              <div id="doorInp" layout="row" layout-align="center" style="padding: 0px 3%;">
+                <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Door/Flat No :" disabled>
+                <input ng-model="vmThanks.doorNo" typr="text" placeholder="Door No" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0" class="font-weightbold">
               </div>
 
-              <div id='nameInp' layout="row" layout-align="center">
-                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none" type="text" value="Name :" disabled>
-                <input ng-model="vmThanks.userName" typr="text" placeholder="Name" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center;border-bottom: none" class="font-weightbold">
+              <div id='nameInp' layout="row" layout-align="center" style="padding: 0px 3%;">
+                <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Name :" disabled>
+                <input ng-model="vmThanks.userName" typr="text" placeholder="Name" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0" class="font-weightbold">
               </div>
 
-              <div id="" layout="row" layout-align="center">
-                <input style="text-align: center;background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%" type="text" value="Email Id :" disabled>
-                <input typr="text" placeholder="Email Id" style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: center" class="font-weightbold">
+              <div id="" layout="row" layout-align="center" style="padding: 0px 3%;">
+                <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;min-width: 0" type="text" value="Email Id :" disabled>
+                <input typr="text" placeholder="Email Id" style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;min-width: 0" class="font-weightbold">
               </div>
               <div layout="row" layout-align="center center" style="padding-top: 15px">
                 <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10 thank-manage-btn" >
