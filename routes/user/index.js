@@ -50,6 +50,7 @@ router.post('/sendtoairpay', function(req, res, next) {
 router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs/:id',subscriptionController.updateSubs)
+router.post('/updateStatus/:id',subscriptionController.updateStatus)
 router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
