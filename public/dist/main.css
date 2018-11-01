@@ -18244,7 +18244,10 @@ md-toolbar {
 }
 
 /* End of File */
-
+.md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: #c02425 !important;
+    color: rgba(255,255,255,0.87);
+}
 
 
 @media screen and (min-width: 500px){
@@ -18733,7 +18736,6 @@ select{
 
 
 /*---------------cart.html-----------------------*/
-
 .cart-pay-btn{
   width:150px;
   border-radius: 50px;
@@ -18746,9 +18748,6 @@ select{
   font-weight: bold;
   letter-spacing: 1px; 
 }
-
-
-
 /*-----------------cart.html------------------------------*/
 
 
@@ -18768,8 +18767,10 @@ select{
   letter-spacing: 1px; 
 
 }
-
 /*--------------------thankyou.html--------------------------------------*/
+
+
+
 
 /*-----------------home.html--------------------------*/
 .home-signup-btn{
@@ -18808,12 +18809,26 @@ select{
 @media screen and (min-height: 700px){
 .home-left-h4{font-size: 18px}
 }
-
-
 /*---------------------home.html----------------------------*/
 
 
 
+
+/*----------------------sidebar.html-----------------------------*/
+
+/*.md-sidenav-left, .md-sidenav{
+    left: 55.5%;
+    margin-top: 4%;
+    margin-bottom: 4%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.md-sidenav-left.md-closed, .md-sidenav.md-closed {
+    transform: translate3d(-10%, 0, 0);
+}*/
+
+/*-----------------------sidebar.html----------------------------------------*/
 
 
 /* Code generator by Bharath */
