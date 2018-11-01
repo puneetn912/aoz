@@ -2,6 +2,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
 
+ <div ng-controller="pageController as vmPage">
+    <ng-include src="'views/user/includes/sidebar.html'"></ng-include>
+
 	<md-content layout="row" layout-xs="column" ng-controller="calenderController as vmCalender" ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > 
 
 
@@ -140,4 +143,5 @@
 <!-- right -->
 
 </md-content>
+</div>
 </div>

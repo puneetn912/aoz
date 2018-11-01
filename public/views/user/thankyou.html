@@ -1,4 +1,8 @@
 <div ng-app="cmsApp" ng-cloak>
+
+    <div ng-controller="pageController as vmPage">
+        <ng-include src="'views/user/includes/sidebar.html'"></ng-include>
+
     <md-content layout="row" layout-xs="column" ng-controller="thankyouController as vmThanks" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
         
         <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
@@ -92,4 +96,5 @@
 <!-- right -->
 
 </md-content>
+</div>
 </div>
