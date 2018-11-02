@@ -145,7 +145,7 @@ md-autocomplete input:not(.md-input) {
   border-bottom-left-radius:15px;
   border-bottom-right-radius:15px;
   background-color:#c02425;
-  height: 60px;
+  height: 50px;
   border-top: 1px solid #eee;
   position: fixed;
 }
@@ -216,11 +216,11 @@ md-autocomplete input:not(.md-input) {
 
 .calendar-update-btn{
   background-color: white !important;
-  width:150px;
+  width:130px;
   border-radius: 50px;
   color: #CE362C !important;
   font-size: 18px;
-  height: 52px;
+  height: 40px;
   letter-spacing:3px;
   padding-top: 2px;
   border: 1px solid #DE772E;
@@ -230,11 +230,11 @@ md-autocomplete input:not(.md-input) {
 
 .calendar-menu-btn{
   background-color: white !important;
-  width:150px;
+  width:130px;
   border-radius: 50px;
   color: #CE362C !important;
   font-size: 18px;
-  height: 52px;
+  height: 40px;
   letter-spacing:3px;
   padding-top: 2px;
   border: 1px solid #DE772E;
@@ -314,6 +314,14 @@ border-radius: 0px !important;
 @media screen and (max-height: 700px){
 .calender-left-h4-2{margin-top:-12px;font-size: 15px;font-weight: bold}
 }
+
+/*@media screen and (min-width: 500px){
+.abc{height: 0%;}
+} */
+
+@media screen and (max-width: 500px){
+.cal-cardcontent{height:100%;}
+} 
 
 /*--------------calendar.html-----------------------*/
 
@@ -679,6 +687,7 @@ body {
 /*height*/
 .height600 {height: 600px;}
 .height60{height: 60px }
+.height50{height: 50px }
 /*height*/
 
 /*width*/
