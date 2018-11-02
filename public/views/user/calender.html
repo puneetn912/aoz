@@ -7,12 +7,11 @@
 		<!-- <ng-include src="'views/user/includes/sidebar.html'"></ng-include> -->
 		<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
 			<md-toolbar class="md-theme-indigo">
-				<md-button ng-click="vmPage.close()" style="position: fixed;right: 0px; padding: 0px;margin:0px;margin-top: 22px;
-    margin-right: -20px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button>
+				<md-button ng-click="vmPage.close()" style="position: fixed;right: 0px; padding: 0px;margin:0px;margin-top: 22px;margin-right: -20px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button>
 				
-				<p style="padding-left: 17px;padding-top: 30px">{{vmCalendar.userData.tower_name}} <br>
-				abc@gmail.com<br>
-				Elita Promidence Apartment</p>
+				<p style="padding-left: 17px;padding-top: 30px">{{vmCalender.subscription.user_id.name}}<br>
+				{{vmCalender.subscription.user_id.email}}<br>
+				{{vmCalender.subscription.apartment_name}}</p>
 
 				<div layout="row" layout-align="space-between center" layout-padding>
 
@@ -28,37 +27,37 @@
 				
 			</md-toolbar>
 			<md-content>
-      <md-list flex>
-        <a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            FAQ’s
-        </md-list-item></a>
-        <md-divider ></md-divider>
-        
-        <a aria-label="caterer" href="/terms" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            Terms & Conditions
-        </md-list-item></a>
-        <md-divider ></md-divider>
-        
-        <a aria-label="caterer" href="/cancellation" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            Cancellation Policy
-        </md-list-item></a>
-        <md-divider ></md-divider>
-        
-        <a aria-label="caterer" href="/history" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            Order History
-        </md-list-item></a>
-        <md-divider ></md-divider>
+	  <md-list flex>
+		<a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			FAQ’s
+		</md-list-item></a>
+		<md-divider ></md-divider>
+		
+		<a aria-label="caterer" href="/terms" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			Terms & Conditions
+		</md-list-item></a>
+		<md-divider ></md-divider>
+		
+		<a aria-label="caterer" href="/cancellation" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			Cancellation Policy
+		</md-list-item></a>
+		<md-divider ></md-divider>
+		
+		<a aria-label="caterer" href="/history" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			Order History
+		</md-list-item></a>
+		<md-divider ></md-divider>
 
-        <a aria-label="caterer" href="/contact" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            Contact Us
-        </md-list-item></a>
-        <md-divider ></md-divider>
+		<a aria-label="caterer" href="/contact" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			Contact Us
+		</md-list-item></a>
+		<md-divider ></md-divider>
 
-        <a aria-label="caterer" href="/chef-registration" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-            Chef Registration
-        </md-list-item></a>
-        <md-divider ></md-divider>
-    </md-list>
+		<a aria-label="caterer" href="/chef-registration" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+			Chef Registration
+		</md-list-item></a>
+		<md-divider ></md-divider>
+	</md-list>
 			</md-content>
 		</md-sidenav>
 
@@ -92,24 +91,20 @@
 
 
 <!-- right -->
-		<md-card class="card-border" flex-gt-xs="25" layout-align="center">
+		<md-card class="card-border desktop" flex-gt-xs="25" layout-align="center">
 		  <div id="cardContent" style="height:100%">
 		<ng-include src="'views/user/includes/header.html'"></ng-include>
 
 	<div style="overflow: hidden;">
 		<div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;">
 
-			<!--                <div layout="row" layout-align="center center">
-			  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
-			</div> -->
 
 
 
 			<!-- calender -->
-						<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
-							<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
-						</md-card-content>
-
+				<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
+					<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
+				</md-card-content>
 			<!-- calender -->
 
 
@@ -175,7 +170,7 @@
 			<div style="padding-left: 12%;">
 				<a href="https://wwww.dialjordan.com"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
 			</div>
-	   	</div>
+		</div>
 
 	</div>
 		</div>

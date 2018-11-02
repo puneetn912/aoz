@@ -3,6 +3,13 @@
     color: rgba(255,255,255,0.87);
 }
 
+@media screen and (min-width: 1300px){
+    .desktop{
+        font-size: 12px !important;
+        max-width: 767px;
+    }
+}
+
 
 @media screen and (min-width: 500px){
   .card-border{
