@@ -320,12 +320,19 @@ border-radius: 0px !important;
 
 
 @media screen and (max-width: 500px){
-.cal-div-heigth{height:100%;}
+.cal-div-height{height:100%;}
 } 
 
 @media screen and (min-width: 500px) and (min-height: 700px){
-.cal-div-heigth{height:100%;}
+.cal-div-height{height:100%;}
 }
+
+
+@media screen and (min-width: 500px) and (max-height: 700px){
+.cal-overflow-height{height:77%;}
+}
+
+
 
 /*--------------calendar.html-----------------------*/
 
@@ -403,23 +410,43 @@ border: 1px solid #DE772E;
     pointer-events:none;
 }
 
-
-/*.abc:before {
-    content:'';
-    right:4px; top:0px;
-    width:23px; height:18px;
-    background:#fff;
-    position:absolute;
-    pointer-events:none;
-    display:block;
-    -webkit-appearance: none;
-  -moz-appearance: none;
-}*/
-
 select{
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
+
+/*1366-1466-1566*/
+/*@media screen and (min-width: 500px) and (min-height: 700px){
+.subscribe-div-height{height:100%;}
+}
+*/
+
+@media screen and (min-width: 500px) and (max-height: 700px){
+.subscribe-div-height{height:100%;}/*TEST*/
+}
+
+
+@media screen and (min-width: 500px) and (min-height: 700px){
+.subscribe-overflow-height{height:77%;}/*1366-1466-1566*/
+}
+@media screen and (min-width: 500px) and (max-height: 700px){
+.subscribe-overflow-height{height:77%;}/*TEST*/
+}
+
+
+@media screen and (max-width: 500px) and (max-height: 700px){
+.subscribe-card-height{height:100%;}/*MOBILE*/
+}
+
+@media screen and (max-width: 500px) and (max-height: 800px){
+.subscribe-card-height{height:100%;}/*PIXEL MOBILE*/
+}
+
+@media screen and (max-width: 500px) and (max-height: 900px){
+.subscribe-card-height{height:100%;}/*PIXEL XL MOBILE*/
+}
+
 /*--------------------subscription.html------------------------------*/
 
 
@@ -530,7 +557,7 @@ select{
 .thank-manage-btn{
   width:150px;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 14px;
 /*  margin: 19px 0px;*/
   height: 52px;
   color: #CE362C !important;

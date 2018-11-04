@@ -42,7 +42,7 @@
 
       <div style="overflow: hidden;">
         <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
-    		  <div layout="column" layout-align="center center"  layout-padding style="padding-top: 60px">
+    		  <div layout="column" layout-align="center center"  layout-padding style="padding-top: 20px">
              <img src="../images/checked.svg" widht="90px" height="90px" alt="submit"></img>
              <h1 class="mt0 mb0 pb0 font-weightbold" style="color: #c02425;letter-spacing: 3px">Thank You!</h1>
              <h4 class="mt0 mb0 pt0" style="letter-spacing: 1px">Order Successfull</h4>
@@ -52,17 +52,17 @@
           <form>
               <div id="doorInp" layout="row" layout-align="center" style="padding: 0px 3%;">
                 <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Door/Flat No :" disabled>
-                <input ng-model="vmThanks.doorNo" typr="text" placeholder="Door No" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0;outline: none" class="font-weightbold" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Door No'">
+                <input ng-model="vmThanks.doorNo" typr="text" placeholder="Door No" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0;outline: none;padding-left: 2px" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Door No'">
               </div>
 
               <div id='nameInp' layout="row" layout-align="center" style="padding: 0px 3%;">
                 <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Name :" disabled>
-                <input ng-model="vmThanks.userName" type="text" placeholder="Name" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0" class="font-weightbold;outline:none" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
+                <input ng-model="vmThanks.userName" type="text" placeholder="Name" style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0;padding-left: 2px;outline:none" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
               </div>
 
               <div id="emailInp" layout="row" layout-align="center" style="padding: 0px 3%;">
                 <input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;min-width: 0" type="text" value="Email Id :" disabled>
-                <input ng-model="vmThanks.email" typr="text" placeholder="Email Id" style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;min-width: 0;outline: none" class="font-weightbold" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Id'">
+                <input ng-model="vmThanks.email" typr="text" placeholder="Email Id" style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;min-width: 0;outline: none;padding-left: 2px" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Id'">
               </div>
               <div layout="row" layout-align="center center" style="padding-top: 15px">
                 <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10 thank-manage-btn" >
