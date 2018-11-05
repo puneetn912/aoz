@@ -18685,9 +18685,9 @@ border: 1px solid #DE772E;
 }
 
 
-.subscribe-select-type {position:relative}
+/*.subscribe-select-type {position:relative}
 .subscribe-select-type:after {
-    content:"\F078";   
+    content:"\f078";   
     font-family: "FontAwesome";
     font-size: 14px;
     color:#aaa;
@@ -18695,11 +18695,11 @@ border: 1px solid #DE772E;
     padding:0 0 2px;
     position:absolute;
     pointer-events:none;
-}
+}*/
 
-.subscribe-select-meal {position:relative}
+/*.subscribe-select-meal {position:relative}
 .subscribe-select-meal:after {
-    content:"\F078";   
+    content:"\f078";   
     font-family: "FontAwesome";
     font-size: 14px;
     color:#aaa;
@@ -18707,7 +18707,7 @@ border: 1px solid #DE772E;
     padding:0 0 2px;
     position:absolute;
     pointer-events:none;
-}
+}*/
 
 select{
   -webkit-appearance: none;
