@@ -18361,6 +18361,10 @@ md-autocomplete input:not(.md-input) {
     line-height: 40px;
     height: 50px;
 }
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+.user-dot-text{font-size: 14px}/*IPHONE 5*/
+}
 /*---------------------userdetails.html--------------------------------*/
 
 
@@ -18441,7 +18445,7 @@ md-autocomplete input:not(.md-input) {
     border-radius: 20px;
     font-size: 14px;
     min-width: 36px;
-    margin: -1px;
+    margin: -2px;
 }
 
 
@@ -18453,6 +18457,20 @@ md-autocomplete input:not(.md-input) {
 .otp-card-img{margin-top: 0px}
 }
 
+@media screen and (max-width: 320px) and (max-height: 570px){
+.otp-card-img{padding-top: 0px}/*IPHONE 5*/
+}
+@media screen and (max-width: 320px) and (max-height: 570px){
+.otp-dot-text{font-size: 14px}/*IPHONE 5*/
+}
+@media screen and (max-width: 320px) and (max-height: 570px){
+.otp-verification-text{font-size: 14px}/*IPHONE 5*/
+}
+
+
+@media screen and (min-width: 360px) and (min-height: 640px){
+.otp-card-img{padding-top: 20px}/*GALAXY S5*/
+}
 
 /*--------------------verify.html---------------------------------*/
 
@@ -18464,21 +18482,20 @@ md-autocomplete input:not(.md-input) {
   width:130px;
   border-radius: 50px;
   color: #CE362C !important;
-  font-size: 18px;
-  height: 40px;
+  font-size: 16px;
+  height: 42px;
   letter-spacing:3px;
   padding-top: 2px;
   border: 1px solid #DE772E;
   font-weight: bold;
   letter-spacing: 1px; 
 }
-
 .calendar-menu-btn{
   background-color: white !important;
   width:130px;
   border-radius: 50px;
   color: #CE362C !important;
-  font-size: 18px;
+  font-size: 16px;
   height: 40px;
   letter-spacing:3px;
   padding-top: 2px;
@@ -18530,6 +18547,20 @@ border-radius: 0px !important;
 .md-calendar-date:first-child{
   padding-left: 10px !important;
 }
+
+
+@media screen and (min-width: 360px) and (min-height: 640px){
+.cal-btn-div{padding-top: 20px}/*GALAXY S5*/
+}
+
+@media screen and (min-width: 500px) and (max-height: 640px){
+.cal-btn-div{padding-top: 0px}/*TEST*/
+}
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+
+}/*IPHONE 5*/
+
 
 
 
@@ -18676,8 +18707,10 @@ select{
 @media screen and (min-width: 500px) and (min-height: 700px){
 .subscribe-overflow-height{height:77%;}/*1366-1466-1566*/
 }
+
 @media screen and (min-width: 500px) and (max-height: 700px){
-.subscribe-overflow-height{height:77%;}/*TEST*/
+.subscribe-overflow-height{height:77%;}
+.subscribe-btn{padding-top: 20px}/*TEST*/
 }
 
 
@@ -18692,6 +18725,31 @@ select{
 @media screen and (max-width: 500px) and (max-height: 900px){
 .subscribe-card-height{height:100%;}/*PIXEL XL MOBILE*/
 }
+@media screen and (max-width: 320px) and (max-height: 570px){
+.subscribe-desc-text{font-size: 12px}
+.subscribe-desc-text{padding-top: 0px}
+}/*IPHONE 5*/
+@media screen and (max-width: 500px) and (max-height: 700px){
+.subscribe-desc-text{padding-bottom: 20px}
+.subscribe-btn{padding-top: 20px}
+}/*MOBILE*/
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+.subscribe-desc-text{padding-bottom: 0px}
+.subscribe-btn{padding-top: 0px}
+.sub-buynow-btn{
+width:130px;
+border-radius: 50px;
+color: #CE362C !important;
+font-size: 18px;
+/*margin: 19px 0px;*/
+height: 42px;
+letter-spacing: 1px;
+background-color: white !important;
+border: 1px solid #DE772E;
+padding-top: 2px;
+}
+}/*IPHONE 5*/
 
 /*--------------------subscription.html------------------------------*/
 
@@ -18777,6 +18835,40 @@ select{
 .signup-card-img{margin-top: 0px}
 }
 
+
+@media screen and (max-width: 500px) and (max-height: 600px){
+.signup-car-form{padding-bottom: 0px}/*IPHONE 5*/
+}
+
+@media screen and (max-width: 500px) and (max-height: 600px){
+.signup-dot-text{font-size: 14px}
+.signup-submit-btn{
+  color: #CE362C !important;
+  background-color: white !important;
+  border-radius: 50px;
+  width: 130px;
+  font-size: 18px;
+  height: 42px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #DE772E;
+}
+}/*IPHONE 5*/
+
+@media screen and (min-width: 500px) and (max-height: 700px){
+.signup-submit-btn{
+  color: #CE362C !important;
+  background-color: white !important;
+  border-radius: 50px;
+  width: 130px;
+  font-size: 18px;
+  height: 42px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #DE772E;
+}
+}/*TEST*/
+
 /*----------------------signup.html---------------------------*/
 
 
@@ -18794,6 +18886,45 @@ select{
   font-weight: bold;
   letter-spacing: 1px; 
 }
+
+@media screen and (min-width: 500px) and (max-height: 700px){
+.cart-btn-div{padding-top: 0px;}
+.cart-pay-btn{
+  width:130px;
+  border-radius: 50px;
+  font-size: 18px;
+ /* margin: 19px 0px;*/
+  height: 42px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  padding-top: 2px;
+}
+}/*TEST*/
+
+@media screen and (max-width: 500px) and (max-height: 700px){
+.cart-btn-div{
+padding-top: 20px;
+}
+}/*MOBILE*/
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+.cart-pay-btn{
+  width:130px;
+  border-radius: 50px;
+  font-size: 18px;
+ /* margin: 19px 0px;*/
+  height: 42px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  padding-top: 2px;
+}
+}/*IPHONE 5*/
 /*-----------------cart.html------------------------------*/
 
 
@@ -18811,8 +18942,42 @@ select{
   border: 1px solid #DE772E;
   font-weight: bold;
   letter-spacing: 1px; 
-
 }
+
+
+@media screen and (min-width: 500px) and (max-height: 700px){
+.thank-manage-btn{
+  width:130px;
+  border-radius: 50px;
+  font-size: 12px;
+  height: 42px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  padding-top: 2px;
+}
+}/*TEST*/
+
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+.thank-manage-btn{
+  width:130px;
+  border-radius: 50px;
+  font-size: 12px;
+ /* margin: 19px 0px;*/
+  height: 42px;
+  color: #CE362C !important;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  padding-top: 2px;
+}
+}/*IPHONE 5*/
+
+
 /*--------------------thankyou.html--------------------------------------*/
 
 
