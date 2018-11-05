@@ -1,9 +1,9 @@
 <div ng-app="cmsApp" ng-cloak>
 	<md-content layout="row" layout-xs="column" ng-controller="userdetailsController as vmUserdetails" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
         
-        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+<!--         <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
             <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-        </div>
+        </div> -->
 
 
 <!-- left -->
@@ -119,10 +119,13 @@
                   <div layout="row" layout-align="center center" class="pt20">
                        <md-button id="detailSubmit" style="background-color:#c02425 !important" class="md-fab user-submit-btn" ng-click="updateUser()">
  <!--                       <img src="../images/checked.svg" widht="50px" height="50px" alt="submit"></img> -->
- <i class="fa fa-check" aria-hidden="true" style="font-size: 25px; background-color: transparent;color:white"></i>
+                          <i class="fa fa-check" aria-hidden="true" style="font-size: 25px; background-color: transparent;color:white"></i>
                        </md-button>
+						<div id="loader" class="user-loader" style="position: fixed;display: none;">
+						   <img src="https://i.stack.imgur.com/h6viz.gif" alt="loader">
+						</div>
                   </div>
-				
+
 			</form>
 		</md-card-content>
 		</md-card>

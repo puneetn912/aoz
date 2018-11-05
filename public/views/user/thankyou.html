@@ -5,9 +5,9 @@
 
     <md-content layout="row" layout-xs="column" ng-controller="thankyouController as vmThanks" ng-cloak style="height:100%;background-image: url(../images/screen1.jpg);">
         
-        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+<!--         <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
             <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-        </div>
+        </div> -->
 
 <!-- left -->
     <div flex-gt-xs="55" hide-xs>
@@ -67,6 +67,9 @@
               <div layout="row" layout-align="center center" style="padding-top: 15px">
                 <md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10 thank-manage-btn" >
                 </md-button>
+        <div id="loader" style="position: fixed;display: none">
+            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+        </div>
               </div>
           </form>
  

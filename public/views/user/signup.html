@@ -1,9 +1,9 @@
 <div ng-app="cmsApp" ng-cloak>
 	<md-content style="height:100%;background-image: url(../images/screen1.jpg);" layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak>
 
-        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+<!--         <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
             <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-        </div>
+        </div> -->
 
 
 <!-- left -->
@@ -80,7 +80,9 @@
                     ng-bind='vmSignup.submit' 
 
 					>Submit</md-button>
-
+			        <div id="loader" style="position: fixed;display: none">
+			            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+			        </div>
 				</div>
 				</div>
 			</form>
