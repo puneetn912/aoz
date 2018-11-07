@@ -3,186 +3,192 @@
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
 	
 	<div ng-controller="calenderController as vmCalender">
-	 <div ng-controller="pageController as vmPage">
-		<!-- <ng-include src="'views/user/includes/sidebar.html'"></ng-include> -->
-		<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
-			<md-toolbar class="md-theme-indigo">
-				<md-button ng-click="vmPage.close()" style="position: fixed;right: 0px; padding: 0px;margin:0px;margin-top: 22px;
-    margin-right: -20px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button>
-				
-				<p style="padding-left: 17px;padding-top: 30px">{{vmCalendar.userData.tower_name}} <br>
-				abc@gmail.com<br>
-				Elita Promidence Apartment</p>
 
-				<div layout="row" layout-align="space-between center" layout-padding>
+		<div ng-controller="pageController as vmPage">
+            <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+                <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+            </div>
+			<!-- <ng-include src="'views/user/includes/sidebar.html'"></ng-include> -->
+			<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+				<md-toolbar class="md-theme-indigo">
+					<md-button ng-click="vmPage.close()" style="position: fixed;right: 0px; padding: 0px;margin:0px;margin-top: 22px;
+					margin-right: -20px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button>
 
-				<div layout="column" layout-align="space-between center">
-				   <h4 class="mt0 mb0" style="color: #c02425;font-size: 10px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12">{{vmCalender.vegRem}}</span> Meals Remaining</h4>
-					 <h4 class="mt0 mb0" style="color:grey;font-size: 10px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalVegCount}}</span> Veg meals </h4>
+					<p style="padding-left: 17px;padding-top: 30px">{{vmCalender.subscription.user_id.name}}<br>
+						{{vmCalender.subscription.user_id.email}}<br>
+					{{vmCalender.subscription.apartment_name}}</p>
+
+					<div layout="row" layout-align="space-between center" layout-padding>
+
+						<div layout="column" layout-align="space-between center">
+							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12">{{vmCalender.vegRem}}</span> Meals Remaining</h4>
+							<h4 style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalVegCount}}</span> Veg meals </h4>
+						</div>
+						<div layout="column" layout-align="space-between center">
+							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12px">{{vmCalender.nvegRem}}</span> Meals Remaining</h4>
+							<h4  style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalNvegCount}}</span> NonVeg meals </h4>
+						</div>
+					</div>
+
+				</md-toolbar>
+				<md-content>
+					<md-list flex>
+						<a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							FAQ’s
+						</md-list-item></a>
+						<md-divider ></md-divider>
+
+						<a aria-label="caterer" href="/terms" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							Terms & Conditions
+						</md-list-item></a>
+						<md-divider ></md-divider>
+
+						<a aria-label="caterer" href="/cancellation" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							Cancellation Policy
+						</md-list-item></a>
+						<md-divider ></md-divider>
+
+						<a aria-label="caterer" href="/history" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							Order History
+						</md-list-item></a>
+						<md-divider ></md-divider>
+
+						<a aria-label="caterer" href="/contact" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							Contact Us
+						</md-list-item></a>
+						<md-divider ></md-divider>
+
+						<a aria-label="caterer" href="/chef-registration" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+							Chef Registration
+						</md-list-item></a>
+						<md-divider ></md-divider>
+					</md-list>
+				</md-content>
+			</md-sidenav>
+
+
+			<md-content layout="row" layout-xs="column"  ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > 
+
+
+				<!-- left -->
+				<div flex-gt-xs="55" hide-xs>
+
+					<div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+						<div style="margin-top: -5%;margin-bottom: -45px;padding-left: 0px">
+							<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+						</div>
+						<div style="margin-left: 5%">
+							<h1 class="calender-left-h1">Healthy Home Style Meal</h1>
+							<h1 class="calender-left-h1">Free Delivery at your doorstep</h1>
+							<h1 class="calender-left-h1">Different Cuisine Everyday</h1>
+							<h1 class="calender-left-h1">No More Kitchen Hassles</h1>
+							<h1 class="calender-left-h1">No Repeat for 30 days</h1>
+						</div>
+						<div style="margin-left: 5%"cclass="calender-left-div">
+							<h4 class="calender-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-, organize your schedule </h4>
+							<h4 class="calender-left-h4-2">No more kitchen hassles, Free home delivery</h4>
+						</div>
+					</div>
+
 				</div>
-				<div layout="column" layout-align="space-between center">
-				   <h4 class="mt0 mb0" style="color:#c02425;font-size: 10px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12px">{{vmCalender.nvegRem}}</span> Meals Remaining</h4>
-					  <h4 class="mb0 mt0" style="color: grey;font-size: 10px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalNvegCount}}</span> NonVeg meals </h4>
-				</div>
-			</div>
-				
-			</md-toolbar>
-			<md-content>
-				<md-list flex>
-					<a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-						FAQ’s
-					</md-list-item></a>
-					<md-divider ></md-divider>
+				<!-- left -->
 
-					<a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
-						Terms & Conditions
-					</md-list-item></a>
-					<md-divider ></md-divider>
-					
-					<a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
-						Cancellation Policy
-					</md-list-item></a>
-					<md-divider ></md-divider>
 
-					<a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
-						Order History
-					</md-list-item></a>
-					<md-divider ></md-divider>
 
-					<a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
-						Contact Us
-					</md-list-item></a>
-					<md-divider ></md-divider>
+				<!-- right -->
+				<md-card class="card-border" flex-gt-xs="25" layout-align="center">
+					<div id="cardContent" class="cal-div-height">
+						<ng-include src="'views/user/includes/header.html'"></ng-include>
 
-					<a aria-label="caterer" href="/admin/caterers"><md-list-item  ng-click="null">
-						Chef Registration
-					</md-list-item></a>
-					<md-divider ></md-divider>
-				</md-list>
+
+						<div style="overflow: hidden;">
+							<div class="cal-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;">
+
+
+
+
+								<!-- calender -->
+
+								<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
+									<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
+								</md-card-content>
+
+								<!-- calender -->
+
+
+
+
+								<!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
+								<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
+									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 8px">
+										<div class="pt0 pb0">
+											<label class="greyfont" style="font-size: 16px">No. of Veg Meals</label>
+										</div>
+										<div layout="row" layout-align="center center" class="pt0 pb0">
+											<div>
+												<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+											</div>
+											<div>
+												<input readonly id="calveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayVegCount">
+											</div>
+											<div>
+												<md-button class="md-raised sub-meal-btn" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+											</div>
+										</div>
+									</div>							
+									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 7px;border-bottom: 1px solid #eee">
+										<div class="pt0 pb0">
+											<label class="greyfont" style="font-size: 16px">No. of non Veg Meals</label>
+										</div>
+										<div layout="row" layout-align="center center" class="pt0 pb0">
+											<div>
+												<md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+											</div>
+											<div>
+												<input readonly id="calnveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayNonvegCount">
+											</div>
+											<div>
+												<md-button class="md-raised sub-meal-btn" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<div style="display: block;text-align: center;padding-right: 4%" class="cal-btn-div" id='finalSubmit'>
+									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()">Update</md-button> 
+									<md-button class="md-raised calendar-menu-btn" ng-click="showMenu()">Menu</md-button> 
+								</div>
+
+								<a href="">{{vmCalender.error}}</a>
+
+							</div>
+
+							<!-- <ng-include src="'views/user/includes/footer.html'"></ng-include> -->
+
+					<!-- footer -->
+							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
+								<div layout="column" layout-align="center center" ng-click="goProfile()">
+									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
+									<span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
+								</div>
+								<div style="padding-left: 23%;padding-top: 4px" layout="column" layout-align="center center">
+									<div layout="column" layout-align="center center" ng-click="addMore()">
+										<img src="../images/catering.png" width="28px" height="28px" alt="white-logo">
+										<span style="font-size: 12px;margin-top: -5px;letter-spacing: 1px;width: max-content" class="whitefont">Add Meals</span>
+									</div>
+								</div>
+								<div style="padding-left: 12%;">
+									<a href="https://www.dialjordan.com"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
+								</div>
+							</div>
+                    <!-- footer -->
+
+						</div>
+					</div>
+				</md-card>
+				<!-- right -->
+
 			</md-content>
-		</md-sidenav>
-
-
-	<md-content layout="row" layout-xs="column"  ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > 
-
-
-<!-- left -->
-		<div flex-gt-xs="55" hide-xs>
-
-		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-			<div style="margin-top: -5%;margin-bottom: -45px;padding-left: 0px">
-				<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
-			</div>
-			<div style="margin-left: 5%">
-				<h1 class="calender-left-h1">Healthy Home Style Meal</h1>
-				<h1 class="calender-left-h1">Free Delivery at your doorstep</h1>
-				<h1 class="calender-left-h1">Different Cuisine Everyday</h1>
-				<h1 class="calender-left-h1">No More Kitchen Hassles</h1>
-				<h1 class="calender-left-h1">No Repeat for 30 days</h1>
-			</div>
-			<div style="margin-left: 5%"cclass="calender-left-div">
-				<h4 class="calender-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-, organize your schedule </h4>
-				<h4 class="calender-left-h4-2">No more kitchen hassles, Free home delivery</h4>
-			</div>
-		   </div>
-		
 		</div>
-<!-- left -->
-
-
-
-<!-- right -->
-		<md-card class="card-border" flex-gt-xs="25" layout-align="center">
-		  <div id="cardContent" style="height:100%">
-		<ng-include src="'views/user/includes/header.html'"></ng-include>
-
-	<div style="overflow: hidden;">
-		<div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;">
-
-			<!--                <div layout="row" layout-align="center center">
-			  <a id="currDateHead" class="greyfont" style="display: block;">{{vmCalender.currDateHead}}</a>
-			</div> -->
-
-
-
-			<!-- calender -->
-						<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
-							<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
-						</md-card-content>
-
-			<!-- calender -->
-
-
-			
-
-			<!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
-			<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
-				<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
-					<div>
-						<label class="greyfont" style="font-size: 20px">No. of Veg Meals</label>
-					</div>
-					<div layout="row" layout-align="center center" class="pt0 pb0">
-						<div>
-							<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
-						</div>
-						<div>
-							<input readonly id="calveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayVegCount">
-						</div>
-						<div>
-							<md-button class="md-raised sub-meal-btn" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
-						</div>
-					</div>
-				</div>							
-				<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 7px;border-bottom: 1px solid #eee">
-					<div>
-						<label class="greyfont" style="font-size: 20px">No. of non Veg Meals</label>
-					</div>
-					<div layout="row" layout-align="center center" class="pt0 pb0">
-						<div>
-							<md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
-						</div>
-						<div>
-							<input readonly id="calnveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayNonvegCount">
-						</div>
-						<div>
-							<md-button class="md-raised sub-meal-btn" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
-						</div>
-					</div>
-				</div>
-			</form>
-
-			<div style="display: block;padding-top: 20px;text-align: center;padding-right: 4%" id='finalSubmit'>
-				<md-button class="md-raised calendar-update-btn" ng-click="finalSave()">Update</md-button> 
-				<md-button class="md-raised calendar-menu-btn" ng-click="showMenu()">Menu</md-button> 
-			</div>
-
-			<a href="">{{vmCalender.error}}</a>
-
-		</div>
-
-		<!-- <ng-include src="'views/user/includes/footer.html'"></ng-include> -->
-		<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
-			<div layout="column" layout-align="center center" ng-click="addMore()">
-				<i class="fa fa-home" style="color:white;font-size: 25px" aria-hidden="true"></i>
-				<span class="whitefont" style="font-size: 12px">Home</span>
-			</div>
-			<div style="padding-left: 23%" layout="column" layout-align="center center">
-				<div layout="column" layout-align="center center" ng-click="addMore()">
-						<i class="fa fa-2x fa-cart-plus" aria-hidden="true" style="color: white"></i>
-						<span style="font-size: 12px" class="whitefont">Add More</span>
-				</div>
-			</div>
-			<div style="padding-left: 12%;">
-				<a href="https://wwww.dialjordan.com"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
-			</div>
-	   	</div>
-
 	</div>
-		</div>
-		</md-card>
-<!-- right -->
 
-</md-content>
-</div>
-</div>
-</div>

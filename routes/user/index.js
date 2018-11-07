@@ -7,6 +7,7 @@ let localityController = require('../../lib/src/js/scriptController/localityCont
 let apartmentController = require('../../lib/src/js/scriptController/apartmentController');
 let userController = require('../../lib/src/js/scriptController/userController');
 let calendarController = require('../../lib/src/js/scriptController/calendarController');
+let paymentController = require('../../lib/src/js/scriptController/paymentController');
 
 
 var mid = '24324';
@@ -73,5 +74,10 @@ router.post('/checkUser/:phone',userController.checkUser)
 router.post('/addCalendar',calendarController.add)
 router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
+
+//payment
+router.post('/addPayment/:id',paymentController.add)
+router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
+
 
 module.exports = router;
