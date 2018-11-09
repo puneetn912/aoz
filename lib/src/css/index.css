@@ -341,17 +341,17 @@ border-radius: 0px !important;
 
 
 @media screen and (max-height: 700px) {
-.calender-left-h1{font-size: 20px;font-weight: bold;line-height: 1.1;display: list-item;list-style-position: inside;}
+.calender-left-h1{font-size: 20px;font-weight: bold; color: white;letter-spacing: 2px}
 }
 @media screen and (min-height: 700px){
-.calender-left-h1{font-size: 25px;font-weight: bold;line-height: 1.1;display: list-item;list-style-position: inside;}
+.calender-left-h1{font-size: 25px;font-weight: bold; color: white;letter-spacing: 2px}
 }
 
 @media screen and (max-height: 700px) {
-.calender-left-h4{font-size: 15px;font-weight: bold}
+.calender-left-h4{font-size: 15px;font-weight: bold;color: white;letter-spacing: 2px}
 }
 @media screen and (min-height: 700px){
-.calender-left-h4{font-size: 18px;font-weight: bold}
+.calender-left-h4{font-size: 18px;font-weight: bold;color: white;letter-spacing: 2px}
 }
 
 
@@ -361,10 +361,10 @@ border-radius: 0px !important;
 
 
 @media screen and (min-height: 700px){
-.calender-left-h4-2{margin-top:-12px;font-size: 18px;font-weight: bold}
+.calender-left-h4-2{margin-top:-5px;font-size: 18px;font-weight: bold;color: white;letter-spacing: 2px}
 }
 @media screen and (max-height: 700px){
-.calender-left-h4-2{margin-top:-12px;font-size: 15px;font-weight: bold}
+.calender-left-h4-2{margin-top:-5px;font-size: 15px;font-weight: bold;color: white;letter-spacing: 2px}
 }
 
 /*@media screen and (min-width: 500px){
@@ -823,18 +823,18 @@ padding-top: 20px;
 }*/
 
 @media screen and (max-height: 700px) {
-.home-left-h1{font-size: 20px;display: list-item;list-style-position: inside;}
+.home-left-h1{font-size: 20px;color: white;letter-spacing: 2px}
 }
 @media screen and (min-height: 700px){
-.home-left-h1{font-size: 25px;display: list-item;list-style-position: inside;}
+.home-left-h1{font-size: 25px;color: white;letter-spacing: 2px}
 }
 
 
 @media screen and (max-height: 700px) {
-.home-left-h4{font-size: 15px}
+.home-left-h4{font-size: 15px;color: white;letter-spacing: 2px}
 }
 @media screen and (min-height: 700px){
-.home-left-h4{font-size: 18px}
+.home-left-h4{font-size: 18px;color: white;letter-spacing: 2px}
 }
 /*---------------------home.html----------------------------*/
 
@@ -1050,3 +1050,38 @@ body {
 .font20{font-size: 20px}
 .font25{font-size: 25px}
 /*font-size*/
+
+
+
+/*@media screen and (min-width: 1366px) and (min-height: 640px){
+.md-content-bgimage{
+  background-image: url(/images/1366.png);
+  opacity: .9;
+}
+}
+@media screen and (min-width: 1440px) and (min-height: 900px){
+.md-content-bgimage{
+  background-image: url(/images/1440.png);
+  opacity: .9;
+}
+}
+@media screen and (min-width: 1536px) and (min-height: 864px){
+.md-content-bgimage{
+  background-image: url(/images/1536.png);
+  opacity: .9;
+  background-repeat: no-repeat;
+}
+}*/
+
+.md-content-bgimage{
+  background-image: url(/images/screen4.jpg);
+  opacity: .9;
+  background-repeat: no-repeat;
+}
+
+/*@media screen and (min-width: 1366px) and (min-height: 64px){
+.md-content-bgimage{
+  background-image: url(/images/test.png);
+  opacity: .7;
+}
+}*/
