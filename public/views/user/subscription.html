@@ -70,11 +70,12 @@
 												<option>Both</option>
 											</select> -->
                                         <md-input-container class="mt0 mb0 pt0 pb0 pr0">
-                                        	<label class="sub-form-label">Meal type</label>
-											<md-select ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" style="text-shadow: none !important;background-color: white !important">
-												<md-option >Veg</md-option>
-												<md-option>Non Veg</md-option>
-												<md-option>Both</md-option>
+<!--                                         	<label class="sub-form-label">Meal type</label> -->
+											<md-select placeholder="Meal type" ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" style="text-shadow: none !important;background-color: white !important">
+
+												<md-option value="Veg">Veg</md-option>
+												<md-option value="Non Veg">Non Veg</md-option>
+												<md-option value="Both">Both</md-option>
 											</md-select>
 										</md-input-container>
 										</div>
@@ -93,8 +94,7 @@
 												</select> -->
 
                                             <md-input-container class="mt0 mb0 pt0 pb0 pr0">
-                                            	<label class="sub-form-label">Veg meals</label>
-												<md-select name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" disabled style="border:none ;text-shadow: none !important;background-color: white !important">
+												<md-select placeholder="Veg Meals"  name="" id="vegCount" ng-model="vmSubscription.vegCount" ng-change="changeVcount(vmSubscription.vegCount)" ng-disabled=vmSubscription.vegSelect style="border:none ;text-shadow: none !important;background-color: white !important">
 													<md-option value="5">5</md-option>
 													<md-option value="10">10</md-option>
 													<md-option value="20">20</md-option>
@@ -117,8 +117,7 @@
 													<option value="30">30</option>
 												</select> -->
                                             <md-input-container class="mt0 mb0 pt0 pb0 pr0">
-                                            	<label class="sub-form-label">Non-veg meals</label>
-												<md-select name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" disabled style="border:none;text-shadow: none !important;background-color: white !important">
+												<md-select placeholder="Non Veg Meals"  name="" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" ng-disabled=vmSubscription.nonvegSelect style="border:none;text-shadow: none !important;background-color: white !important">
 													<md-option value="5">5</md-option>
 													<md-option value="10">10</md-option>
 													<md-option value="20">20</md-option>

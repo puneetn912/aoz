@@ -1,90 +1,90 @@
 <div ng-app="cmsApp" ng-cloak>
 
-  <div ng-controller="pageController as vmPage">
-    <ng-include src="'views/user/includes/sidebar.html'"></ng-include>
-  
-
-    <md-content class="md-content-bgimage" layout="row" layout-xs="column" ng-controller="profileController as vmProfile" ng-cloak style="height:100%;" >
-
-        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
-            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-        </div>
-
-<!-- left -->
-        <div flex-gt-xs="55" hide-xs>
-
-           <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-            <div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
-                <img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
-            </div>
-            <div style="margin-left: 5%">
-                <h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
-                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
-                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
-                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
-                <h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
-            </div>
-            <div style="margin-left: 5%">
-                <h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
-                <h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
-                <h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
-            </div>
-           </div>
-        
-        </div>
-<!-- left -->
+	<div ng-controller="pageController as vmPage">
+		<ng-include src="'views/user/includes/sidebar.html'"></ng-include>
 
 
-<!-- right -->
-        <md-card class="card-border" flex-gt-xs="25" layout-align="center">
-            <div style="height:100%">
-            <ng-include src="'views/user/includes/header.html'"></ng-include>
-                <div style="overflow: hidden;">
-                    <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
-                        <h2>Profile Info</h2>
-                        <md-button class="md-raised" aria-label="description" ng-click="editProfile()">Edit</md-button>                    
-                        <form id="profileForm">
-                            <fieldset ng-disabled="vmProfile.isDisabled">
-                                <md-input-container class="profileForm" >
-                                    <input name="name" ng-model="vmProfile.subscription.user_id.name" placeholder="Name">
-                                </md-input-container>
+		<md-content class="md-content-bgimage" layout="row" layout-xs="column" ng-controller="profileController as vmProfile" ng-cloak style="height:100%;" >
 
-                                <md-input-container class="profileForm">
-                                    <input name="mobileno" ng-model="vmProfile.subscription.user_id.mobileno" placeholder="Mobile">
-                                </md-input-container>
+			<div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+				<img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+			</div>
 
-                                <md-input-container class="profileForm">
-                                    <input name="email" ng-model="vmProfile.subscription.user_id.email" type="email" placeholder="Email">
-                                </md-input-container>
-                                
-                                <md-input-container class="profileForm">
-                                    <input name="door_no" ng-model="vmProfile.subscription.user_id.door_no" placeholder="Door Number">
-                                </md-input-container>
-                                
-                                <md-input-container class="profileForm">
-                                    <input name="tower_name" ng-model="vmProfile.subscription.user_id.tower_name" placeholder="Tower Name">
-                                </md-input-container>
-                                
-                                <md-input-container class="profileForm">
-                                    <input name="apartment_name" ng-model="vmProfile.subscription.user_id.apartment_name" placeholder="Apartment Name">
-                                </md-input-container>
-                                <br>
-                                <md-input-container class="profileForm">
-                                    <md-button class="md-raised"  aria-label="description" ng-click="submit()">Submit</md-button>
-                                </md-input-container>
-                            </fieldset>
-                        </form>
-                        
+			<!-- left -->
+			<div flex-gt-xs="55" hide-xs>
 
-                    </div>
-                </div> 
-            </div>
-      <ng-include src="'views/user/includes/footer.html'"></ng-include>
-        </md-card>
-<!-- right -->
+				<div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+					<div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
+						<img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+					</div>
+					<div style="margin-left: 5%">
+						<h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
+						<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
+					</div>
+					<div style="margin-left: 5%">
+						<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+						<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
+						<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
+					</div>
+				</div>
 
-    </md-content>
-</div>
+			</div>
+			<!-- left -->
+
+
+			<!-- right -->
+			<md-card class="card-border" flex-gt-xs="25" layout-align="center">
+				<div class="profile-div-height">
+					<ng-include src="'views/user/includes/header.html'"></ng-include>
+					<div style="overflow: hidden;">
+						<div class="profile-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
+							<h2 style="padding-left: 10px">Profile Info</h2>
+							<md-button style="margin-left: 10px" class="md-raised" aria-label="description" ng-click="editProfile()">Edit</md-button>                    
+							<form id="profileForm">
+								<fieldset ng-disabled="vmProfile.isDisabled" style="border: none">
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="name" ng-model="vmProfile.subscription.user_id.name" placeholder="Name">
+									</md-input-container>
+
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="mobileno" ng-model="vmProfile.subscription.user_id.mobileno" placeholder="Mobile">
+									</md-input-container>
+
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="email" ng-model="vmProfile.subscription.user_id.email" type="email" placeholder="Email">
+									</md-input-container>
+
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="door_no" ng-model="vmProfile.subscription.user_id.door_no" placeholder="Door Number">
+									</md-input-container>
+
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="tower_name" ng-model="vmProfile.subscription.user_id.tower_name" placeholder="Tower Name">
+									</md-input-container>
+
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<input name="apartment_name" ng-model="vmProfile.subscription.user_id.apartment_name" placeholder="Apartment Name">
+									</md-input-container>
+									<br>
+									<md-input-container class="profileForm mb0 mt0" style="width: 100%">
+										<md-button class="md-raised"  aria-label="description" ng-click="submit()">Submit</md-button>
+									</md-input-container>
+								</fieldset>
+							</form>
+
+
+						</div>
+					</div> 
+				</div>
+				<ng-include src="'views/user/includes/footer.html'"></ng-include>
+			</md-card>
+			<!-- right -->
+
+		</md-content>
+	</div>
 </div>
 
 <!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
