@@ -5,6 +5,8 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
     entry: {main: './lib/src/js/index.js'},
@@ -23,13 +25,18 @@ module.exports = {
             new OptimizeCSSAssetsPlugin({})
         ],
         splitChunks: {
-          name (module) {
-            name ='vendor'
-            return
-          }
+            cacheGroups: {
+                commons: {
+                    test: `/node_modules/angular-material`,
+                    name: 'vendors',
+                    chunks: 'all'
+                }
+            }
         }
     },
     plugins: [
+        new CompressionPlugin(),
+        new BundleAnalyzerPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
