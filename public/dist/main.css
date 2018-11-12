@@ -19348,9 +19348,10 @@ body {
 }*/
 
 .md-content-bgimage{
-  background-image: url(/images/screen4.jpg);
+  background-image: url(/images/dscreen.jpg);
   opacity: .9;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*@media screen and (min-width: 1366px) and (min-height: 64px){
