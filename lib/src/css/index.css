@@ -843,7 +843,7 @@ padding-top: 20px;
 /*almost ok media*/
 @media screen and (min-width: 1366px) and (min-height: 768px){
 .profile-div-height{height: 87%}
-.profile-overflow-height{height: 87%}/*1366-1466-1566*/
+.profile-overflow-height{height: 87%}/*1366-1466-1536*/
 }
 
 @media screen and (min-width: 1366px) and (max-height: 640px){
