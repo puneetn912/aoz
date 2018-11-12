@@ -5,9 +5,9 @@
 	<div ng-controller="calenderController as vmCalender">
 
 		<div ng-controller="pageController as vmPage">
-            <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
-                <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-            </div>
+			<div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+				<img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+			</div>
 			<!-- <ng-include src="'views/user/includes/sidebar.html'"></ng-include> -->
 			<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
 				<md-toolbar class="md-theme-indigo">
@@ -67,33 +67,38 @@
 			</md-sidenav>
 
 
-			<md-content layout="row" layout-xs="column"  ng-cloak  style="height:100%;background-image: url(../images/screen1.jpg);" > 
+			<md-content layout="row" layout-xs="column" ng-cloak  style="height:100%;" class="md-content-bgimage" > 
 
 
 				<!-- left -->
 				<div flex-gt-xs="55" hide-xs>
 
 					<div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-						<div style="margin-top: -5%;margin-bottom: -45px;padding-left: 0px">
-							<img src="../images/logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+						<div style="margin-top: -5%;margin-bottom: 0px;padding-left: 0px;margin-top: -110px">
+							<img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
 						</div>
 						<div style="margin-left: 5%">
-							<h1 class="calender-left-h1">Healthy Home Style Meal</h1>
-							<h1 class="calender-left-h1">Free Delivery at your doorstep</h1>
-							<h1 class="calender-left-h1">Different Cuisine Everyday</h1>
-							<h1 class="calender-left-h1">No More Kitchen Hassles</h1>
-							<h1 class="calender-left-h1">No Repeat for 30 days</h1>
+							<h1 style="margin-bottom: 0px" class="calender-left-h1">No Repeat for 30 days</h1>
+							<h1 style="margin-bottom: 0;margin-top: 10px" class="calender-left-h1">Healthy Home Style Meal</h1>
+							<h1 style="margin-bottom: 0;margin-top: 10px" class="calender-left-h1">No More Kitchen Hassles</h1>
+							<h1 style="margin-bottom: 0;margin-top: 10px" class="calender-left-h1">Different Cuisine Everyday</h1>
+							<h1 style="margin-top: 10px" class="calender-left-h1">Free Delivery at your doorstep</h1>
 						</div>
-						<div style="margin-left: 5%"cclass="calender-left-div">
+            <div style="margin-left: 5%">
+            	<h4 class="calender-left-h4 mt0 mb0">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+            	<h4 style="margin-bottom: 0px;" class="calender-left-h4-2">organize your schedule No more kitchen hassles,</h4>
+            	<h4 class="calender-left-h4-2">Free home delivery</h4>
+		   	</div>
+
+
+<!-- 						<div style="margin-left: 5%" class="calender-left-div">
 							<h4 class="calender-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-, organize your schedule </h4>
 							<h4 class="calender-left-h4-2">No more kitchen hassles, Free home delivery</h4>
-						</div>
+						</div> -->
 					</div>
 
 				</div>
 				<!-- left -->
-
-
 
 				<!-- right -->
 				<md-card class="card-border" flex-gt-xs="25" layout-align="center">
@@ -104,9 +109,6 @@
 						<div style="overflow: hidden;">
 							<div class="cal-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;">
 
-
-
-
 								<!-- calender -->
 
 								<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
@@ -114,9 +116,6 @@
 								</md-card-content>
 
 								<!-- calender -->
-
-
-
 
 								<!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
 								<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
@@ -165,7 +164,7 @@
 
 							<!-- <ng-include src="'views/user/includes/footer.html'"></ng-include> -->
 
-					<!-- footer -->
+							<!-- footer -->
 							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
 								<div layout="column" layout-align="center center" ng-click="goProfile()">
 									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
@@ -181,7 +180,7 @@
 									<a href="https://www.dialjordan.com"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
 								</div>
 							</div>
-                    <!-- footer -->
+							<!-- footer -->
 
 						</div>
 					</div>
