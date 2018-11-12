@@ -843,7 +843,7 @@ padding-top: 20px;
 /*almost ok media*/
 @media screen and (min-width: 1366px) and (min-height: 768px){
 .profile-div-height{height: 87%}
-.profile-overflow-height{height: 87%}/*1366-1466-1566*/
+.profile-overflow-height{height: 87%}/*1366-1466-1536*/
 }
 
 @media screen and (min-width: 1366px) and (max-height: 640px){
@@ -1101,16 +1101,22 @@ body {
 }
 }*/
 
+
+@media screen and (min-width: 500px) and (min-height: 700px){
 .md-content-bgimage{
   background-image: url(/images/dscreen.jpg);
   opacity: .9;
   background-repeat: no-repeat;
   background-size: cover;
+}/*1366-1466-1566*/
 }
 
-/*@media screen and (min-width: 1366px) and (min-height: 64px){
+
+@media screen and (min-width: 1366px) and (min-height: 640px){
 .md-content-bgimage{
-  background-image: url(/images/test.png);
-  opacity: .7;
+  background-image: url(/images/dscreen.jpg);
+  opacity: .9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*TEST*/
 }
-}*/
