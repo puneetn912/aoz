@@ -8,6 +8,7 @@ let apartmentController = require('../../lib/src/js/scriptController/apartmentCo
 let userController = require('../../lib/src/js/scriptController/userController');
 let calendarController = require('../../lib/src/js/scriptController/calendarController');
 let paymentController = require('../../lib/src/js/scriptController/paymentController');
+let menuController = require('../../lib/src/js/scriptController/menuController');
 
 
 var mid = '24324';
@@ -55,6 +56,9 @@ router.post('/updateStatus/:id',subscriptionController.updateStatus)
 router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
+
+//menu
+router.post('/getMenu',menuController.getMenu)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
