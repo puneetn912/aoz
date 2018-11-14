@@ -272,6 +272,37 @@ md-autocomplete input:not(.md-input) {
 
 
 
+
+/*-------------------------menu.html-------------------------------*/
+@media screen and (min-width: 1366px) and (min-height: 768px){
+.menu-div-height{height: 87%}
+.menu-overflow-height{height: 87%}/*1366-1466-1536*/
+}
+
+@media screen and (min-width: 1366px) and (max-height: 640px){
+.menu-overflow-height{height: 82%}
+.menu-div-height{height: 83%}
+}/*TEST*/
+
+@media screen and (max-width: 360px) and (max-height: 640px){
+.menu-overflow-height{height: 85%}
+.menu-div-height{height: 100%}/*GALAXY S5*/
+}
+
+@media screen and (max-width: 500px) and (max-height: 800px){
+.menu-overflow-height{height: 90%}
+.menu-div-height{height: 95%}/*PIXEL MOBILE*/
+}
+
+@media screen and (max-width: 500px) and (min-height: 820px){
+.menu-overflow-height{height: 93%}
+.menu-div-height{height: 95%}/*PIXEL XL MOBILE*/
+}
+/*-------------------------menu.html------------------------------------*/
+
+
+
+
 /*---------------------footer.html-------------------------*/
 
 .card-footer{
