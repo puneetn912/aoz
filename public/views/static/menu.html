@@ -37,24 +37,23 @@
 
 			<!-- right -->
 			<md-card class="card-border" flex-gt-xs="25" layout-align="center">
-				<div style="height:100%">
+				<div class="menu-div-height">
 					<ng-include src="'views/user/includes/header.html'"></ng-include>
 					<div style="overflow: hidden;">
-						<div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
+						<div class="menu-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
 
 							<md-tabs md-selected="selectedIndex" style="min-height: 100% !important">
 								<md-tab ng-disabled="tab.disabled" label="Veg">
 									<div style="text-align: center">
 										<md-list>
-											<h3 style="border-bottom: 1.5px solid #c02425;margin-left: 30%;margin-right: 30%;padding-bottom: 5px;margin-bottom: 1px;letter-spacing: 3px">Our Menu</h3>
 											<md-list-item class="md-2-line" ng-repeat="x in vmMenu.veg">
-												<div style="width: 100%;border-bottom: 1px solid #eee" ng-repeat="(key,value) in x">
+												<div style="width: 100%;border-bottom: 2px solid #eee" ng-repeat="(key,value) in x">
 													<div layout="row" layout-align="center center">
 														<p class="mt0" style="border-bottom: 1.5px solid #c02425;width: 70px;margin-right: 10px">&nbsp;</p>
 														<h4 class="mt0" style="margin-bottom: 2px;letter-spacing: 1px">{{ key }}</h4>
 														<p class="mt0" style="border-bottom: 1.5px solid #c02425;width: 70px;margin-left: 10px">&nbsp;</p>
 													</div>
-													<p style="color: #979797; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px">{{ value }}</p>
+													<p style="color: #838383; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px">{{ value }}</p>
 												</div>
 
 											</md-list-item>
@@ -66,18 +65,18 @@
 									<div style="text-align: center;">
 										<md-list>
 
-											<h3 style="border-bottom: 1.5px solid #c02425;margin-left: 30%;margin-right: 30%;padding-bottom: 5px;margin-bottom: 1px;letter-spacing: 3px">Our Menu</h3>
+											<h3 style="border-bottom: 1.5px solid #c02425;margin-left: 25%;margin-right: 25%;padding-bottom: 5px;margin-bottom: 12px;letter-spacing: 3px;margin-top: 2px">Todays Menu</h3>
 											<md-list-item class="md-2-line" ng-repeat="x in vmMenu.nonveg">
 
 
 
-												<div style="width: 100%;border-bottom: 1px solid #eee" ng-repeat="(key,value) in x">
+												<div style="width: 100%;border-bottom: 2px solid #eee" ng-repeat="(key,value) in x">
 													<div layout="row" layout-align="center center">
 														<p class="mt0" style="border-bottom: 1.5px solid #c02425;width: 70px;margin-right: 10px">&nbsp;</p>
 														<h4 class="mt0" style="margin-bottom: 2px;letter-spacing: 1px">{{ key }}</h4>
 														<p class="mt0" style="border-bottom: 1.5px solid #c02425;width: 70px;margin-left: 10px">&nbsp;</p>
 													</div>
-													<p style="color: #979797; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px">{{ value }}</p>
+													<p style="color: #838383; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px">{{ value }}</p>
 												</div>
 
 
