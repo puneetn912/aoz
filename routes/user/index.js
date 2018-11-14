@@ -81,6 +81,7 @@ router.post('/getCal/:subId',calendarController.getCal)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)
+router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
 
 
