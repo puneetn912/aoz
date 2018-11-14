@@ -121,7 +121,12 @@
 								<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 8px">
 										<div class="pt0 pb0">
-											<label class="greyfont" style="font-size: 16px">No. of Veg Meals</label>
+											<label class="greyfont" style="font-size: 16px">Veg Meals 
+                                                <span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>
+
+
+<!-- vmCalender.nvegRem -->
+<!-- vmCalender.totalNvegCount -->
 										</div>
 										<div layout="row" layout-align="center center" class="pt0 pb0">
 											<div>
@@ -137,7 +142,7 @@
 									</div>							
 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 7px;border-bottom: 1px solid #eee">
 										<div class="pt0 pb0">
-											<label class="greyfont" style="font-size: 16px">No. of non Veg Meals</label>
+											<label class="greyfont" style="font-size: 16px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
 										</div>
 										<div layout="row" layout-align="center center" class="pt0 pb0">
 											<div>
