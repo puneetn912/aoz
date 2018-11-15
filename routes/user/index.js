@@ -1,4 +1,5 @@
 var express = require('express');
+var request = require('request')
 var router = express.Router();
 
 var subscription = require('../../lib/models/subscription');
@@ -43,9 +44,50 @@ router.post('/sendtoairpay', function(req, res, next) {
     aldata = alldata+dateformat(now,'yyyy-mm-dd');
 	checksum = md5(aldata+privatekey);
     fdata = req.body;
-    let paymentObj = { mid : mid,data: fdata,privatekey : privatekey,checksum:checksum}
+    let paymentObj = {         
+        privatekey:privatekey,
+        mercid:mid,
+        currency:356,
+        isocurrency:'INR',
+        chmod:'pg',
+        buyerEmail:fdata.buyerEmail,
+        buyerPhone:fdata.buyerPhone,
+        buyerFirstName:fdata.buyerFirstName,
+        buyerAddress:fdata.buyerAddress,
+        orderid:fdata.buyerPhone,
+        amount:fdata.amount,
+        checksum:checksum,
+      }
     console.log('paymentObj paymentObj',paymentObj)
+
     res.send(paymentObj);
+
+
+    // request.post('https://payments.airpay.co.in/pay/index.php',
+    //   {
+    //     privatekey:privatekey,
+    //     mercid:mid,
+    //     currency:356,
+    //     isocurrency:'INR',
+    //     chmod:'pg',
+    //     buyerEmail:fdata.buyerEmail,
+    //     buyerPhone:fdata.buyerPhone,
+    //     buyerFirstName:fdata.buyerFirstName,
+    //     buyerAddress:fdata.buyerAddress,
+    //     orderid:fdata.buyerPhone,
+    //     amount:fdata.amount,
+    //     checksum:checksum,
+    //   },function(err, res) {
+    //   if(!err)
+    //   {
+    //     console.log('res',res);
+    //     console.log('hero')
+    //   }
+    //   else
+    //   {
+    //     console.log('eeeeeeeeeeeee',err);
+    //   }
+    // })
 });
 
 // subcription

@@ -86,13 +86,13 @@
 
             <!-- payment -->
             <form style="margin-bottom: 0px">
-                <div layout="row" layout-align="center center" style="display:block;">
-                    <input type="text" ng-value="vmCart.name" id="name" class="width25"/>
-                    <input type="text" ng-value="vmCart.userPhone" id="userPhone" class="width25"/>
-                    <input type="text" ng-value="vmCart.userPhone" id="orderid" class="width25"/>
-                    <input type="text" ng-value="vmCart.address" id="address" class="width25"/>
-                    <input type="text" ng-value="vmCart.total" id="total" class="width25"/>
-                    <input type="text" ng-value="vmCart.email" id="email" class="width25"/>
+                <div layout="row" layout-align="center center" style="display:block">
+                    <input type="text" ng-value="vmCart.name" id="name" class="width251"/>
+                    <input type="text" ng-value="vmCart.userPhone" id="userPhone" class="width251"/>
+                    <input type="text" ng-value="vmCart.userPhone" id="orderid" class="width251"/>
+                    <input type="text" ng-value="vmCart.address" id="address" class="width251"/>
+                    <input type="text" ng-value="vmCart.total" id="total" class="width251"/>
+                    <input type="text" ng-value="vmCart.email" id="email" class="width251"/>
                 </div>
                 <div layout="row" layout-align="center center" class="cart-btn-div">
                     <md-button id="payBtn" ng-click="paynow()" class="md-raised cart-pay-btn" >Pay Now
@@ -103,22 +103,21 @@
                 </div>
             </form>
                 
-            <form method='POST' name="pForm" action='https://payments.airpay.co.in/pay/index.php' id='sendtoairpay'>
-              <div layout="row" layout-align="center center" style="">
-                  <input type="text" id="buyerFirstName" name='buyerFirstName' class="width25"/>
-                  <input type="text" id="buyerPhone" name='buyerPhone' class="width25"/>
-                  <input type="text" id="buyerAddress" name='buyerAddress' class="width25"/>
-                  <input type="text" id="amount" name='amount' class="width25"/>
-                  <input type="text" id="orderid1" name='orderid' class="width25"/>
-                  
-                  <input type="text" name='privatekey' id='privatekey' class="width25"/>
-                  <input type="text" id="mid" name='mercid' class="width25"/>
-                  <input type="text" id="checksum" name='checksum' class="width25"/>
-                  <input type="text" value=356 name='currency' class="width25"/>
-                  <input type="text" value="INR" name='isocurrency' class="width25"/>
-                  <input type="text" value="pg" name='chmod' class="width25"/>
-              </div>
-          </form>
+                <form method='POST' action="https://payments.airpay.co.in/pay/index.php" id='sendtoairpay'>
+                  <div layout="row" layout-align="center center" style="display: block">
+                      <input type="text" name='privatekey' id='privatekey' class="width251"/>
+                      <input type="text" id="mid" name='mercid' class="width251"/>
+                      <input type="text" id="orderid1" name='orderid' class="width251"/>
+                      <input type="text" id="buyerAddress" name='buyerAddress' class="width251"/>
+                      <input type="text" id="buyerPhone" name='buyerPhone' class="width251"/>
+                      <input type="text" id="amount" name='amount' class="width251"/>
+                      <input type="text" id="checksum" name='checksum' class="width251"/>
+                      <input type="text" value=356 name='currency' class="width251"/>
+                      <input type="text" value="INR" name='isocurrency' class="width251"/>
+                      <input type="text" value="pg" name='chmod' class="width251"/>
+                      <input type="submit" value="pay"/>
+                  </div>
+              </form>
 
               <!-- payment -->
 
