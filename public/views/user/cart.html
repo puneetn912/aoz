@@ -86,12 +86,14 @@
 
             <!-- payment -->
             <form style="margin-bottom: 0px">
-<!--                     <div layout="row" layout-align="center center" style="display:none">
+                    <div layout="row" layout-align="center center" style="display:none">
+                        <input type="text" ng-value="vmCart.name" id="name" class="width25"/>
                         <input type="text" ng-value="vmCart.userPhone" id="userPhone" class="width25"/>
+                        <input type="text" ng-value="vmCart.userPhone" id="orderid" class="width25"/>
                         <input type="text" ng-value="vmCart.address" id="address" class="width25"/>
-                        <input type="text" ng-value="vmCart._id" id="su_id" class="width25"/>
                         <input type="text" ng-value="vmCart.total" id="total" class="width25"/>
-                    </div> -->
+                        <input type="text" ng-value="vmCart.email" id="email" class="width25"/>
+                    </div>
                     <div layout="row" layout-align="center center" class="cart-btn-div">
                         <md-button id="payBtn" ng-click="paynow()" class="md-raised cart-pay-btn" >Pay Now
                         </md-button>
@@ -102,7 +104,7 @@
 
                 </form>
                 
-<!--                 <form method='POST' action='https://payments.airpay.co.in/pay/index.php' id='sendtoairpay'>
+                <form method='POST' action='https://payments.airpay.co.in/pay/index.php' id='sendtoairpay'>
                   <div layout="row" layout-align="center center" style="display: none">
                       <input type="text" name='privatekey' id='privatekey' class="width25"/>
                       <input type="text" id="mid" name='mercid' class="width25"/>
@@ -115,7 +117,7 @@
                       <input type="text" value="INR" name='isocurrency' class="width25"/>
                       <input type="text" value="pg" name='chmod' class="width25"/>
                   </div>
-              </form> -->
+              </form>
 
               <!-- payment -->
 
