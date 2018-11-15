@@ -36,7 +36,7 @@ router.post('/sendotp', function(req, res) {
 router.post('/thankyou', function(req, res, next) {
    console.log(req.body,'req') 
    console.log(res,'req')
-   res.redirect(`/`)
+   res.redirect(`/thankyou`)
 })
 
 router.post('/sendtoairpay', function(req, res, next) {
