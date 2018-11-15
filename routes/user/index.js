@@ -1,4 +1,5 @@
 var express = require('express');
+var request = require('request')
 var router = express.Router();
 
 var subscription = require('../../lib/models/subscription');
@@ -21,31 +22,82 @@ var locality = require('../../lib/models/locality')
 
 //send otp sign up functionalities
 router.post('/sendotp', function(req, res) {
-	  let signupotp = Math.floor(1000 + Math.random() * 9000);
-      let phone = [];
-      phone.push(Number(req.body.mobile));
-  	  console.log('req.body',req.body)
-  	  console.log('req.body',signupotp)
-  	  console.log('req.body',phone)
-  	  // res.send(signupotp)
+    let signupotp = Math.floor(1000 + Math.random() * 9000);
+    let phone = [];
+    phone.push(Number(req.body.mobile));
+    console.log('req.body',req.body)
+    console.log('req.body',signupotp)
+    console.log('req.body',phone)
+    // res.send(signupotp)
 });
 
 //payment integration
+
+router.post('/thankyou', function(req, res, next) {
+   console.log(req.body,'req') 
+   console.log(res,'req')
+   if(req.body.MESSAGE == 'Success'){
+        res.redirect(`/thankyou`)
+   }else{
+        res.redirect(`/declined`)
+   }
+})
 
 router.post('/sendtoairpay', function(req, res, next) {
 	console.log('req.body',req.body);
 	var md5 = require('md5');
 	var sha256 = require('sha256');
 	var dateformat = require('dateformat');
-    alldata   = req.body.buyerAddress+req.body.amount+req.body.orderid;
+    alldata   = req.body.buyerAddress+req.body.amount+Number(req.body.orderid);
     udata = username+':|:'+password;
     privatekey = sha256(secret+'@'+udata);
     aldata = alldata+dateformat(now,'yyyy-mm-dd');
 	checksum = md5(aldata+privatekey);
     fdata = req.body;
-    let paymentObj = { mid : mid,data: fdata,privatekey : privatekey,checksum:checksum}
+    let paymentObj = {         
+        privatekey:privatekey,
+        mercid:mid,
+        currency:356,
+        isocurrency:'INR',
+        chmod:'pg',
+        buyerEmail:fdata.buyerEmail,
+        buyerPhone:fdata.buyerPhone,
+        buyerFirstName:fdata.buyerFirstName,
+        buyerAddress:fdata.buyerAddress,
+        orderid:fdata.buyerPhone,
+        amount:fdata.amount,
+        checksum:checksum,
+      }
     console.log('paymentObj paymentObj',paymentObj)
+
     res.send(paymentObj);
+
+
+    // request.post('https://payments.airpay.co.in/pay/index.php',
+    //   {
+    //     privatekey:privatekey,
+    //     mercid:mid,
+    //     currency:356,
+    //     isocurrency:'INR',
+    //     chmod:'pg',
+    //     buyerEmail:fdata.buyerEmail,
+    //     buyerPhone:fdata.buyerPhone,
+    //     buyerFirstName:fdata.buyerFirstName,
+    //     buyerAddress:fdata.buyerAddress,
+    //     orderid:fdata.buyerPhone,
+    //     amount:fdata.amount,
+    //     checksum:checksum,
+    //   },function(err, res) {
+    //   if(!err)
+    //   {
+    //     console.log('res',res);
+    //     console.log('hero')
+    //   }
+    //   else
+    //   {
+    //     console.log('eeeeeeeeeeeee',err);
+    //   }
+    // })
 });
 
 // subcription
