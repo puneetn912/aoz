@@ -37,7 +37,7 @@ router.post('/sendtoairpay', function(req, res, next) {
 	var md5 = require('md5');
 	var sha256 = require('sha256');
 	var dateformat = require('dateformat');
-    alldata   = req.body.buyerAddress+req.body.amount+req.body.orderid;
+    alldata   = req.body.buyerAddress+req.body.amount+Number(req.body.orderid);
     udata = username+':|:'+password;
     privatekey = sha256(secret+'@'+udata);
     aldata = alldata+dateformat(now,'yyyy-mm-dd');
