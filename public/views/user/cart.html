@@ -86,7 +86,7 @@
 
             <!-- payment -->
             <form style="margin-bottom: 0px">
-                <div layout="row" layout-align="center center" style="display:block">
+                <div layout="row" layout-align="center center" style="display:none">
                     <input type="text" ng-value="vmCart.name" id="name" class="width251"/>
                     <input type="text" ng-value="vmCart.userPhone" id="userPhone" class="width251"/>
                     <input type="text" ng-value="vmCart.userPhone" id="orderid" class="width251"/>
@@ -104,7 +104,7 @@
             </form>
                 
                 <form method='POST' action="https://payments.airpay.co.in/pay/index.php" id='sendtoairpay'>
-                  <div layout="row" layout-align="center center" style="display: block">
+                  <div layout="row" layout-align="center center" style="display: none">
                       <input type="text" name='privatekey' id='privatekey' class="width251"/>
                       <input type="text" id="mid" name='mercid' class="width251"/>
                       <input type="text" id="orderid1" name='orderid' class="width251"/>
