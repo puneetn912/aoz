@@ -13,8 +13,6 @@ var myMiddleware = require('./lib/middleware');
 
 //User routes
 var user = require('./routes/user/index');
-
-
 var app = express();
 
 // // view engine setup
