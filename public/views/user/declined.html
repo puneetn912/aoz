@@ -1,0 +1,61 @@
+<div ng-app="cmsApp" ng-cloak>
+
+  <div ng-controller="pageController as vmPage">
+    <ng-include src="'views/user/includes/sidebar.html'"></ng-include>
+  
+
+    <md-content layout="row" class="md-content-bgimage" layout-xs="column" ng-controller="menuController as vmMenu" ng-cloak style="height:100%;" >
+
+        <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+        </div>
+
+<!-- left -->
+        <div flex-gt-xs="55" hide-xs>
+
+           <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+            <div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
+                <img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+            </div>
+            <div style="margin-left: 5%">
+                <h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
+                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
+                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
+                <h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
+                <h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
+            </div>
+            <div style="margin-left: 5%">
+                <h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+                <h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
+                <h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
+            </div>
+           </div>
+        
+        </div>
+<!-- left -->
+<!-- left -->
+
+
+<!-- right -->
+        <md-card class="card-border" flex-gt-xs="25" layout-align="center">
+            <div style="height:100%">
+            <ng-include src="'views/user/includes/header.html'"></ng-include>
+                <div style="overflow: hidden;">
+                    <div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
+                        <div layout="column" layout-align="center center" layout-padding>
+                            <h3>Payment failed Bro</h3>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+      <ng-include src="'views/user/includes/footer.html'"></ng-include>
+        </md-card>
+<!-- right -->
+
+    </md-content>
+</div>
+</div>
+
+<!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
+
+
