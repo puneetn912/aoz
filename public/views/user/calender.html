@@ -121,7 +121,12 @@
 								<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 8px">
 										<div class="pt0 pb0">
-											<label class="greyfont" style="font-size: 16px">No. of Veg Meals</label>
+											<label class="greyfont" style="font-size: 16px">Veg Meals 
+                                                <span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>
+
+
+<!-- vmCalender.nvegRem -->
+<!-- vmCalender.totalNvegCount -->
 										</div>
 										<div layout="row" layout-align="center center" class="pt0 pb0">
 											<div>
@@ -137,7 +142,7 @@
 									</div>							
 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 7px;border-bottom: 1px solid #eee">
 										<div class="pt0 pb0">
-											<label class="greyfont" style="font-size: 16px">No. of non Veg Meals</label>
+											<label class="greyfont" style="font-size: 16px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
 										</div>
 										<div layout="row" layout-align="center center" class="pt0 pb0">
 											<div>
@@ -166,12 +171,12 @@
 
 							<!-- footer -->
 							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
-								<div layout="column" layout-align="center center" ng-click="goProfile()">
+								<div layout="column" layout-align="center center" ng-click="goProfile()" style="outline: none;cursor: pointer">
 									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
 									<span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
 								</div>
 								<div style="padding-left: 23%;padding-top: 4px" layout="column" layout-align="center center">
-									<div layout="column" layout-align="center center" ng-click="addMore()">
+									<div layout="column" layout-align="center center" ng-click="addMore()" style="outline: none;cursor: pointer">
 										<img src="../images/catering.png" width="28px" height="28px" alt="white-logo">
 										<span style="font-size: 12px;margin-top: -5px;letter-spacing: 1px;width: max-content" class="whitefont">Add Meals</span>
 									</div>
