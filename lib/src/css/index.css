@@ -427,11 +427,13 @@ border-radius: 0px !important;
 
 
 @media screen and (max-width: 500px){
-.cal-div-height{height:100%;}
+.cal-div-height{height:93%;}
+.cal-overflow-height{height:91%;}
 } 
 
 @media screen and (min-width: 500px) and (min-height: 700px){
 .cal-div-height{height:100%;}
+
 }
 
 
@@ -535,14 +537,16 @@ select{
 }
 
 @media screen and (min-width: 500px) and (max-height: 700px){
-.subscribe-overflow-height{height:84%;}
+.subscribe-overflow-height{height:89%;}
 .subscribe-btn{padding-top: 20px}
-.subscribe-div-height{height:82%;}/*TEST*/
+.subscribe-div-height{height:76%;}/*TEST*/
 }
 
 
 @media screen and (max-width: 500px) and (max-height: 700px){
-.subscribe-card-height{height:100%;}/*MOBILE*/
+.subscribe-card-height{height:100%;}
+.subscribe-overflow-height{height:91%;}
+.subscribe-div-height{height:93%;}/*MOBILE*/
 }
 
 @media screen and (max-width: 500px) and (max-height: 800px){
@@ -558,7 +562,7 @@ select{
 }/*IPHONE 5*/
 @media screen and (max-width: 500px) and (max-height: 700px){
 .subscribe-desc-text{padding-bottom: 20px}
-.subscribe-btn{padding-top: 20px}
+.subscribe-btn{padding-top: 0px}
 }/*MOBILE*/
 
 @media screen and (max-width: 320px) and (max-height: 570px){
