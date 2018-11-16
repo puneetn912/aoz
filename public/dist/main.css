@@ -698,20 +698,40 @@ padding-top: 2px;
 
 
 /*-----------------------faq.html---------------------------*/
-@media screen and (min-width: 500px) and (max-height: 640px){
-.faq-div-height{height:90%;}
-.faq-overflow-height{height:81%;}/*TEST*/
-}
-@media screen and (min-width: 500px) and (min-height: 700px){
-.faq-div-height{height:90%;}
-.faq-overflow-height{height:87%;}/*1366-1466-1566*/
-}
 
 
-@media screen and (max-width: 1350px) and (max-height: 644px){
+/*@media screen and (min-width: 1366px) and (max-height: 640px){
+.faq-div-height{height:80%;}
+.faq-overflow-height{height:90%;}
+}*//*TEST*/
+
+
+/*@media screen and (min-width: 1366px) and (min-height: 768px){
+.faq-div-height{height:84%;}
+.faq-overflow-height{height:92%;}
+}*//*1366*/
+
+/*@media screen and (min-width: 1350px) and (min-height: 644px){
+.faq-div-height{height:84%;}
+.faq-overflow-height{height:92%;}
+}*//*1350*/
+
+
+@media screen and (min-width: 1224px){
+.faq-div-height{height:84%;}
+.faq-overflow-height{height:94%;}
+}/*1224*/
+
+
+/*@media screen and (min-width: 1536px) and (min-height: 754px){
+.faq-div-height{height:84%;}
+.faq-overflow-height{height:92%;}
+}*//*1536*/
+
+/*@media screen and (max-width: 1350px) and (max-height: 644px){
 .faq-div-height{height:94%;}
 .faq-overflow-height{height:85%;}
-}/*1350-644*/
+}*//*1350*/
 
 
 @media screen and (max-width: 400px) and (min-height: 640px){
@@ -1293,7 +1313,7 @@ body {
 }/*1366-1466-1566*/
 }
 
-@media screen and (max-width: 1350px) and (max-height: 644px){
+@media screen and (min-width: 1350px) and (min-height: 644px){
 .md-content-bgimage{
   background-image: url(/images/dscreen.jpg);
   background-repeat: no-repeat;
