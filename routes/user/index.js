@@ -59,7 +59,7 @@ router.post('/sendtoairpay', function(req, res, next) {
         mercid:mid,
         currency:356,
         isocurrency:'INR',
-        chmod:'pg',
+        chmod:'',
         buyerEmail:fdata.buyerEmail,
         buyerPhone:fdata.buyerPhone,
         buyerFirstName:fdata.buyerFirstName,

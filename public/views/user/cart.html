@@ -46,7 +46,7 @@
 
                    <div layout="row" style="border-bottom: 2px solid #eee;margin-right: 13px;margin-left: 10px" layout-padding>
                      <div>
-                       <h4 class="mb5" style="letter-spacing: 1px;margin-top: 10px;font-size: 20px">User Id</h4> 
+                       <h4 class="mb5" style="letter-spacing: 1px;margin-top: 10px;font-size: 20px" ng-bind="vmCart.userName"></h4> 
                        <h4 class="greyfont mt5 font-weight400" style="margin-bottom: 5px" ng-model="vmCart.userPhone" ng-bind="vmCart.userPhone"></h4>
                    </div>
                </div>
@@ -62,11 +62,11 @@
                         <a ng-bind="vmCart.meal_type" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Veg Meals</label>
+                        <label class="pt0 pb0 letter-space1">Veg Meals * {{vmCart.subscription.veg_count}}</label>
                         <a ng-bind="vmCart.vegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Non-Veg Meals</label>
+                        <label class="pt0 pb0 letter-space1">Non-Veg Meals * {{vmCart.subscription.nonveg_count}}</label>
                         <a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
