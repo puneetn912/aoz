@@ -110,7 +110,7 @@ router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
 //menu
-router.post('/getMenu',menuController.getMenu)
+router.post('/getMenuByDate',menuController.getMenuByDate)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
@@ -125,6 +125,7 @@ router.post('/addTwr/:id',apartmentController.addTwr)
 router.post('/createUser',userController.createUser)
 router.post('/updateUser',userController.updateUser)
 router.post('/checkUser/:phone',userController.checkUser)
+router.post('/checkUserId/:id',userController.checkUserId)
 
 //calendar
 router.post('/addCalendar',calendarController.add)
