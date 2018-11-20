@@ -31,16 +31,36 @@
 
 <!-- right -->
          <md-card flex-gt-xs="25" layout-align="center" class="card-border">
+		  <md-card-content class="home-card-content mobile" style="padding: 0px">
+
+		<div style="display: none" ng-init="init()" id="abc" class="imageslide" ng-switch='slideshow' ng-animate="animate">
+			<div class="slider-content" ng-switch-when="1">
+					   		<img src="../images/bg-1.jpg" style="width: 100%" alt="image caption">
+				<!-- <div class="mobile1"></div> -->
+			</div>	
+			<div class="slider-content" ng-switch-when="2">
+						   		<img src="../images/bg-2.jpg" style="width: 100%" alt="image caption">
+               <!-- <div class="mobile2"></div> -->
+			</div>
+			<div class="slider-content" ng-switch-when="3">
+						   		<img src="../images/bg-3.jpg" style="width: 100%" alt="image caption">
+               <!-- <div class="mobile3"></div> -->
+			</div>	
+			<div class="slider-content" ng-switch-when="4">
+						   		<img src="../images/bg-4.jpg" style="width: 100%" alt="image caption">
+				<!-- <div class="mobile4"></div> -->
+			</div>	
+		</div>
 
 
-		  <md-card-content class="home-card-content mobile">
-           <div layout="column" layout-align="center center" class="pb124 mt-100">
-			<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10" alt="image caption">
+
+           <div layout="column" layout-align="center center" class="pb124 home-div">
+			<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image zindex999" alt="image caption">
 			
-			<h4 class="greyfont letter-space1 mt-66">Healthy home style food</h4>
+			<h4 class="home-healthy-text letter-space2 mt-66 zindex999">Healthy home style food</h4>
 		   </div>
            <div layout="column" layout-align="center center">
-			<h4 class="greyfont letter-space1">Sign in with DJ Fresh</h4>
+			<h4 class="home-sign-text letter-space2 zindex999">Sign in with DJ Fresh</h4>
 		  <div layout="row">
 			<div>	
 			    <md-button class="md-raised home-signup-btn" href="/signup">Log in</md-button>

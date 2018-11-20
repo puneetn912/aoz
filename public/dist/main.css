@@ -288,7 +288,7 @@ md-tabs md-ink-bar {
 .menu-overflow-height{height: 87%}
 }*/
 
-@media screen and (max-width: 1536px) and (max-height: 864px){
+@media screen and (min-width: 1530px) and (min-height: 750px){
 .menu-div-height{height: 87%}
 .menu-overflow-height{height: 87%}/*1536*/
 }
@@ -703,39 +703,12 @@ padding-top: 2px;
 
 /*-----------------------faq.html---------------------------*/
 
-
-/*@media screen and (min-width: 1366px) and (max-height: 640px){
-.faq-div-height{height:80%;}
-.faq-overflow-height{height:90%;}
-}*//*TEST*/
-
-
-/*@media screen and (min-width: 1366px) and (min-height: 768px){
-.faq-div-height{height:84%;}
-.faq-overflow-height{height:92%;}
-}*//*1366*/
-
-/*@media screen and (min-width: 1350px) and (min-height: 644px){
-.faq-div-height{height:84%;}
-.faq-overflow-height{height:92%;}
-}*//*1350*/
-
-
 @media screen and (min-width: 1224px){
 .faq-div-height{height:84%;}
 .faq-overflow-height{height:94%;}
 }/*1224*/
 
 
-/*@media screen and (min-width: 1536px) and (min-height: 754px){
-.faq-div-height{height:84%;}
-.faq-overflow-height{height:92%;}
-}*//*1536*/
-
-/*@media screen and (max-width: 1350px) and (max-height: 644px){
-.faq-div-height{height:94%;}
-.faq-overflow-height{height:85%;}
-}*//*1350*/
 
 
 @media screen and (max-width: 400px) and (min-height: 640px){
@@ -930,6 +903,63 @@ padding-top: 20px;
   padding-top: 2px;
 }
 }/*IPHONE 5*/
+
+                /*perfect-media*/
+@media screen and (max-width: 360px) and (max-height: 640px){
+.cart-overflow-height{height: 88%}
+.cart-div-height{height: 93%}/*GALAXY S5*/
+}
+
+@media screen and (max-width: 380px) and (max-height: 670px){
+.cart-overflow-height{height: 93%}
+.cart-div-height{height: 94%}/*iphone 6*/
+}
+
+@media screen and (max-width: 420px) and (max-height: 740px){
+.cart-overflow-height{height: 93%}
+.cart-div-height{height: 94%}/*pixel 2*/
+}
+
+@media screen and (max-width: 1360px) and (max-height: 650px){
+.cart-overflow-height{height: 82%}
+.cart-div-height{height: 83%}/*1350-644*/
+}
+
+@media screen and (max-width: 1380px) and (min-height: 700px){
+.cart-overflow-height{height: 86%}
+.cart-div-height{height: 86%}/*1366-768*/
+}
+
+
+@media screen and (max-width: 1450px) and (min-height: 850px){
+.cart-overflow-height{height: 89%}
+.cart-div-height{height: 88%}/*1440-900*/
+}
+
+
+@media screen and (min-width: 1520px) and (min-height: 750px){
+.cart-overflow-height{height: 86%}
+.cart-div-height{height: 86%}/*1536-754*/
+}
+
+@media screen and (max-width: 1370px) and (max-height: 640px){
+.cart-overflow-height{height: 83%}
+.cart-div-height{height: 86%}/*test*/
+}
+
+
+@media screen and (max-width: 420px) and (max-height: 830px){
+.cart-overflow-height{height: 93%}
+.cart-div-height{height: 94%}/*pixel x*/
+}
+
+@media screen and (max-width: 320px) and (max-height: 570px){
+.cart-div-height{height: 92%}
+.cart-overflow-height{height: 90%}/*iphone 5*/
+}
+                 /*perfect-media*/
+
+
 /*-----------------cart.html------------------------------*/
 
 
@@ -1022,6 +1052,21 @@ padding-top: 20px;
 @media screen and (min-height: 700px){
 .home-left-h4{font-size: 18px;color: white;letter-spacing: 2px}
 }
+
+
+
+@media screen and (min-width: 900px){
+.home-div{margin-top: -100px}
+.home-sign-text{color: grey}
+.home-healthy-text{color: grey;}
+}
+
+@media screen and (max-width: 500px){
+.home-div{margin-top: -610px}
+.home-sign-text{color: white}
+.home-healthy-text{color: white;}
+}
+
 /*---------------------home.html----------------------------*/
 
 
@@ -1248,7 +1293,7 @@ body {
 
 /*margins*/
 .m0{margin: 0px}
-
+.mt-570{margin-top: -570px !important}
 .mt-136{margin-top: -136px !important}
 .mt-100{margin-top: -100px !important}
 .mt-66{margin-top: -66px !important}
@@ -1348,11 +1393,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mobile{
-  background-image: url(/images/bg-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*TEST*/
 }
@@ -1360,12 +1400,86 @@ body {
 
 
 
+/*zindex*/
 
-@media screen and (max-width: 500px) and (max-height: 640px){
-.mobile{
-  background-image: url(/images/bg-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.zindex999{
+  z-index: 999;
 }
-}/*GALAXY S5*/
 
+/*zindex*/
+
+
+
+
+/* Styles go here */
+
+.slideshow {
+  /*font-family: "Arial", sans-serif;*/
+  text-align: center;
+  position:relative;
+  /*width:600px;*/
+  overflow:hidden;
+  background: #1a1a1a;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: .3em;
+  margin-top: 30px;
+}
+
+#withinheader {
+  width:60%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.imageslide{
+  /*height:400px;*/
+  height: 100%;
+  margin: 0 auto;
+  /*margin-bottom: 20px;*/
+  overflow:hidden;
+  position:relative;
+  text-align: center;
+}
+
+.imageslide .slider-content {
+  position: absolute;
+  width:100%;
+  height:400px;
+  
+}
+
+.animate-enter,.animate-leave {
+  -webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+  -moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+  -ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+  -o-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+  transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+}
+
+.animate-enter {
+  left:100%;
+}
+
+.animate-enter.animate-enter-active {
+  left:0;
+}
+
+.animate-leave {
+  left:0;
+}
+
+.animate-leave.animate-leave-active {
+  margin-left:-100%;
+}
+
+#mainbody {
+  background-color: #FFFFFF;
+  width:50%;
+  min-height:1024px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #EEEEEE;
+  margin: 0 auto;
+}
