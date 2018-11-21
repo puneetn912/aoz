@@ -75,32 +75,6 @@ router.post('/sendtoairpay', function(req, res, next) {
 
     res.send(paymentObj);
 
-
-    // request.post('https://payments.airpay.co.in/pay/index.php',
-    //   {
-    //     privatekey:privatekey,
-    //     mercid:mid,
-    //     currency:356,
-    //     isocurrency:'INR',
-    //     chmod:'pg',
-    //     buyerEmail:fdata.buyerEmail,
-    //     buyerPhone:fdata.buyerPhone,
-    //     buyerFirstName:fdata.buyerFirstName,
-    //     buyerAddress:fdata.buyerAddress,
-    //     orderid:fdata.buyerPhone,
-    //     amount:fdata.amount,
-    //     checksum:checksum,
-    //   },function(err, res) {
-    //   if(!err)
-    //   {
-    //     console.log('res',res);
-    //     console.log('hero')
-    //   }
-    //   else
-    //   {
-    //     console.log('eeeeeeeeeeeee',err);
-    //   }
-    // })
 });
 
 // subcription
