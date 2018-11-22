@@ -47,7 +47,20 @@
 						<div class="subscribe-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px;width:101%">        
 
 							<div style="height: 142px">
-								<img src="../images/food3.png" width="100%" height="142px" alt="lunch">
+		<div  id="abc" class="imageslide" ng-switch='slideshow' ng-animate="animate">
+			<div class="slider-content" ng-switch-when="1">
+					   		<img src="../images/sub1.jpg" style="width: 100%" alt="image caption">
+				<!-- <div class="mobile1"></div> -->
+			</div>	
+			<div class="slider-content" ng-switch-when="2">
+						   		<img src="../images/sub2.jpg" style="width: 100%" alt="image caption">
+               <!-- <div class="mobile2"></div> -->
+			</div>
+			<div class="slider-content" ng-switch-when="3">
+						   		<img src="../images/sub3.jpg" style="width: 100%" alt="image caption">
+               <!-- <div class="mobile3"></div> -->
+			</div>	
+		</div>
 							</div>
 							<div layout-padding class="aligncenter subscribe-desc-dic">
 								<h5 class="blackffont-weight400 mt0 mb0 subscribe-desc-text">
