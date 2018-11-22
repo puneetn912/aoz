@@ -103,6 +103,7 @@ router.post('/createUser',userController.createUser)
 router.post('/updateUser',userController.updateUser)
 router.post('/checkUser/:phone',userController.checkUser)
 router.post('/checkUserId/:id',userController.checkUserId)
+router.post('/getUserById/:id',userController.getUserById)
 
 //calendar
 router.post('/addCalendar',calendarController.add)
