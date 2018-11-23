@@ -931,13 +931,13 @@ padding-top: 2px;
 
 
 @media screen and (min-width: 1000px){
-  .signup-div-heigth{height: 83%}
+  .signup-div-height{height: 83%}
   .signup-overflow-height{height: 98%}
 }
 
 
 @media screen and (max-width: 500px){
-  .signup-div-heigth{height: 100%}
+  .signup-div-height{height: 100%}
   .signup-overflow-height{height: 98%}
 }
 
