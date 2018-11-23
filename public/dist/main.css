@@ -375,7 +375,7 @@ md-tabs md-ink-bar {
 }
 
 .white-footer{
-  background-color:transparent;
+  background-color:red;
   height: 5px;
   /*border-top: 1px solid #eee;*/
   position: fixed;
@@ -383,7 +383,7 @@ md-tabs md-ink-bar {
 
 .white-header{
 height: 5px;
-background-color: transparent;
+background-color: red;
 }
 /*white-footer*/
 
@@ -405,6 +405,7 @@ background-color: transparent;
   margin-right: 70px;*/
   height: 40px;
  /* position: absolute;*/
+ background-color: white;
 }
 
 .otp-otpbtn-inp{
@@ -413,6 +414,7 @@ background-color: transparent;
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+   background-color: white;
 }
 
 .otp-otpbtn-btn{
@@ -447,6 +449,18 @@ background-color: transparent;
 
 @media screen and (min-width: 360px) and (min-height: 640px){
 .otp-card-img{padding-top: 20px}/*GALAXY S5*/
+}
+
+
+@media screen and (max-width: 500px){
+.otp-div-height{height: 99%}
+.otp-overflow-height{height: 100%}
+}
+
+
+@media screen and (min-width: 1000px){
+.otp-div-height{height: 83%}
+.otp-overflow-height{height: 99%}
 }
 
 /*--------------------verify.html---------------------------------*/
@@ -777,6 +791,32 @@ padding-top: 2px;
 /*-----------------------faq.html---------------------------------*/
 
 /*-----------------------signup.html-----------------------------*/
+
+
+.signup-btn-div{
+/*  display:flex;
+  flex-direction:row;*/
+  border:1px solid lightsalmon;
+  padding:2px;
+  border-radius: 50px;
+/*  margin-left: 70px;
+  margin-right: 70px;*/
+  height: 40px;
+ /* position: absolute;*/
+ background-color: white;
+}
+
+.signup-btn-inp{
+  flex-grow:2;
+  border:none;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   background-color: white;
+}
+
+
+
 .dot {
     height: 25px;
     width: 25px;
