@@ -12,10 +12,10 @@ let paymentController = require('../../lib/src/js/scriptController/paymentContro
 let menuController = require('../../lib/src/js/scriptController/menuController');
 
 
-var mid = '24324';
-var username = '5168160';
-var password = 'NBTh6GXx';
-var secret = 'KVnqNAjbh8wKE6wM';
+var mid = '26239';
+var username = '5895556';
+var password = 'AH4NjDNd';
+var secret = '8mWpy7XcmP56S9BT';
 var now = new Date();
 
 var locality = require('../../lib/models/locality')
