@@ -267,7 +267,7 @@ md-tabs md-ink-bar {
 }
 
 .white-footer{
-  background-color:red;
+  background-color:transparent;
   height: 5px;
   /*border-top: 1px solid #eee;*/
   position: fixed;
@@ -275,7 +275,7 @@ md-tabs md-ink-bar {
 
 .white-header{
 height: 5px;
-background-color: red;
+background-color: transparent;
 }
 /*white-footer*/
 
