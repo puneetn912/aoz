@@ -32,13 +32,10 @@
 		</div>
 		<!-- left -->
 
-
-
 		<!-- right -->
 		<md-card class="card-border" flex-gt-xs="25" layout-align="center">
 			<div  style="height:100%">
 				<ng-include src="'views/user/includes/header.html'"></ng-include>
-
 
 				<div style="overflow: hidden;">
 					<div style="height: 84%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
@@ -51,89 +48,22 @@
 
 						<form name="userDetails">
 
+						<div layout="column">
 
-<div layout="column">
+							<div id="doorInp">
+								<input ng-model="vmThanks.doorNo" type="text" name="doorNo" placeholder="Enter your Door/Flat Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Door/Flat Number'" ng-pattern="/^[A-Za-z0-9]*$/" class="thank-input">	
+							</div>
 
-	<div id="doorInp">
-		<input ng-model="vmThanks.doorNo" type="text" name="doorNo" placeholder="Enter your Door Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Door Number'" ng-pattern="/^[A-Za-z0-9]*$/" class="thank-input">	
-	</div>
+							<div id='nameInp'>
+								<input class="thank-input" ng-model="vmThanks.userName" type="text" placeholder="Enter your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Name'" ng-pattern="/^[A-Za-z ]*$/" name="userName">	
+							</div>
 
-	<div id='nameInp'>
-		<input class="thank-input" ng-model="vmThanks.userName" type="text" placeholder="Enter your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Name'" ng-pattern="/^[A-Za-z ]*$/" name="userName">	
-	</div>
+							<div id="emailInp">
+								<input class="thank-input" ng-model="vmThanks.email" type="email" placeholder="Enter your EmailId" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your EmailId'" name="email" placeholder="Enter your EmailId">	
 
-	<div id="emailInp">
-		<input class="thank-input" ng-model="vmThanks.email" type="email" placeholder="Enter your EmailId" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your EmailId'" name="email" placeholder="Enter your EmailId">	
+							</div>
 
-	</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 							<div id="doorInp" layout="row" layout-align="center" style="padding:0 3%;">
-								<input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Door/Flat No :" disabled>
-								<input ng-model="vmThanks.doorNo" type="text" name="doorNo" placeholder="Door No" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Door No'" ng-pattern="/^[A-Za-z0-9]*$/"
-									style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0;outline: none;padding-left: 2px" 
-									>
-							</div> -->
-
-<!-- 							<div id='nameInp' layout="row" layout-align="center" style="padding: 0px 3%;">
-								<input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;border-bottom: none;min-width: 0" type="text" value="Name :" disabled>
-								<input ng-model="vmThanks.userName" type="text" placeholder="Name" onfocus="this.placeholder = ''" 
-									onblur="this.placeholder = 'Name'" ng-pattern="/^[A-Za-z ]*$/" name="userName" 
-									style="background-color: white;border-top: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;border-bottom: none;min-width: 0;padding-left: 2px;outline:none" >
-							</div> -->
-
-<!-- 							<div id="emailInp" layout="row" layout-align="center" style="padding: 0px 3%;">
-								<input style="text-align: left;background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-right: none;border-left: none;min-height: 7%;min-width: 0" type="text" value="Email Id :" disabled>
-								<input ng-model="vmThanks.email" type="email" placeholder="Email Id" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Id'" name="email" 
-									style="background-color: white;border-top: 1px solid #e9dbdb;border-bottom: 1px solid #e9dbdb;border-left: 1px solid #e9dbdb;border-right: none;text-align: left;min-width: 0;outline: none;padding-left: 2px" >
-							</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+						</div>
 
 							<div layout="row" layout-align="center center" style="padding-top: 15px">
 								<md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10 thank-manage-btn" ></md-button>
@@ -148,23 +78,6 @@
 							<div ng-show="userDetails.email.$invalid && userDetails.email.$dirty" 
 								style="color: red" align="center">Email not valid</div>
 						</form>
-
-
-
-		  <!--           <form>
-					  <div id="doorInp" layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding:12px 8px;display: block">
-						  <label for="drno" class="pt0 pb0">Door/Flat No :</label>
-						  <input type="text" name="drno" style="outline:none" ng-model="vmThanks.doorNo" placeholder="Door No"  class="pt0 pb0 whitebgcolor font-weight600 border-none"/>  
-					  </div>
-					  <div id='nameInp' layout="row" layout-align="center center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: block ">
-					  <label for="uname" class="pt0 pb0">Name :</label>
-						  <input type="text" name="uname" style="outline: none" ng-model="vmThanks.userName" placeholder="Name" class="pt0 pb0 whitebgcolor font-weight600 border-none">  
-					  </div>
-					  <div layout="row" layout-align="center center" class="bt-1-s-eee" style="padding-top: 15px">
-						<md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10" style="width:180px;border-radius: 50px;font-size: 18px;margin: 19px 0px;height: 48px;background: linear-gradient(to right, #c02425, #f0cb35);color:white;">
-						</md-button>
-					  </div>
-					</form> -->
 
 				</div>
 			</div>

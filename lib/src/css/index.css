@@ -94,6 +94,10 @@ table.md-calendar-day-header{width: 100%}
 .user-dot{padding-top: 60px}
 }
 
+@media screen and (min-width: 1000px){
+.user-dot{padding-top: 0px}
+}
+
 md-autocomplete {
     border-radius: 2px;
     display: block;
@@ -118,6 +122,7 @@ md-autocomplete input:not(.md-input) {
 
 @media screen and (max-width: 500px){
 .user-btn{padding-top: 130px}
+#img{display: none}
 }
 
 @media screen and (min-width: 1000px){
@@ -235,18 +240,46 @@ md-tabs md-ink-bar {
   position: fixed;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 600px){
 .card-footer{bottom:54px;
+  width: 25%;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;}
+}
+@media screen and (max-width: 500px){
+  .card-footer{bottom:0px;width: 100%; 
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;}
+}
+
+/*white-footer*/
+@media screen and (min-width: 500px){
+.white-footer{bottom:54px;
   width: 25%;
   border-bottom-left-radius:15px;
   border-bottom-right-radius:15px;}
 }
 
 @media screen and (max-width: 500px){
-  .card-footer{bottom:0px;width: 100%; 
+.white-footer{bottom:0px;width: 100%; 
   border-bottom-left-radius:0px;
   border-bottom-right-radius:0px;}
 }
+
+.white-footer{
+  background-color:transparent;
+  height: 5px;
+  /*border-top: 1px solid #eee;*/
+  position: fixed;
+}
+
+.white-header{
+height: 5px;
+background-color: transparent;
+}
+/*white-footer*/
+
+
 /*-----------------------footer.html------------------------------*/
 
 
@@ -692,7 +725,6 @@ padding-top: 2px;
 .signup-card-content{margin-bottom: 60px}
 }
 
-
 @media screen and (max-height: 700px) {
 .signup-card-form{padding-top: 0px}
 }
@@ -748,6 +780,19 @@ padding-top: 2px;
   border: 1px solid #DE772E;
 }
 }/*TEST*/
+
+
+@media screen and (min-width: 1000px){
+  .signup-div-heigth{height: 83%}
+  .signup-overflow-height{height: 98%}
+}
+
+
+@media screen and (max-width: 500px){
+  .signup-div-heigth{height: 100%}
+  .signup-overflow-height{height: 98%}
+}
+
 
 /*----------------------signup.html---------------------------*/
 
