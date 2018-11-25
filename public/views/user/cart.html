@@ -70,15 +70,15 @@
                         <a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Total Amount :</label>
+                        <label class="pt0 pb0 letter-space1">Total Amount (INR):</label>
                         <a ng-bind="vmCart.mealCost" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">GST :</label>
+                        <label class="pt0 pb0 letter-space1">GST (INR):</label>
                         <a ng-bind="vmCart.gst" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Net Payable Amount :</label>
+                        <label class="pt0 pb0 letter-space1">Net Payable Amount (INR):</label>
                         <a ng-bind="vmCart.total" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                 </div>
@@ -94,9 +94,12 @@
                     <input type="text" ng-value="vmCart.total" id="total" class="width251"/>
                     <input type="text" ng-value="vmCart.email" id="email" class="width251"/>
                 </div>
-                <div layout="row" layout-align="center center" class="cart-btn-div">
+                <div layout="col" layout-align="center center" class="cart-btn-div">
                     <md-button id="payBtn" ng-click="paynow()" class="md-raised cart-pay-btn" >Pay Now
                     </md-button>
+<!--                     <md-button id="payBtn" ng-click="modify()" class="md-raised cart-pay-btn" >Modify
+                    </md-button> -->
+
                     <div id="loader" style="position: fixed;display: none">
                         <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
                     </div>

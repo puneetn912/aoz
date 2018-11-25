@@ -106,6 +106,10 @@
 }
 
 /* End of File */
+.disableDiv{
+    pointer-events: none;
+    opacity: 0.4;
+}
 
 .md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
     background-color: #c02425 !important;
