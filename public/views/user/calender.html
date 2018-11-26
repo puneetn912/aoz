@@ -18,18 +18,6 @@
 						{{vmCalender.subscription.user_id.email}}<br>
 					{{vmCalender.subscription.apartment_name}}</p>
 
-					<!-- <div layout="row" layout-align="space-between center" layout-padding>
-
-						<div layout="column" layout-align="space-between center">
-							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12">{{vmCalender.vegRem}}</span> Meals Remaining</h4>
-							<h4 style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalVegCount}}</span> Veg meals </h4>
-						</div>
-						<div layout="column" layout-align="space-between center">
-							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12px">{{vmCalender.nvegRem}}</span> Meals Remaining</h4>
-							<h4  style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalNvegCount}}</span> NonVeg meals </h4>
-						</div>
-					</div> -->
-
 				</md-toolbar>
 				<md-content>
 					<md-list flex>
@@ -126,7 +114,7 @@
 													<label class="greyfont" style="font-size: 16px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
 												</div>
 											</div>
-											<div>
+											<div id="countBtn">
 												<div layout="row">
 													<div>
 														<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
@@ -196,11 +184,11 @@
 								</form>
 
 								<div style="display: block;text-align: center;padding-right: 4%" class="cal-btn-div" id='finalSubmit'>
-									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()">Update</md-button> 
-									<md-button class="md-raised calendar-menu-btn" ng-click="showMenu()">Menu</md-button> 
+									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()" ng-bind="vmCalender.updateBtn"></md-button> 
+									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-disabled="vmCalender.menuBtn" ng-click="showMenu()">Menu</md-button> 
 								</div>
 
-								<a href="">{{vmCalender.error}}</a>
+								<a>{{vmCalender.error}}</a>
 
 							</div>
 
@@ -208,18 +196,20 @@
 
 							<!-- footer -->
 							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
-								<div layout="column" layout-align="center center" ng-click="goProfile()" style="outline: none;cursor: pointer">
+								<div layout="column" layout-align="center center" id='profileBtn' 
+                                ng-click="!vmCalender.isProfileEnabled||goProfile()" style="outline: none;cursor: pointer">
 									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
 									<span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
 								</div>
-								<div style="padding-left: 23%;padding-top: 4px" layout="column" layout-align="center center">
-									<div layout="column" layout-align="center center" ng-click="addMore()" style="outline: none;cursor: pointer">
+								<div style="padding-left: 23%;padding-top: 4px" layout="column"  layout-align="center center">
+									<div layout="column" layout-align="center center" id='addMealsBtn' 
+                                    ng-click="!vmCalender.isAddEnabled||addMore()" style="outline: none;cursor: pointer">
 										<img src="../images/catering.png" width="28px" height="28px" alt="white-logo">
 										<span style="font-size: 12px;margin-top: -5px;letter-spacing: 1px;width: max-content" class="whitefont">Add Meals</span>
 									</div>
 								</div>
-								<div style="padding-left: 12%;">
-									<a href="https://www.dialjordan.com" target="_blank"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
+								<div style="padding-left: 12%;" id="djBtn"> 
+									<a id="goDJ" href="www.dialjordan.com" target="_blank"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
 								</div>
 							</div>
 							<!-- footer -->
