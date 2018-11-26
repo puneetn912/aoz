@@ -10,7 +10,7 @@ let userController = require('../../lib/src/js/scriptController/userController')
 let calendarController = require('../../lib/src/js/scriptController/calendarController');
 let paymentController = require('../../lib/src/js/scriptController/paymentController');
 let menuController = require('../../lib/src/js/scriptController/menuController');
-
+let mailController = require('../../lib/src/js/scriptController/mailController');
 
 var mid = '26239';
 var username = '5895556';
@@ -78,7 +78,6 @@ router.post('/sendtoairpay', function(req, res, next) {
 });
 
 // subcription
-router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs/:id',subscriptionController.updateSubs)
 router.post('/updateStatus/:id',subscriptionController.updateStatus)
@@ -114,6 +113,9 @@ router.post('/getCal/:subId',calendarController.getCal)
 router.post('/addPayment/:id',paymentController.add)
 router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
+
+router.post('/sendMail', mailController.test )
+
 
 
 module.exports = router;
