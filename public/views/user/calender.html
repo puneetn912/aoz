@@ -104,37 +104,37 @@
 
 
 
-									<div layout="row" layout-padding layout-align="space-between center" style="border-top: 1px solid #eee;border-bottom: 1px solid #eee" class="pr15">
-										<div layout="column" layout-align="space-between center">
-											<div class="alignleft">
-												<label class="greyfont" style="font-size: 16px">Veg Meals 
+									<div layout="row" layout-padding layout-align="space-between center" style="border-top: 1px solid #eee;border-bottom: 1px solid #eee" class="pr15 pt0 pb0">
+										<div class="pt0 pb0">
+											<div class="alignleft pb10">
+												<label class="greyfont" style="font-size: 15px">Veg Meals 
 													<span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>			
 												</div>
 												<div class="alignleft">
-													<label class="greyfont" style="font-size: 16px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
+													<label class="greyfont" style="font-size: 15px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
 												</div>
 											</div>
-											<div id="countBtn">
+											<div class="pt0 pb0" id="countBtn">
 												<div layout="row">
 													<div>
-														<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+														<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus pt3" aria-hidden="true"></i></md-button>
 													</div>
-													<div>
+													<div class="pt8">
 														<input readonly id="calveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayVegCount">
 													</div>
 													<div>
-														<md-button class="md-raised sub-meal-btn" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+														<md-button class="md-raised sub-meal-btn pt2" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
 													</div>
 												</div>
 												<div layout="row">
 													<div>
-														<md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+														<md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus pt3" aria-hidden="true"></i></md-button>
 													</div>
-													<div>
+													<div class="pt8">
 														<input readonly id="calnveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayNonvegCount">
 													</div>
 													<div>
-														<md-button class="md-raised sub-meal-btn" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+														<md-button class="md-raised sub-meal-btn pt2" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
 													</div>
 												</div>
 											</div>
