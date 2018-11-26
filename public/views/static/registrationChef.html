@@ -41,27 +41,36 @@
             <ng-include src="'views/user/includes/header.html'"></ng-include>
 				<div style="overflow: hidden;">
 					<div style="height: 77%;overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 12px">
+
                        <div layout="column" layout-padding>
-                       	<h3>Register Yourself as Chef</h3>
-                          <md-input-container class="mt0 mb0">
-                          	<input type="text" placeholder="Name">
-                         </md-input-container>
-                          <md-input-container class="mt0 mb0">
-                          	<input type="text" placeholder="Email">
-                         </md-input-container>
-                          <md-input-container class="mt0 mb0">
-                          	<input type="text" placeholder="Phone">
-                         </md-input-container>
-                          <md-input-container class="mt0 mb0">
-                          	<input type="text" placeholder="Subject">
-                         </md-input-container>
-                          <md-input-container class="mt0 mb0">
-                          	<textarea placeholder="Enter your message here"></textarea> 
-                         </md-input-container>
-                         <md-input-container>
-                         	<md-button>Submit Now</md-button>
-                         </md-input-container>
-                       </div>
+                       	<h2>Register Yourself as Chef</h2>
+
+                <div class="p0">
+                  <input class="Contact-input" type="text" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" name="name" placeholder="Name">
+                </div>
+                <div class="p0">
+                  <input class="Contact-input" type="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" name="email" placeholder="Email">
+                </div>
+                <div class="p0">
+                  <input class="Contact-input" type="text" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" name="phone" placeholder="Phone">
+                </div>
+                <div class="p0">
+                  <input class="Contact-input" type="text" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" name="subject" placeholder="Subject">
+                </div>
+                <div class="p0">
+                  <input class="Contact-input" type="text" placeholder="Enter your Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Message'" name="message" placeholder="Enter your Message">
+                </div>
+
+              </div>
+
+              <div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
+                <md-button class="md-raised home-signup-btn"  aria-label="description" ng-click="">Submit</md-button>
+              </div>
+
+
+
+
+
 					</div>
 				</div> 
 			</div>

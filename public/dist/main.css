@@ -471,17 +471,36 @@ background-color: transparent;
 
 
 @media screen and (max-width: 500px){
-.otp-div-height{height: 99%}
-.otp-overflow-height{height: 100%}
+.otp-div-height{height: 100%}
+.otp-overflow-height{height: 99%}
 }
 
 
 @media screen and (min-width: 1000px){
-.otp-div-height{height: 83%}
+.otp-div-height{height: 80%}
 .otp-overflow-height{height: 99%}
 }
 
 /*--------------------verify.html---------------------------------*/
+
+
+
+
+
+/*---------------------terms.html-------------------------*/
+@media screen and (max-width: 500px){
+.term-div-height{height: 95%}
+.term-overflow-height{height: 91%}
+}
+
+
+@media screen and (min-width: 1000px){
+.term-div-height{height: 88%}
+.term-overflow-height{height: 88%}
+}
+/*---------------------terms.html---------------------------*/
+
+
 
 
 /*--------------calendar.html----------------------*/
@@ -1077,6 +1096,26 @@ padding-top: 20px;
 
 
 
+/*----------------------contact.html---------------------------*/
+.contact-input{
+    font-size: 18px;
+    box-sizing: border-box;
+    /*border: none;*/
+    /*box-shadow: none;*/
+    outline: none;
+    border-right: none;
+    border-left: none;
+    background: white;
+    width: 100%;
+    border-top:1px solid #eee;
+    border-bottom:0px solid #eee; 
+    padding: 0 15px;
+    line-height: 40px;
+    height: 50px;
+}
+/*-------------------------contact.html-------------------------*/
+
+
 /*-------------------thankyou.html---------------------------------*/
 .thank-input{
     font-size: 18px;
@@ -1453,7 +1492,6 @@ body {
 /*letter-spacing*/
 .letter-space1{letter-spacing:1px}
 .letter-space2{letter-spacing:2px}
-
 /*letter-spacing*/
 
 /*border-top*/
@@ -1463,6 +1501,7 @@ body {
 /*text-align*/
 .text-right{text-align: right}
 .text-left{text-align: left;}
+.text-justify{text-align: justify;}
 /*text-align*/
 
 
