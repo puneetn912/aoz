@@ -68,6 +68,24 @@ table.md-calendar-day-header{width: 100%}
 .md-calendar-scroll-container{width: 100%}
 
 
+
+/*----------------cancellation.html---------------------------*/
+@media screen and (max-width: 500px){
+  .cancel-div-height{height: 94%}
+  .cancel-overflow-height{height: 91%}
+}
+
+
+@media screen and (min-width: 1000px){
+  .cancel-div-height{height: 87%}
+  .cancel-overflow-height{height: 86%}
+}
+/*----------------cancellation.html-----------------------------------*/
+
+
+
+
+
 /*---------------------userdetails.html--------------------------*/
 
 .user-submit-btn{
