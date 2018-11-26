@@ -48,22 +48,22 @@
 
 						<form name="userDetails">
 
-						<div layout="column">
+							<div layout="column">
 
-							<div id="doorInp">
-								<input ng-model="vmThanks.doorNo" type="text" name="doorNo" placeholder="Enter your Door/Flat Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Door/Flat Number'" ng-pattern="/^[A-Za-z0-9]*$/" class="thank-input">	
+								<div id="doorInp">
+									<input ng-model="vmThanks.doorNo" type="text" name="doorNo" placeholder="Enter your Door/Flat Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Door/Flat Number'" ng-pattern="/^[A-Za-z0-9]*$/" class="thank-input">	
+								</div>
+
+								<div id='nameInp'>
+									<input class="thank-input" ng-model="vmThanks.userName" type="text" placeholder="Enter your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Name'" ng-pattern="/^[A-Za-z ]*$/" name="userName">	
+								</div>
+
+								<div id="emailInp">
+									<input class="thank-input" ng-model="vmThanks.email" type="email" placeholder="Enter your EmailId" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your EmailId'" name="email" placeholder="Enter your EmailId">	
+
+								</div>
+
 							</div>
-
-							<div id='nameInp'>
-								<input class="thank-input" ng-model="vmThanks.userName" type="text" placeholder="Enter your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Name'" ng-pattern="/^[A-Za-z ]*$/" name="userName">	
-							</div>
-
-							<div id="emailInp">
-								<input class="thank-input" ng-model="vmThanks.email" type="email" placeholder="Enter your EmailId" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your EmailId'" name="email" placeholder="Enter your EmailId">	
-
-							</div>
-
-						</div>
 
 							<div layout="row" layout-align="center center" style="padding-top: 15px">
 								<md-button id="updateBtn" ng-click="update()" ng-bind='vmThanks.update' class="md-raised mb10 mt10 thank-manage-btn" ></md-button>
@@ -72,21 +72,21 @@
 								</div>
 							</div>
 							<div ng-show="userDetails.doorNo.$invalid && userDetails.doorNo.$dirty" 
-								style="color: red" align="center">Invalid door number</div>
+							style="color: red" align="center">Invalid door number</div>
 							<div ng-show="userDetails.userName.$invalid && userDetails.userName.$dirty" 
-								style="color: red" align="center">Name not valid</div>
+							style="color: red" align="center">Name not valid</div>
 							<div ng-show="userDetails.email.$invalid && userDetails.email.$dirty" 
-								style="color: red" align="center">Email not valid</div>
+							style="color: red" align="center">Email not valid</div>
 						</form>
 
+					</div>
 				</div>
-			</div>
 
-			<ng-include src="'views/user/includes/footer.html'"></ng-include>
+				<ng-include src="'views/user/includes/footer.html'"></ng-include>
 
-		</md-card>
-		<!-- right -->
+			</md-card>
+			<!-- right -->
 
-	</md-content>
-</div>
+		</md-content>
+	</div>
 </div>
