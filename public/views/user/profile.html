@@ -74,15 +74,55 @@
 										<div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
 											<label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Door No</label>
 										    <input name="door_no"  style="background-color: white;border: none;text-align: right" ng-model="vmProfile.subscription.user_id.door_no" placeholder="Door Number">
-										</div>
-										<div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
-											<label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Tower Name/Number</label>
-											<input name="tower_name"  style="background-color: white;border: none;text-align: right" ng-model="vmProfile.subscription.user_id.tower_name" placeholder="Tower Name"> 
-										</div>
+                                        </div>
 										<div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
 											<label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Apartment</label>
-											<input name="apartment_name" style="background-color: white;border: none;text-align: right" ng-model="vmProfile.subscription.user_id.apartment_name" placeholder="Apartment Name"> 
+											
+                                            <md-autocomplete style="border: 1px solid #eee;"
+                                                ng-disabled="vmProfile.isDisabledApt"
+                                                md-no-cache="true"
+                                                md-input-name="apartment_name"
+                                                md-selected-item="vmProfile.selectedItemApt"
+                                                md-search-text-change="vmProfile.searchTextChangeApt(vmProfile.searchTextApt)"
+                                                md-search-text="vmProfile.searchTextApt"
+                                                md-selected-item-change="vmProfile.selectedItemChangeApt(item)"
+                                                md-items="item in vmProfile.querySearchApt(vmProfile.searchTextApt)"
+                                                md-item-text="item.apartment_name"
+                                                md-min-length="3"
+                                                placeholder="{{vmProfile.subscription.user_id.apartment_name}}">
+                                                <md-item-template>
+                                                    <span md-highlight-text="vmProfile.searchTextApt" md-highlight-flags="^i">{{item.apartment_name}}</span>
+                                                </md-item-template>
+                                                <md-not-found>
+                                                    Apartment Not found
+                                                </md-not-found>
+                                            </md-autocomplete>
+                                            <input type="hidden" name="apartment_id" value={{vmProfile.apartment_id}} > 
 										</div>
+                                        <div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
+                                            <label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Tower Name/Number</label>
+
+                                            <md-autocomplete style="border: 1px solid #eee;"
+                                                ng-disabled="vmProfile.isDisabledTwr"
+                                                md-selected-item="vmProfile.selectedItemTwr"
+                                                md-input-name="tower_name"
+                                                md-search-text-change="vmProfile.searchTextChangeTwr(vmProfile.searchTextTwr)"
+                                                md-search-text="vmProfile.searchTextTwr"
+                                                md-selected-item-change="vmProfile.selectedItemChangeTwr(item)"
+                                                md-items="item in vmProfile.querySearchTwr(vmProfile.searchTextTwr)"
+                                                md-item-text="item"
+                                                md-min-length="1"
+                                                placeholder="{{vmProfile.subscription.user_id.tower_name}}">
+                                                <md-item-template>
+                                                    <span md-highlight-text="vmProfile.searchTextTwr" md-highlight-flags="^i">{{item}}</span>
+                                                </md-item-template>
+                                                <md-not-found>
+                                                    Tower not found. 
+                                                </md-not-found>
+                                            </md-autocomplete>
+
+                                            <!-- <input type="hidden" name="tower_name" ng-model="vmProfile.tower">  -->
+                                        </div>
 										<div layout="row" layout-align="center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 20px 0px;">
 										    <md-button class="md-raised home-signup-btn"  aria-label="description" ng-click="submit()">update</md-button>
 										</div>
