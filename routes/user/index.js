@@ -11,6 +11,7 @@ let calendarController = require('../../lib/src/js/scriptController/calendarCont
 let paymentController = require('../../lib/src/js/scriptController/paymentController');
 let menuController = require('../../lib/src/js/scriptController/menuController');
 let mailController = require('../../lib/src/js/scriptController/mailController');
+let pageController = require('../../lib/src/js/scriptController/pageController');
 
 var mid = '26239';
 var username = '5895556';
@@ -87,6 +88,9 @@ router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
 //menu
 router.post('/getMenuByDate',menuController.getMenuByDate)
+
+//leads
+router.post('/addContactLead',pageController.addContactLead)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
