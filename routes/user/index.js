@@ -92,6 +92,7 @@ router.post('/getMenuByDate',menuController.getMenuByDate)
 router.post('/getAllLocality',localityController.getAll)
 
 // apartment
+router.post('/addApt',apartmentController.addApt)
 router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
 router.post('/getAllApt',apartmentController.getAll)
 router.post('/updateApt/:id',apartmentController.update)

@@ -94,7 +94,8 @@
 							<span md-highlight-text="vmUserdetails.searchTextApt" md-highlight-flags="^i">{{item.apartment_name}}</span>
 						</md-item-template>
 						<md-not-found>
-							No states matching "{{vmUserdetails.searchTextApt}}" were found.
+                            <!-- Apartment Not found "{{vmUserdetails.searchTextApt}}" were found. -->
+							Apartment Not found <md-button ng-href="/apartment" class="md-raised">Register New?</md-button>
 						</md-not-found>
 					</md-autocomplete>
 
@@ -129,6 +130,8 @@
                   </div>
 
 			</form>
+
+            <a style="color: red" ng-bind="vmUserdetails.noTowers"></a>
 		</md-card-content>
 		</md-card>
 <!-- right -->

@@ -87,8 +87,11 @@
 
 			<div layout="row" layout-align="center center" layout-padding layout-margin class="mt0">
 				<div class="otp-otpbtn-div">
-					<input class="otp-otpbtn-inp" placeholder="Phone Number" maxlength="10" 
-        					ng-pattern="/^[0-9]+$/" required type="text" ng-model="vmSignup.mobileno" name="mobileno"  style="outline: none;"/>
+					<input class="otp-otpbtn-inp" placeholder="Phone Number" type="text" name="mobileno"
+                            maxlength="10"   
+        					ng-pattern="/^[0-9]+$/" 
+                            ng-model="vmSignup.mobileno" 
+                            style="outline: none;" required />
 					<md-button id="sendOTP" class="otp-otpbtn-btn" ng-click="sendOtp(userForm)" ><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
 
                     <div id="loader" style="position: fixed;display: none">
