@@ -13,10 +13,10 @@ let menuController = require('../../lib/src/js/scriptController/menuController')
 let mailController = require('../../lib/src/js/scriptController/mailController');
 let pageController = require('../../lib/src/js/scriptController/pageController');
 
-var mid = '26239';
-var username = '5895556';
-var password = 'AH4NjDNd';
-var secret = '8mWpy7XcmP56S9BT';
+var mid = '24324';
+var username = '5168160';
+var password = 'NBTh6GXx';
+var secret = 'KVnqNAjbh8wKE6wM';
 var now = new Date();
 
 var locality = require('../../lib/models/locality')
@@ -91,6 +91,7 @@ router.post('/getMenuByDate',menuController.getMenuByDate)
 
 //leads
 router.post('/addContactLead',pageController.addContactLead)
+router.post('/addChefLead',pageController.addChefLead)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
