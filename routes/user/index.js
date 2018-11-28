@@ -46,6 +46,7 @@ router.post('/sendtoairpay', function(req, res, next) {
     let mid = '', username = '', password = '', secret='', now = new Date();
     
     if(process.env.NODE_ENV == 'stage'){
+        console.log('entered stage payment')
         mid = '24324';
         username = '5168160';
         password = 'NBTh6GXx';
