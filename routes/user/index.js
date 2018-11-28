@@ -13,12 +13,6 @@ let menuController = require('../../lib/src/js/scriptController/menuController')
 let mailController = require('../../lib/src/js/scriptController/mailController');
 let pageController = require('../../lib/src/js/scriptController/pageController');
 
-var mid = '24324';
-var username = '5168160';
-var password = 'NBTh6GXx';
-var secret = 'KVnqNAjbh8wKE6wM';
-var now = new Date();
-
 var locality = require('../../lib/models/locality')
 
 //send otp sign up functionalities
@@ -48,8 +42,22 @@ router.post('/thankyou', function(req, res, next) {
 })
 
 router.post('/sendtoairpay', function(req, res, next) {
-	console.log('req.body',req.body);
-	var md5 = require('md5');
+    console.log('req.body',req.body);
+    let mid = '', username = '', password = '', secret='', now = new Date();
+    
+    if(process.env.NODE_ENV == 'stage'){
+        mid = '24324';
+        username = '5168160';
+        password = 'NBTh6GXx';
+        secret = 'KVnqNAjbh8wKE6wM';
+    }else{
+        mid = '26239';
+        username = '5895556';
+        password = 'AH4NjDNd';
+        secret = '8mWpy7XcmP56S9BT';
+    }
+
+    var md5 = require('md5');
 	var sha256 = require('sha256');
 	var dateformat = require('dateformat');
     alldata   = req.body.buyerAddress+req.body.amount+Number(req.body.orderid);
