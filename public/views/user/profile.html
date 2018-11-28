@@ -75,10 +75,10 @@
 											<label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Door No</label>
 										    <input name="door_no"  style="background-color: white;border: none;text-align: right" ng-model="vmProfile.subscription.user_id.door_no" placeholder="Door Number">
                                         </div>
-										<div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
+										<div layout="row" layout-align="space-between center" class="profileForm bt-1-s-eee form-div">
 											<label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Apartment</label>
 											
-                                            <md-autocomplete style="border: 1px solid #eee;"
+                                            <md-autocomplete class="p0"
                                                 ng-disabled="vmProfile.isDisabledApt"
                                                 md-no-cache="true"
                                                 md-input-name="apartment_name"
@@ -99,10 +99,10 @@
                                             </md-autocomplete>
                                             <input type="hidden" name="apartment_id" value={{vmProfile.apartment_id}} > 
 										</div>
-                                        <div layout="row" layout-align="space-between center" layout-padding class="profileForm bt-1-s-eee form-div" style="padding: 4px 0px;">
+                                        <div layout="row" layout-align="space-between center" class="profileForm bt-1-s-eee form-div">
                                             <label style="color: rgb(255,82,82);" class="pt0 pb0 pl0 letter-space1">Tower Name/Number</label>
 
-                                            <md-autocomplete style="border: 1px solid #eee;"
+                                            <md-autocomplete class="p0"
                                                 ng-disabled="vmProfile.isDisabledTwr"
                                                 md-selected-item="vmProfile.selectedItemTwr"
                                                 md-input-name="tower_name"
