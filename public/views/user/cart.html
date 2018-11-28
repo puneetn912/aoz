@@ -61,13 +61,13 @@
                         <label class="pt0 pb0 letter-space1">Meal Type</label>
                         <a ng-bind="vmCart.meal_type" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
-                    <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
+                    <div  id="veeg" layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: none;">
                         <label class="pt0 pb0 letter-space1">Veg Meals * {{vmCart.veg_count}}</label>
-                        <a ng-bind="vmCart.vegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+                        <a ng-bind="vmCart.vegAmt" style="float: right" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
-                    <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
+                    <div id="nveeg" layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px;display: none;">
                         <label class="pt0 pb0 letter-space1">Non-Veg Meals * {{vmCart.nveg_count}}</label>
-                        <a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
+                        <a ng-bind="vmCart.nvegAmt" style="float: right" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
                         <label class="pt0 pb0 letter-space1">Total Amount (INR):</label>
