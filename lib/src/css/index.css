@@ -1183,17 +1183,12 @@ padding-top: 20px;
 }/*IPHONE 5*/
 
 
-md-autocomplete input:not(.md-input) {
+.profileForm md-autocomplete input:not(.md-input)
+{
 padding-right: 0px;
-text-align: right; 
-
+text-align: right;
+background: white; 
 }
- 
- md-autocomplete[disabled]:not([md-floating-label]) {
-    background: none;
-}
-
-
 
 /*-------------------------profile.html-----------------------------------*/
 
