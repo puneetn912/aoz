@@ -91,6 +91,7 @@ router.post('/getMenuByDate',menuController.getMenuByDate)
 
 //leads
 router.post('/addContactLead',pageController.addContactLead)
+router.post('/addChefLead',pageController.addChefLead)
 
 // locality
 router.post('/getAllLocality',localityController.getAll)
