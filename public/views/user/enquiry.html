@@ -1,5 +1,5 @@
 <div ng-app="cmsApp" ng-cloak>
-	<md-content class="md-content-bgimage" style="height:100%;" layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak>
+	<md-content class="md-content-bgimage" style="height:100%;" layout="row" layout-xs="column" ng-controller="pageController as vmPage" ng-cloak>
 
 		<!-- left -->
 		<div flex-gt-xs="55" hide-xs>
@@ -39,35 +39,48 @@
 					<div class="signup-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
 						<div layout="column" layout-align="center center">  
 							<div class="signup-card-img">
-								<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image" alt="image caption">
+								<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image" alt="image caption" style="zoom:0.7">
 							</div>
-							<div style="margin-top: -100px;" class="signup-card-content signup-car-form">
-								<h4 class="greyfont letter-space1">Healthy home style food</h4>
-							</div>
-							<div layout="row" layout-align="center center" >
-								<span style="margin-right: -1px" class="dot">1</span>
-								<span style="margin-right: -1px" class="line"></span>
-								<span style="margin-right: -1px" class="dot">2</span>
-								<span style="margin-right: -1px" class="line"></span>
-								<span class="dot">3</span>
-							</div>  
-							<div class="mt16">
-								<span style="color:#c02425" class="font-weightbold letter-space1 signup-dot-text">Phone</span>
-								<span class="line1"></span>
-								<span class="greyfont signup-dot-text">Verify</span>
-								<span class="line2"></span>
-								<span class="greyfont signup-dot-text">Order</span>
-							</div>
+							<form name="enquiryForm" style="margin-top: -57px">
+								<div layout="column" layout-padding>
+									<h2 align="center" class='p0'>Enquiry</h2>
+									<h4 class='p0'>Drop in an enquiry and we'll get back to you!</h4>
+
+									<div class="p0">
+										<input class="Contact-input" type="text" placeholder="Name" name="name" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Name'" >
+									</div>
+									<div class="p0">
+										<input class="Contact-input" type="email" placeholder="Email" name="email" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Email'" >
+									</div>
+									<div class="p0">
+										<input class="Contact-input" type="text" placeholder="Phone" name="mobileno" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Phone'" ng-model='vmPage.phone'>
+									</div>
+									<div class="p0">
+										<input class="Contact-input" type="text" placeholder="Subject" name="subject" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Subject'" ng-model='vmPage.enqSubject'>
+									</div> 
+									<div class="p0">
+										<input class="Contact-input" type="text" placeholder="Enter your Message" name="message" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Enter your Message'" >
+									</div>
+								</div>
+
+								<div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
+									<md-button class="md-raised home-signup-btn" aria-label="description" ng-disabled='vmPage.isEnqFilled' ng-click="enquire()">Submit</md-button>
+								</div>
+							</form>
+							<p ng-bind="vmPage.errMsg" align="center" style="color:red;"></p>
+							
 						</div>  
 
-						<form name="userForm" class="signup-card-form">
-							<h4 class="greyfont letter-space2" layout="row" layout-align="center center">Enter your phone number</h4>
-							<div layout="column"  layout-padding layout-margin class="ml0 mr0 pl0 pr0">
-								<div layout="row" layout-align="center center" layout-padding layout-margin class="mt0">
-									asdfasdf
-								</div>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>
