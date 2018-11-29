@@ -1182,6 +1182,14 @@ padding-top: 20px;
 .form-fieldset{padding-left:0px}
 }/*IPHONE 5*/
 
+
+.profileForm md-autocomplete input:not(.md-input)
+{
+padding-right: 0px;
+text-align: right;
+background: white; 
+}
+
 /*-------------------------profile.html-----------------------------------*/
 
 
@@ -1315,7 +1323,7 @@ body {
 
 
 /*pads*/
-.p0{padding:0px 0px 0px 0px}
+.p0{padding:0px 0px 0px 0px !important}
 .p5{padding:5px 5px 5px 5px}
 .p10{padding:10px 10px 10px 10px}
 .p20{padding:20px}
