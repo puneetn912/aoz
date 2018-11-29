@@ -1,29 +1,29 @@
 <div ng-app="cmsApp" ng-cloak>
 	<md-content class="md-content-bgimage" layout="row" ng-controller="verifyController as vmVerify" ng-cloak style="height:100%;">
-        
+		
 <!--         <div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
-            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-        </div>  -->     
+			<img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+		</div>  -->     
 
 <!-- left -->
 		<div flex-gt-xs="55" hide-xs>
 
 		   <div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
-		   	<div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
-		   		<img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
-		   	</div>
-		   	<div style="margin-left: 5%">
-	   			<h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
-	   			<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
-	   			<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
-	   			<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
-	   			<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
-            </div>
-            <div style="margin-left: 5%">
-            	<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
-            	<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
-            	<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
-		   	</div>
+			<div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
+				<img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+			</div>
+			<div style="margin-left: 5%">
+				<h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
+				<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
+				<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
+				<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
+				<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
+			</div>
+			<div style="margin-left: 5%">
+				<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
+				<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
+				<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
+			</div>
 		   </div>
 		
 		</div>
@@ -32,25 +32,36 @@
 
 
 <!-- right -->
-      <md-card class="card-border" flex-gt-xs="25" layout-align="space-between center" style="width: 100%">
-        <md-card-content>
+<md-card class="card-border" flex-gt-xs="25" layout-align="center" style="width: 100%">
+		<div class="otp-div-height">
+
+
+				<!-- white-header -->
+				<div class="white-header">
+				</div>
+				<!--white-header-->
+
+				<div style="overflow: hidden;">
+					<div class="otp-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
+
+
 			<div layout="column" layout-align="center center" class="otp-card-img">	
 			<div>
 			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image" alt="image caption">
-            </div>
+			</div>
 			<div style="margin-top: -100px">
-               <h4 class="greyfont letter-space1">Healthy home style food</h4>
-            </div>
+			   <h4 class="greyfont letter-space1">Healthy home style food</h4>
+			</div>
 			<div layout="row" layout-align="center center" style="padding-top: 60px">
 			  <span style="background-color: #c02425 !important;margin-right: -2" class="dot"><i class="fa fa-check" aria-hidden="true" style="padding:6px; padding-top:4px;padding-right:5px;float: right;font-size: 14px"></i></span>
-              <span style="margin-right: -2px" class="line"></span>
+			  <span style="margin-right: -2px" class="line"></span>
 			  <span style="margin-right: -1px" class="dot">2</span>
 			  <span style="margin-right: -2px" class="line"></span>
 			  <span style="margin-right: -2px" class="dot">3</span>
 			</div>	
 			<div class="mt10">
 			  <span class="indianredfont font-weightbold otp-dot-text">Phone</span>
-              <span class="line1"></span>
+			  <span class="line1"></span>
 			  <span class="indianredfont font-weightbold otp-dot-text">Verify</span>
 			  <span class="line2"></span>
 			  <span class="greyfont otp-dot-text">Order</span>
@@ -58,8 +69,8 @@
 		  </div>
 		  <div>
 			<form name="otpForm" class="pt20">
-            <h4 class="greyfont font-weight400 mb0 otp-verification-text" layout="row" layout-align="center center">Enter the verification code you've received</h4>
-                <!--<md-card-content layout="column"  layout-padding layout-margin  >
+			<h4 class="greyfont font-weight400 mb0 otp-verification-text" layout="row" layout-align="center center">Enter the verification code you've received</h4>
+				<!--<md-card-content layout="column"  layout-padding layout-margin  >
 					<md-input-container>
 						<label>Enter OTP</label>
 						<input required type="text" name="otpno" ng-model="userForm.Mmobileno" maxlength="10" md-maxlength="10" ng-pattern="/^[0-9]+$/"/>
@@ -73,19 +84,27 @@
 
 				<!-- <a ng-bind="<%= vm %>.titleErr" ng-model="<%= vm %>.titleErr" style='color:red'></a> -->
 				</div>
-            </div>
+			</div>
 
-            <div layout="column" layout-align="center center" style="margin-top: -25px">
-                <md-button id="resendOtp" class="c02425font" ng-click="resendOtp()">Resend OTP</md-button>
-                <a id="resendMsg"></a><br/><br/>
-                
-			        <div id="loader" style="position: fixed;display: none">
-			            <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
-			        </div> 
+			<div layout="column" layout-align="center center" style="margin-top: -25px">
+				<md-button id="resendOtp" class="c02425font" ng-click="resendOtp()">Resend OTP</md-button>
+				<a id="resendMsg"></a><br/><br/>
+				
+					<div id="loader" style="position: fixed;display: none">
+						<img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+					</div> 
 			</div>
 			</form>
 		  </div>
-		 </md-card-content>
+		 </div>
+		</div>
+
+
+			<!-- white-footer -->
+			<div class="white-footer">
+			</div>
+			<!-- white-footer -->
+
 		</md-card>
 <!-- right -->
 		

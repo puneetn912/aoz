@@ -24,7 +24,7 @@
           <h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
             </div>
             <div style="margin-left: 5%">
-              <h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+              <h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
               <h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
               <h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
         </div>
@@ -70,15 +70,15 @@
                         <a ng-bind="vmCart.nvegAmt" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Total Amount :</label>
+                        <label class="pt0 pb0 letter-space1">Total Amount (INR):</label>
                         <a ng-bind="vmCart.mealCost" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">GST :</label>
+                        <label class="pt0 pb0 letter-space1">GST (INR):</label>
                         <a ng-bind="vmCart.gst" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                     <div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-                        <label class="pt0 pb0 letter-space1">Net Payable Amount :</label>
+                        <label class="pt0 pb0 letter-space1">Net Payable Amount (INR):</label>
                         <a ng-bind="vmCart.total" class="pt0 pb0 whitebgcolor border-none font-weight600 text-right"></a>  
                     </div>
                 </div>
@@ -94,9 +94,12 @@
                     <input type="text" ng-value="vmCart.total" id="total" class="width251"/>
                     <input type="text" ng-value="vmCart.email" id="email" class="width251"/>
                 </div>
-                <div layout="row" layout-align="center center" class="cart-btn-div">
+                <div layout="col" layout-align="center center" class="cart-btn-div">
+                    <md-button id="payBtn" ng-click="modify()" class="md-raised cart-pay-btn" >Modify
+                    </md-button>
                     <md-button id="payBtn" ng-click="paynow()" class="md-raised cart-pay-btn" >Pay Now
                     </md-button>
+
                     <div id="loader" style="position: fixed;display: none">
                         <img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
                     </div>

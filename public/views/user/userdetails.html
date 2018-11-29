@@ -21,7 +21,7 @@
 	   			<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
             </div>
             <div style="margin-left: 5%">
-            	<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+            	<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
             	<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
             	<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
 		   	</div>
@@ -34,13 +34,15 @@
 <!-- right -->
 		<md-card class="card-border" flex-gt-xs="25" layout-align="center">
 		<md-card-content style="height: 100%; padding:0px" >
-		  <div layout="column" layout-align="center center">	
-<!-- 			<div>
+		  <div layout="column" layout-align="center center">
+
+			<div id="img" style="margin-top: -70px">
 			   <img src="../images/logo.png" widht="300px" height="300px" class="md-card-image pl10 pt20" alt="image caption">
             </div>
 			<div style="margin-top: -100px;" class="user-card-content">
                <h4 class="greyfont letter-space1">Healthy home style food</h4>
-            </div> -->
+            </div>
+
 			<div layout="row" layout-align="center center" class="user-dot">
 			  <span class="dot" style="background-color: #c02425 !important;margin-right: -5px"><i style="padding:6px;padding-top:4px;padding-right:5px;font-size: 14px;float: right;" class="fa fa-check" aria-hidden="true"></i></span>
               <span class="line" style="margin-right: -5px"></span>
@@ -92,7 +94,8 @@
 							<span md-highlight-text="vmUserdetails.searchTextApt" md-highlight-flags="^i">{{item.apartment_name}}</span>
 						</md-item-template>
 						<md-not-found>
-							No states matching "{{vmUserdetails.searchTextApt}}" were found.
+                            <!-- Apartment Not found "{{vmUserdetails.searchTextApt}}" were found. -->
+							Apartment Not found <md-button ng-href="/apartment" class="md-raised">Register New?</md-button>
 						</md-not-found>
 					</md-autocomplete>
 
@@ -117,7 +120,7 @@
                     <!-- <input type="text" name="towerName" ng-model="vmUserdetails.tower" ng-disabled="vmUserdetails.isDisabledTwr"> -->
 				  </div>
 
-                  <div layout="row" layout-align="center center" style="padding-top: 130px">
+                  <div layout="row" layout-align="center center" class="user-btn">
                        <md-button id="detailSubmit" style="background-color:#c02425 !important" class="md-fab user-submit-btn" ng-click="updateUser()">
                           <i class="fa fa-check" aria-hidden="true" style="font-size: 25px; background-color: transparent;color:white"></i>
                        </md-button>
@@ -127,6 +130,8 @@
                   </div>
 
 			</form>
+
+            <a style="color: red" ng-bind="vmUserdetails.noTowers"></a>
 		</md-card-content>
 		</md-card>
 <!-- right -->

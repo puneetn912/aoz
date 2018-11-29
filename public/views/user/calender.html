@@ -18,18 +18,6 @@
 						{{vmCalender.subscription.user_id.email}}<br>
 					{{vmCalender.subscription.apartment_name}}</p>
 
-					<!-- <div layout="row" layout-align="space-between center" layout-padding>
-
-						<div layout="column" layout-align="space-between center">
-							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12">{{vmCalender.vegRem}}</span> Meals Remaining</h4>
-							<h4 style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalVegCount}}</span> Veg meals </h4>
-						</div>
-						<div layout="column" layout-align="space-between center">
-							<h4 class="mt0 mb0" style="font-size: 12px;letter-spacing: 1px;line-height: 15px"><span class="font-weightbold" style="font-size: 12px">{{vmCalender.nvegRem}}</span> Meals Remaining</h4>
-							<h4  style="font-size: 12px;line-height: 15px"> Out of <span class="font-weightbold" style="font-size: 12px">{{vmCalender.totalNvegCount}}</span> NonVeg meals </h4>
-						</div>
-					</div> -->
-
 				</md-toolbar>
 				<md-content>
 					<md-list flex>
@@ -66,9 +54,7 @@
 				</md-content>
 			</md-sidenav>
 
-
 			<md-content layout="row" layout-xs="column" ng-cloak  style="height:100%;" class="md-content-bgimage" > 
-
 
 				<!-- left -->
 				<div flex-gt-xs="55" hide-xs>
@@ -84,11 +70,11 @@
 							<h1 style="margin-bottom: 0;margin-top: 10px" class="calender-left-h1">Different Cuisine Everyday</h1>
 							<h1 style="margin-top: 10px" class="calender-left-h1">Free Delivery at your doorstep</h1>
 						</div>
-            <div style="margin-left: 5%">
-            	<h4 class="calender-left-h4 mt0 mb0">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
-            	<h4 style="margin-bottom: 0px;" class="calender-left-h4-2">organize your schedule No more kitchen hassles,</h4>
-            	<h4 class="calender-left-h4-2">Free home delivery</h4>
-		   	</div>
+						<div style="margin-left: 5%">
+							<h4 class="calender-left-h4 mt0 mb0">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
+							<h4 style="margin-bottom: 0px;" class="calender-left-h4-2">organize your schedule No more kitchen hassles,</h4>
+							<h4 class="calender-left-h4-2">Free home delivery</h4>
+						</div>
 
 
 					</div>
@@ -107,7 +93,7 @@
 
 								<!-- calender -->
 
-								<md-card-content layout="column" class="pl0 pt0 pr0 pb0">
+								<md-card-content layout="column" class="pl0 pt0 pr0 pb0" id="calContent">
 									<md-calendar md-min-date="vmCalender.startDate" md-max-date="vmCalender.threeMahead" ng-model="vmCalender.currDate" ng-click="some(startDate)" md-mode="day"></md-calendar>
 								</md-card-content>
 
@@ -115,14 +101,52 @@
 
 								<!-- <a href="">{{vmCalender.lastVegDate}}</a> -->
 								<form name="userForm" id='mealCountForm' style="margin-bottom: 0px" align="center"> 
-									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 8px">
+
+
+
+									<div layout="row" layout-padding layout-align="space-between center" style="border-top: 1px solid #eee;border-bottom: 1px solid #eee" class="pr15 pt0 pb0">
+										<div class="pt0 pb0">
+											<div class="alignleft pb10">
+												<label class="greyfont" style="font-size: 15px">Veg Meals 
+													<span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>			
+												</div>
+												<div class="alignleft">
+													<label class="greyfont" style="font-size: 15px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
+												</div>
+											</div>
+											<div class="pt0 pb0" id="countBtn">
+												<div layout="row">
+													<div>
+														<md-button class="md-raised sub-meal-btn" ng-click="caldveg()"><i class="fa fa-minus pt3" aria-hidden="true"></i></md-button>
+													</div>
+													<div class="pt8">
+														<input readonly id="calveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayVegCount">
+													</div>
+													<div>
+														<md-button class="md-raised sub-meal-btn pt2" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+													</div>
+												</div>
+												<div layout="row">
+													<div>
+														<md-button class="md-raised sub-meal-btn" ng-click="caldnveg()"><i class="fa fa-minus pt3" aria-hidden="true"></i></md-button>
+													</div>
+													<div class="pt8">
+														<input readonly id="calnveg" class="aligncenter width35 border-none" type="number" value="0" ng-model="vmCalender.dayNonvegCount">
+													</div>
+													<div>
+														<md-button class="md-raised sub-meal-btn pt2" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+<!-- 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 8px">
 										<div class="pt0 pb0">
 											<label class="greyfont" style="font-size: 16px">Veg Meals 
-                                                <span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>
-
-
-<!-- vmCalender.nvegRem -->
-<!-- vmCalender.totalNvegCount -->
+												<span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>
 										</div>
 										<div layout="row" layout-align="center center" class="pt0 pb0">
 											<div>
@@ -135,7 +159,11 @@
 												<md-button class="md-raised sub-meal-btn" ng-click="caliveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
 											</div>
 										</div>
-									</div>							
+									</div>	 -->	
+
+
+
+<!-- 
 									<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 0px 7px;border-bottom: 1px solid #eee">
 										<div class="pt0 pb0">
 											<label class="greyfont" style="font-size: 16px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
@@ -151,15 +179,16 @@
 												<md-button class="md-raised sub-meal-btn" ng-click="calinveg()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
 											</div>
 										</div>
-									</div>
+									</div> -->
+
 								</form>
 
 								<div style="display: block;text-align: center;padding-right: 4%" class="cal-btn-div" id='finalSubmit'>
-									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()">Update</md-button> 
-									<md-button class="md-raised calendar-menu-btn" ng-click="showMenu()">Menu</md-button> 
+									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()" ng-bind="vmCalender.updateBtn"></md-button> 
+									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-disabled="vmCalender.menuBtn" ng-click="showMenu()">Menu</md-button> 
 								</div>
 
-								<a href="">{{vmCalender.error}}</a>
+								<a>{{vmCalender.error}}</a>
 
 							</div>
 
@@ -167,18 +196,20 @@
 
 							<!-- footer -->
 							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
-								<div layout="column" layout-align="center center" ng-click="goProfile()" style="outline: none;cursor: pointer">
+								<div layout="column" layout-align="center center" id='profileBtn' 
+                                ng-click="!vmCalender.isProfileEnabled||goProfile()" style="outline: none;cursor: pointer">
 									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
 									<span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
 								</div>
-								<div style="padding-left: 23%;padding-top: 4px" layout="column" layout-align="center center">
-									<div layout="column" layout-align="center center" ng-click="addMore()" style="outline: none;cursor: pointer">
+								<div style="padding-left: 23%;padding-top: 4px" layout="column"  layout-align="center center">
+									<div layout="column" layout-align="center center" id='addMealsBtn' 
+                                    ng-click="!vmCalender.isAddEnabled||addMore()" style="outline: none;cursor: pointer">
 										<img src="../images/catering.png" width="28px" height="28px" alt="white-logo">
 										<span style="font-size: 12px;margin-top: -5px;letter-spacing: 1px;width: max-content" class="whitefont">Add Meals</span>
 									</div>
 								</div>
-								<div style="padding-left: 12%;">
-									<a href="https://www.dialjordan.com"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
+								<div style="padding-left: 12%;" id="djBtn"> 
+									<a id="goDJ" href="www.dialjordan.com" target="_blank"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
 								</div>
 							</div>
 							<!-- footer -->

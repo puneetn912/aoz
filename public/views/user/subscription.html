@@ -25,7 +25,7 @@
 						<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
 					</div>
 					<div style="margin-left: 5%">
-						<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+						<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
 						<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
 						<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
 					</div>
@@ -48,17 +48,14 @@
 
 							<div style="height: 142px">
 		<div  id="abc" class="imageslide" ng-switch='slideshow' ng-animate="animate">
-			<div class="slider-content" ng-switch-when="1">
+<!-- 			<div class="slider-content" ng-switch-when="1">
 					   		<img src="../images/sub1.jpg" style="width: 100%" alt="image caption">
-				<!-- <div class="mobile1"></div> -->
-			</div>	
-			<div class="slider-content" ng-switch-when="2">
+			</div> -->	
+			<div class="slider-content" ng-switch-when="1">
 						   		<img src="../images/sub2.jpg" style="width: 100%" alt="image caption">
-               <!-- <div class="mobile2"></div> -->
 			</div>
-			<div class="slider-content" ng-switch-when="3">
+			<div class="slider-content" ng-switch-when="2">
 						   		<img src="../images/sub3.jpg" style="width: 100%" alt="image caption">
-               <!-- <div class="mobile3"></div> -->
 			</div>	
 		</div>
 							</div>
@@ -77,7 +74,7 @@
 										<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee subscribe-select-type" style="padding: 4px 8px">
 											<label class="sub-form-label pt0 pb0">Meal Type</label>
 
-											<md-select placeholder="Meal type" ng-model="mealType" ng-change="selectedMeal(mealType)" class="border-none" style="text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;width: 50%;text-align: right">
+											<md-select placeholder="Meal type" ng-model="vmSubscription.mealType" ng-change="selectedMeal(vmSubscription.mealType)" class="border-none" style="text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;width: 50%;text-align: right">
 
 												<md-option value="Veg">Veg</md-option>
 												<md-option value="Non Veg">Non Veg</md-option>
@@ -88,7 +85,7 @@
 
 										<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 											<div class="pt0 pb0">
-												<label class="greyfont sub-form-label">No. of Veg Meals</label>
+												<label class="greyfont sub-form-label">No. of Veg (Full Meal)</label>
 											</div>
 											<div class="subscribe-select-meal pt0 pb0 pr0">
 
@@ -103,7 +100,7 @@
 										</div>
 										<div layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px">
 											<div class="pt0 pb0">
-												<label class="greyfont sub-form-label">No. of non Veg Meals</label>
+												<label class="greyfont sub-form-label">No. of non Veg (Full meal)</label>
 											</div>
 											<div class="subscribe-select-meal pt0 pb0 pr0">
 
@@ -117,8 +114,8 @@
 										</div>
 										
 										<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-											<label style="width: 100%" class="pt0 pb0 sub-form-label">Total Price :</label>
-											<input style="width: 100%" type="number" id="total" value="0" disabled="true" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+											<label style="width: 100%" class="pt0 pb0 sub-form-label">Total Price (INR):</label>
+											<input style="width: 100%" type="number" ng-model="vmSubscription.sumAmt" id="total" value="0" disabled="true" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
 										</div>
 									</div>
 

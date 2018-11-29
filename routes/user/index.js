@@ -10,12 +10,12 @@ let userController = require('../../lib/src/js/scriptController/userController')
 let calendarController = require('../../lib/src/js/scriptController/calendarController');
 let paymentController = require('../../lib/src/js/scriptController/paymentController');
 let menuController = require('../../lib/src/js/scriptController/menuController');
+let mailController = require('../../lib/src/js/scriptController/mailController');
 
-
-var mid = '24324';
-var username = '5168160';
-var password = 'NBTh6GXx';
-var secret = 'KVnqNAjbh8wKE6wM';
+var mid = '26239';
+var username = '5895556';
+var password = 'AH4NjDNd';
+var secret = '8mWpy7XcmP56S9BT';
 var now = new Date();
 
 var locality = require('../../lib/models/locality')
@@ -78,7 +78,6 @@ router.post('/sendtoairpay', function(req, res, next) {
 });
 
 // subcription
-router.post('/mealcount',subscriptionController.subscriptionCount)
 router.post('/createSubs',subscriptionController.createSubs)
 router.post('/updateSubs/:id',subscriptionController.updateSubs)
 router.post('/updateStatus/:id',subscriptionController.updateStatus)
@@ -93,6 +92,7 @@ router.post('/getMenuByDate',menuController.getMenuByDate)
 router.post('/getAllLocality',localityController.getAll)
 
 // apartment
+router.post('/addApt',apartmentController.addApt)
 router.post('/getAptByLocality/:id',apartmentController.getAptByLocality)
 router.post('/getAllApt',apartmentController.getAll)
 router.post('/updateApt/:id',apartmentController.update)
@@ -103,6 +103,7 @@ router.post('/createUser',userController.createUser)
 router.post('/updateUser',userController.updateUser)
 router.post('/checkUser/:phone',userController.checkUser)
 router.post('/checkUserId/:id',userController.checkUserId)
+router.post('/getUserById/:id',userController.getUserById)
 
 //calendar
 router.post('/addCalendar',calendarController.add)
@@ -113,6 +114,9 @@ router.post('/getCal/:subId',calendarController.getCal)
 router.post('/addPayment/:id',paymentController.add)
 router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
+
+router.post('/sendMail', mailController.test )
+
 
 
 module.exports = router;

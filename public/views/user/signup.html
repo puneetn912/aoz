@@ -21,7 +21,7 @@
         			<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
         		</div>
         		<div style="margin-left: 5%">
-        			<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 99/- and non veg meals at just &#8377 119/-,</h4>
+        			<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
         			<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
         			<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
         		</div>
@@ -33,7 +33,18 @@
         
         <!-- right -->
         <md-card class="card-border" flex-gt-xs="25" layout-align="center">
-        	<md-card-content style="height: 100%">
+        	<div class="signup-div-height">
+
+				<!-- white-header -->
+				<div class="white-header">
+				</div>
+				<!--white-header-->
+
+        	
+				<div style="overflow: hidden;">
+					<div class="signup-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
+
+
         		<div layout="column" layout-align="center center">	
         			<div class="signup-card-img">
         				<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image" alt="image caption">
@@ -76,8 +87,11 @@
 
 			<div layout="row" layout-align="center center" layout-padding layout-margin class="mt0">
 				<div class="otp-otpbtn-div">
-					<input class="otp-otpbtn-inp" placeholder="Phone Number" maxlength="10" 
-        					ng-pattern="/^[0-9]+$/" required type="text" ng-model="vmSignup.mobileno" name="mobileno"  style="outline: none;"/>
+					<input class="otp-otpbtn-inp" placeholder="Phone Number" type="text" name="mobileno"
+                            maxlength="10"   
+        					ng-pattern="/^[0-9]+$/" 
+                            ng-model="vmSignup.mobileno" 
+                            style="outline: none;" required />
 					<md-button id="sendOTP" class="otp-otpbtn-btn" ng-click="sendOtp(userForm)" ><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
 
                     <div id="loader" style="position: fixed;display: none">
@@ -108,7 +122,15 @@
                 </div> -->
             </div>
         </form>
-    </md-card-content>	
+    </div>
+    </div>
+    </div>
+
+			<!-- white-footer -->
+			<div class="white-footer">
+			</div>
+			<!-- white-footer -->
+
 </md-card>
 <!-- right -->
 

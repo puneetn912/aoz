@@ -3,11 +3,11 @@
         <i class="fa fa-user" style="color:white;font-size: 20px !important" aria-hidden="true"></i>
         <span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
     </div>
-    <div layout="column" layout-align="center center" ng-click="goCal()" style="padding-left: 12%;cursor: pointer;outline: none">
+    <div layout="column" id="secondSlot" layout-align="center center" ng-click="goCal()" style="padding-left: 12%;cursor: pointer;outline: none">
         <i class="fa fa-calendar" aria-hidden="true" style="color: white;font-size: 20px !important"></i>
         <span style="font-size: 12px;letter-spacing: 1px" class="whitefont">Manage</span>
     </div>
-    <div layout="column" layout-align="center center" style="outline: none">
-        <a href="https://www.dialjordan.com" target="_blank"><img src="../images/logowhite.png" alt="home" style="width: 80px"></a>
+    <div layout="column" layout-align="center center" style="outline: none" id='djLink' ng-click="goDJ()">
+        <a ><img src="../images/logowhite.png" alt="home" style="width: 80px"></a>
     </div>
 </div>
