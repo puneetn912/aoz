@@ -36,18 +36,18 @@
 
 			<!-- right -->
 			<md-card class="card-border" flex-gt-xs="25" layout-align="center">
-				<div style="height:100%">
+				<div class="history-div-height">
 					<ng-include src="'views/user/includes/header.html'"></ng-include>
 					<div style="overflow: hidden;">
-						<div style="height: 77%;overflow-y: overlay;overflow-x: hidden;">
-							<div layout="column" layout-padding>
-								<h3>Your order history</h3>
-								<div layout="row" layout-align="space-around">
-									<label flex="25">Meal type</label>
-									<label flex="25">Quantity</label>
-									<label flex="20">Date</label>
-									<label flex="15">Total</label>
-									<label flex="15">Status</label>
+						<div class="history-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -20px;padding-right: 20px">
+							<div layout="column">
+								<h3 class="pl10 pr10">Your order history</h3>
+								<div layout="row" layout-align="space-around" class="pl10 pr10">
+									<label flex="25" class="font-weightbold">Meal type</label>
+									<label flex="25" class="font-weightbold">Quantity</label>
+									<label flex="20" class="font-weightbold">Date</label>
+									<label flex="15" class="font-weightbold">Total</label>
+									<label flex="15" class="font-weightbold">Status</label>
 								</div>
 
 						      	<md-list >

@@ -202,6 +202,21 @@ md-autocomplete input:not(.md-input) {
 
 
 
+/*----------------------history.html---------------------*/
+
+@media screen and (max-width: 500px){
+  .history-div-height{height: 94%}
+  .history-overflow-height{height: 90%}
+}
+
+@media screen and (min-width: 1000px){
+  .history-div-height{height: 88%}
+  .history-overflow-height{height: 82%}
+}
+/*-----------------------history.html---------------------------------*/
+
+
+
 /*-------------------------menu.html-------------------------------*/
 
 md-tabs .md-tab.md-active{
