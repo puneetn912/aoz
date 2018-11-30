@@ -1,5 +1,5 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content class="md-content-bgimage" style="height:100%;" layout="row" layout-xs="column" ng-controller="signupController as vmSignup" ng-cloak>
+    <md-content class="md-content-bgimage" style="height:100%;" layout="row" layout-xs="column" ng-controller="pageController as vmPage" ng-cloak>
 
         <!-- left -->
         <div flex-gt-xs="55" hide-xs>
@@ -44,17 +44,11 @@
                             <div style="margin-top: -100px;" class="signup-card-content signup-car-form">
                                 <h4 class="greyfont letter-space1">Healthy home style food</h4>
                             </div>
-                          
-                        </div>  
-
-                        <form name="userForm" class="signup-card-form">
-                            <h4 class="greyfont letter-space2" layout="row" layout-align="center center">Enter your phone number</h4>
-                            <div layout="column"  layout-padding layout-margin class="ml0 mr0 pl0 pr0">
-                                <div layout="row" layout-align="center center" layout-padding layout-margin class="mt0">
-                                    ewrqweqrwqwrqw
-                                </div>
-                            </div>
-                        </form>
+                            <md-button class="md-raised md-primary" ng-click="catHome()" style="zoom:1.3">Home</md-button>
+                            <md-button class="md-raised md-primary" ng-href='/enquiry?subject=School Enquiry' style="zoom:1.3">School</md-button>
+                            <md-button class="md-raised md-primary" ng-href='/enquiry?subject=Corporate Enquiry' style="zoom:1.3">Corporate</md-button>
+                            <md-button class="md-raised md-primary" ng-href='/enquiry?subject=Party Enquiry' style="zoom:1.3">Party</md-button>
+                        </div>
                     </div>
                 </div>
             </div>
