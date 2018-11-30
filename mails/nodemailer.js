@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
 
 exports.sendMail= function (user, [html, subject, attachments]) {
     transporter.sendMail({
-        from: 'support@djfresh.in',
+        from: 'info@djfresh.in',
         to: user.email,
         subject: subject || 'DJfresh Update',
         html: html,
