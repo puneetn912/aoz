@@ -290,6 +290,67 @@ md-autocomplete input:not(.md-input) {
 
 
 
+/*--------------------category.html-----------------------------*/
+
+.category-home-btn{
+  color: #CE362C !important;
+  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  /*padding: 5px 60px; */
+  font-size: 20px;
+  height: 52px;
+  border-radius: 50px;
+  padding-top: 0px;
+  width: 220px;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  margin-bottom: 10px; 
+}
+.category-school-btn{
+  color: #CE362C !important;
+  font-size: 15px;
+  height: 52px;
+  border-radius: 50px;
+  padding-top: 5px;
+  width: 220px;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px; 
+  margin-bottom: 10px; 
+}
+.category-party-btn{
+  color: #CE362C !important;
+  font-size: 15px;
+  height: 52px;
+  border-radius: 50px;
+  padding-top: 8px;
+  width: 220px;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 3px; 
+}
+.category-corpo-btn{
+  color: #CE362C !important;
+  font-size: 15px;
+  height: 52px;
+  border-radius: 50px;
+  padding-top: 5px;
+  width: 220px;
+  background-color: white !important;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;  
+  margin-bottom: 10px; 
+}
+
+/*--------------------category.html---------------------------*/
+
+
 
 /*---------------------header.html-------------------------*/
 @media screen and (max-width: 500px){
@@ -947,8 +1008,8 @@ padding-top: 2px;
 @media screen and (max-width: 500px) {
 .signup-card-img{margin-top: -45px}
 }
-@media screen and (min-width: 500px){
-.signup-card-img{margin-top: 0px}
+@media screen and (min-width: 1000px){
+.signup-card-img{margin-top: -50px}
 }
 
 
@@ -1000,6 +1061,43 @@ padding-top: 2px;
 
 /*----------------------signup.html---------------------------*/
 
+
+/*------------------enquiry.html-------------------------------*/
+.enquiry-input{
+    font-size: 18px;
+    box-sizing: border-box;
+    /*border: none;*/
+    /*box-shadow: none;*/
+    outline: none;
+    border-right: none;
+    border-left: none;
+    background: white;
+    width: 100%;
+    border-top:0px solid #eee;
+    border-bottom:1px solid #eee; 
+    padding: 0 15px;
+    line-height: 40px;
+    height: 50px;
+}
+.enquiry-text-input{
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    background: white;
+    width: 100%;
+    border-top:0px solid #eee;
+    border-bottom:1px solid #eee; 
+    padding: 0 15px;
+    /*line-height: 40px;*/
+    height: 100px;
+    padding-top: 13px
+
+}
+
+
+/*-------------------enquiry.html--------------------------*/
 
 
 /*---------------cart.html-----------------------*/
@@ -1523,6 +1621,7 @@ body {
 /*letter-spacing*/
 .letter-space1{letter-spacing:1px}
 .letter-space2{letter-spacing:2px}
+.letter-space3{letter-spacing:3px}
 /*letter-spacing*/
 
 /*border-top*/
