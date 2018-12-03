@@ -37,43 +37,44 @@
 
 				<div style="overflow: hidden;">
 					<div class="signup-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px">
-						<div layout="column" layout-align="center center">  
-							<div class="signup-card-img">
+						<div layout="column" layout-padding>  
+							<div class="signup-card-img" layout="row" layout-align="center center">
 								<img src="../images/logo.png" widht="300px" height="300px" class="md-card-image" alt="image caption" style="zoom:0.7">
 							</div>
-							<form name="enquiryForm" style="margin-top: -57px">
-								<div layout="column" layout-padding>
-									<h2 align="center" class='p0'>Enquiry</h2>
-									<h4 class='p0'>Drop in an enquiry and we'll get back to you!</h4>
+							<form name="enquiryForm" class="mb0" style="margin-top: -57px">
+								<div layout="column">
+									<!-- <h2 align="center" class='p0'>Enquiry</h2> -->
+									<h4 class='p0 mt0'>Drop in an enquiry and we'll get back to you!</h4>
 
 									<div class="p0">
-										<input class="Contact-input" type="text" placeholder="Name" name="name" 
+										<input class="enquiry-input pl0" type="text" placeholder="Name" name="name" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Name'" >
 									</div>
 									<div class="p0">
-										<input class="Contact-input" type="email" placeholder="Email" name="email" 
+										<input class="enquiry-input pl0" type="email" placeholder="Email" name="email" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Email'" >
 									</div>
 									<div class="p0">
-										<input class="Contact-input" type="text" placeholder="Phone" name="mobileno" 
+										<input class="enquiry-input pl0" type="text" placeholder="Phone" name="mobileno" 
 										onfocus="this.placeholder = ''" 
-										onblur="this.placeholder = 'Phone'" ng-model='vmPage.phone'>
+										onblur="this.placeholder = 'Phone'" ng-model='vmPage.phone' readonly>
 									</div>
 									<div class="p0">
-										<input class="Contact-input" type="text" placeholder="Subject" name="subject" 
+										<input class="enquiry-input pl0" type="text" placeholder="Subject" name="subject" 
 										onfocus="this.placeholder = ''" 
-										onblur="this.placeholder = 'Subject'" ng-model='vmPage.enqSubject'>
+										onblur="this.placeholder = 'Subject'" ng-model='vmPage.enqSubject' readonly>
 									</div> 
 									<div class="p0">
-										<input class="Contact-input" type="text" placeholder="Enter your Message" name="message" 
+										<textarea class="enquiry-text-input pl0" placeholder="Enter your Message..." name="message" 
 										onfocus="this.placeholder = ''" 
-										onblur="this.placeholder = 'Enter your Message'" >
+										onblur="this.placeholder = 'Enter your Message...'" ></textarea>
 									</div>
 								</div>
 
 								<div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
+									<md-button  ng-href="/category" class="md-raised home-signup-btn" aria-label="description" ng-disabled='vmPage.isEnqFilled'>Back</md-button> 
 									<md-button class="md-raised home-signup-btn" aria-label="description" ng-disabled='vmPage.isEnqFilled' ng-click="enquire()">Submit</md-button>
 								</div>
 							</form>
