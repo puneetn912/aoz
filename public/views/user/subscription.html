@@ -112,10 +112,10 @@
 											<div class="subscribe-select-meal pt0 pb0 pr0" layout="row" layout-align="end">
 
 												<md-select placeholder="Non Veg Meals" id="nvegCount" ng-model="vmSubscription.nvegCount" ng-change="changeNVcount(vmSubscription.nvegCount)" ng-disabled=vmSubscription.nonvegSelect style="border:none;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
-													<md-option value="5">5</md-option>
-													<md-option value="10">10</md-option>
-													<md-option value="20">20</md-option>
-													<md-option value="30">30</md-option>
+													<md-option id="abc" value="5">5</md-option>
+													<md-option id="abc" value="10">10</md-option>
+													<md-option id="abc" value="20">20</md-option>
+													<md-option id="abc" value="30">30</md-option>
 												</md-select>
 											</div>
 										</div>
@@ -130,7 +130,7 @@
 									</div>
 
 									<div layout="row" layout-align="center center" class="bt-1-s-eee subscribe-btn">
-										<md-button id="subscribeBtn" ng-click="subscribe() " class="md-raised sub-buynow-btn">buy Now
+										<md-button id="subscribeBtn" ng-click="subscribe()" ng-disabled="vmSubscription.button" class="md-raised sub-buynow-btn">buy Now
 										</md-button>
 									</div>
 								</form>
