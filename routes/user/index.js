@@ -27,18 +27,18 @@ router.post('/sendotp', function(req, res) {
 });
 
 //payment integration
-
 router.post('/thankyou', function(req, res, next) {
-   console.log(req.body,'req') 
-   console.log(res,'req')
-   if(req.body.MESSAGE == 'Success'){
+    if(req.body.MESSAGE == 'Success'){
         res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
         res.header('Expires', '-1');
         res.header('Pragma', 'no-cache');
         res.redirect(`/thankyou`)
-   }else{
+    }else{
         res.redirect(`/declined`)
-   }
+    }
+})
+router.post('/declined', function(req, res, next) {
+    res.redirect('/declined')
 })
 
 router.post('/sendtoairpay', function(req, res, next) {
