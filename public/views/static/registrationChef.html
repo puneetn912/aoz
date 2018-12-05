@@ -67,9 +67,10 @@
 										onblur="this.placeholder = 'Subject'">
 									</div> -->
 									<div class="p0">
-										<input class="Contact-input" type="text" placeholder="Enter your Message" name="message" 
+										<textarea class="contact-textarea" placeholder="Enter your Message..." name="message" 
 										onfocus="this.placeholder = ''" 
-										onblur="this.placeholder = 'Enter your Message'" >
+										onblur="this.placeholder = 'Enter your Message...'" ></textarea>
+
 									</div>
 								</div>
 
@@ -77,7 +78,7 @@
 									<md-button class="md-raised home-signup-btn" aria-label="description" ng-disabled='vmPage.isFormFilled' ng-click="submit()">Submit</md-button>
 								</div>
 							</form>
-                            <p ng-bind="vmPage.errMsg" align="center" style="color:red;"></p>
+							<p ng-bind="vmPage.errMsg" align="center" style="color:red;"></p>
 						</div>
 					</div> 
 				</div>

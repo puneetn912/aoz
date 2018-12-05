@@ -203,12 +203,23 @@ table.md-calendar-day-header{width: 100%}
 
 .md-virtual-repeat-container.md-autocomplete-suggestions-container{
   /*background-color: green;*/
-  border: 1px solid darkgrey;
+  /*border: 1px solid darkgrey;*/
   border-top: none ;
   border-bottom:none;
 }
+
 .md-autocomplete-suggestions li{
   border-bottom: 1px solid darkgrey;
+    color: firebrick;
+    letter-spacing: 1;
+}
+.md-whiteframe-z1{
+  box-shadow: 0 2px 5px rgba(0,0,0,.25) !important;
+}
+
+.md-virtual-repeat-container.md-autocomplete-suggestions-container{
+  box-shadow: 0 2px 5px rgba(0,0,0,.25) !important;
+  max-height: none;
 }
 
 
@@ -1242,6 +1253,24 @@ padding-top: 20px;
     padding: 0 15px;
     line-height: 40px;
     height: 50px;
+}
+
+.contact-textarea{
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    background: white;
+    width: 100%;
+    border-top:1px solid #eee;
+    /*border-bottom:1px solid #eee; */
+    padding: 0 15px;
+    /*line-height: 40px;*/
+    height: 100px;
+    padding-top: 13px
+
 }
 /*-------------------------contact.html-------------------------*/
 
