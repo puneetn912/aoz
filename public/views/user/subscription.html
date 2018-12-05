@@ -47,17 +47,17 @@
 						<div class="subscribe-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -15px;padding-right: 15px;width:101%">        
 
 							<div style="height: 142px">
-		<div  id="abc" class="imageslide" ng-switch='slideshow' ng-animate="animate">
-<!-- 			<div class="slider-content" ng-switch-when="1">
-					   		<img src="../images/sub1.jpg" style="width: 100%" alt="image caption">
-			</div> -->	
-			<div class="slider-content" ng-switch-when="1">
-						   		<img src="../images/sub2.jpg" style="width: 100%" alt="image caption">
-			</div>
-			<div class="slider-content" ng-switch-when="2">
-						   		<img src="../images/sub3.jpg" style="width: 100%" alt="image caption">
-			</div>	
-		</div>
+                    		<div  id="abc" class="imageslide" ng-switch='slideshow' ng-animate="animate">
+                                <!--<div class="slider-content" ng-switch-when="1">
+                    					   		<img src="../images/sub1.jpg" style="width: 100%" alt="image caption">
+                    			</div> -->	
+                    			<div class="slider-content" ng-switch-when="1">
+                    						   		<img src="../images/sub2.jpg" style="width: 100%" alt="image caption">
+                    			</div>
+                    			<div class="slider-content" ng-switch-when="2">
+                    						   		<img src="../images/sub3.jpg" style="width: 100%" alt="image caption">
+                    			</div>	
+                    		</div>
 							</div>
 							<div layout-padding class="aligncenter subscribe-desc-dic">
 								<h5 class="blackffont-weight400 mt0 mb0 subscribe-desc-text">
@@ -89,7 +89,10 @@
                                          <!-- select -->
 
                                         <!-- veg-meal -->
-										<div id="veeg" layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px;display: block;">
+										<div id="veeg" layout="row" layout-align="space-between center" 
+                                            ng-hide="vmSubscription.isVegHidden" 
+                                            layout-padding class="pt0 pb0 bt-1-s-eee" 
+                                            style="padding: 4px 8px;">
 											<div class="pt0 pb0" style="float: left;padding-top: 8px">
 												<label class="greyfont sub-form-label">Veg (Full Meal)</label>
 											</div>
@@ -113,11 +116,15 @@
 
 
                                         <!-- nonveg-meal -->
-										<div id="nveeg" layout="row" layout-align="space-between center" layout-padding class="pt0 pb0 bt-1-s-eee" style="padding: 4px 8px;display: block">
+										<div id="nveeg" layout="row" layout-align="space-between center" 
+                                        layout-padding class="pt0 pb0 bt-1-s-eee" 
+                                        ng-hide="vmSubscription.isNvegHidden"
+                                        style="padding: 4px 8px;">
 											<div class="pt0 pb0" style="float: left;padding-top: 8px">
 												<label class="greyfont sub-form-label">Non - Veg (Full Meal)</label>
 											</div>
 											<div class="subscribe-select-meal pt0 pb0 pr0" layout="row" layout-align="end">
+
 
 												<md-select placeholder="Non Veg Meals" id="nvegCount"
                                                 ng-required="vmSubscription.isNvegRequired" 
@@ -129,6 +136,7 @@
 													<md-option value="10">10</md-option>
 													<md-option value="20">20</md-option>
 													<md-option value="30">30</md-option>
+
 												</md-select>
 											</div>
 										</div>
@@ -143,7 +151,9 @@
 									</div>
 
 									<div layout="row" layout-align="center center" class="bt-1-s-eee subscribe-btn">
+
 										<md-button id="subscribeBtn" ng-disabled='orderForm.$invalid' ng-click="subscribe() " class="md-raised sub-buynow-btn">buy Now
+
 										</md-button>
 									</div>
 								</form>

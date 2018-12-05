@@ -200,6 +200,19 @@ table.md-calendar-day-header{width: 100%}
 
 /*---------------------userdetails.html--------------------------*/
 
+
+.md-virtual-repeat-container.md-autocomplete-suggestions-container{
+  /*background-color: green;*/
+  border: 1px solid darkgrey;
+  border-top: none ;
+  border-bottom:none;
+}
+.md-autocomplete-suggestions li{
+  border-bottom: 1px solid darkgrey;
+}
+
+
+
 .user-submit-btn{
     background-color: transparent !important;
     padding-left: 0px;
