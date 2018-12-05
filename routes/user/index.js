@@ -124,6 +124,8 @@ router.post('/getUserById/:id',userController.getUserById)
 router.post('/addCalendar',calendarController.add)
 router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
+router.post('/delCal/:calId',calendarController.delCal)
+router.post('/updateCalOne',calendarController.updateCalOne)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)
