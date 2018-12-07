@@ -89,13 +89,13 @@
 						md-items="item in vmUserdetails.querySearchApt(vmUserdetails.searchTextApt)"
 						md-item-text="item.apartment_name"
 						md-min-length="3"
-						placeholder="Enter Apartment name">
+						placeholder="Name of the Apartment / Villa">
 						<md-item-template>
 							<span md-highlight-text="vmUserdetails.searchTextApt" md-highlight-flags="^i">{{item.apartment_name}}</span>
 						</md-item-template>
 						<md-not-found>
                             <!-- Apartment Not found "{{vmUserdetails.searchTextApt}}" were found. -->
-							Apartment Not found <md-button ng-href="/apartment" class="md-raised">Register New?</md-button>
+							Please <md-button ng-href="/apartment" class="md-raised">Register</md-button> Your Apartment
 						</md-not-found>
 					</md-autocomplete>
 
