@@ -152,14 +152,15 @@
 
 									<div layout="row" layout-align="center center" class="bt-1-s-eee subscribe-btn">
 
-										<md-button id="subscribeBtn" ng-disabled='orderForm.$invalid' ng-click="subscribe() " class="md-raised sub-buynow-btn">buy Now
+										<md-button id="subscribeBtn" ng-click="subscribe() " class="md-raised sub-buynow-btn">buy Now
 
 										</md-button>
 									</div>
 								</form>
-							</div>
-						</div>
-					</div>
+                                <p ng-bind="vmSubscription.err" align="center" style="color: red"></p>
+                            </div>
+                        </div>
+                    </div>
 					
 					<ng-include src="'views/user/includes/footer.html'"></ng-include>
 
