@@ -1,6 +1,11 @@
 <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
     <md-toolbar class="md-theme-indigo">
         <h1 class="md-toolbar-tools"><img src="../images/white-logo.png" width="100px" height="100px" class="ml-25" alt="white-logo"> <md-button ng-click="vmPage.close()" style="position: fixed;right: 0px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button></h1>
+        <span ng-if='vmPage.gotUser' style="padding-left: 13px;padding-bottom: 10px">
+            <p style="font-size: 15px;margin:5px ">{{vmPage.gotUser}}</p>
+            <p style="font-size: 15px;margin:5px" >{{vmPage.email}}</p>
+            <p style="font-size: 15px;margin:5px">{{vmPage.apartment_name}}</p>
+        </span>
         
     </md-toolbar>
     <md-content>

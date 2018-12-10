@@ -42,27 +42,38 @@
 						<div class="history-overflow-height" style="overflow-y: overlay;overflow-x: hidden;margin-right: -20px;padding-right: 20px">
 							<div layout="column">
 								<h3 class="pl10 pr10">Your order history</h3>
-								<div layout="row" layout-align="space-around" class="pl10 pr10">
-									<label flex="25" class="font-weightbold">Meal type</label>
-									<label flex="25" class="font-weightbold">Quantity</label>
-									<label flex="20" class="font-weightbold">Date</label>
-									<label flex="15" class="font-weightbold">Total</label>
-									<label flex="15" class="font-weightbold">Status</label>
-								</div>
 
 						      	<md-list >
-							        <md-list-item ng-click="null" class="md-2-line" ng-repeat="item in vmHistory.payments">
-							        	<div class="md-list-item-text" layout="row" layout-align="space-around" style="padding: 0px">
-									      <span flex="20">{{item.meal_type}}</span>
-									      <span flex="20" style="padding-left: 25px">{{item.veg_count+item.nonveg_count}}</span>
-									      <span flex="30" style="padding-left: 10px">{{item.created_at.slice(0,10)}}</span>
-									      <span flex="20" style="padding-left: 4px">{{item.amount}}</span>
-									      <span flex="10" style="">{{item.status}}</span>
+							        <md-list-item class="md-2-line" ng-repeat="item in vmHistory.payments" style="padding: 10px;border: 1px solid grey;border-radius: 5px; margin-bottom: 10px">
+							        	<div class="md-list-item-text">
+                                            <div layout="row" layout-align="space-between">
+									            <p style="font-weight: bold">Order No {{item.order_no}}</p>
+                                                <p style="font-weight: bold"><i class="fa fa-inr" aria-hidden="true"></i> {{item.amount}}</p>
+                                            </div>
+
+                                            <p>{{item.created_at.slice(0,10)}} {{item.created_at.getTime()}}</p>
+                                            <div ng-if="item.veg_count>0">
+                                                <p>
+                                                    Veg Meal * {{item.veg_count}} : 
+                                                    <i class="fa fa-inr" aria-hidden="true"></i> {{item.veg_count*119}}
+                                                </p>
+                                                
+                                            </div>
+                                            <div ng-if="item.nonveg_count>0">
+                                                <p>
+                                                    Non-Veg Meal * {{item.nonveg_count}} : 
+                                                    <i class="fa fa-inr" aria-hidden="true"></i> {{item.nonveg_count*139}}
+                                                </p>
+                                                
+                                            </div>
+                                            <div ng-if='item.status==true' layout='row' layout-align='space-between'>
+                                                <p>Transaction Status : {{item.status}}</p>
+                                                <md-button class="md-raised md-primary" style="margin-top: -18px;margin-right: 0px">Get Invoice</md-button>
+                                            </div>
 									    </div>
 							        </md-list-item>
 							        <md-divider ></md-divider>
 							    </md-list>
-
 
 							</div>
 						</div>
@@ -76,6 +87,5 @@
 	</div>
 </div>
 
-<!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
 
 
