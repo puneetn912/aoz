@@ -85,93 +85,95 @@
 											ng-model="vmSubscription.mealType" 
 											ng-change="selectedMeal(vmSubscription.mealType)" 
 											style="text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;width: 50%;text-align: right">
-											<md-option value="Veg">Veg</md-option>
-											<md-option value="Non Veg">Non Veg</md-option>
-											<md-option value="Both">Both</md-option>
-										</md-select>
+    											<md-option value="Veg">Veg</md-option>
+    											<md-option value="Non Veg">Non Veg</md-option>
+    											<md-option value="Both">Both</md-option>
+    										</md-select>
 
-									</div>
-									<!-- select -->
+									    </div>
+									   <!-- select -->
 
-									<!-- veg-meal -->
-									<div id="veeg" layout="row" layout-align="space-between center" 
-									ng-hide="vmSubscription.isVegHidden" 
-									layout-padding class="pt0 pb0 bt-1-s-eee" 
-									style="padding: 4px 8px;">
-									<div class="pt0 pb0" style="float: left;padding-top: 8px">
-										<label class="greyfont sub-form-label">Veg (Full Meal)</label>
-									</div>
-									<div class="subscribe-select-meal pt0 pb0 pr0" style="float: right">
+    									<!-- veg-meal -->
+    									<div id="veeg" layout="row" layout-align="space-between center" 
+    									ng-hide="vmSubscription.isVegHidden" 
+    									layout-padding class="pt0 pb0 bt-1-s-eee" 
+    									style="padding: 4px 8px;">
+        									<div class="pt0 pb0" style="float: left;padding-top: 8px">
+        										<label class="greyfont sub-form-label">Veg (Full Meal)</label>
+        									</div>
+        									<div class="subscribe-select-meal pt0 pb0 pr0" style="float: right">
 
-										<md-select placeholder="Veg Meals" id="vegCount" 
-										ng-required='vmSubscription.isVegRequired' 
-										ng-model="vmSubscription.vegCount" 
-										ng-change="changeVcount(vmSubscription.vegCount)" 
-										ng-disabled=vmSubscription.vegSelect 
-										style="border:none ;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
-										<md-option value="5">5</md-option>
-										<md-option value="10">10</md-option>
-										<md-option value="20">20</md-option>
-										<md-option value="30">30</md-option>
-									</md-select>
+        										<md-select placeholder="Veg Meals" id="vegCount" 
+        										ng-required='vmSubscription.isVegRequired' 
+        										ng-model="vmSubscription.vegCount" 
+        										ng-change="changeVcount(vmSubscription.vegCount)" 
+        										ng-disabled=vmSubscription.vegSelect 
+        										style="border:none ;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
+            										<md-option value="5">5</md-option>
+            										<md-option value="10">10</md-option>
+            										<md-option value="20">20</md-option>
+            										<md-option value="30">30</md-option>
+            									</md-select>
 
-								</div>
-							</div>
-							<!-- veg-meal -->
-
-
-							<!-- nonveg-meal -->
-							<div id="nveeg" layout="row" layout-align="space-between center" 
-							layout-padding class="pt0 pb0 bt-1-s-eee" 
-							ng-hide="vmSubscription.isNvegHidden"
-							style="padding: 4px 8px;">
-							<div class="pt0 pb0" style="float: left;padding-top: 8px">
-								<label class="greyfont sub-form-label">Non - Veg (Full Meal)</label>
-							</div>
-							<div class="subscribe-select-meal pt0 pb0 pr0" layout="row" layout-align="end">
+        								    </div>
+        							    </div>
+            							<!-- veg-meal -->
 
 
-								<md-select placeholder="Non Veg Meals" id="nvegCount"
-								ng-required="vmSubscription.isNvegRequired" 
-								ng-model="vmSubscription.nvegCount" 
-								ng-change="changeNVcount(vmSubscription.nvegCount)" 
-								ng-disabled=vmSubscription.nonvegSelect 
-								style="border:none;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
-								<md-option value="5">5</md-option>
-								<md-option value="10">10</md-option>
-								<md-option value="20">20</md-option>
-								<md-option value="30">30</md-option>
-
-							</md-select>
-						</div>
-					</div>
-					<!-- non-veg-meal -->
+            							<!-- nonveg-meal -->
+            							<div id="nveeg" layout="row" layout-align="space-between center" 
+            							layout-padding class="pt0 pb0 bt-1-s-eee" 
+            							ng-hide="vmSubscription.isNvegHidden"
+            							style="padding: 4px 8px;">
+                							<div class="pt0 pb0" style="float: left;padding-top: 8px">
+                								<label class="greyfont sub-form-label">Non - Veg (Full Meal)</label>
+                							</div>
+                							<div class="subscribe-select-meal pt0 pb0 pr0" layout="row" layout-align="end">
 
 
 
-					<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
-						<label style="width: 100%" class="pt0 pb0 sub-form-label">Total Price (INR):</label>
-						<input style="width: 100%" type="number" ng-model="vmSubscription.sumAmt" id="total" value="0" disabled="true" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
-					</div>
-				</div>
+                								<md-select placeholder="Non Veg Meals" id="nvegCount"
+                								ng-required="vmSubscription.isNvegRequired" 
+                								ng-model="vmSubscription.nvegCount" 
+                								ng-change="changeNVcount(vmSubscription.nvegCount)" 
+                								ng-disabled=vmSubscription.nonvegSelect 
+                								style="border:none;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
+                    								<md-option value="5">5</md-option>
+                    								<md-option value="10">10</md-option>
+                    								<md-option value="20">20</md-option>
+                    								<md-option value="30">30</md-option>
 
-				<div layout="row" layout-align="center center" class="bt-1-s-eee subscribe-btn">
+                    							</md-select>
+                    						</div>
+                    					</div>
+					                    <!-- non-veg-meal -->
 
-					<md-button id="subscribeBtn" ng-disabled='orderForm.$invalid' ng-click="subscribe() " class="md-raised sub-buynow-btn">buy Now
 
-					</md-button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
 
-<ng-include src="'views/user/includes/footer.html'"></ng-include>
+                    					<div layout="row" layout-align="space-between center" layout-padding class="bt-1-s-eee" style="padding: 12px 8px">
+                    						<label style="width: 100%" class="pt0 pb0 sub-form-label">Total Price (INR):</label>
+                    						<input style="width: 100%" type="number" ng-model="vmSubscription.sumAmt" id="total" value="0" disabled="true" class="pt0 pb0 whitebgcolor font-weight600 border-none text-right">  
+                    					</div>
+				                    </div>
 
-</div>
-</md-card>
-<!-- right -->
+                    				<div layout="row" layout-align="center center" class="bt-1-s-eee subscribe-btn">
 
-</md-content>
-</div>
+                    					<md-button id="subscribeBtn" ng-click="subscribe()" class="md-raised sub-buynow-btn">buy Now
+
+                    					</md-button>
+                    				</div>
+                    			</form>
+                                <p ng-bind="vmSubscription.err" style="color: red" align="center"></p>
+                    		</div>
+                    	</div>
+                    </div>
+
+                    <ng-include src="'views/user/includes/footer.html'"></ng-include>
+
+                </div>
+            </md-card>
+            <!-- right -->
+
+        </md-content>
+    </div>
 </div>
