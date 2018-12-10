@@ -218,7 +218,7 @@
 
 								<div style="display: block;text-align: center;padding-right: 4%" class="cal-btn-div" id='finalSubmit'>
 									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()" ng-bind="vmCalender.updateBtn"></md-button> 
-									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-disabled="vmCalender.menuBtn" ng-click="showMenu()">Menu</md-button> 
+									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-click="showMenu()">Menu</md-button> 
 								</div>
 
 								<a>{{vmCalender.error}}</a>
@@ -230,19 +230,19 @@
 							<!-- footer -->
 							<div layout="row" class="card-footer" layout-align="space-between center" layout-padding >
 								<div layout="column" layout-align="center center" id='profileBtn' 
-                                ng-click="!vmCalender.isProfileEnabled||goProfile()" style="outline: none;cursor: pointer">
+                                ng-click="goProfile()" style="outline: none;cursor: pointer">
 									<i class="fa fa-user" style="color:white;font-size: 20px" aria-hidden="true"></i>
 									<span class="whitefont" style="font-size: 12px;letter-spacing: 1px">Profile</span>
 								</div>
 								<div style="padding-left: 23%;padding-top: 4px" layout="column"  layout-align="center center">
 									<div layout="column" layout-align="center center" id='addMealsBtn' 
-                                    ng-click="!vmCalender.isAddEnabled||addMore()" style="outline: none;cursor: pointer">
+                                    ng-click="addMore()" style="outline: none;cursor: pointer">
 										<img src="../images/catering.png" width="28px" height="28px" alt="white-logo">
 										<span style="font-size: 12px;margin-top: -5px;letter-spacing: 1px;width: max-content" class="whitefont">Add Meals</span>
 									</div>
 								</div>
-								<div style="padding-left: 12%;" id="djBtn"> 
-									<a id="goDJ" href="www.dialjordan.com" target="_blank"><img src="../images/logowhite.png" alt="lunch" style="width: 80px"></a>
+								<div style="padding-left: 12%;" ng-click="djLink()"> 
+									<img src="../images/logowhite.png" alt="lunch" style="width: 80px">
 								</div>
 							</div>
 							<!-- footer -->
