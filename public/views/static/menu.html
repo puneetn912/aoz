@@ -47,7 +47,7 @@
 										<md-list>
 											<h3 style="border-bottom: 1.5px solid #c02425;padding-bottom: 5px;margin-bottom: 12px;letter-spacing: 3px;margin-top: 2px;word-break: break-all;border: 1px solid lightgrey;margin-left: 6px;margin-right:6px;color: slategrey;">{{vmMenu.vheader}}</h3>
 											<md-list-item ng-if="vmMenu.veg.length>0" class="md-2-line" ng-repeat="x in vmMenu.veg">
-												<div style="width: 100%;border-bottom: 2px solid #eee" ng-repeat="(key,value) in x">
+												<div style="width: 100%;border-bottom: 2px solid #eee;padding-top: 5px" ng-repeat="(key,value) in x">
 													<div layout="row" layout-align="center center">
 
 														<h4 class="mt0" style="margin-bottom: 2px;letter-spacing: 1px;word-break: break-all;">{{ key }}</h4>
@@ -62,9 +62,9 @@
 											</div>
 
 											<md-list-item ng-if="vmMenu.veg.length==0" class="md-2-line">
-												<div style="width: 100%;border-bottom: 2px solid #eee;margin-right: 20px">
+												<div style="width: 100%;border-bottom: 2px solid #eee;">
 													<div layout="row" layout-align="center center">
-													<p style="color: #838383; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">Veg Menu Details Not Available For Today.</p>
+													<p style="color: #838383;font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">Veg menu details is not available on the selected date</p>
 													</div>
 
 												</div>
@@ -86,7 +86,7 @@
 
 
 
-												<div style="width: 100%;border-bottom: 2px solid #eee" ng-repeat="(key,value) in x">
+												<div style="width: 100%;border-bottom: 2px solid #eee;padding-top: 5px" ng-repeat="(key,value) in x">
 													<div layout="row" layout-align="center center">
 
 														<h4 class="mt0" style="margin-bottom: 2px;letter-spacing: 1px;word-break: break-all;">{{ key }}</h4>
@@ -110,9 +110,9 @@
 											</div>
 
 											<md-list-item ng-if="vmMenu.nonveg.length==0" class="md-2-line">
-												<div style="width: 100%;border-bottom: 2px solid #eee;margin-right: 20px">
+												<div style="width: 100%;border-bottom: 2px solid #eee;">
 													<div layout="row" layout-align="center center">
-													<p style="color: #838383; word-break: break-all;font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">Non Veg Menu Details Not Available For Today.</p>
+													<p style="color: #838383; font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">Non Veg menu details is not available on the selected date</p>
 													</div>
 
 												</div>
