@@ -215,7 +215,11 @@
 									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()" ng-bind="vmCalender.updateBtn"></md-button> 
 									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-click="showMenu()">Menu</md-button> 
 								</div>
-
+                                <div align="center" >
+                                    <md-button class="md-raised" ng-click="pause()" aria-label="Comment">
+                                        Pause Subscription
+                                    </md-button>
+                                </div>
 								<a>{{vmCalender.error}}</a>
 
 							</div>
