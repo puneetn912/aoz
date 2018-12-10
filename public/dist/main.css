@@ -438,6 +438,20 @@ md-tab-content{
 .menu-overflow-height{height: 87%}/*1536*/
 }
 
+
+
+@media screen and (max-width: 1519px) and (max-height: 744px){
+.menu-overflow-height{height: 86%}
+.menu-div-height{height: 86%}
+}
+
+@media screen and (min-width: 1520px) and (min-height: 745px){
+.menu-overflow-height{height: 86%}
+.menu-div-height{height: 86%}/*1522-747*/
+}
+
+
+
 @media screen and (max-width: 1466px) and (max-height: 900px){
 .menu-div-height{height: 88%}
 .menu-overflow-height{height: 88%}/*1466*/
