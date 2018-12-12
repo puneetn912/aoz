@@ -106,6 +106,12 @@
 }
 
 /* End of File */
+.custonDialog{
+    max-width: 100%;
+    bottom: 50px;
+    position: fixed;
+}
+
 .disableDiv{
     pointer-events: none;
     opacity: 0.4;

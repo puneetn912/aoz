@@ -136,10 +136,10 @@
 										<div class="pt0 pb0">
 											<div class="alignleft pb10">
 												<label class="greyfont" style="font-size: 15px">Veg Meals 
-													<span style="font-size: 11px">( {{vmCalender.vegRem}}/{{vmCalender.totalVegCount}} remaining )</span></label>			
+													<span style="font-size: 11px">( {{vmCalender.vegRem}} remaining )</span></label>			
 												</div>
 												<div class="alignleft">
-													<label class="greyfont" style="font-size: 15px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}}/{{vmCalender.totalNvegCount}} remaining )</span></label>
+													<label class="greyfont" style="font-size: 15px">NonVeg Meals <span style="font-size: 11px">( {{vmCalender.nvegRem}} remaining )</span></label>
 												</div>
 											</div>
 											<div class="pt0 pb0" id="countBtn">
@@ -213,13 +213,11 @@
 
 								<div style="display: block;text-align: center;padding-right: 4%" class="cal-btn-div" id='finalSubmit'>
 									<md-button class="md-raised calendar-update-btn" ng-click="finalSave()" ng-bind="vmCalender.updateBtn"></md-button> 
-									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-click="showMenu()">Menu</md-button> 
-								</div>
-                                <div align="center" >
+									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-click="showMenu()">Menu</md-button> <br>
                                     <md-button class="md-raised" ng-click="pause()" aria-label="Comment">
                                         Pause Subscription
                                     </md-button>
-                                </div>
+								</div>
 								<a>{{vmCalender.error}}</a>
 
 							</div>

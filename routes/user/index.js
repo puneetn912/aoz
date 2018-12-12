@@ -94,6 +94,7 @@ router.post('/updateStatus/:id',subscriptionController.updateStatus)
 router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
+router.post('/resumeSub/:id',subscriptionController.resumeSub)
 
 //menu
 router.post('/getMenuByDate',menuController.getMenuByDate)
@@ -127,6 +128,7 @@ router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
 router.post('/delCal/:calId',calendarController.delCal)
 router.post('/updateCalOne',calendarController.updateCalOne)
+router.post('/pauseSub',calendarController.pauseSub)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)
