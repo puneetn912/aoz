@@ -546,11 +546,24 @@ background-color: transparent;
   padding-top: 2px;
   border: 1px solid #DE772E;
   font-weight: bold;
-  letter-spacing: 1px; 
+  letter-spacing: 4px; 
 }
 .calendar-menu-btn{
   background-color: white !important;
   width:130px;
+  border-radius: 50px;
+  color: #CE362C !important;
+  font-size: 16px;
+  height: 42px;
+  letter-spacing:3px;
+  padding-top: 2px;
+  border: 1px solid #DE772E;
+  font-weight: bold;
+  letter-spacing: 4px; 
+}
+.calendar-pause-btn{
+  background-color: white !important;
+  width:220px;
   border-radius: 50px;
   color: #CE362C !important;
   font-size: 16px;
