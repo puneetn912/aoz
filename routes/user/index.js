@@ -128,7 +128,7 @@ router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
 router.post('/delCal/:calId',calendarController.delCal)
 router.post('/updateCalOne',calendarController.updateCalOne)
-router.post('/pauseSub',calendarController.pauseSub)
+router.post('/pauseSub/:subId',calendarController.pauseSub)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)

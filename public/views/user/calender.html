@@ -228,7 +228,7 @@
 									<md-button class="md-raised calendar-menu-btn" id='menuBtn' ng-click="showMenu()">Menu</md-button> 
 								</div>
                                 <div align="center" >
-                                    <md-button class="md-raised" ng-click="pause()" aria-label="Comment" ng-bind='vmCalender.pauseBtn'>
+                                    <md-button class="md-raised" ng-click="pause()" aria-label="Comment" ng-show="vmCalender.showPause" ng-bind='vmCalender.pauseBtn'>
                                         Pause Subscription
                                     </md-button>
                                 </div>
