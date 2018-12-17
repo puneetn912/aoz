@@ -680,7 +680,7 @@ background-color: transparent;
   padding-top: 2px;
   border: 1px solid #DE772E;
   font-weight: bold;
-  letter-spacing: 1px; 
+  letter-spacing: 0px; 
 }
 
 
@@ -791,7 +791,8 @@ border-radius: 0px !important;
 
 
 @media screen and (min-width: 500px) and (max-height: 700px){
-.cal-overflow-height{height:77%;}
+.cal-overflow-height{height:80%;}
+.cal-div-height{height:100%;}
 }
 
 
