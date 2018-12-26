@@ -80,7 +80,7 @@ router.post('/sendtoairpay', function(req, res, next) {
         orderid:fdata.buyerPhone,
         amount:fdata.amount,
         checksum:checksum,
-      }
+    }
     console.log('paymentObj paymentObj',paymentObj)
 
     res.send(paymentObj);
@@ -127,13 +127,14 @@ router.post('/addCalendar',calendarController.add)
 router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
 router.post('/delCal/:calId',calendarController.delCal)
-router.post('/updateCalOne',calendarController.updateCalOne)
+router.post('/updateCalOne/:subId',calendarController.updateCalOne)
 router.post('/pauseSub/:subId',calendarController.pauseSub)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)
 router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
+router.post('/updatePaymentStatusNative/:id',paymentController.updateStatusNative)
 
 router.post('/sendMail', mailController.test )
 
