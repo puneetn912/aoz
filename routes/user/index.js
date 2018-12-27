@@ -126,7 +126,7 @@ router.post('/getUserById/:id',userController.getUserById)
 router.post('/addCalendar',calendarController.add)
 router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
-router.post('/delCal/:calId',calendarController.delCal)
+router.post('/delCal/:cId',calendarController.delCal)
 router.post('/updateCalOne/:subId',calendarController.updateCalOne)
 router.post('/pauseSub/:subId',calendarController.pauseSub)
 
