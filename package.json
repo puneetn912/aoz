@@ -58,6 +58,8 @@
     "ejs": "^2.5.9",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "firebase": "^5.7.2",
+    "firebase-admin": "^6.4.0",
     "helmet": "^3.13.0",
     "html-loader": "^0.5.5",
     "md5": "^2.2.1",

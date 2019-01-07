@@ -12,6 +12,7 @@ let paymentController = require('../../lib/src/js/scriptController/paymentContro
 let menuController = require('../../lib/src/js/scriptController/menuController');
 let mailController = require('../../lib/src/js/scriptController/mailController');
 let pageController = require('../../lib/src/js/scriptController/pageController');
+let notifyController = require('../../lib/src/js/scriptController/notifyController');
 
 var locality = require('../../lib/models/locality')
 
@@ -138,6 +139,10 @@ router.post('/updatePaymentStatusNative/:id',paymentController.updateStatusNativ
 
 router.post('/sendMail', mailController.test )
 
+// Notify
+router.post('/notify', notifyController.notify )
+router.post('/notifyOne', notifyController.notifyOne )
+router.post('/storeToken', notifyController.storeToken )
 
 
 module.exports = router;
