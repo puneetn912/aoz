@@ -12,6 +12,7 @@ let paymentController = require('../../lib/src/js/scriptController/paymentContro
 let menuController = require('../../lib/src/js/scriptController/menuController');
 let mailController = require('../../lib/src/js/scriptController/mailController');
 let pageController = require('../../lib/src/js/scriptController/pageController');
+let notifyController = require('../../lib/src/js/scriptController/notifyController');
 
 var locality = require('../../lib/models/locality')
 
@@ -80,7 +81,7 @@ router.post('/sendtoairpay', function(req, res, next) {
         orderid:fdata.buyerPhone,
         amount:fdata.amount,
         checksum:checksum,
-      }
+    }
     console.log('paymentObj paymentObj',paymentObj)
 
     res.send(paymentObj);
@@ -126,17 +127,22 @@ router.post('/getUserById/:id',userController.getUserById)
 router.post('/addCalendar',calendarController.add)
 router.post('/updateCal',calendarController.update)
 router.post('/getCal/:subId',calendarController.getCal)
-router.post('/delCal/:calId',calendarController.delCal)
-router.post('/updateCalOne',calendarController.updateCalOne)
+router.post('/delCal/:cId',calendarController.delCal)
+router.post('/updateCalOne/:subId',calendarController.updateCalOne)
 router.post('/pauseSub/:subId',calendarController.pauseSub)
 
 //payment
 router.post('/addPayment/:id',paymentController.add)
 router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
+router.post('/updatePaymentStatusNative/:id',paymentController.updateStatusNative)
 
 router.post('/sendMail', mailController.test )
 
+// Notify
+router.post('/notify', notifyController.notify )
+router.post('/notifyOne', notifyController.notifyOne )
+router.post('/storeToken', notifyController.storeToken )
 
 
 module.exports = router;
