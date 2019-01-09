@@ -143,6 +143,7 @@ router.post('/sendMail', mailController.test )
 router.post('/notify', notifyController.notify )
 router.post('/notifyOne', notifyController.notifyOne )
 router.post('/storeToken', notifyController.storeToken )
+router.post('/getScheduleNotice', notifyController.getScheduleNotice )
 
 
 module.exports = router;
