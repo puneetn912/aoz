@@ -136,6 +136,7 @@ router.post('/addPayment/:id',paymentController.add)
 router.post('/getPayments/:id',paymentController.get)
 router.post('/updatePaymentStatus/:id',paymentController.updateStatus)
 router.post('/updatePaymentStatusNative/:id',paymentController.updateStatusNative)
+router.post('/getMealCost',paymentController.getMealCost)
 
 router.post('/sendMail', mailController.test )
 
