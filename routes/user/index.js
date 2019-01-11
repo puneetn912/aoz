@@ -94,6 +94,7 @@ router.post('/updateSubs/:id',subscriptionController.updateSubs)
 router.post('/updateStatus/:id',subscriptionController.updateStatus)
 router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
+router.post('/getSubNative/:id',subscriptionController.getSubNative)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
 
 //menu
