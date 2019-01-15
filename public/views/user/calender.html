@@ -12,7 +12,7 @@
 
 
 			<!-- side bar -->
-			<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+			<md-sidenav style="overflow: unset" class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
 				<md-toolbar class="md-theme-indigo">
 					<md-button ng-click="vmPage.close()" style="position: fixed;right: 0px; padding: 0px;margin:0px;margin-top: 22px;
 					margin-right: -20px;"><i class="fa fa-2x fa-angle-left" aria-hidden="true"></i></md-button>
@@ -22,70 +22,72 @@
 					{{vmCalender.subscription.apartment_name}}</p>
 
 				</md-toolbar>
-				<md-content>
-					<md-list flex>
-						<a aria-label="caterer" href="/menu" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Today's Menu
-						</md-list-item></a>
-						<md-divider ></md-divider>
-						
-						<a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							FAQ
-						</md-list-item></a>
-						<md-divider ></md-divider>
-						
-						<a aria-label="caterer" href="/history" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Order History
-						</md-list-item></a>
-						<md-divider ></md-divider>
+				<div style="overflow: scroll;">
+					<md-content style="height: 79%">
+						<md-list flex>
+							<a aria-label="caterer" href="/menu" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Today's Menu
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" href="/contact" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Contact Us
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" href="/faq" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								FAQ
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" href="/chef-registration" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Chef Registration
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" href="/history" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Order History
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" href="/feedback" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Feedback form
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" href="/contact" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Contact Us
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" ng-href='/enquiry?subject=School Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Dj School
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" href="/chef-registration" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Chef Registration
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" ng-href='/enquiry?subject=Corporate Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Dj School
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" href="/feedback" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Feedback form
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" ng-href='/enquiry?subject=Party Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Dj Party
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" ng-href='/enquiry?subject=School Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Dj School
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" ng-href="/apartment" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Register your Apartment
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" ng-href='/enquiry?subject=Corporate Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Dj School
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-						<a aria-label="caterer" href="/terms" style="color:black; text-decoration: none"><md-list-item  ng-click="null">    
-							Terms & Conditions
-						</md-list-item></a>
-						<md-divider ></md-divider>
-						
-						<a aria-label="caterer" href="/cancellation" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
-							Cancellation Policy
-						</md-list-item></a>
-						<md-divider ></md-divider>
+							<a aria-label="caterer" ng-href='/enquiry?subject=Party Enquiry' style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Dj Party
+							</md-list-item></a>
+							<md-divider ></md-divider>
 
-					</md-list>
-				</md-content>
+							<a aria-label="caterer" ng-href="/apartment" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Register your Apartment
+							</md-list-item></a>
+							<md-divider ></md-divider>
+
+							<a aria-label="caterer" href="/terms" style="color:black; text-decoration: none"><md-list-item  ng-click="null">    
+								Terms & Conditions
+							</md-list-item></a>
+							<md-divider ></md-divider>
+
+							<a aria-label="caterer" href="/cancellation" style="color:black; text-decoration: none"><md-list-item  ng-click="null">
+								Cancellation Policy
+							</md-list-item></a>
+							<md-divider ></md-divider>
+
+						</md-list>
+					</md-content>
+				</div>
 				<div layout="row" layout-align="space-between center" layout-padding style="background-color: #eee;position:fixed; bottom:0;height: 64px;width: 100%" >
 					<div><a itemprop="sameAs" href="#"><i style="font-size: 20px" class="fa fa-twitter pr10" aria-hidden="true"></i></a></div>
 					<div><a itemprop="sameAs" target="_blank" href="https://www.facebook.com/Djfresh-2231392523743731/"><i style="font-size: 20px" class="fa fa-facebook pr10" aria-hidden="true"></i></a></div>
