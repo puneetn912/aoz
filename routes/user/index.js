@@ -96,6 +96,7 @@ router.post('/updateSubBro/:id',subscriptionController.updateSubBro)
 router.post('/getSub/:id',subscriptionController.getSub)
 router.post('/getSubNative/:id',subscriptionController.getSubNative)
 router.post('/getSubByUser/:user',subscriptionController.getSubByUser)
+router.post('/getSubByUserNative/:user',subscriptionController.getSubByUserNative)
 
 //menu
 router.post('/getMenuByDate',menuController.getMenuByDate)
