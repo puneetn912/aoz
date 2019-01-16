@@ -46,19 +46,19 @@
 
 							<form name="contactForm">
 								<div layout="column" layout-padding>
-									<h2>Feedback</h2>
+									<h2>We want your Feedback</h2>
 									<div class="p0">
-										<input class="Contact-input inp" type="text" placeholder="Enter your Name" name="feedback_name"
+										<input class="Contact-input inp" type="text" ng-model='vmPage.name' readonly="" placeholder="Enter your Name" name="feedback_name"
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Name'" >
 									</div>
 									<div class="p0">
-										<input type="email" class="Contact-input inp" type="email" placeholder="Enter your Email" name="email" 
+										<input type="email" class="Contact-input inp" ng-model='vmPage.email' readonly="" type="email" placeholder="Enter your Email" name="email" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Email'" >
 									</div>
 									<div class="p0">
-										<input class="Contact-input inp" type="text" placeholder="Enter your Phone" name="mobileno"
+										<input class="Contact-input inp" type="text" ng-model='vmPage.phone' readonly="" placeholder="Enter your Phone" name="mobileno"
 										maxlength="10" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Phone'">
@@ -75,6 +75,9 @@
                                 </div>
 
                                 <div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
+
+									<md-button class="md-raised home-signup-btn" ng-disabled='vmPage.isFormFilled' aria-label="description" ng-click="goback()">Back</md-button>
+
                                 	<md-button class="md-raised home-signup-btn" ng-disabled='vmPage.isFormFilled' aria-label="description" ng-click="submit()">Submit</md-button>
                                 </div>
                             </form>

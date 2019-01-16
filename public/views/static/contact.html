@@ -46,52 +46,52 @@
 
 							<form name="contactForm">
 								<div layout="column" layout-padding>
-									<h2>Contact us</h2>
+									<h2>Need to contact us?</h2>
 									<div class="p0">
-										<input class="Contact-input inp" type="text" placeholder="Enter your Name" name="name"
+										<input class="Contact-input inp" type="text" ng-model='vmPage.name' readonly="" placeholder="Enter your Name" name="name"
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Name'" >
 									</div>
 									<div class="p0">
-										<input type="email" class="Contact-input inp" type="email" placeholder="Enter your Email" name="email" 
+										<input type="email" class="Contact-input inp" ng-model='vmPage.email' readonly="" type="email" placeholder="Enter your Email" name="email" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Email'" >
 									</div>
 									<div class="p0">
-										<input class="Contact-input inp" type="text" placeholder="Enter your Phone" name="mobileno"
+										<input class="Contact-input inp" type="text" ng-model='vmPage.phone' readonly="" placeholder="Enter your Phone" name="mobileno"
 										maxlength="10" 
 										onfocus="this.placeholder = ''" 
 										onblur="this.placeholder = 'Enter your Phone'">
 									</div>
-                                    <div class="p0">
-    									<input class="Contact-input inp" type="text" name="subject" readonly="" value="DJfresh Update">
-                                    </div> 
-                                    <div class="p0">
-                                    	<textarea class="contact-textarea inp" placeholder="Enter your Message..." name="message" 
-                                    	onfocus="this.placeholder = ''" 
-                                    	onblur="this.placeholder = 'Enter your Message...'" ></textarea>
-                                    </div>
+									<div class="p0">
+										<input class="Contact-input inp" type="text" name="subject" readonly="" value="DJfresh Update">
+									</div> 
+									<div class="p0">
+										<textarea class="contact-textarea inp" placeholder="Enter your Message..." name="message" 
+										onfocus="this.placeholder = ''" 
+										onblur="this.placeholder = 'Enter your Message...'" ></textarea>
+									</div>
 
-                                </div>
+								</div>
 
-                                <div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
-                                	<md-button class="md-raised home-signup-btn" ng-disabled='vmPage.isFormFilled' aria-label="description" ng-click="submit()">Submit</md-button>
-                                </div>
-                            </form>
-                            <p ng-bind="vmPage.errMsg" align="center" style="color:red;"></p>
+								<div layout="row" layout-align="center" layout-padding class="bt-1-s-eee form-div" style="padding: 20px 0px;">
+									<md-button class="md-raised home-signup-btn" ng-disabled='vmPage.isFormFilled' aria-label="description" ng-click="goback()">Back</md-button>
 
+									<md-button class="md-raised home-signup-btn" ng-disabled='vmPage.isFormFilled' aria-label="description" ng-click="submit()">Submit</md-button>
 
+								</div>
+							</form>
+							<p ng-bind="vmPage.errMsg" align="center" style="color:red;"></p>
 
+						</div>
+					</div> 
+				</div>
+				<ng-include src="'views/user/includes/footer.html'"></ng-include>
+			</md-card>
+			<!-- right -->
 
-                        </div>
-                    </div> 
-                </div>
-                <ng-include src="'views/user/includes/footer.html'"></ng-include>
-            </md-card>
-            <!-- right -->
-
-        </md-content>
-    </div>
+		</md-content>
+	</div>
 </div>
 
 <!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
