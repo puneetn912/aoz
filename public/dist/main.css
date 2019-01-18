@@ -118,7 +118,7 @@
 }
 
 .md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
-    background-color: #c02425 !important;
+    background-color: E79B30 !important;
     color: rgba(255,255,255,0.87);
 }
 
@@ -323,8 +323,8 @@ md-autocomplete input:not(.md-input) {
 /*--------------------category.html-----------------------------*/
 
 .category-home-btn{
-  color: #CE362C !important;
-  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  color: #E79B30 !important;
+  /*background: linear-gradient(to right, E79B30, #f0cb35);*/
   /*padding: 5px 60px; */
   font-size: 20px;
   height: 52px;
@@ -340,8 +340,8 @@ md-autocomplete input:not(.md-input) {
 
 
 .category-school-btn{
-  color: #CE362C !important;
-  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  color: #E79B30 !important;
+  /*background: linear-gradient(to right, E79B30, #f0cb35);*/
   /*padding: 5px 60px; */
   font-size: 20px;
   height: 52px;
@@ -356,7 +356,7 @@ md-autocomplete input:not(.md-input) {
 }
 
 .category-party-btn{
-  color: #CE362C !important;
+  color: #E79B30 !important;
   font-size: 15px;
   height: 52px;
   border-radius: 50px;
@@ -368,7 +368,7 @@ md-autocomplete input:not(.md-input) {
   letter-spacing: 3px; 
 }
 .category-corpo-btn{
-  color: #CE362C !important;
+  color: #E79B30 !important;
   font-size: 15px;
   height: 52px;
   border-radius: 50px;
@@ -423,11 +423,11 @@ md-autocomplete input:not(.md-input) {
 /*-------------------------menu.html-------------------------------*/
 
 md-tabs .md-tab.md-active{
-  color: #c02425 !important;
+  color: E79B30 !important;
  }
 md-tabs md-ink-bar {
-    color: #c02425 !important;
-    background: #c02425 !important;
+    color: #E79B30 !important;
+    background: #E79B30 !important;
 }
 
 ::-webkit-scrollbar {
@@ -498,7 +498,7 @@ md-tabs md-ink-bar {
 .card-footer{
   border-bottom-left-radius:15px;
   border-bottom-right-radius:15px;
-  background-color:#c02425;
+  background-color:E79B30;
   height: 50px;
   border-top: 1px solid #eee;
   position: fixed;
@@ -647,7 +647,7 @@ background-color: transparent;
   background-color: white !important;
   width:130px;
   border-radius: 50px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   font-size: 16px;
   height: 42px;
   letter-spacing:3px;
@@ -660,7 +660,7 @@ background-color: transparent;
   background-color: white !important;
   width:130px;
   border-radius: 50px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   font-size: 16px;
   height: 42px;
   letter-spacing:3px;
@@ -673,7 +673,7 @@ background-color: transparent;
   background-color: white !important;
   width:220px;
   border-radius: 50px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   font-size: 16px;
   height: 42px;
   letter-spacing:3px;
@@ -715,7 +715,7 @@ border-radius: 0px !important;
 }
 
 /*.md-calendar-date-today{
-  background:#c02425 !important; 
+  background:E79B30 !important; 
 }*/
 
 .md-virtual-repeat-scroller{
@@ -816,13 +816,13 @@ border-radius: 0px !important;
 }
 
 .sub-meal-btn{
-  border-radius: 20px;min-width: 20px;min-height: 23px;color:white !important; background-color: #c02425 !important;
+  border-radius: 20px;min-width: 20px;min-height: 23px;color:white !important; background-color: E79B30 !important;
 }
 
 
 .home-signup-btn{
-  color: #CE362C !important;
-  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  color: #E79B30 !important;
+  /*background: linear-gradient(to right, E79B30, #f0cb35);*/
   /*padding: 5px 60px; */
   font-size: 18px;
   height: 52px;
@@ -839,7 +839,7 @@ border-radius: 0px !important;
 .sub-buynow-btn{
 width:150px;
 border-radius: 50px;
-color: #CE362C !important;
+color: #E79B30 !important;
 font-size: 18px;
 /*margin: 19px 0px;*/
 height: 52px;
@@ -941,7 +941,7 @@ select{
 .sub-buynow-btn{
 width:130px;
 border-radius: 50px;
-color: #CE362C !important;
+color: #E79B30 !important;
 font-size: 18px;
 /*margin: 19px 0px;*/
 height: 42px;
@@ -1025,7 +1025,7 @@ padding-top: 2px;
 .dot {
     height: 25px;
     width: 25px;
-    background-color: tomato;
+    background-color: goldenrod;
     border-radius: 50%;
     display: inline-block;
     padding-left: 8px;
@@ -1035,7 +1035,7 @@ padding-top: 2px;
 .line {
     height: 10px;
     width: 100px;
-    background-color: #c02425;
+    background-color: E79B30;
     display: inline-block; 
 }
 .line1 {
@@ -1058,7 +1058,7 @@ padding-top: 2px;
 
 
 .signup-submit-btn{
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border-radius: 50px;
   width: 150px;
@@ -1108,7 +1108,7 @@ padding-top: 2px;
 @media screen and (max-width: 500px) and (max-height: 600px){
 .signup-dot-text{font-size: 14px}
 .signup-submit-btn{
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border-radius: 50px;
   width: 130px;
@@ -1122,7 +1122,7 @@ padding-top: 2px;
 
 @media screen and (min-width: 500px) and (max-height: 700px){
 .signup-submit-btn{
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border-radius: 50px;
   width: 130px;
@@ -1195,7 +1195,7 @@ padding-top: 2px;
   font-size: 18px;
  /* margin: 19px 0px;*/
   height: 52px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold;
@@ -1210,7 +1210,7 @@ padding-top: 2px;
   font-size: 18px;
  /* margin: 19px 0px;*/
   height: 42px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold;
@@ -1232,7 +1232,7 @@ padding-top: 20px;
   font-size: 18px;
  /* margin: 19px 0px;*/
   height: 42px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold;
@@ -1368,7 +1368,7 @@ padding-top: 20px;
   font-size: 14px;
 /*  margin: 19px 0px;*/
   height: 52px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold; 
@@ -1381,7 +1381,7 @@ padding-top: 20px;
   border-radius: 50px;
   font-size: 12px;
   height: 42px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold;
@@ -1396,7 +1396,7 @@ padding-top: 20px;
   font-size: 12px;
  /* margin: 19px 0px;*/
   height: 42px;
-  color: #CE362C !important;
+  color: #E79B30 !important;
   background-color: white !important;
   border: 1px solid #DE772E;
   font-weight: bold;
@@ -1411,8 +1411,8 @@ padding-top: 20px;
 
 /*-----------------home.html--------------------------*/
 .home-signup-btn{
-  color: #CE362C !important;
-  /*background: linear-gradient(to right, #c02425, #f0cb35);*/
+  color: #E79B30 !important;
+  /*background: linear-gradient(to right, E79B30, #f0cb35);*/
   /*padding: 5px 60px; */
   font-size: 18px;
   height: 52px;
@@ -1621,13 +1621,16 @@ body {
 .FFC300font{color:#FFC300 !important}
 .greyfont{color: grey !important}
 .eeefont{color:#eee !important}
-.c02425font{color: #c02425 !important}
+.c02425font{color: c02425 !important}
+.E79B30font{color: E79B30 !important}
 .indianredfont{color:indianred !important}
+.goldenrod{color:goldenrod !important}
 /*font-color*/
 
 /*bg-color*/
 .FFC300bgcolor{background-color:#FFC300 !important}
-.c02425bgcolor{background-color: #c02425 !important}
+.c02425bgcolor{background-color: c02425 !important}
+.E79B30bgcolor{background-color: #E79B30 !important}
 .whitebgcolor{background-color: #ffffff}
 /*bg-color*/
 
