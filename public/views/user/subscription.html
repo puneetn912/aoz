@@ -103,12 +103,14 @@
         									</div>
         									<div class="subscribe-select-meal pt0 pb0 pr0" style="float: right">
 
+                                                
         										<md-select placeholder="Veg Meals" id="vegCount" 
         										ng-required='vmSubscription.isVegRequired' 
         										ng-model="vmSubscription.vegCount" 
         										ng-change="changeVcount(vmSubscription.vegCount)" 
         										ng-disabled=vmSubscription.vegSelect 
         										style="border:none ;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
+                                                    <md-option value="1" ng-hide="vmSubscription.subStatus">1</md-option>
             										<md-option value="5">5</md-option>
             										<md-option value="10">10</md-option>
             										<md-option value="20">20</md-option>
@@ -138,6 +140,7 @@
                 								ng-change="changeNVcount(vmSubscription.nvegCount)" 
                 								ng-disabled=vmSubscription.nonvegSelect 
                 								style="border:none;text-shadow: none !important;background-color: white !important;margin-top: 0px;margin-bottom: 0px;padding: 4px 0px;float: right">
+                                                    <md-option value="1" ng-hide="vmSubscription.subStatus">1</md-option>
                     								<md-option value="5">5</md-option>
                     								<md-option value="10">10</md-option>
                     								<md-option value="20">20</md-option>
