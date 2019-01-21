@@ -120,6 +120,7 @@ router.post('/addTwr/:id',apartmentController.addTwr)
 
 // user
 router.post('/createUser',userController.createUser)
+router.post('/createUserNative',userController.createUserNative)
 router.post('/updateUser',userController.updateUser)
 router.post('/checkUser/:phone',userController.checkUser)
 router.post('/checkUserId/:id',userController.checkUserId)
