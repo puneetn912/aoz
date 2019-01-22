@@ -53,7 +53,7 @@
 			   <h4 class="greyfont letter-space1">Bangalore's Number 1 Dabbawala</h4>
 			</div>
 			<div layout="row" layout-align="center center" style="padding-top: 60px">
-			  <span style="background-color: E79B30 !important;margin-right: -2" class="dot"><i class="fa fa-check" aria-hidden="true" style="padding:6px; padding-top:4px;padding-right:5px;float: right;font-size: 14px"></i></span>
+			  <span style="background-color: #E79B30 !important;margin-right: -2" class="dot"><i class="fa fa-check" aria-hidden="true" style="padding:6px; padding-top:4px;padding-right:5px;float: right;font-size: 14px"></i></span>
 			  <span style="margin-right: -2px" class="line"></span>
 			  <span style="margin-right: -1px" class="dot">2</span>
 			  <span style="margin-right: -2px" class="line"></span>
@@ -69,11 +69,12 @@
 		  </div>
 		  <div>
 			<form name="otpForm" class="pt20">
-			<h4 class="greyfont font-weight400 mb0 otp-verification-text" layout="row" layout-align="center center">Enter the verification code you've received</h4>
+			<!-- <h4 class="greyfont font-weight400 mb0 otp-verification-text" layout="row" layout-align="center center">Enter the verification code you've received</h4> -->
+			<div style="text-align: center"><input type="checkbox" id="check" style="" ng-click="terms()">I, Accept the <a href="https://www.djfresh.in/terms-condition/" id="conditions" title="Click">Terms and Conditions.</a></div>
 			<div layout="row" layout-align="center center" layout-padding layout-margin class="mt0">
-				<div class="otp-otpbtn-div">
-					<input class="otp-otpbtn-inp" placeholder="OTP" maxlength="4" required type="text" id='otp' name="otp" ng-model="vmVerify.Otp" style="outline: none;"/>
-					<md-button id="verifyOtp" class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)"><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
+				<div class="otp-otpbtn-div" title="Please Accept our terms and condition">
+					<input disabled="true" class="otp-otpbtn-inp" placeholder="OTP" maxlength="4" required type="text" id='otp' name="otp" ng-model="vmVerify.Otp" style="outline: none;"/>
+					<md-button disabled="true" id="verifyOtp" class="otp-otpbtn-btn" ng-click="verifyOtp(otpForm)"><img src="../images/checked.svg" alt="submit" style="height: 36px;width: 36px;margin-left: -3px;margin-top: 0px"></img></md-button>
 
 				<!-- <a ng-bind="<%= vm %>.titleErr" ng-model="<%= vm %>.titleErr" style='color:red'></a> -->
 				</div>
