@@ -106,6 +106,10 @@
 }
 
 /* End of File */
+.themeBg{
+    background: #DE742E;
+}
+
 #conditions:hover {
   text-decoration: underline;
   font-style: normal;
