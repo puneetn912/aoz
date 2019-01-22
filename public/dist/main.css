@@ -106,6 +106,18 @@
 }
 
 /* End of File */
+#conditions:hover {
+  text-decoration: underline;
+  font-style: normal;
+
+}
+
+#conditions {
+  text-decoration: none;
+  font-style: italic;
+}
+
+
 .custonDialog{
     max-width: 100%;
     bottom: 50px;

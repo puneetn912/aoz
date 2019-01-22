@@ -84,6 +84,7 @@
     "request": "^2.88.0",
     "serve-favicon": "~2.4.5",
     "sha256": "^0.2.0",
+    "split-string": "^6.0.0",
     "webpack-bundle-analyzer": "^3.0.3"
   },
   "devDependencies": {
