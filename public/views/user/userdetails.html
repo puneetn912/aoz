@@ -108,6 +108,7 @@
 						md-items="item in vmUserdetails.querySearchTwr(vmUserdetails.searchTextTwr)"
 						md-item-text="item"
 						md-min-length="0"
+                        md-no-cache='true'
 						placeholder="Enter Tower name">
 						<md-item-template>
 							<span md-highlight-text="vmUserdetails.searchTextTwr" md-highlight-flags="^i">{{item}}</span>
