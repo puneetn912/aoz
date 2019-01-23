@@ -1812,7 +1812,7 @@ body {
 /*bg-image*/
 @media screen and (min-width: 1000px){
 .md-content-bgimage{
-  background-image: url(/images/dscreen.jpg);
+  background-image: url(/images/dscreen1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

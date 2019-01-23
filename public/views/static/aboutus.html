@@ -1,0 +1,153 @@
+<div ng-app="cmsApp" ng-cloak>
+
+	<div ng-controller="pageController as vmPage">
+		<ng-include src="'views/user/includes/sidebar.html'"></ng-include>
+
+		<md-content layout="row" class="md-content-bgimage" layout-xs="column" ng-controller="menuController as vmMenu" ng-cloak style="height:100%;" >
+
+			<div id="loader" style="position: fixed; bottom: -13%;left:6.5%;display: none">
+				<img src="https://i.stack.imgur.com/h6viz.gif" alt=""  >
+			</div>
+
+			<!-- left -->
+			<div flex-gt-xs="55" hide-xs>
+
+				<div layout="column" style="padding-top: 10%" layout-align="start start" layout-padding>
+					<div style="margin-top: -15%;margin-bottom: 24px;padding-left: 0px">
+						<img src="../images/white-logo.png" width="200px" height="200px" class="md-card-image" alt="image caption">
+					</div>
+					<div style="margin-left: 5%">
+						<h1 style="margin-bottom: 0px" class="home-left-h1">No Repeat for 30 days</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Healthy Home Style Meal</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">No More Kitchen Hassles</h1>
+						<h1 style="margin-bottom: 0;margin-top: 10px" class="home-left-h1">Different Cuisine Everyday</h1>
+						<h1 style="margin-top: 10px" class="home-left-h1">Free Delivery at your doorstep</h1>
+					</div>
+					<div style="margin-left: 5%">
+						<h4 style="margin-bottom: 0px" class="home-left-h4">Get veg meals at &#8377 119/- and non veg meals at just &#8377 139/-,</h4>
+						<h4 style="margin-bottom: 0px;margin-top: 10px" class="home-left-h4">organize your schedule No more kitchen hassles,</h4>
+						<h4 style="margin-top: 10px" class="home-left-h4">Free home delivery</h4>
+					</div>
+				</div>
+
+			</div>
+			<!-- left -->
+
+
+			<!-- right -->
+			<md-card class="card-border" flex-gt-xs="25" layout-align="center">
+				<div class="menu-div-height">
+					<ng-include src="'views/user/includes/header.html'"></ng-include>
+					<div style="overflow: hidden;">
+						<div class="menu-overflow-height" style="overflow-y: overlay;overflow-x: hidden;">
+
+							<md-tabs md-selected="selectedIndex" style="min-height: 100% !important" md-stretch-tabs="always">
+								<md-tab ng-disabled="tab.disabled" label="Our Team">
+									<div style="text-align: center">
+										<md-list>
+											
+												<div style="width: 100%">
+													<div layout="column">
+														 <!-- <md-card style="margin-bottom: 0px" class="card-border" layout-align="space-between" flex-gt-xs="20" layout="row">
+															<div style="padding-top: 20px;padding-left: 10px"><img src="../images/user.jpg" width="50px" height="50px" alt="user"></div>
+															<div style="text-align: right;padding-right: 10px">
+																<h4 style="margin-bottom: 5px;letter-spacing:1">Rohit Jain</h4>
+																<h5 style="margin-top: 5px">Founder and CEO</h5>
+															</div>
+														 </md-card>
+
+														 <md-card style="margin-bottom: 0px" class="card-border" layout-align="space-between" flex-gt-xs="20" layout="row">
+															<div style="padding-top: 20px;padding-left: 10px"><img src="../images/user.jpg" width="50px" height="50px" alt="user"></div>
+															<div style="text-align: right;padding-right: 10px">
+																<h4 style="margin-bottom: 5px;letter-spacing:1">Sohail Ahmed</h4>
+																<h5 style="margin-top: 5px">Co - Founder & Sales Head</h5>
+															</div>
+														 </md-card> -->
+
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Sangita Sahoo</h4>
+                                                                <h5 style="margin-top: 5px">SEO Manager</h5>
+                                                            </div>
+                                                         </md-card>
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Sharief M</h4>
+                                                                <h5 style="margin-top: 5px">Customer Relationship Manager</h5>
+                                                            </div>
+                                                         </md-card>
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Rithinraj KP</h4>
+                                                                <h5 style="margin-top: 5px">Software Developer</h5>
+                                                            </div>
+                                                         </md-card>
+
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Nallaguntla Shyam Kumar</h4>
+                                                                <h5 style="margin-top: 5px">Software Architect</h5>
+                                                            </div>
+                                                         </md-card>
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Shreyansh Lodha</h4>
+                                                                <h5 style="margin-top: 5px">App Developer</h5>
+                                                            </div>
+                                                         </md-card>
+
+                                                         <md-card class="card-border" layout-align="center center" flex-gt-xs="20" layout="row">
+                                                            <div >
+                                                                <!-- <img src="../images/user.jpg" width="50px" height="50px" alt="user"> -->
+                                                                <h4 style="margin-bottom: 5px;letter-spacing:1">Puneet Naik</h4>
+                                                                <h5 style="margin-top: 5px">VP - Technology & Products</h5>
+                                                            </div>
+                                                         </md-card>
+													</div>
+												</div>
+										</md-list>
+									</div>
+								</md-tab>
+
+								<md-tab ng-disabled="tab.disabled" label="Go Green">
+									<div style="text-align: center;">
+										<md-list>
+											<md-list-item ng-if="vmMenu.nonveg.length==0" class="md-2-line">
+												<div style="width: 100%;border-bottom: 2px solid #eee;">
+													<div>
+													<p style="color: #838383; font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">Sustainable packaging & delivery - DJFresh utilises packaging and delivery methods that are sustainable and not harmful to the environment. </p>
+                                                    <p style="color: #838383; font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">
+                                                    On the packaging front, we are using the good old, steel tiffin boxes. Besides contributing to a cleaner, greener and plastic-free environment, we also want to give our patrons the warmth and feel of eating straight out a tiffin box as if it is prepared in their own home. No matter where you are, ghar ka khaana will follow. We request our patrons to treat the dabba with utmost care and love. </p>
+
+													<p style="color: #838383; font-weight: normal;margin-top: 2px;letter-spacing: 1px;text-align: justify;">
+													In our endeavour to give back to the planet, we are going a step further by delivering our food in a more sustainable fashion. Contrary to the popular bike taxis, DJFresh satisfies hunger pangs of their customers by delivering food in a vehicle that runs on biodiesel.</p>
+
+													</div>
+
+												</div>
+
+											</md-list-item>
+
+										</md-list>
+									</div>
+								</md-tab>
+							</md-tabs>						
+							
+						</div>
+					</div>
+				</div> 
+
+				<ng-include src="'views/user/includes/footer.html'"></ng-include>
+			</md-card>
+			<!-- right -->
+
+		</md-content>
+	</div>
+</div>
+
+<!--                     <md-slider flex md-discrete ng-model="rating1" step="1" min="1" max="5" aria-label="rating"></md-slider> -->
