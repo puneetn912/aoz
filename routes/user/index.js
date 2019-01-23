@@ -145,10 +145,10 @@ router.post('/getMealCost',paymentController.getMealCost)
 router.post('/sendMail', mailController.test )
 
 // Notify
-router.post('/notify', notifyController.notify )
-router.post('/notifyOne', notifyController.notifyOne )
+// router.post('/notify', notifyController.notify )
+// router.post('/notifyOne', notifyController.notifyOne )
+// router.post('/getScheduleNotice', notifyController.getScheduleNotice )
 router.post('/storeToken', notifyController.storeToken )
-router.post('/getScheduleNotice', notifyController.getScheduleNotice )
 
 
 module.exports = router;

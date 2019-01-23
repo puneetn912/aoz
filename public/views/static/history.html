@@ -67,8 +67,8 @@
                                                 
                                             </div>
                                             <div ng-if='item.status==true' layout='row' layout-align='space-between'>
-                                                <p>Transaction Status : {{item.status}}</p>
-                                                <md-button class="md-raised md-primary" style="margin-top: -18px;margin-right: 0px">Get Invoice</md-button>
+                                                <p>Transaction Status : {{item.status==true? 'Success' : 'Failed'}}</p>
+                                                <!-- <md-button class="md-raised md-primary" style="margin-top: -18px;margin-right: 0px">Get Invoice</md-button> -->
                                             </div>
 									    </div>
 							        </md-list-item>
