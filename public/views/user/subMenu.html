@@ -1,5 +1,5 @@
 <div ng-app="cmsApp" ng-cloak>
-    <md-content class="height100p" style="background:none" layout="row" layout-xs="column" ng-controller="homeController as vmHome" ng-cloak >
+    <md-content class="height100p"  style="background:none" layout="row" layout-xs="column" ng-controller="homeController as vmHome" ng-cloak >
         <div flex-gt-xs="55" hide-xs>
             <div layout="column" class="pt10p" layout-align="start start" layout-padding>
                 <div class="mt-15p mb13 pl0">
@@ -15,63 +15,61 @@
         <md-card flex-gt-xs="25" class="card-border">
             <ng-include src="'views/user/includes/header.html'"></ng-include>
 
-            <md-card-content class="home-card-content mobile" >
-                        <h2 align="center" style="margin-top: 10px">App Cateogry</h2>
+            <md-card-content class="home-card-content mobile" style="padding-top: 50px">
                         <md-grid-list
                             md-cols-xs="3" md-cols-sm="3" md-cols-md="3" md-cols-gt-md="3"
                             md-row-height-gt-md="1:1" md-row-height="2:2"
-                            md-gutter="40px" md-gutter-gt-sm="11px" >
-                            <md-grid-tile ng-click='goSubMenu()' class="green" style="background:green;border-radius: 20%">
-                                <h3 align="center">Top Apps</h3>
-                                <!-- <md-grid-tile-footer>
-                                    <h3>#2: (1r x 1c)</h3>
-                                </md-grid-tile-footer> -->
-                            </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:yellow;border-radius: 20%">
-                                <h3 align="center">Food</h3>
-                                <!-- <md-grid-tile-footer>
-                                    <h3>#3: (1r x 1c)</h3>
-                                </md-grid-tile-footer> -->
-                            </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:blue;border-radius: 20%">
-                                <h3 align="center">Rental</h3>
-                                <!-- <md-grid-tile-footer>
-                                    <h3>#3: (1r x 1c)</h3>
-                                </md-grid-tile-footer> -->
-                            </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="green" style="background:green;border-radius: 20%">
-                                <h3 align="center">Car Taxi</h3>
+                            md-gutter="40px" md-gutter-gt-sm="40px" >
+                            <md-grid-tile class="green" style="background:green;border-radius: 50%">
+                                <i class="fa fa-2x fa-shopping-cart" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#2: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
                             </md-grid-tile> 
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:yellow;border-radius: 20%">
-                                <h3 align="center">Bike Taxi</h3>
+                            <md-grid-tile class="yellow" style="background:yellow;border-radius: 50%">
+                                <i class="fa fa-2x fa-home" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#3: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
                             </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:blue;border-radius: 20%">
-                                <h3 align="center">Travels</h3>
+                            <md-grid-tile class="yellow" style="background:blue;border-radius: 50%">
+                                <i class="fa fa-2x fa-star" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#3: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
                             </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="green" style="background:green;border-radius: 20%">
-                                <h3 align="center">Beauty and Health</h3>
+                            <md-grid-tile class="green" style="background:green;border-radius: 50%">
+                                <i class="fa fa-2x fa-cogs" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#2: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
                             </md-grid-tile> 
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:yellow;border-radius: 20%">
-                                <h3 align="center">Bike Rental</h3>
-
+                            <md-grid-tile class="yellow" style="background:yellow;border-radius: 50%">
+                                <i class="fa fa-2x fa-truck" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#3: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
                             </md-grid-tile>
-                            <md-grid-tile ng-click='goSubMenu()' class="yellow" style="background:blue;border-radius: 20%">
-                                <h3 align="center">Car Rental</h3>
+                            <md-grid-tile class="yellow" style="background:blue;border-radius: 50%">
+                                <i class="fa fa-2x fa-desktop" style="color:white;" aria-hidden="true"></i>
+                                <!-- <md-grid-tile-footer>
+                                    <h3>#3: (1r x 1c)</h3>
+                                </md-grid-tile-footer> -->
+                            </md-grid-tile>
+                            <md-grid-tile class="green" style="background:green;border-radius: 50%">
+                                <i class="fa fa-2x fa-search" style="color:white;" aria-hidden="true"></i>
+                                <!-- <md-grid-tile-footer>
+                                    <h3>#2: (1r x 1c)</h3>
+                                </md-grid-tile-footer> -->
+                            </md-grid-tile> 
+                            <md-grid-tile class="yellow" style="background:yellow;border-radius: 50%">
+                                <i class="fa fa-2x fa-credit-card" style="color:white;" aria-hidden="true"></i>
+                                <!-- <md-grid-tile-footer>
+                                    <h3>#3: (1r x 1c)</h3>
+                                </md-grid-tile-footer> -->
+                            </md-grid-tile>
+                            <md-grid-tile class="yellow" style="background:blue;border-radius: 50%">
+                                <i class="fa fa-2x fa-file-text" style="color:white;" aria-hidden="true"></i>
                                 <!-- <md-grid-tile-footer>
                                     <h3>#3: (1r x 1c)</h3>
                                 </md-grid-tile-footer> -->
